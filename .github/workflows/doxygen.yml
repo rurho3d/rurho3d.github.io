@@ -1,0 +1,132 @@
+# Данный workflow генерирует документацию Urho3D и публикует её на сайте
+
+# Отображаемое имя workflow
+# https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#name
+name: Генерация документации
+
+on:
+  # Данный workflow запускается вручную
+  # https://docs.github.com/en/actions/reference/events-that-trigger-workflows#manual-events
+  # Ручной запуск можно было бы симулировать из репозитория Urho3D, но нужно вписать туда токен
+  # https://docs.github.com/en/rest/actions/workflows#create-a-workflow-dispatch-event
+  workflow_dispatch:
+
+jobs:
+  # Идентификатор job
+  # https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_id
+  Dokumentaciya:
+    # Будет запущен на виртуальной машине с последней версией Ubuntu
+    # https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idruns-on
+    runs-on: ubuntu-22.04
+
+    # Отображаемое имя job 
+    # https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idname
+    name: Генерация документации
+
+    # Последовательность задач
+    # https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idsteps
+    steps:
+
+    - name: Устанавливаем софт # Отображаемое имя step
+      run: |
+        set -x # Отображаем выполняемые команды
+
+        # Приложение Doxygen генерирует документацию
+        #sudo apt-get install -y doxygen
+
+        # В репозитории Ubuntu устаревшая версия 1.9.1. Качаем свою сборку
+        mkdir $HOME/programs
+        cd $HOME/programs
+        wget -q -O tmp.zip https://github.com/rurho3d/doxygen-builder/raw/main/doxygen_linux64.zip && unzip tmp.zip && rm tmp.zip
+        echo "$HOME/programs" >> $GITHUB_PATH
+
+        # Для генерации ScriptAPI.dox и AngelScriptAPI.h нужно скомпилировать ScriptCompiler, а значит и движок.
+        # Поэтому устанавливаем библиотеки, необходимые для компиляции движка
+        sudo apt-get install freeglut3-dev
+
+      # Временная метка добавляется к ключу кэша, чтобы при каждом запуске скрипта ключ отличался и кэш сохранялся заново
+    - name: Генерируем временную метку
+      # https://docs.github.com/en/actions/reference/workflow-commands-for-github-actions#setting-an-environment-variable
+      run: echo "TIMESTAMP=$(/bin/date -u "+%Y_%m_%d_%H_%M_%S")" >> $GITHUB_ENV
+
+      # Используем кэш, так как без него компиляция движка каждый раз будет производиться с нуля, что очень долго
+    - name: Восстанавливаем данные из кэша
+      uses: actions/cache@v2 # Исходник скрипта можно посмотреть тут: https://github.com/actions/cache
+      with:
+        path: | # Папки, которые будут кэшироваться
+          urho3d_repo
+          urho3d_build
+          this_repo
+        restore-keys: cache_key_v1_ # Используем сохранённый кэш, если есть (поменять версию, чтобы перезаписать кэш без использования)
+        key: cache_key_v1_${{ env.TIMESTAMP }} # Новый ключ для кэша
+
+    - name: Скачиваем репозиторий движка
+
+      # Дефолтная командная оболочка моментально прекращает работу, если при выполнении любой команды возникла ошибка.
+      # Нам же нужна возможность обработки ошибок
+      # https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idstepsrun
+      shell: bash {0}
+
+      run: |
+        set -x # Отображаем выполняемые команды
+
+        git config --global user.email "rurho3d[bot]@users.noreply.github.com"
+        git config --global user.name "rurho3d[bot]"
+
+        if [[ -d urho3d_repo ]] # Если папка urho3d_repo уже есть
+        then
+          git -C urho3d_repo pull # Обновляем репозиторий
+          git pull # Обновляем репозиторий
+
+          if (( ret != 0 )) # Если в процессе git pull возникла ошибка (например коммиты в репозитории были спрессованы)
+          then
+            echo "========== Не удалось обновить репозиторий, перезакачиваем целиком"
+            rm -r urho3d_repo # Удаляем папку
+            rm -r urho3d_build
+            git clone https://github.com/urho3d/Urho3D urho3d_repo # Качаем репозиторий
+          fi
+        else # Папки urho3d_repo нет
+          # Качаем репозиторий
+          git clone https://github.com/urho3d/Urho3D urho3d_repo
+        fi
+
+    - name: Генерируем документацию
+      run: |
+        cmake urho3d_repo -B urho3d_build -D CMAKE_BUILD_TYPE=Debug # Генерируем проекты движка
+        cmake --build urho3d_build --target doc # Компилируем проект doc
+
+    - name: Публикуем документацию
+
+      # Не пытаемся публиковать документацию, если action выполняется в форке
+      # https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idif
+      # https://docs.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions#github-context
+      if: github.repository == 'rurho3d/rurho3d.github.io'
+
+      shell: bash {0}
+
+      run: |
+        set -x # Отображаем выполняемые команды
+
+        if [[ -d this_repo ]] # Если папка this_repo уже есть
+        then
+          git -C this_repo pull # Обновляем репозиторий
+          ret=$? # Сохраняем код возврата предыдущей команды
+
+          if (( ret != 0 )) # Если в процессе git pull возникла ошибка (например коммиты в репозитории были спрессованы)
+          then
+            echo "========== Не удалось обновить репозиторий, перезакачиваем целиком"
+            rm -r this_repo # Удаляем папку
+            git clone https://github.com/rurho3d/rurho3d.github.io this_repo # Качаем репозиторий
+          fi
+        else
+          git clone https://github.com/rurho3d/rurho3d.github.io this_repo # Качаем репозиторий
+        fi
+
+        rm -rf this_repo/doxygen # Удаляем директорию, если существует
+        mkdir this_repo/doxygen
+        cp -a urho3d_build/Docs/html/. this_repo/doxygen # Копируем содержимое папки
+
+        cd this_repo
+        git add -A
+        git diff-index --quiet HEAD || git commit -m "Обновление документации" # Создаём коммит, если есть изменения
+        git push "https://oauth2:${{ secrets.GITHUB_TOKEN }}@github.com/rurho3d/rurho3d.github.io" main
