@@ -79,7 +79,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:aa6c3754fa4fd5afb4c7a2c6b3f8833d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct. <br /></td></tr>
 <tr class="separator:aa6c3754fa4fd5afb4c7a2c6b3f8833d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38bd2f1292778c57fae949c4e271c20d"><td class="memItemLeft" align="right" valign="top"><a id="a38bd2f1292778c57fae949c4e271c20d"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_view.html#a38bd2f1292778c57fae949c4e271c20d">Define</a> (<a class="el" href="class_urho3_d_1_1_render_surface.html">RenderSurface</a> *renderTarget, <a class="el" href="class_urho3_d_1_1_viewport.html">Viewport</a> *viewport)</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_view.html#a38bd2f1292778c57fae949c4e271c20d">Define</a> (RenderSurface *renderTarget, <a class="el" href="class_urho3_d_1_1_viewport.html">Viewport</a> *viewport)</td></tr>
 <tr class="memdesc:a38bd2f1292778c57fae949c4e271c20d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define with rendertarget and viewport. Return true if successful. <br /></td></tr>
 <tr class="separator:a38bd2f1292778c57fae949c4e271c20d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50c3fe5d5c2b3040e13925aa277a8d93"><td class="memItemLeft" align="right" valign="top"><a id="a50c3fe5d5c2b3040e13925aa277a8d93"></a>
@@ -119,7 +119,7 @@ const <a class="el" href="struct_urho3_d_1_1_frame_info.html">FrameInfo</a> &amp
 <tr class="memdesc:af8b8de040a6ccb8e37e6cd45589eb509"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return information of the frame being rendered. <br /></td></tr>
 <tr class="separator:af8b8de040a6ccb8e37e6cd45589eb509"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6572cc7e2ca99db6e4e4dcf1d5b112d4"><td class="memItemLeft" align="right" valign="top"><a id="a6572cc7e2ca99db6e4e4dcf1d5b112d4"></a>
-<a class="el" href="class_urho3_d_1_1_render_surface.html">RenderSurface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_view.html#a6572cc7e2ca99db6e4e4dcf1d5b112d4">GetRenderTarget</a> () const</td></tr>
+RenderSurface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_view.html#a6572cc7e2ca99db6e4e4dcf1d5b112d4">GetRenderTarget</a> () const</td></tr>
 <tr class="memdesc:a6572cc7e2ca99db6e4e4dcf1d5b112d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the rendertarget. 0 if using the backbuffer. <br /></td></tr>
 <tr class="separator:a6572cc7e2ca99db6e4e4dcf1d5b112d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54960bdae6a569b2ae6c1dbbbd65a49c"><td class="memItemLeft" align="right" valign="top"><a id="a54960bdae6a569b2ae6c1dbbbd65a49c"></a>
@@ -183,7 +183,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:a9f5a7068310ea03c58673eb5add7db21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a fullscreen quad. Shaders and renderstates must have been set beforehand. Quad will be drawn to the middle of depth range, similarly to deferred directional lights. <br /></td></tr>
 <tr class="separator:a9f5a7068310ea03c58673eb5add7db21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8853d06cedaef03a07c2f4a9af1ca827"><td class="memItemLeft" align="right" valign="top"><a id="a8853d06cedaef03a07c2f4a9af1ca827"></a>
-<a class="el" href="class_urho3_d_1_1_texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_view.html#a8853d06cedaef03a07c2f4a9af1ca827">FindNamedTexture</a> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;name, bool isRenderTarget, bool isVolumeMap=false)</td></tr>
+Texture *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_view.html#a8853d06cedaef03a07c2f4a9af1ca827">FindNamedTexture</a> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;name, bool isRenderTarget, bool isVolumeMap=false)</td></tr>
 <tr class="memdesc:a8853d06cedaef03a07c2f4a9af1ca827"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a named texture from the rendertarget list or from the resource cache, to be either used as a rendertarget or texture binding. <br /></td></tr>
 <tr class="separator:a8853d06cedaef03a07c2f4a9af1ca827"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_urho3_d_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_urho3_d_1_1_object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_urho3_d_1_1_object.html">Urho3D::Object</a></td></tr>
@@ -432,7 +432,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:ae34ebc6c877f3e56ae7c9c086f3b83dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate needed screen buffers. <br /></td></tr>
 <tr class="separator:ae34ebc6c877f3e56ae7c9c086f3b83dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07fcfa3743eb980a7f821d810abc42e5"><td class="memItemLeft" align="right" valign="top"><a id="a07fcfa3743eb980a7f821d810abc42e5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_view.html#a07fcfa3743eb980a7f821d810abc42e5">BlitFramebuffer</a> (<a class="el" href="class_urho3_d_1_1_texture.html">Texture</a> *source, <a class="el" href="class_urho3_d_1_1_render_surface.html">RenderSurface</a> *destination, bool depthWrite)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_view.html#a07fcfa3743eb980a7f821d810abc42e5">BlitFramebuffer</a> (Texture *source, RenderSurface *destination, bool depthWrite)</td></tr>
 <tr class="memdesc:a07fcfa3743eb980a7f821d810abc42e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blit the viewport from one surface to another. <br /></td></tr>
 <tr class="separator:a07fcfa3743eb980a7f821d810abc42e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97f9dbaf8b51572832e0890af3e53e4b"><td class="memItemLeft" align="right" valign="top"><a id="a97f9dbaf8b51572832e0890af3e53e4b"></a>
@@ -472,7 +472,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:a49001e64316a935b378b045fde2043a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check visibility of one shadow caster. <br /></td></tr>
 <tr class="separator:a49001e64316a935b378b045fde2043a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a095d13605a5cc24d9530f377f1e67d29"><td class="memItemLeft" align="right" valign="top"><a id="a095d13605a5cc24d9530f377f1e67d29"></a>
-<a class="el" href="class_urho3_d_1_1_int_rect.html">IntRect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_view.html#a095d13605a5cc24d9530f377f1e67d29">GetShadowMapViewport</a> (<a class="el" href="class_urho3_d_1_1_light.html">Light</a> *light, int splitIndex, <a class="el" href="class_urho3_d_1_1_texture2_d.html">Texture2D</a> *shadowMap)</td></tr>
+<a class="el" href="class_urho3_d_1_1_int_rect.html">IntRect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_view.html#a095d13605a5cc24d9530f377f1e67d29">GetShadowMapViewport</a> (<a class="el" href="class_urho3_d_1_1_light.html">Light</a> *light, int splitIndex, Texture2D *shadowMap)</td></tr>
 <tr class="memdesc:a095d13605a5cc24d9530f377f1e67d29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the viewport for a shadow map split. <br /></td></tr>
 <tr class="separator:a095d13605a5cc24d9530f377f1e67d29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6b753dabd0921ef05ce5d73b75c6209"><td class="memItemLeft" align="right" valign="top"><a id="ae6b753dabd0921ef05ce5d73b75c6209"></a>
@@ -511,11 +511,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:ae7e6e47346e5ff4346eb8cb251e013ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render a shadow map. <br /></td></tr>
 <tr class="separator:ae7e6e47346e5ff4346eb8cb251e013ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13308c358756474b667377d2c266d7ba"><td class="memItemLeft" align="right" valign="top"><a id="a13308c358756474b667377d2c266d7ba"></a>
-<a class="el" href="class_urho3_d_1_1_render_surface.html">RenderSurface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_view.html#a13308c358756474b667377d2c266d7ba">GetDepthStencil</a> (<a class="el" href="class_urho3_d_1_1_render_surface.html">RenderSurface</a> *renderTarget)</td></tr>
+RenderSurface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_view.html#a13308c358756474b667377d2c266d7ba">GetDepthStencil</a> (RenderSurface *renderTarget)</td></tr>
 <tr class="memdesc:a13308c358756474b667377d2c266d7ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the proper depth-stencil surface to use for a rendertarget. <br /></td></tr>
 <tr class="separator:a13308c358756474b667377d2c266d7ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9403526247004c50f6f96e22930fb361"><td class="memItemLeft" align="right" valign="top"><a id="a9403526247004c50f6f96e22930fb361"></a>
-<a class="el" href="class_urho3_d_1_1_render_surface.html">RenderSurface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_view.html#a9403526247004c50f6f96e22930fb361">GetRenderSurfaceFromTexture</a> (<a class="el" href="class_urho3_d_1_1_texture.html">Texture</a> *texture, <a class="el" href="_graphics_defs_8h.html#a7ce449a91c063bbb178d2faee315ca0e">CubeMapFace</a> face=FACE_POSITIVE_X)</td></tr>
+RenderSurface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_view.html#a9403526247004c50f6f96e22930fb361">GetRenderSurfaceFromTexture</a> (Texture *texture, CubeMapFace face=FACE_POSITIVE_X)</td></tr>
 <tr class="memdesc:a9403526247004c50f6f96e22930fb361"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function to get the render surface from a texture. 2D textures will always return the first face only. <br /></td></tr>
 <tr class="separator:a9403526247004c50f6f96e22930fb361"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb4b301e90a8147ea5087441b063c928"><td class="memItemLeft" align="right" valign="top"><a id="aeb4b301e90a8147ea5087441b063c928"></a>
@@ -582,31 +582,31 @@ Private Attributes</h2></td></tr>
 <tr class="memdesc:af18988e328bf2e09a22005838fd826ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Occlusion buffer for the main camera. <br /></td></tr>
 <tr class="separator:af18988e328bf2e09a22005838fd826ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4036aed47efa92548de2a99a2fc4706a"><td class="memItemLeft" align="right" valign="top"><a id="a4036aed47efa92548de2a99a2fc4706a"></a>
-<a class="el" href="class_urho3_d_1_1_render_surface.html">RenderSurface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_view.html#a4036aed47efa92548de2a99a2fc4706a">renderTarget_</a> {}</td></tr>
+RenderSurface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_view.html#a4036aed47efa92548de2a99a2fc4706a">renderTarget_</a> {}</td></tr>
 <tr class="memdesc:a4036aed47efa92548de2a99a2fc4706a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destination color rendertarget. <br /></td></tr>
 <tr class="separator:a4036aed47efa92548de2a99a2fc4706a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a611c7ddebd1801e96834c56d980d6c3f"><td class="memItemLeft" align="right" valign="top"><a id="a611c7ddebd1801e96834c56d980d6c3f"></a>
-<a class="el" href="class_urho3_d_1_1_render_surface.html">RenderSurface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_view.html#a611c7ddebd1801e96834c56d980d6c3f">substituteRenderTarget_</a> {}</td></tr>
+RenderSurface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_view.html#a611c7ddebd1801e96834c56d980d6c3f">substituteRenderTarget_</a> {}</td></tr>
 <tr class="memdesc:a611c7ddebd1801e96834c56d980d6c3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Substitute rendertarget for deferred rendering. Allocated if necessary. <br /></td></tr>
 <tr class="separator:a611c7ddebd1801e96834c56d980d6c3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1065e33d5ec9e8ec3ac949b67dc4bb6"><td class="memItemLeft" align="right" valign="top"><a id="ad1065e33d5ec9e8ec3ac949b67dc4bb6"></a>
-<a class="el" href="class_urho3_d_1_1_texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_view.html#ad1065e33d5ec9e8ec3ac949b67dc4bb6">viewportTextures_</a> [MAX_VIEWPORT_TEXTURES] {}</td></tr>
+Texture *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_view.html#ad1065e33d5ec9e8ec3ac949b67dc4bb6">viewportTextures_</a> [MAX_VIEWPORT_TEXTURES] {}</td></tr>
 <tr class="memdesc:ad1065e33d5ec9e8ec3ac949b67dc4bb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Texture(s) for sampling the viewport contents. Allocated if necessary. <br /></td></tr>
 <tr class="separator:ad1065e33d5ec9e8ec3ac949b67dc4bb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d253cfb19c6bc5b725766b54ac7682a"><td class="memItemLeft" align="right" valign="top"><a id="a0d253cfb19c6bc5b725766b54ac7682a"></a>
-<a class="el" href="class_urho3_d_1_1_render_surface.html">RenderSurface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_view.html#a0d253cfb19c6bc5b725766b54ac7682a">currentRenderTarget_</a> {}</td></tr>
+RenderSurface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_view.html#a0d253cfb19c6bc5b725766b54ac7682a">currentRenderTarget_</a> {}</td></tr>
 <tr class="memdesc:a0d253cfb19c6bc5b725766b54ac7682a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_color.html" title="RGBA color.">Color</a> rendertarget active for the current renderpath command. <br /></td></tr>
 <tr class="separator:a0d253cfb19c6bc5b725766b54ac7682a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5be72bf0820089ea0150240b0176df7d"><td class="memItemLeft" align="right" valign="top"><a id="a5be72bf0820089ea0150240b0176df7d"></a>
-<a class="el" href="class_urho3_d_1_1_render_surface.html">RenderSurface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_view.html#a5be72bf0820089ea0150240b0176df7d">lastCustomDepthSurface_</a> {}</td></tr>
+RenderSurface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_view.html#a5be72bf0820089ea0150240b0176df7d">lastCustomDepthSurface_</a> {}</td></tr>
 <tr class="memdesc:a5be72bf0820089ea0150240b0176df7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Last used custom depth render surface. <br /></td></tr>
 <tr class="separator:a5be72bf0820089ea0150240b0176df7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad09141d39221cb5f971c30f3f4dc7734"><td class="memItemLeft" align="right" valign="top"><a id="ad09141d39221cb5f971c30f3f4dc7734"></a>
-<a class="el" href="class_urho3_d_1_1_texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_view.html#ad09141d39221cb5f971c30f3f4dc7734">currentViewportTexture_</a> {}</td></tr>
-<tr class="memdesc:ad09141d39221cb5f971c30f3f4dc7734"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_texture.html" title="Base class for texture resources.">Texture</a> containing the latest viewport texture. <br /></td></tr>
+Texture *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_view.html#ad09141d39221cb5f971c30f3f4dc7734">currentViewportTexture_</a> {}</td></tr>
+<tr class="memdesc:ad09141d39221cb5f971c30f3f4dc7734"><td class="mdescLeft">&#160;</td><td class="mdescRight">Texture containing the latest viewport texture. <br /></td></tr>
 <tr class="separator:ad09141d39221cb5f971c30f3f4dc7734"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c328a039405071a2d3e2a0253061f9e"><td class="memItemLeft" align="right" valign="top"><a id="a7c328a039405071a2d3e2a0253061f9e"></a>
-<a class="el" href="class_urho3_d_1_1_texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_view.html#a7c328a039405071a2d3e2a0253061f9e">depthOnlyDummyTexture_</a> {}</td></tr>
+Texture *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_view.html#a7c328a039405071a2d3e2a0253061f9e">depthOnlyDummyTexture_</a> {}</td></tr>
 <tr class="memdesc:a7c328a039405071a2d3e2a0253061f9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dummy texture for D3D9 depth only rendering. <br /></td></tr>
 <tr class="separator:a7c328a039405071a2d3e2a0253061f9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46bbf02fcd252d4c556c60ddef0c3251"><td class="memItemLeft" align="right" valign="top"><a id="a46bbf02fcd252d4c556c60ddef0c3251"></a>
@@ -734,7 +734,7 @@ unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <tr class="memdesc:a521eaea9db4c5d30ebb72010860b1180"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drawables that limit their maximum light count. <br /></td></tr>
 <tr class="separator:a521eaea9db4c5d30ebb72010860b1180"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed07e091d286be9b1b2e6434680e7001"><td class="memItemLeft" align="right" valign="top"><a id="aed07e091d286be9b1b2e6434680e7001"></a>
-<a class="el" href="class_urho3_d_1_1_hash_map.html">HashMap</a>&lt; <a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a>, <a class="el" href="class_urho3_d_1_1_texture.html">Texture</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_view.html#aed07e091d286be9b1b2e6434680e7001">renderTargets_</a></td></tr>
+<a class="el" href="class_urho3_d_1_1_hash_map.html">HashMap</a>&lt; <a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a>, Texture * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_view.html#aed07e091d286be9b1b2e6434680e7001">renderTargets_</a></td></tr>
 <tr class="memdesc:aed07e091d286be9b1b2e6434680e7001"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rendertargets defined by the renderpath. <br /></td></tr>
 <tr class="separator:aed07e091d286be9b1b2e6434680e7001"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1c0a4f8e173e7db062a86d7776b1d33"><td class="memItemLeft" align="right" valign="top"><a id="ae1c0a4f8e173e7db062a86d7776b1d33"></a>
@@ -847,7 +847,7 @@ static const <a class="el" href="class_urho3_d_1_1_type_info.html">TypeInfo</a> 
 </div><div class="memdoc">
 
 <p>Prepare instancing buffer by filling it with all instance transforms. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000018">Todo:</a></b></dt><dd>If rendering the same view several times back-to-back, would not need to refill the buffer </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000017">Todo:</a></b></dt><dd>If rendering the same view several times back-to-back, would not need to refill the buffer </dd></dl>
 
 </div>
 </div>
@@ -858,7 +858,7 @@ static const <a class="el" href="class_urho3_d_1_1_type_info.html">TypeInfo</a> 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 25 2022 15:49:20 for Urho3D by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 13 2022 10:08:42 for Urho3D by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

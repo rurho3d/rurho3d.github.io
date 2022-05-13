@@ -2534,7 +2534,7 @@ Classes</h1>
 <li>bool array (readonly)</li>
 <li>bool sRGB (readonly)</li>
 </ul>
-<p><a class="anchor" id="Class_IndexBuffer"></a> </p><h3><a class="el" href="class_urho3_d_1_1_index_buffer.html" title="Hardware index buffer.">IndexBuffer</a> : <a class="el" href="class_urho3_d_1_1_object.html">Object</a></h3>
+<p><a class="anchor" id="Class_IndexBuffer"></a> </p><h3>IndexBuffer : <a class="el" href="class_urho3_d_1_1_object.html">Object</a></h3>
 <p>Methods:</p>
 <ul>
 <li>IndexBuffer() (GC)</li>
@@ -4776,7 +4776,7 @@ Classes</h1>
 <li>bool vertexLights</li>
 <li><a class="el" href="class_urho3_d_1_1_string.html" title="String class.">String</a> eventName</li>
 </ul>
-<p><a class="anchor" id="Class_RenderSurface"></a> </p><h3><a class="el" href="class_urho3_d_1_1_render_surface.html" title="Color or depth-stencil surface that can be rendered into.">RenderSurface</a></h3>
+<p><a class="anchor" id="Class_RenderSurface"></a> </p><h3>RenderSurface</h3>
 <p>Methods:</p>
 <ul>
 <li>RenderSurface(Texture* parentTexture) (GC)</li>
@@ -6218,7 +6218,7 @@ Classes</h1>
 <li>bool fixedScreenSize</li>
 <li>FaceCameraMode faceCameraMode</li>
 </ul>
-<p><a class="anchor" id="Class_Texture"></a> </p><h3><a class="el" href="class_urho3_d_1_1_texture.html" title="Base class for texture resources.">Texture</a> : <a class="el" href="class_urho3_d_1_1_resource_with_metadata.html" title="Base class for resources that support arbitrary metadata stored. Metadata serialization shall be impl...">ResourceWithMetadata</a></h3>
+<p><a class="anchor" id="Class_Texture"></a> </p><h3>Texture : <a class="el" href="class_urho3_d_1_1_resource_with_metadata.html" title="Base class for resources that support arbitrary metadata stored. Metadata serialization shall be impl...">ResourceWithMetadata</a></h3>
 <p>Methods:</p>
 <ul>
 <li>void SetNumLevels(unsigned levels)</li>
@@ -6271,7 +6271,7 @@ Classes</h1>
 <li>Texture* backupTexture</li>
 <li>TextureUsage usage (readonly)</li>
 </ul>
-<p><a class="anchor" id="Class_Texture2D"></a> </p><h3><a class="el" href="class_urho3_d_1_1_texture2_d.html" title="2D texture resource.">Texture2D</a> : <a class="el" href="class_urho3_d_1_1_texture.html" title="Base class for texture resources.">Texture</a></h3>
+<p><a class="anchor" id="Class_Texture2D"></a> </p><h3>Texture2D : Texture</h3>
 <p>Methods:</p>
 <ul>
 <li>Texture2D() (GC)</li>
@@ -6286,7 +6286,7 @@ Classes</h1>
 <ul>
 <li>RenderSurface* renderSurface (readonly)</li>
 </ul>
-<p><a class="anchor" id="Class_Texture2DArray"></a> </p><h3><a class="el" href="class_urho3_d_1_1_texture2_d_array.html" title="2D texture array resource.">Texture2DArray</a> : <a class="el" href="class_urho3_d_1_1_texture.html" title="Base class for texture resources.">Texture</a></h3>
+<p><a class="anchor" id="Class_Texture2DArray"></a> </p><h3>Texture2DArray : Texture</h3>
 <p>Methods:</p>
 <ul>
 <li>Texture2DArray() (GC)</li>
@@ -6303,7 +6303,7 @@ Classes</h1>
 <li>unsigned layers</li>
 <li>RenderSurface* renderSurface (readonly)</li>
 </ul>
-<p><a class="anchor" id="Class_Texture3D"></a> </p><h3><a class="el" href="class_urho3_d_1_1_texture3_d.html" title="3D texture resource.">Texture3D</a> : <a class="el" href="class_urho3_d_1_1_texture.html" title="Base class for texture resources.">Texture</a></h3>
+<p><a class="anchor" id="Class_Texture3D"></a> </p><h3>Texture3D : Texture</h3>
 <p>Methods:</p>
 <ul>
 <li>Texture3D() (GC)</li>
@@ -6312,7 +6312,7 @@ Classes</h1>
 <li>bool SetSize(int width, int height, int depth, unsigned format, TextureUsage usage = TEXTURE_STATIC)</li>
 <li>bool SetData(Image* image, bool useAlpha = false)</li>
 </ul>
-<p><a class="anchor" id="Class_TextureCube"></a> </p><h3><a class="el" href="class_urho3_d_1_1_texture_cube.html" title="Cube texture resource.">TextureCube</a> : <a class="el" href="class_urho3_d_1_1_texture.html" title="Base class for texture resources.">Texture</a></h3>
+<p><a class="anchor" id="Class_TextureCube"></a> </p><h3>TextureCube : Texture</h3>
 <p>Methods:</p>
 <ul>
 <li>TextureCube() (GC)</li>
@@ -7204,7 +7204,7 @@ Classes</h1>
 <li>unsigned size (readonly)</li>
 <li>bool eof (readonly)</li>
 </ul>
-<p><a class="anchor" id="Class_VertexBuffer"></a> </p><h3><a class="el" href="class_urho3_d_1_1_vertex_buffer.html" title="Hardware vertex buffer.">VertexBuffer</a> : <a class="el" href="class_urho3_d_1_1_object.html">Object</a></h3>
+<p><a class="anchor" id="Class_VertexBuffer"></a> </p><h3>VertexBuffer : <a class="el" href="class_urho3_d_1_1_object.html">Object</a></h3>
 <p>Methods:</p>
 <ul>
 <li>VertexBuffer() (GC)</li>
@@ -7235,12 +7235,12 @@ Classes</h1>
 <li>unsigned vertexSize (readonly)</li>
 <li>unsigned elementMask (readonly)</li>
 </ul>
-<p><a class="anchor" id="Class_VertexElement"></a> </p><h3><a class="el" href="struct_urho3_d_1_1_vertex_element.html" title="Vertex element description for arbitrary vertex declarations.">VertexElement</a></h3>
+<p><a class="anchor" id="Class_VertexElement"></a> </p><h3>VertexElement</h3>
 <p>Methods:</p>
 <ul>
 <li>VertexElement() (GC)</li>
 <li>VertexElement* new()</li>
-<li><a class="el" href="struct_urho3_d_1_1_vertex_element.html" title="Vertex element description for arbitrary vertex declarations.">VertexElement</a>(VertexElementType type, VertexElementSemantic semantic, char index = 0, bool perInstance = false) (GC)</li>
+<li>VertexElement(VertexElementType type, VertexElementSemantic semantic, char index = 0, bool perInstance = false) (GC)</li>
 <li>VertexElement* new(VertexElementType type, VertexElementSemantic semantic, char index = 0, bool perInstance = false)</li>
 </ul>
 <p>Properties:</p>
@@ -8994,7 +8994,7 @@ Global constants</h1>
 </div><!-- PageDoc -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 25 2022 15:49:16 for Urho3D by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 13 2022 10:08:38 for Urho3D by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

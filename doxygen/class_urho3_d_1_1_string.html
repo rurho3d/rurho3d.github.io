@@ -452,11 +452,11 @@ unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <tr class="memdesc:a59d526d61a11fab4497d6ebf5d09f2ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return index to the first occurrence of a character, or NPOS if not found. <br /></td></tr>
 <tr class="separator:a59d526d61a11fab4497d6ebf5d09f2ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e5b8a91af2ee6014ef12810da1d82f8"><td class="memItemLeft" align="right" valign="top"><a id="a4e5b8a91af2ee6014ef12810da1d82f8"></a>
-unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_string.html#a4e5b8a91af2ee6014ef12810da1d82f8">FindLast</a> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;str, unsigned startPos=<a class="el" href="class_urho3_d_1_1_string.html#a9f7135066f45c2571bf9d8414c1e0152">NPOS</a>, bool caseSensitive=true) const</td></tr>
+unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_string.html#a4e5b8a91af2ee6014ef12810da1d82f8">FindLast</a> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;str, unsigned startPos=<a class="el" href="class_urho3_d_1_1_string.html#a2d3f0ab7ab4905906a8afdc9f2b8a0be">NPOS</a>, bool caseSensitive=true) const</td></tr>
 <tr class="memdesc:a4e5b8a91af2ee6014ef12810da1d82f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return index to the last occurrence of a string, or NPOS if not found. <br /></td></tr>
 <tr class="separator:a4e5b8a91af2ee6014ef12810da1d82f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d7113194d16918717bd535a3a1f6a6e"><td class="memItemLeft" align="right" valign="top"><a id="a7d7113194d16918717bd535a3a1f6a6e"></a>
-unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_string.html#a7d7113194d16918717bd535a3a1f6a6e">FindLast</a> (char c, unsigned startPos=<a class="el" href="class_urho3_d_1_1_string.html#a9f7135066f45c2571bf9d8414c1e0152">NPOS</a>, bool caseSensitive=true) const</td></tr>
+unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_string.html#a7d7113194d16918717bd535a3a1f6a6e">FindLast</a> (char c, unsigned startPos=<a class="el" href="class_urho3_d_1_1_string.html#a2d3f0ab7ab4905906a8afdc9f2b8a0be">NPOS</a>, bool caseSensitive=true) const</td></tr>
 <tr class="memdesc:a7d7113194d16918717bd535a3a1f6a6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return index to the last occurrence of a character, or NPOS if not found. <br /></td></tr>
 <tr class="separator:a7d7113194d16918717bd535a3a1f6a6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa8a3643a9866f6846520794d3b45b47"><td class="memItemLeft" align="right" valign="top"><a id="afa8a3643a9866f6846520794d3b45b47"></a>
@@ -585,14 +585,10 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a9f7135066f45c2571bf9d8414c1e0152"><td class="memItemLeft" align="right" valign="top"><a id="a9f7135066f45c2571bf9d8414c1e0152"></a>
-static const unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_string.html#a9f7135066f45c2571bf9d8414c1e0152">NPOS</a> = 0xffffffff</td></tr>
-<tr class="memdesc:a9f7135066f45c2571bf9d8414c1e0152"><td class="mdescLeft">&#160;</td><td class="mdescRight">Position for "not found". <br /></td></tr>
-<tr class="separator:a9f7135066f45c2571bf9d8414c1e0152"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeea2afc34de7b293f9ef1c974ca2d8bc"><td class="memItemLeft" align="right" valign="top"><a id="aeea2afc34de7b293f9ef1c974ca2d8bc"></a>
-static const unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_string.html#aeea2afc34de7b293f9ef1c974ca2d8bc">MIN_CAPACITY</a> = 8</td></tr>
-<tr class="memdesc:aeea2afc34de7b293f9ef1c974ca2d8bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initial dynamic allocation size. <br /></td></tr>
-<tr class="separator:aeea2afc34de7b293f9ef1c974ca2d8bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d3f0ab7ab4905906a8afdc9f2b8a0be"><td class="memItemLeft" align="right" valign="top"><a id="a2d3f0ab7ab4905906a8afdc9f2b8a0be"></a>
+static constexpr unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_string.html#a2d3f0ab7ab4905906a8afdc9f2b8a0be">NPOS</a> = 0xffffffff</td></tr>
+<tr class="memdesc:a2d3f0ab7ab4905906a8afdc9f2b8a0be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Position for "not found". <br /></td></tr>
+<tr class="separator:a2d3f0ab7ab4905906a8afdc9f2b8a0be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4b764c2af370a120fb9e3470329c96e"><td class="memItemLeft" align="right" valign="top"><a id="ac4b764c2af370a120fb9e3470329c96e"></a>
 static const <a class="el" href="class_urho3_d_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_string.html#ac4b764c2af370a120fb9e3470329c96e">EMPTY</a></td></tr>
 <tr class="memdesc:ac4b764c2af370a120fb9e3470329c96e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Empty string. <br /></td></tr>
@@ -854,13 +850,12 @@ static constexpr u8&#160;</td><td class="memItemRight" valign="bottom"><b>INVERT
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/runner/work/rurho3d.github.io/rurho3d.github.io/urho3d_repo/Source/Urho3D/Container/Str.h</li>
-<li>/home/runner/work/rurho3d.github.io/rurho3d.github.io/urho3d_repo/Source/Urho3D/AngelScript/Manual_Container.cpp</li>
 <li>/home/runner/work/rurho3d.github.io/rurho3d.github.io/urho3d_repo/Source/Urho3D/Container/Str.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 25 2022 15:49:20 for Urho3D by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 13 2022 10:08:42 for Urho3D by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

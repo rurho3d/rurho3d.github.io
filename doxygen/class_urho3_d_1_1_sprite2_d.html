@@ -87,7 +87,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_sprite2_d.html#a8404b2a7c8c03b6ae636a83c1bac2807">EndLoad</a> () override</td></tr>
 <tr class="memdesc:a8404b2a7c8c03b6ae636a83c1bac2807"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finish resource loading. Always called from the main thread. Return true if successful. <br /></td></tr>
 <tr class="separator:a8404b2a7c8c03b6ae636a83c1bac2807"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecad4f3116b4c35dc1abb1ecc1efc4a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_sprite2_d.html#aecad4f3116b4c35dc1abb1ecc1efc4a3">SetTexture</a> (<a class="el" href="class_urho3_d_1_1_texture2_d.html">Texture2D</a> *texture)</td></tr>
+<tr class="memitem:aecad4f3116b4c35dc1abb1ecc1efc4a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_sprite2_d.html#aecad4f3116b4c35dc1abb1ecc1efc4a3">SetTexture</a> (Texture2D *texture)</td></tr>
 <tr class="separator:aecad4f3116b4c35dc1abb1ecc1efc4a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9941b08d2a48916bdc1b9f6046506602"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_sprite2_d.html#a9941b08d2a48916bdc1b9f6046506602">SetRectangle</a> (const <a class="el" href="class_urho3_d_1_1_int_rect.html">IntRect</a> &amp;rectangle)</td></tr>
 <tr class="separator:a9941b08d2a48916bdc1b9f6046506602"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -101,7 +101,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_sprite2_d.html#a23698bdc0f09a12b4f409caf1667a85d">SetSpriteSheet</a> (<a class="el" href="class_urho3_d_1_1_sprite_sheet2_d.html">SpriteSheet2D</a> *spriteSheet)</td></tr>
 <tr class="memdesc:a23698bdc0f09a12b4f409caf1667a85d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set sprite sheet. <br /></td></tr>
 <tr class="separator:a23698bdc0f09a12b4f409caf1667a85d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aceda6e32f1ba0b41b6221aba1d98c7f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_texture2_d.html">Texture2D</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_sprite2_d.html#aceda6e32f1ba0b41b6221aba1d98c7f0">GetTexture</a> () const</td></tr>
+<tr class="memitem:aceda6e32f1ba0b41b6221aba1d98c7f0"><td class="memItemLeft" align="right" valign="top">Texture2D *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_sprite2_d.html#aceda6e32f1ba0b41b6221aba1d98c7f0">GetTexture</a> () const</td></tr>
 <tr class="separator:aceda6e32f1ba0b41b6221aba1d98c7f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74e1806ec719040bade7e82cd82d1f5a"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_urho3_d_1_1_int_rect.html">IntRect</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_sprite2_d.html#a74e1806ec719040bade7e82cd82d1f5a">GetRectangle</a> () const</td></tr>
 <tr class="separator:a74e1806ec719040bade7e82cd82d1f5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -375,8 +375,8 @@ Private Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a5dcfb9ef2c6300922c54cb5c1b59f671"><td class="memItemLeft" align="right" valign="top"><a id="a5dcfb9ef2c6300922c54cb5c1b59f671"></a>
-<a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a>&lt; <a class="el" href="class_urho3_d_1_1_texture2_d.html">Texture2D</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_sprite2_d.html#a5dcfb9ef2c6300922c54cb5c1b59f671">texture_</a></td></tr>
-<tr class="memdesc:a5dcfb9ef2c6300922c54cb5c1b59f671"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_texture.html" title="Base class for texture resources.">Texture</a>. <br /></td></tr>
+<a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a>&lt; Texture2D &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_sprite2_d.html#a5dcfb9ef2c6300922c54cb5c1b59f671">texture_</a></td></tr>
+<tr class="memdesc:a5dcfb9ef2c6300922c54cb5c1b59f671"><td class="mdescLeft">&#160;</td><td class="mdescRight">Texture. <br /></td></tr>
 <tr class="separator:a5dcfb9ef2c6300922c54cb5c1b59f671"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f7022771f8303e8372833791896312e"><td class="memItemLeft" align="right" valign="top"><a id="a4f7022771f8303e8372833791896312e"></a>
 <a class="el" href="class_urho3_d_1_1_int_rect.html">IntRect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_sprite2_d.html#a4f7022771f8303e8372833791896312e">rectangle_</a></td></tr>
@@ -395,8 +395,8 @@ Private Attributes</h2></td></tr>
 <tr class="memdesc:a729b5c92289f4429de3781c4dbe5b9d7"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_sprite.html" title="UI element which allows sub-pixel positioning and size, as well as rotation. Only other Sprites shoul...">Sprite</a> sheet. <br /></td></tr>
 <tr class="separator:a729b5c92289f4429de3781c4dbe5b9d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47e20711aef84bb27c5c5d198e425f8e"><td class="memItemLeft" align="right" valign="top"><a id="a47e20711aef84bb27c5c5d198e425f8e"></a>
-<a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a>&lt; <a class="el" href="class_urho3_d_1_1_texture2_d.html">Texture2D</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_sprite2_d.html#a47e20711aef84bb27c5c5d198e425f8e">loadTexture_</a></td></tr>
-<tr class="memdesc:a47e20711aef84bb27c5c5d198e425f8e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_texture.html" title="Base class for texture resources.">Texture</a> used while loading. <br /></td></tr>
+<a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a>&lt; Texture2D &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_sprite2_d.html#a47e20711aef84bb27c5c5d198e425f8e">loadTexture_</a></td></tr>
+<tr class="memdesc:a47e20711aef84bb27c5c5d198e425f8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Texture used while loading. <br /></td></tr>
 <tr class="separator:a47e20711aef84bb27c5c5d198e425f8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba08647226d96e044d8269cb4e31d39b"><td class="memItemLeft" align="right" valign="top"><a id="aba08647226d96e044d8269cb4e31d39b"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_sprite2_d.html#aba08647226d96e044d8269cb4e31d39b">edgeOffset_</a></td></tr>
@@ -502,7 +502,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_urho3_d_1_1_texture2_d.html">Texture2D</a>* Urho3D::Sprite2D::GetTexture </td>
+          <td class="memname">Texture2D* Urho3D::Sprite2D::GetTexture </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -637,7 +637,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">void Urho3D::Sprite2D::SetTexture </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_urho3_d_1_1_texture2_d.html">Texture2D</a> *&#160;</td>
+          <td class="paramtype">Texture2D *&#160;</td>
           <td class="paramname"><em>texture</em></td><td>)</td>
           <td></td>
         </tr>
@@ -673,7 +673,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 25 2022 15:49:19 for Urho3D by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 13 2022 10:08:42 for Urho3D by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

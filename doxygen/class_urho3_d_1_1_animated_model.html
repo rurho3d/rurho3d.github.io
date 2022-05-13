@@ -210,7 +210,7 @@ const <a class="el" href="class_urho3_d_1_1_vector.html">Vector</a>&lt; <a class
 <tr class="memdesc:ad0a08cd68d5447ecd26b0625c24d8be1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return all vertex morphs. <br /></td></tr>
 <tr class="separator:ad0a08cd68d5447ecd26b0625c24d8be1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a354196d37474f5964aa9330c69b97521"><td class="memItemLeft" align="right" valign="top"><a id="a354196d37474f5964aa9330c69b97521"></a>
-const <a class="el" href="class_urho3_d_1_1_vector.html">Vector</a>&lt; <a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a>&lt; <a class="el" href="class_urho3_d_1_1_vertex_buffer.html">VertexBuffer</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_animated_model.html#a354196d37474f5964aa9330c69b97521">GetMorphVertexBuffers</a> () const</td></tr>
+const <a class="el" href="class_urho3_d_1_1_vector.html">Vector</a>&lt; <a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a>&lt; VertexBuffer &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_animated_model.html#a354196d37474f5964aa9330c69b97521">GetMorphVertexBuffers</a> () const</td></tr>
 <tr class="memdesc:a354196d37474f5964aa9330c69b97521"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return all morph vertex buffers. <br /></td></tr>
 <tr class="separator:a354196d37474f5964aa9330c69b97521"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace33275729129b5bcab5d1b6adcaa2c2"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_animated_model.html#ace33275729129b5bcab5d1b6adcaa2c2">GetNumMorphs</a> () const</td></tr>
@@ -1148,7 +1148,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:a1cee08d3a1d69d8d41397c0a99006369"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clone geometries for vertex morphing. <br /></td></tr>
 <tr class="separator:a1cee08d3a1d69d8d41397c0a99006369"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3089ac56ce8f602201ce67c81e7f9733"><td class="memItemLeft" align="right" valign="top"><a id="a3089ac56ce8f602201ce67c81e7f9733"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_animated_model.html#a3089ac56ce8f602201ce67c81e7f9733">CopyMorphVertices</a> (void *destVertexData, void *srcVertexData, unsigned vertexCount, <a class="el" href="class_urho3_d_1_1_vertex_buffer.html">VertexBuffer</a> *destBuffer, <a class="el" href="class_urho3_d_1_1_vertex_buffer.html">VertexBuffer</a> *srcBuffer)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_animated_model.html#a3089ac56ce8f602201ce67c81e7f9733">CopyMorphVertices</a> (void *destVertexData, void *srcVertexData, unsigned vertexCount, VertexBuffer *destBuffer, VertexBuffer *srcBuffer)</td></tr>
 <tr class="memdesc:a3089ac56ce8f602201ce67c81e7f9733"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy morph vertices. <br /></td></tr>
 <tr class="separator:a3089ac56ce8f602201ce67c81e7f9733"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4490aea6f65d9c5c617f8f6a4f762401"><td class="memItemLeft" align="right" valign="top"><a id="a4490aea6f65d9c5c617f8f6a4f762401"></a>
@@ -1164,7 +1164,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:ae22d418c07fd8116bffd89288af3a4ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reapply all vertex morphs. <br /></td></tr>
 <tr class="separator:ae22d418c07fd8116bffd89288af3a4ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8677800e4c82fc784375febc08a266e2"><td class="memItemLeft" align="right" valign="top"><a id="a8677800e4c82fc784375febc08a266e2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_animated_model.html#a8677800e4c82fc784375febc08a266e2">ApplyMorph</a> (<a class="el" href="class_urho3_d_1_1_vertex_buffer.html">VertexBuffer</a> *buffer, void *destVertexData, unsigned morphRangeStart, const <a class="el" href="struct_urho3_d_1_1_vertex_buffer_morph.html">VertexBufferMorph</a> &amp;morph, float weight)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_animated_model.html#a8677800e4c82fc784375febc08a266e2">ApplyMorph</a> (VertexBuffer *buffer, void *destVertexData, unsigned morphRangeStart, const <a class="el" href="struct_urho3_d_1_1_vertex_buffer_morph.html">VertexBufferMorph</a> &amp;morph, float weight)</td></tr>
 <tr class="memdesc:a8677800e4c82fc784375febc08a266e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply a vertex morph. <br /></td></tr>
 <tr class="separator:a8677800e4c82fc784375febc08a266e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6af95070304f3ecca53d9dee1ce63ad"><td class="memItemLeft" align="right" valign="top"><a id="af6af95070304f3ecca53d9dee1ce63ad"></a>
@@ -1179,7 +1179,7 @@ Private Attributes</h2></td></tr>
 <tr class="memdesc:a40289fe73614fb3dac92b5db2b7f5e65"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_skeleton.html">Skeleton</a>. <br /></td></tr>
 <tr class="separator:a40289fe73614fb3dac92b5db2b7f5e65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ac699a76643c8cadd18c4284a17e1e4"><td class="memItemLeft" align="right" valign="top"><a id="a5ac699a76643c8cadd18c4284a17e1e4"></a>
-<a class="el" href="class_urho3_d_1_1_vector.html">Vector</a>&lt; <a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a>&lt; <a class="el" href="class_urho3_d_1_1_vertex_buffer.html">VertexBuffer</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_animated_model.html#a5ac699a76643c8cadd18c4284a17e1e4">morphVertexBuffers_</a></td></tr>
+<a class="el" href="class_urho3_d_1_1_vector.html">Vector</a>&lt; <a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a>&lt; VertexBuffer &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_animated_model.html#a5ac699a76643c8cadd18c4284a17e1e4">morphVertexBuffers_</a></td></tr>
 <tr class="memdesc:a5ac699a76643c8cadd18c4284a17e1e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Morph vertex buffers. <br /></td></tr>
 <tr class="separator:a5ac699a76643c8cadd18c4284a17e1e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7161a060e2ff53bca2efae32bef35c9"><td class="memItemLeft" align="right" valign="top"><a id="ab7161a060e2ff53bca2efae32bef35c9"></a>
@@ -1796,7 +1796,7 @@ std::unique_ptr&lt; <a class="el" href="struct_urho3_d_1_1_network_state.html">N
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 25 2022 15:49:17 for Urho3D by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 13 2022 10:08:39 for Urho3D by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

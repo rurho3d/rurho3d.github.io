@@ -81,7 +81,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a057ec5ef772e1cdc006c271917adb3d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88af879659f6a3b8354b6893243bd0ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_material.html">Material</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i_component.html#a88af879659f6a3b8354b6893243bd0ab">GetMaterial</a> () const</td></tr>
 <tr class="separator:a88af879659f6a3b8354b6893243bd0ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac333caedc1bad7d0bc336bbc81b76fc2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_texture2_d.html">Texture2D</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i_component.html#ac333caedc1bad7d0bc336bbc81b76fc2">GetTexture</a> () const</td></tr>
+<tr class="memitem:ac333caedc1bad7d0bc336bbc81b76fc2"><td class="memItemLeft" align="right" valign="top">Texture2D *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i_component.html#ac333caedc1bad7d0bc336bbc81b76fc2">GetTexture</a> () const</td></tr>
 <tr class="separator:ac333caedc1bad7d0bc336bbc81b76fc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7d5d394d0f698b801754082ef61713f"><td class="memItemLeft" align="right" valign="top"><a id="ab7d5d394d0f698b801754082ef61713f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i_component.html#ab7d5d394d0f698b801754082ef61713f">SetViewportIndex</a> (unsigned index)</td></tr>
@@ -645,8 +645,8 @@ Protected Attributes</h2></td></tr>
 <tr class="memdesc:af8599ca94b0fc4b3a38a1bc3e0ef13ef"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_material.html" title="Describes how to render 3D geometries.">Material</a> that is set to the model. <br /></td></tr>
 <tr class="separator:af8599ca94b0fc4b3a38a1bc3e0ef13ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0425d6706b150dc97ac4b93255582697"><td class="memItemLeft" align="right" valign="top"><a id="a0425d6706b150dc97ac4b93255582697"></a>
-<a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a>&lt; <a class="el" href="class_urho3_d_1_1_texture2_d.html">Texture2D</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i_component.html#a0425d6706b150dc97ac4b93255582697">texture_</a></td></tr>
-<tr class="memdesc:a0425d6706b150dc97ac4b93255582697"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_texture.html" title="Base class for texture resources.">Texture</a> that <a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a> will be rendered into. <br /></td></tr>
+<a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a>&lt; Texture2D &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i_component.html#a0425d6706b150dc97ac4b93255582697">texture_</a></td></tr>
+<tr class="memdesc:a0425d6706b150dc97ac4b93255582697"><td class="mdescLeft">&#160;</td><td class="mdescRight">Texture that <a class="el" href="class_urho3_d_1_1_u_i_element.html" title="Base class for UI elements.">UIElement</a> will be rendered into. <br /></td></tr>
 <tr class="separator:a0425d6706b150dc97ac4b93255582697"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0648bda84d19cdc0ed30b35832205daf"><td class="memItemLeft" align="right" valign="top"><a id="a0648bda84d19cdc0ed30b35832205daf"></a>
 <a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a>&lt; <a class="el" href="class_urho3_d_1_1_static_model.html">StaticModel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i_component.html#a0648bda84d19cdc0ed30b35832205daf">model_</a></td></tr>
@@ -755,7 +755,7 @@ Private Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_urho3_d_1_1_texture2_d.html">Texture2D</a> * Urho3D::UIComponent::GetTexture </td>
+          <td class="memname">Texture2D * Urho3D::UIComponent::GetTexture </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -800,7 +800,7 @@ Private Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 25 2022 15:49:20 for Urho3D by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 13 2022 10:08:42 for Urho3D by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

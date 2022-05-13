@@ -124,7 +124,7 @@ Cube map textures</h1>
 </div><!-- fragment --><p>Using a 3D texture for color correction postprocess (see bin/Data/PostProcess/ColorCorrection.xml) requires the 3D texture to be assigned to the "volume" texture unit, so that the effect knows to load the texture as the correct type. The lookup for the corrected color happens by using the original color's red channel as the X coordinate, the green channel as the Y coordinate, and blue as the Z. Therefore the identity LUT's slices (which shouldn't transform the color at all) grow red from left to right and green from top to bottom, and finally the slices themselves turn blue from left to right.</p>
 <h1><a class="anchor" id="Materials_2DArrayTextures"></a>
 2D array textures</h1>
-<p>2D array textures (<a class="el" href="class_urho3_d_1_1_texture2_d_array.html" title="2D texture array resource.">Texture2DArray</a> class) are available on OpenGL and Direct3D 11. They are also defined via an XML file defining the images to use on each array layer:</p>
+<p>2D array textures (Texture2DArray class) are available on OpenGL and Direct3D 11. They are also defined via an XML file defining the images to use on each array layer:</p>
 <div class="fragment"><div class="line">&lt;texturearray&gt;</div>
 <div class="line">    &lt;layer name=<span class="stringliteral">&quot;Layer1_ImageName&quot;</span> /&gt;</div>
 <div class="line">    &lt;layer name=<span class="stringliteral">&quot;Layer2_ImageName&quot;</span> /&gt;</div>
@@ -180,7 +180,7 @@ Render order caveats</h1>
 </div><!-- PageDoc -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 25 2022 15:49:16 for Urho3D by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 13 2022 10:08:38 for Urho3D by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
