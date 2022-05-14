@@ -76,6 +76,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a21a62d5c35e86cbcac727367c4a68dbb"><td class="memItemLeft" align="right" valign="top"><a id="a21a62d5c35e86cbcac727367c4a68dbb"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>BigInt</b> (u64 value)</td></tr>
 <tr class="separator:a21a62d5c35e86cbcac727367c4a68dbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a132e0b2fad2f25f00d43c3a5f6603c"><td class="memItemLeft" align="right" valign="top"><a id="a0a132e0b2fad2f25f00d43c3a5f6603c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsPositive</b> () const</td></tr>
+<tr class="separator:a0a132e0b2fad2f25f00d43c3a5f6603c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bcfd11489472a353381e1b34ef98bab"><td class="memItemLeft" align="right" valign="top"><a id="a7bcfd11489472a353381e1b34ef98bab"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsNegative</b> () const</td></tr>
+<tr class="separator:a7bcfd11489472a353381e1b34ef98bab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ac99acb6a441949d165cafb887b15e5"><td class="memItemLeft" align="right" valign="top"><a id="a4ac99acb6a441949d165cafb887b15e5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsZero</b> () const</td></tr>
+<tr class="separator:a4ac99acb6a441949d165cafb887b15e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa521f5e56e3059b6ec58f96599712582"><td class="memItemLeft" align="right" valign="top"><a id="aa521f5e56e3059b6ec58f96599712582"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="class_urho3_d_1_1_big_int.html">BigInt</a> &amp;rhs) const</td></tr>
 <tr class="separator:aa521f5e56e3059b6ec58f96599712582"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -88,6 +97,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;</b> (con
 <tr class="memitem:a3207b970774491e48c51a769c83fc3bf"><td class="memItemLeft" align="right" valign="top"><a id="a3207b970774491e48c51a769c83fc3bf"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator&gt;</b> (const <a class="el" href="class_urho3_d_1_1_big_int.html">BigInt</a> &amp;rhs) const</td></tr>
 <tr class="separator:a3207b970774491e48c51a769c83fc3bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0893bc6168a8102f96034a25a59a09fc"><td class="memItemLeft" align="right" valign="top"><a id="a0893bc6168a8102f96034a25a59a09fc"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;=</b> (const <a class="el" href="class_urho3_d_1_1_big_int.html">BigInt</a> &amp;rhs) const</td></tr>
+<tr class="separator:a0893bc6168a8102f96034a25a59a09fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e12d6f9cf844c600e8317405dfbc90d"><td class="memItemLeft" align="right" valign="top"><a id="a5e12d6f9cf844c600e8317405dfbc90d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator&gt;=</b> (const <a class="el" href="class_urho3_d_1_1_big_int.html">BigInt</a> &amp;rhs) const</td></tr>
+<tr class="separator:a5e12d6f9cf844c600e8317405dfbc90d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3756ae2b578f30e1fa0a960719cb255"><td class="memItemLeft" align="right" valign="top"><a id="ae3756ae2b578f30e1fa0a960719cb255"></a>
 <a class="el" href="class_urho3_d_1_1_big_int.html">BigInt</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator+</b> (const <a class="el" href="class_urho3_d_1_1_big_int.html">BigInt</a> &amp;rhs) const</td></tr>
 <tr class="separator:ae3756ae2b578f30e1fa0a960719cb255"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -97,6 +112,17 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator&gt;</b> (con
 <tr class="memitem:a4baf01e3d8f9b067416acdf3a68d85e4"><td class="memItemLeft" align="right" valign="top"><a id="a4baf01e3d8f9b067416acdf3a68d85e4"></a>
 <a class="el" href="class_urho3_d_1_1_big_int.html">BigInt</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> (const <a class="el" href="class_urho3_d_1_1_big_int.html">BigInt</a> &amp;rhs) const</td></tr>
 <tr class="separator:a4baf01e3d8f9b067416acdf3a68d85e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0acbb664af4bb4e20866a4bae33b3234"><td class="memItemLeft" align="right" valign="top"><a id="a0acbb664af4bb4e20866a4bae33b3234"></a>
+<a class="el" href="class_urho3_d_1_1_big_int.html">BigInt</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_big_int.html#a0acbb664af4bb4e20866a4bae33b3234">operator/</a> (const <a class="el" href="class_urho3_d_1_1_big_int.html">BigInt</a> &amp;rhs) const</td></tr>
+<tr class="memdesc:a0acbb664af4bb4e20866a4bae33b3234"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return 0 if rhs zero. <br /></td></tr>
+<tr class="separator:a0acbb664af4bb4e20866a4bae33b3234"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a825c3e3fa2baf2c6dec508b52227c1ee"><td class="memItemLeft" align="right" valign="top"><a id="a825c3e3fa2baf2c6dec508b52227c1ee"></a>
+<a class="el" href="class_urho3_d_1_1_big_int.html">BigInt</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_big_int.html#a825c3e3fa2baf2c6dec508b52227c1ee">operator%</a> (const <a class="el" href="class_urho3_d_1_1_big_int.html">BigInt</a> &amp;rhs) const</td></tr>
+<tr class="memdesc:a825c3e3fa2baf2c6dec508b52227c1ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return 0 if rhs zero. <br /></td></tr>
+<tr class="separator:a825c3e3fa2baf2c6dec508b52227c1ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2348469b9dcb211c3fdd5f54205304c"><td class="memItemLeft" align="right" valign="top"><a id="ad2348469b9dcb211c3fdd5f54205304c"></a>
+<a class="el" href="class_urho3_d_1_1_big_int.html">BigInt</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator-</b> () const</td></tr>
+<tr class="separator:ad2348469b9dcb211c3fdd5f54205304c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade775ca1db1d1b6aae246b3f682c406b"><td class="memItemLeft" align="right" valign="top"><a id="ade775ca1db1d1b6aae246b3f682c406b"></a>
 <a class="el" href="class_urho3_d_1_1_big_int.html">BigInt</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator+=</b> (const <a class="el" href="class_urho3_d_1_1_big_int.html">BigInt</a> &amp;rhs)</td></tr>
 <tr class="separator:ade775ca1db1d1b6aae246b3f682c406b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -106,6 +132,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator&gt;</b> (con
 <tr class="memitem:a35a33cb5543298a36aaf87827255fc86"><td class="memItemLeft" align="right" valign="top"><a id="a35a33cb5543298a36aaf87827255fc86"></a>
 <a class="el" href="class_urho3_d_1_1_big_int.html">BigInt</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator*=</b> (const <a class="el" href="class_urho3_d_1_1_big_int.html">BigInt</a> &amp;rhs)</td></tr>
 <tr class="separator:a35a33cb5543298a36aaf87827255fc86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d029d435effe8afc3aa1c303853daa5"><td class="memItemLeft" align="right" valign="top"><a id="a0d029d435effe8afc3aa1c303853daa5"></a>
+<a class="el" href="class_urho3_d_1_1_big_int.html">BigInt</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator/=</b> (const <a class="el" href="class_urho3_d_1_1_big_int.html">BigInt</a> &amp;rhs)</td></tr>
+<tr class="separator:a0d029d435effe8afc3aa1c303853daa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e0419b05224e9520e334f18b905a1a1"><td class="memItemLeft" align="right" valign="top"><a id="a2e0419b05224e9520e334f18b905a1a1"></a>
+<a class="el" href="class_urho3_d_1_1_big_int.html">BigInt</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator%=</b> (const <a class="el" href="class_urho3_d_1_1_big_int.html">BigInt</a> &amp;rhs)</td></tr>
+<tr class="separator:a2e0419b05224e9520e334f18b905a1a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f03a94ddb011db93a99b22bfa699376"><td class="memItemLeft" align="right" valign="top"><a id="a3f03a94ddb011db93a99b22bfa699376"></a>
 <a class="el" href="class_urho3_d_1_1_big_int.html">BigInt</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_big_int.html#a3f03a94ddb011db93a99b22bfa699376">operator++</a> ()</td></tr>
 <tr class="memdesc:a3f03a94ddb011db93a99b22bfa699376"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prefix increment operator. <br /></td></tr>
@@ -130,7 +162,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator&gt;</b> (con
 Private Attributes</h2></td></tr>
 <tr class="memitem:a5e8ca79dfd63288a0cd554c07d840dd4"><td class="memItemLeft" align="right" valign="top"><a id="a5e8ca79dfd63288a0cd554c07d840dd4"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_big_int.html#a5e8ca79dfd63288a0cd554c07d840dd4">positive_</a></td></tr>
-<tr class="memdesc:a5e8ca79dfd63288a0cd554c07d840dd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sign. <br /></td></tr>
+<tr class="memdesc:a5e8ca79dfd63288a0cd554c07d840dd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sign (zero is positive). <br /></td></tr>
 <tr class="separator:a5e8ca79dfd63288a0cd554c07d840dd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab71dce36787cb815d5fdff8a11c97c18"><td class="memItemLeft" align="right" valign="top"><a id="ab71dce36787cb815d5fdff8a11c97c18"></a>
 <a class="el" href="class_urho3_d_1_1_vector.html">Vector</a>&lt; <a class="el" href="class_urho3_d_1_1_big_int.html#a8ba31521c3f01e8a82e19988f183bf3c">Digit</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_big_int.html#ab71dce36787cb815d5fdff8a11c97c18">magnitude_</a></td></tr>
@@ -144,7 +176,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 13 2022 10:47:39 for Urho3D by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat May 14 2022 19:18:20 for Urho3D by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
