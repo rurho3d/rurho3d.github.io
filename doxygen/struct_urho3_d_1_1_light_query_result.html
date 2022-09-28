@@ -80,14 +80,14 @@ Public Attributes</h2></td></tr>
 <a class="el" href="class_urho3_d_1_1_camera.html">Camera</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>shadowCameras_</b> [MAX_LIGHT_SPLITS]</td></tr>
 <tr class="memdesc:a35998ae67ea64b0865b39b0c803bc332"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shadow cameras. <br /></td></tr>
 <tr class="separator:a35998ae67ea64b0865b39b0c803bc332"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c233bb3441ee360085959a3cf027ced"><td class="memItemLeft" align="right" valign="top"><a id="a7c233bb3441ee360085959a3cf027ced" name="a7c233bb3441ee360085959a3cf027ced"></a>
-unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>shadowCasterBegin_</b> [MAX_LIGHT_SPLITS]</td></tr>
-<tr class="memdesc:a7c233bb3441ee360085959a3cf027ced"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shadow caster start indices. <br /></td></tr>
-<tr class="separator:a7c233bb3441ee360085959a3cf027ced"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae610469c2c933552f3212f3ba25e493"><td class="memItemLeft" align="right" valign="top"><a id="aae610469c2c933552f3212f3ba25e493" name="aae610469c2c933552f3212f3ba25e493"></a>
-unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>shadowCasterEnd_</b> [MAX_LIGHT_SPLITS]</td></tr>
-<tr class="memdesc:aae610469c2c933552f3212f3ba25e493"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shadow caster end indices. <br /></td></tr>
-<tr class="separator:aae610469c2c933552f3212f3ba25e493"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc76423259fafa10820aacd5a0bae6d1"><td class="memItemLeft" align="right" valign="top"><a id="afc76423259fafa10820aacd5a0bae6d1" name="afc76423259fafa10820aacd5a0bae6d1"></a>
+i32&#160;</td><td class="memItemRight" valign="bottom"><b>shadowCasterBegin_</b> [MAX_LIGHT_SPLITS]</td></tr>
+<tr class="memdesc:afc76423259fafa10820aacd5a0bae6d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shadow caster start indices. <br /></td></tr>
+<tr class="separator:afc76423259fafa10820aacd5a0bae6d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b244e1df46d04358aa8d3db6b2f2ede"><td class="memItemLeft" align="right" valign="top"><a id="a7b244e1df46d04358aa8d3db6b2f2ede" name="a7b244e1df46d04358aa8d3db6b2f2ede"></a>
+i32&#160;</td><td class="memItemRight" valign="bottom"><b>shadowCasterEnd_</b> [MAX_LIGHT_SPLITS]</td></tr>
+<tr class="memdesc:a7b244e1df46d04358aa8d3db6b2f2ede"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shadow caster end indices. <br /></td></tr>
+<tr class="separator:a7b244e1df46d04358aa8d3db6b2f2ede"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29936299a8297abae9fb89a61272a78d"><td class="memItemLeft" align="right" valign="top"><a id="a29936299a8297abae9fb89a61272a78d" name="a29936299a8297abae9fb89a61272a78d"></a>
 <a class="el" href="class_urho3_d_1_1_bounding_box.html">BoundingBox</a>&#160;</td><td class="memItemRight" valign="bottom"><b>shadowCasterBox_</b> [MAX_LIGHT_SPLITS]</td></tr>
 <tr class="memdesc:a29936299a8297abae9fb89a61272a78d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Combined bounding box of shadow casters in light projection space. Only used for focused spot lights. <br /></td></tr>
@@ -100,10 +100,10 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>shadowNearSplits_</b
 float&#160;</td><td class="memItemRight" valign="bottom"><b>shadowFarSplits_</b> [MAX_LIGHT_SPLITS]</td></tr>
 <tr class="memdesc:abb24827ea5a3c4d514d91bd75af6aca9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shadow camera far splits (directional lights only). <br /></td></tr>
 <tr class="separator:abb24827ea5a3c4d514d91bd75af6aca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a5751f7107d2c119ebafe7d835b3967"><td class="memItemLeft" align="right" valign="top"><a id="a0a5751f7107d2c119ebafe7d835b3967" name="a0a5751f7107d2c119ebafe7d835b3967"></a>
-unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>numSplits_</b></td></tr>
-<tr class="memdesc:a0a5751f7107d2c119ebafe7d835b3967"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shadow map split count. <br /></td></tr>
-<tr class="separator:a0a5751f7107d2c119ebafe7d835b3967"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad379ccb4291245df8193baea9cec418b"><td class="memItemLeft" align="right" valign="top"><a id="ad379ccb4291245df8193baea9cec418b" name="ad379ccb4291245df8193baea9cec418b"></a>
+i32&#160;</td><td class="memItemRight" valign="bottom"><b>numSplits_</b></td></tr>
+<tr class="memdesc:ad379ccb4291245df8193baea9cec418b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shadow map split count. <br /></td></tr>
+<tr class="separator:ad379ccb4291245df8193baea9cec418b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Intermediate light processing result. </p>
@@ -113,7 +113,7 @@ unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>numSplits_</b></t
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 27 2022 08:16:12 for Urho3D by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Wed Sep 28 2022 20:01:28 for Urho3D by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

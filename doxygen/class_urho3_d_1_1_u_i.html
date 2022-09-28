@@ -70,7 +70,7 @@ Inheritance diagram for Urho3D::UI:</div>
  <div class="center">
   <img src="class_urho3_d_1_1_u_i.png" usemap="#Urho3D::UI_map" alt=""/>
   <map id="Urho3D::UI_map" name="Urho3D::UI_map">
-<area href="class_urho3_d_1_1_object.html" alt="Urho3D::Object" shape="rect" coords="0,56,127,80"/>
+<area href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil..." alt="Urho3D::Object" shape="rect" coords="0,56,127,80"/>
 <area href="class_urho3_d_1_1_ref_counted.html" title="Base class for intrusively reference-counted objects. These are noncopyable and non-assignable." alt="Urho3D::RefCounted" shape="rect" coords="0,0,127,24"/>
   </map>
 </div></div>
@@ -94,13 +94,17 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>~UI</b> () override</td></tr>
 <tr class="memdesc:a7848cfbc7819e06dbfd720106b94a05f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct. <br /></td></tr>
 <tr class="separator:a7848cfbc7819e06dbfd720106b94a05f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7d94a2bf8f5fa20722957f0b0f8d716"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#ab7d94a2bf8f5fa20722957f0b0f8d716">SetCursor</a> (<a class="el" href="class_urho3_d_1_1_cursor.html">Cursor</a> *cursor)</td></tr>
+<tr class="memitem:ab7d94a2bf8f5fa20722957f0b0f8d716"><td class="memItemLeft" align="right" valign="top"><a id="ab7d94a2bf8f5fa20722957f0b0f8d716" name="ab7d94a2bf8f5fa20722957f0b0f8d716"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCursor</b> (<a class="el" href="class_urho3_d_1_1_cursor.html">Cursor</a> *cursor)</td></tr>
+<tr class="memdesc:ab7d94a2bf8f5fa20722957f0b0f8d716"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set cursor <a class="el" href="class_urho3_d_1_1_u_i.html" title="UI subsystem. Manages the graphical user interface.">UI</a> element. <br /></td></tr>
 <tr class="separator:ab7d94a2bf8f5fa20722957f0b0f8d716"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1354d0acce25fb4c12d08a4addc09612"><td class="memItemLeft" align="right" valign="top"><a id="a1354d0acce25fb4c12d08a4addc09612" name="a1354d0acce25fb4c12d08a4addc09612"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFocusElement</b> (<a class="el" href="class_urho3_d_1_1_u_i_element.html">UIElement</a> *element, bool byKey=false)</td></tr>
 <tr class="memdesc:a1354d0acce25fb4c12d08a4addc09612"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set focused <a class="el" href="class_urho3_d_1_1_u_i.html" title="UI subsystem. Manages the graphical user interface.">UI</a> element. <br /></td></tr>
 <tr class="separator:a1354d0acce25fb4c12d08a4addc09612"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70d676b6b63b600b08b56c18389f63c4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#a70d676b6b63b600b08b56c18389f63c4">SetModalElement</a> (<a class="el" href="class_urho3_d_1_1_u_i_element.html">UIElement</a> *modalElement, bool enable)</td></tr>
+<tr class="memitem:a70d676b6b63b600b08b56c18389f63c4"><td class="memItemLeft" align="right" valign="top"><a id="a70d676b6b63b600b08b56c18389f63c4" name="a70d676b6b63b600b08b56c18389f63c4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>SetModalElement</b> (<a class="el" href="class_urho3_d_1_1_u_i_element.html">UIElement</a> *modalElement, bool enable)</td></tr>
+<tr class="memdesc:a70d676b6b63b600b08b56c18389f63c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set modal element. Until all the modal elements are dismissed, all the inputs and events are only sent to them. Return true when successful. Only the modal element can clear its modal status or when it is being destructed. <br /></td></tr>
 <tr class="separator:a70d676b6b63b600b08b56c18389f63c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa820ea19a96913819df9672d95094f60"><td class="memItemLeft" align="right" valign="top"><a id="aa820ea19a96913819df9672d95094f60" name="aa820ea19a96913819df9672d95094f60"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Clear</b> ()</td></tr>
@@ -134,37 +138,69 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DebugDraw</b> (<a cla
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>SaveLayout</b> (<a class="el" href="class_urho3_d_1_1_serializer.html">Serializer</a> &amp;dest, <a class="el" href="class_urho3_d_1_1_u_i_element.html">UIElement</a> *element)</td></tr>
 <tr class="memdesc:a5cd07643076e6439a75cb6de7e038df9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save a <a class="el" href="class_urho3_d_1_1_u_i.html" title="UI subsystem. Manages the graphical user interface.">UI</a> layout to an XML file. Return true if successful. <br /></td></tr>
 <tr class="separator:a5cd07643076e6439a75cb6de7e038df9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45b6ad972b2f5fe0f50912b74d209209"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#a45b6ad972b2f5fe0f50912b74d209209">SetClipboardText</a> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;text)</td></tr>
+<tr class="memitem:a45b6ad972b2f5fe0f50912b74d209209"><td class="memItemLeft" align="right" valign="top"><a id="a45b6ad972b2f5fe0f50912b74d209209" name="a45b6ad972b2f5fe0f50912b74d209209"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetClipboardText</b> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;text)</td></tr>
+<tr class="memdesc:a45b6ad972b2f5fe0f50912b74d209209"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set clipboard text. <br /></td></tr>
 <tr class="separator:a45b6ad972b2f5fe0f50912b74d209209"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d66d21c4b7f72f310ad00f47257e490"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#a7d66d21c4b7f72f310ad00f47257e490">SetDoubleClickInterval</a> (float interval)</td></tr>
+<tr class="memitem:a7d66d21c4b7f72f310ad00f47257e490"><td class="memItemLeft" align="right" valign="top"><a id="a7d66d21c4b7f72f310ad00f47257e490" name="a7d66d21c4b7f72f310ad00f47257e490"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDoubleClickInterval</b> (float interval)</td></tr>
+<tr class="memdesc:a7d66d21c4b7f72f310ad00f47257e490"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set <a class="el" href="class_urho3_d_1_1_u_i.html" title="UI subsystem. Manages the graphical user interface.">UI</a> element double click interval in seconds. <br /></td></tr>
 <tr class="separator:a7d66d21c4b7f72f310ad00f47257e490"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c3ad4aff2b4278c7c080a7473f0cee7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#a1c3ad4aff2b4278c7c080a7473f0cee7">SetMaxDoubleClickDistance</a> (float distPixels)</td></tr>
+<tr class="memitem:a1c3ad4aff2b4278c7c080a7473f0cee7"><td class="memItemLeft" align="right" valign="top"><a id="a1c3ad4aff2b4278c7c080a7473f0cee7" name="a1c3ad4aff2b4278c7c080a7473f0cee7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetMaxDoubleClickDistance</b> (float distPixels)</td></tr>
+<tr class="memdesc:a1c3ad4aff2b4278c7c080a7473f0cee7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set max screen distance in pixels between double click clicks. <br /></td></tr>
 <tr class="separator:a1c3ad4aff2b4278c7c080a7473f0cee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a246e421939905d6b9ce449dde586401b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#a246e421939905d6b9ce449dde586401b">SetDragBeginInterval</a> (float interval)</td></tr>
+<tr class="memitem:a246e421939905d6b9ce449dde586401b"><td class="memItemLeft" align="right" valign="top"><a id="a246e421939905d6b9ce449dde586401b" name="a246e421939905d6b9ce449dde586401b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDragBeginInterval</b> (float interval)</td></tr>
+<tr class="memdesc:a246e421939905d6b9ce449dde586401b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set <a class="el" href="class_urho3_d_1_1_u_i.html" title="UI subsystem. Manages the graphical user interface.">UI</a> drag event start interval in seconds. <br /></td></tr>
 <tr class="separator:a246e421939905d6b9ce449dde586401b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0139fe20b617fe2db097783b59a03172"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#a0139fe20b617fe2db097783b59a03172">SetDragBeginDistance</a> (int pixels)</td></tr>
+<tr class="memitem:a0139fe20b617fe2db097783b59a03172"><td class="memItemLeft" align="right" valign="top"><a id="a0139fe20b617fe2db097783b59a03172" name="a0139fe20b617fe2db097783b59a03172"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDragBeginDistance</b> (int pixels)</td></tr>
+<tr class="memdesc:a0139fe20b617fe2db097783b59a03172"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set <a class="el" href="class_urho3_d_1_1_u_i.html" title="UI subsystem. Manages the graphical user interface.">UI</a> drag event start distance threshold in pixels. <br /></td></tr>
 <tr class="separator:a0139fe20b617fe2db097783b59a03172"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47ac88d68d9e4bc648e7b1b892d02778"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#a47ac88d68d9e4bc648e7b1b892d02778">SetDefaultToolTipDelay</a> (float delay)</td></tr>
+<tr class="memitem:a47ac88d68d9e4bc648e7b1b892d02778"><td class="memItemLeft" align="right" valign="top"><a id="a47ac88d68d9e4bc648e7b1b892d02778" name="a47ac88d68d9e4bc648e7b1b892d02778"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDefaultToolTipDelay</b> (float delay)</td></tr>
+<tr class="memdesc:a47ac88d68d9e4bc648e7b1b892d02778"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set tooltip default display delay in seconds. <br /></td></tr>
 <tr class="separator:a47ac88d68d9e4bc648e7b1b892d02778"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47474698321610582940b681d9d94314"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#a47474698321610582940b681d9d94314">SetMaxFontTextureSize</a> (int size)</td></tr>
+<tr class="memitem:a47474698321610582940b681d9d94314"><td class="memItemLeft" align="right" valign="top"><a id="a47474698321610582940b681d9d94314" name="a47474698321610582940b681d9d94314"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetMaxFontTextureSize</b> (int size)</td></tr>
+<tr class="memdesc:a47474698321610582940b681d9d94314"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set maximum font face texture size. Must be a power of two. Default is 2048. <br /></td></tr>
 <tr class="separator:a47474698321610582940b681d9d94314"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9f9a3c281c6e12949c18349a41d994b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#ab9f9a3c281c6e12949c18349a41d994b">SetNonFocusedMouseWheel</a> (bool nonFocusedMouseWheel)</td></tr>
+<tr class="memitem:ab9f9a3c281c6e12949c18349a41d994b"><td class="memItemLeft" align="right" valign="top"><a id="ab9f9a3c281c6e12949c18349a41d994b" name="ab9f9a3c281c6e12949c18349a41d994b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetNonFocusedMouseWheel</b> (bool nonFocusedMouseWheel)</td></tr>
+<tr class="memdesc:ab9f9a3c281c6e12949c18349a41d994b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set whether mouse wheel can control also a non-focused element. <br /></td></tr>
 <tr class="separator:ab9f9a3c281c6e12949c18349a41d994b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae70a982e3eb0c59f2a49bf7113e2584"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#aae70a982e3eb0c59f2a49bf7113e2584">SetUseSystemClipboard</a> (bool enable)</td></tr>
+<tr class="memitem:aae70a982e3eb0c59f2a49bf7113e2584"><td class="memItemLeft" align="right" valign="top"><a id="aae70a982e3eb0c59f2a49bf7113e2584" name="aae70a982e3eb0c59f2a49bf7113e2584"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetUseSystemClipboard</b> (bool enable)</td></tr>
+<tr class="memdesc:aae70a982e3eb0c59f2a49bf7113e2584"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set whether to use system clipboard. Default false. <br /></td></tr>
 <tr class="separator:aae70a982e3eb0c59f2a49bf7113e2584"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad589c4fa698684727046bfd1da5e8854"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#ad589c4fa698684727046bfd1da5e8854">SetUseScreenKeyboard</a> (bool enable)</td></tr>
+<tr class="memitem:ad589c4fa698684727046bfd1da5e8854"><td class="memItemLeft" align="right" valign="top"><a id="ad589c4fa698684727046bfd1da5e8854" name="ad589c4fa698684727046bfd1da5e8854"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetUseScreenKeyboard</b> (bool enable)</td></tr>
+<tr class="memdesc:ad589c4fa698684727046bfd1da5e8854"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set whether to show the on-screen keyboard (if supported) when a LineEdit is focused. Default true on mobile devices. <br /></td></tr>
 <tr class="separator:ad589c4fa698684727046bfd1da5e8854"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3c4899c916faa7d4911975bd7e25372"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#ae3c4899c916faa7d4911975bd7e25372">SetUseMutableGlyphs</a> (bool enable)</td></tr>
+<tr class="memitem:ae3c4899c916faa7d4911975bd7e25372"><td class="memItemLeft" align="right" valign="top"><a id="ae3c4899c916faa7d4911975bd7e25372" name="ae3c4899c916faa7d4911975bd7e25372"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetUseMutableGlyphs</b> (bool enable)</td></tr>
+<tr class="memdesc:ae3c4899c916faa7d4911975bd7e25372"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set whether to use mutable (eraseable) glyphs to ensure a font face never expands to more than one texture. Default false. <br /></td></tr>
 <tr class="separator:ae3c4899c916faa7d4911975bd7e25372"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3136d55d1cc4ea112324d890a332b810"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#a3136d55d1cc4ea112324d890a332b810">SetForceAutoHint</a> (bool enable)</td></tr>
+<tr class="memitem:a3136d55d1cc4ea112324d890a332b810"><td class="memItemLeft" align="right" valign="top"><a id="a3136d55d1cc4ea112324d890a332b810" name="a3136d55d1cc4ea112324d890a332b810"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetForceAutoHint</b> (bool enable)</td></tr>
+<tr class="memdesc:a3136d55d1cc4ea112324d890a332b810"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set whether to force font autohinting instead of using FreeType's TTF bytecode interpreter. <br /></td></tr>
 <tr class="separator:a3136d55d1cc4ea112324d890a332b810"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0d8d9ace57d3dec84e96d92addf7f3b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#aa0d8d9ace57d3dec84e96d92addf7f3b">SetFontHintLevel</a> (<a class="el" href="_u_i_8h.html#abc25f48f67a57480b1b674ca317f120e">FontHintLevel</a> level)</td></tr>
+<tr class="memitem:aa0d8d9ace57d3dec84e96d92addf7f3b"><td class="memItemLeft" align="right" valign="top"><a id="aa0d8d9ace57d3dec84e96d92addf7f3b" name="aa0d8d9ace57d3dec84e96d92addf7f3b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFontHintLevel</b> (<a class="el" href="_u_i_8h.html#abc25f48f67a57480b1b674ca317f120e">FontHintLevel</a> level)</td></tr>
+<tr class="memdesc:aa0d8d9ace57d3dec84e96d92addf7f3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the hinting level used by FreeType fonts. <br /></td></tr>
 <tr class="separator:aa0d8d9ace57d3dec84e96d92addf7f3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4326a98edbefb4bf516bbb528e79e7bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#a4326a98edbefb4bf516bbb528e79e7bd">SetFontSubpixelThreshold</a> (float threshold)</td></tr>
+<tr class="memitem:a4326a98edbefb4bf516bbb528e79e7bd"><td class="memItemLeft" align="right" valign="top"><a id="a4326a98edbefb4bf516bbb528e79e7bd" name="a4326a98edbefb4bf516bbb528e79e7bd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFontSubpixelThreshold</b> (float threshold)</td></tr>
+<tr class="memdesc:a4326a98edbefb4bf516bbb528e79e7bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the font subpixel threshold. Below this size, if the hint level is LIGHT or NONE, fonts will use subpixel positioning plus oversampling for higher-quality rendering. Has no effect at hint level NORMAL. <br /></td></tr>
 <tr class="separator:a4326a98edbefb4bf516bbb528e79e7bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42bd2fdb0910d88ccd48cfeed172b0fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#a42bd2fdb0910d88ccd48cfeed172b0fd">SetFontOversampling</a> (int oversampling)</td></tr>
+<tr class="memitem:a42bd2fdb0910d88ccd48cfeed172b0fd"><td class="memItemLeft" align="right" valign="top"><a id="a42bd2fdb0910d88ccd48cfeed172b0fd" name="a42bd2fdb0910d88ccd48cfeed172b0fd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFontOversampling</b> (int oversampling)</td></tr>
+<tr class="memdesc:a42bd2fdb0910d88ccd48cfeed172b0fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the oversampling (horizonal stretching) used to improve subpixel font rendering. Only affects fonts smaller than the subpixel limit. <br /></td></tr>
 <tr class="separator:a42bd2fdb0910d88ccd48cfeed172b0fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c1e9ed8137e895cd9d2cf4e9be5796f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#a3c1e9ed8137e895cd9d2cf4e9be5796f">SetScale</a> (float scale)</td></tr>
+<tr class="memitem:a3c1e9ed8137e895cd9d2cf4e9be5796f"><td class="memItemLeft" align="right" valign="top"><a id="a3c1e9ed8137e895cd9d2cf4e9be5796f" name="a3c1e9ed8137e895cd9d2cf4e9be5796f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetScale</b> (float scale)</td></tr>
+<tr class="memdesc:a3c1e9ed8137e895cd9d2cf4e9be5796f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set UI scale. 1.0 is default (pixel perfect). Resize the root element to match. <br /></td></tr>
 <tr class="separator:a3c1e9ed8137e895cd9d2cf4e9be5796f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7bfd17a2b528bd11d3348ab1bdd1fc8"><td class="memItemLeft" align="right" valign="top"><a id="ab7bfd17a2b528bd11d3348ab1bdd1fc8" name="ab7bfd17a2b528bd11d3348ab1bdd1fc8"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetWidth</b> (float width)</td></tr>
@@ -174,19 +210,29 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetWidth</b> (float w
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetHeight</b> (float height)</td></tr>
 <tr class="memdesc:a65d29ca3b07a6002e702deec015c5d5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scale UI to the specified height in pixels. <br /></td></tr>
 <tr class="separator:a65d29ca3b07a6002e702deec015c5d5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6fc5d536a21f287476fafa07801ef5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#ae6fc5d536a21f287476fafa07801ef5e">SetCustomSize</a> (const <a class="el" href="class_urho3_d_1_1_int_vector2.html">IntVector2</a> &amp;size)</td></tr>
+<tr class="memitem:ae6fc5d536a21f287476fafa07801ef5e"><td class="memItemLeft" align="right" valign="top"><a id="ae6fc5d536a21f287476fafa07801ef5e" name="ae6fc5d536a21f287476fafa07801ef5e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCustomSize</b> (const <a class="el" href="class_urho3_d_1_1_int_vector2.html">IntVector2</a> &amp;size)</td></tr>
+<tr class="memdesc:ae6fc5d536a21f287476fafa07801ef5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set custom size of the root element. This disables automatic resizing of the root element according to window size. Set custom size 0,0 to return to automatic resizing. <br /></td></tr>
 <tr class="separator:ae6fc5d536a21f287476fafa07801ef5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95ba1e77d91c7c37394d6cb5e1c442ce"><td class="memItemLeft" align="right" valign="top"><a id="a95ba1e77d91c7c37394d6cb5e1c442ce" name="a95ba1e77d91c7c37394d6cb5e1c442ce"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCustomSize</b> (int width, int height)</td></tr>
 <tr class="memdesc:a95ba1e77d91c7c37394d6cb5e1c442ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set custom size of the root element. <br /></td></tr>
 <tr class="separator:a95ba1e77d91c7c37394d6cb5e1c442ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a932bd5090d04181146dcac4c58f32f8f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_u_i_element.html">UIElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#a932bd5090d04181146dcac4c58f32f8f">GetRoot</a> () const</td></tr>
+<tr class="memitem:a932bd5090d04181146dcac4c58f32f8f"><td class="memItemLeft" align="right" valign="top"><a id="a932bd5090d04181146dcac4c58f32f8f" name="a932bd5090d04181146dcac4c58f32f8f"></a>
+<a class="el" href="class_urho3_d_1_1_u_i_element.html">UIElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetRoot</b> () const</td></tr>
+<tr class="memdesc:a932bd5090d04181146dcac4c58f32f8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return root <a class="el" href="class_urho3_d_1_1_u_i.html" title="UI subsystem. Manages the graphical user interface.">UI</a> element. <br /></td></tr>
 <tr class="separator:a932bd5090d04181146dcac4c58f32f8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab03a11c4fbdaf054f7300aa442d6ee1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_u_i_element.html">UIElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#ab03a11c4fbdaf054f7300aa442d6ee1c">GetRootModalElement</a> () const</td></tr>
+<tr class="memitem:ab03a11c4fbdaf054f7300aa442d6ee1c"><td class="memItemLeft" align="right" valign="top"><a id="ab03a11c4fbdaf054f7300aa442d6ee1c" name="ab03a11c4fbdaf054f7300aa442d6ee1c"></a>
+<a class="el" href="class_urho3_d_1_1_u_i_element.html">UIElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetRootModalElement</b> () const</td></tr>
+<tr class="memdesc:ab03a11c4fbdaf054f7300aa442d6ee1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return root modal element. <br /></td></tr>
 <tr class="separator:ab03a11c4fbdaf054f7300aa442d6ee1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44dbb3e075ecea4116eadec39096e6b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_cursor.html">Cursor</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#a44dbb3e075ecea4116eadec39096e6b1">GetCursor</a> () const</td></tr>
+<tr class="memitem:a44dbb3e075ecea4116eadec39096e6b1"><td class="memItemLeft" align="right" valign="top"><a id="a44dbb3e075ecea4116eadec39096e6b1" name="a44dbb3e075ecea4116eadec39096e6b1"></a>
+<a class="el" href="class_urho3_d_1_1_cursor.html">Cursor</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetCursor</b> () const</td></tr>
+<tr class="memdesc:a44dbb3e075ecea4116eadec39096e6b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return cursor. <br /></td></tr>
 <tr class="separator:a44dbb3e075ecea4116eadec39096e6b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ae2e44e029886eeb0b12182bb002648"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_int_vector2.html">IntVector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#a3ae2e44e029886eeb0b12182bb002648">GetCursorPosition</a> () const</td></tr>
+<tr class="memitem:a3ae2e44e029886eeb0b12182bb002648"><td class="memItemLeft" align="right" valign="top"><a id="a3ae2e44e029886eeb0b12182bb002648" name="a3ae2e44e029886eeb0b12182bb002648"></a>
+<a class="el" href="class_urho3_d_1_1_int_vector2.html">IntVector2</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetCursorPosition</b> () const</td></tr>
+<tr class="memdesc:a3ae2e44e029886eeb0b12182bb002648"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return cursor position. <br /></td></tr>
 <tr class="separator:a3ae2e44e029886eeb0b12182bb002648"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6e052c43b7dc743ae7e83df21c75dff"><td class="memItemLeft" align="right" valign="top"><a id="ad6e052c43b7dc743ae7e83df21c75dff" name="ad6e052c43b7dc743ae7e83df21c75dff"></a>
 <a class="el" href="class_urho3_d_1_1_u_i_element.html">UIElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetElementAt</b> (const <a class="el" href="class_urho3_d_1_1_int_vector2.html">IntVector2</a> &amp;position, bool enabledOnly=true)</td></tr>
@@ -208,11 +254,17 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCustomSize</b> (in
 <a class="el" href="class_urho3_d_1_1_int_vector2.html">IntVector2</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ConvertUIToSystem</b> (const <a class="el" href="class_urho3_d_1_1_int_vector2.html">IntVector2</a> &amp;uiPos) const</td></tr>
 <tr class="memdesc:a76db3cfa0cbacb1c0ded6c60dcd32470"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert scaled <a class="el" href="class_urho3_d_1_1_u_i.html" title="UI subsystem. Manages the graphical user interface.">UI</a> position (or offset) to system mouse position (or offset). <br /></td></tr>
 <tr class="separator:a76db3cfa0cbacb1c0ded6c60dcd32470"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00f326e27e347d8a9c13fa0928c210a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_u_i_element.html">UIElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#a00f326e27e347d8a9c13fa0928c210a6">GetFocusElement</a> () const</td></tr>
+<tr class="memitem:a00f326e27e347d8a9c13fa0928c210a6"><td class="memItemLeft" align="right" valign="top"><a id="a00f326e27e347d8a9c13fa0928c210a6" name="a00f326e27e347d8a9c13fa0928c210a6"></a>
+<a class="el" href="class_urho3_d_1_1_u_i_element.html">UIElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetFocusElement</b> () const</td></tr>
+<tr class="memdesc:a00f326e27e347d8a9c13fa0928c210a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return focused element. <br /></td></tr>
 <tr class="separator:a00f326e27e347d8a9c13fa0928c210a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8433a02802724d3efe7e7bf8d2f0315d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_u_i_element.html">UIElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#a8433a02802724d3efe7e7bf8d2f0315d">GetFrontElement</a> () const</td></tr>
+<tr class="memitem:a8433a02802724d3efe7e7bf8d2f0315d"><td class="memItemLeft" align="right" valign="top"><a id="a8433a02802724d3efe7e7bf8d2f0315d" name="a8433a02802724d3efe7e7bf8d2f0315d"></a>
+<a class="el" href="class_urho3_d_1_1_u_i_element.html">UIElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetFrontElement</b> () const</td></tr>
+<tr class="memdesc:a8433a02802724d3efe7e7bf8d2f0315d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return topmost enabled root-level non-modal element. <br /></td></tr>
 <tr class="separator:a8433a02802724d3efe7e7bf8d2f0315d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16f4b26e029b19175a19653c3e6adb31"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_urho3_d_1_1_vector.html">Vector</a>&lt; <a class="el" href="class_urho3_d_1_1_u_i_element.html">UIElement</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#a16f4b26e029b19175a19653c3e6adb31">GetDragElements</a> ()</td></tr>
+<tr class="memitem:a16f4b26e029b19175a19653c3e6adb31"><td class="memItemLeft" align="right" valign="top"><a id="a16f4b26e029b19175a19653c3e6adb31" name="a16f4b26e029b19175a19653c3e6adb31"></a>
+const <a class="el" href="class_urho3_d_1_1_vector.html">Vector</a>&lt; <a class="el" href="class_urho3_d_1_1_u_i_element.html">UIElement</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetDragElements</b> ()</td></tr>
+<tr class="memdesc:a16f4b26e029b19175a19653c3e6adb31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return currently dragged elements. <br /></td></tr>
 <tr class="separator:a16f4b26e029b19175a19653c3e6adb31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2eae37a78be6c135b8bbc735f3533b24"><td class="memItemLeft" align="right" valign="top"><a id="a2eae37a78be6c135b8bbc735f3533b24" name="a2eae37a78be6c135b8bbc735f3533b24"></a>
 unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>GetNumDragElements</b> () const</td></tr>
@@ -222,35 +274,65 @@ unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>GetNumDragElement
 <a class="el" href="class_urho3_d_1_1_u_i_element.html">UIElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetDragElement</b> (unsigned index)</td></tr>
 <tr class="memdesc:ac7c6ed721b3fbdc8f89ef425a8ae7edc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the drag element at index. <br /></td></tr>
 <tr class="separator:ac7c6ed721b3fbdc8f89ef425a8ae7edc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0bdfcf41f7b617d4147d31da2cdbca2"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#ae0bdfcf41f7b617d4147d31da2cdbca2">GetClipboardText</a> () const</td></tr>
+<tr class="memitem:ae0bdfcf41f7b617d4147d31da2cdbca2"><td class="memItemLeft" align="right" valign="top"><a id="ae0bdfcf41f7b617d4147d31da2cdbca2" name="ae0bdfcf41f7b617d4147d31da2cdbca2"></a>
+const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetClipboardText</b> () const</td></tr>
+<tr class="memdesc:ae0bdfcf41f7b617d4147d31da2cdbca2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return clipboard text. <br /></td></tr>
 <tr class="separator:ae0bdfcf41f7b617d4147d31da2cdbca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65c1f800df801b4377838d9d2f6c1ad9"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#a65c1f800df801b4377838d9d2f6c1ad9">GetDoubleClickInterval</a> () const</td></tr>
+<tr class="memitem:a65c1f800df801b4377838d9d2f6c1ad9"><td class="memItemLeft" align="right" valign="top"><a id="a65c1f800df801b4377838d9d2f6c1ad9" name="a65c1f800df801b4377838d9d2f6c1ad9"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>GetDoubleClickInterval</b> () const</td></tr>
+<tr class="memdesc:a65c1f800df801b4377838d9d2f6c1ad9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return <a class="el" href="class_urho3_d_1_1_u_i.html" title="UI subsystem. Manages the graphical user interface.">UI</a> element double click interval in seconds. <br /></td></tr>
 <tr class="separator:a65c1f800df801b4377838d9d2f6c1ad9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73c45ddf24a6fced2b1576560cf1c2fb"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#a73c45ddf24a6fced2b1576560cf1c2fb">GetMaxDoubleClickDistance</a> () const</td></tr>
+<tr class="memitem:a73c45ddf24a6fced2b1576560cf1c2fb"><td class="memItemLeft" align="right" valign="top"><a id="a73c45ddf24a6fced2b1576560cf1c2fb" name="a73c45ddf24a6fced2b1576560cf1c2fb"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>GetMaxDoubleClickDistance</b> () const</td></tr>
+<tr class="memdesc:a73c45ddf24a6fced2b1576560cf1c2fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return max screen distance in pixels for double clicks to register. <br /></td></tr>
 <tr class="separator:a73c45ddf24a6fced2b1576560cf1c2fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a05f87c92941189d0c2e6976df2c905"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#a6a05f87c92941189d0c2e6976df2c905">GetDragBeginInterval</a> () const</td></tr>
+<tr class="memitem:a6a05f87c92941189d0c2e6976df2c905"><td class="memItemLeft" align="right" valign="top"><a id="a6a05f87c92941189d0c2e6976df2c905" name="a6a05f87c92941189d0c2e6976df2c905"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>GetDragBeginInterval</b> () const</td></tr>
+<tr class="memdesc:a6a05f87c92941189d0c2e6976df2c905"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return <a class="el" href="class_urho3_d_1_1_u_i.html" title="UI subsystem. Manages the graphical user interface.">UI</a> drag start event interval in seconds. <br /></td></tr>
 <tr class="separator:a6a05f87c92941189d0c2e6976df2c905"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae17e800a74053bfe63c7ef75118ac05b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#ae17e800a74053bfe63c7ef75118ac05b">GetDragBeginDistance</a> () const</td></tr>
+<tr class="memitem:ae17e800a74053bfe63c7ef75118ac05b"><td class="memItemLeft" align="right" valign="top"><a id="ae17e800a74053bfe63c7ef75118ac05b" name="ae17e800a74053bfe63c7ef75118ac05b"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>GetDragBeginDistance</b> () const</td></tr>
+<tr class="memdesc:ae17e800a74053bfe63c7ef75118ac05b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return <a class="el" href="class_urho3_d_1_1_u_i.html" title="UI subsystem. Manages the graphical user interface.">UI</a> drag start event distance threshold in pixels. <br /></td></tr>
 <tr class="separator:ae17e800a74053bfe63c7ef75118ac05b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af03eddaec815060372242bae1e1d4fd0"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#af03eddaec815060372242bae1e1d4fd0">GetDefaultToolTipDelay</a> () const</td></tr>
+<tr class="memitem:af03eddaec815060372242bae1e1d4fd0"><td class="memItemLeft" align="right" valign="top"><a id="af03eddaec815060372242bae1e1d4fd0" name="af03eddaec815060372242bae1e1d4fd0"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>GetDefaultToolTipDelay</b> () const</td></tr>
+<tr class="memdesc:af03eddaec815060372242bae1e1d4fd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return tooltip default display delay in seconds. <br /></td></tr>
 <tr class="separator:af03eddaec815060372242bae1e1d4fd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3716d6e6d234c790ca5fc63542ccf7ee"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#a3716d6e6d234c790ca5fc63542ccf7ee">GetMaxFontTextureSize</a> () const</td></tr>
+<tr class="memitem:a3716d6e6d234c790ca5fc63542ccf7ee"><td class="memItemLeft" align="right" valign="top"><a id="a3716d6e6d234c790ca5fc63542ccf7ee" name="a3716d6e6d234c790ca5fc63542ccf7ee"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>GetMaxFontTextureSize</b> () const</td></tr>
+<tr class="memdesc:a3716d6e6d234c790ca5fc63542ccf7ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return font texture maximum size. <br /></td></tr>
 <tr class="separator:a3716d6e6d234c790ca5fc63542ccf7ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6218e301deedaf7eb31ff74ba3fcdcd4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#a6218e301deedaf7eb31ff74ba3fcdcd4">IsNonFocusedMouseWheel</a> () const</td></tr>
+<tr class="memitem:a6218e301deedaf7eb31ff74ba3fcdcd4"><td class="memItemLeft" align="right" valign="top"><a id="a6218e301deedaf7eb31ff74ba3fcdcd4" name="a6218e301deedaf7eb31ff74ba3fcdcd4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsNonFocusedMouseWheel</b> () const</td></tr>
+<tr class="memdesc:a6218e301deedaf7eb31ff74ba3fcdcd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether mouse wheel can control also a non-focused element. <br /></td></tr>
 <tr class="separator:a6218e301deedaf7eb31ff74ba3fcdcd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2defe70f623606384482ed328fe85d91"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#a2defe70f623606384482ed328fe85d91">GetUseSystemClipboard</a> () const</td></tr>
+<tr class="memitem:a2defe70f623606384482ed328fe85d91"><td class="memItemLeft" align="right" valign="top"><a id="a2defe70f623606384482ed328fe85d91" name="a2defe70f623606384482ed328fe85d91"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetUseSystemClipboard</b> () const</td></tr>
+<tr class="memdesc:a2defe70f623606384482ed328fe85d91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether is using the system clipboard. <br /></td></tr>
 <tr class="separator:a2defe70f623606384482ed328fe85d91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8bef6358501427f9854b57a013bf7cc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#af8bef6358501427f9854b57a013bf7cc">GetUseScreenKeyboard</a> () const</td></tr>
+<tr class="memitem:af8bef6358501427f9854b57a013bf7cc"><td class="memItemLeft" align="right" valign="top"><a id="af8bef6358501427f9854b57a013bf7cc" name="af8bef6358501427f9854b57a013bf7cc"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetUseScreenKeyboard</b> () const</td></tr>
+<tr class="memdesc:af8bef6358501427f9854b57a013bf7cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether focusing a LineEdit will show the on-screen keyboard. <br /></td></tr>
 <tr class="separator:af8bef6358501427f9854b57a013bf7cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31eb531ba7ae25b6f178c73a0b230945"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#a31eb531ba7ae25b6f178c73a0b230945">GetUseMutableGlyphs</a> () const</td></tr>
+<tr class="memitem:a31eb531ba7ae25b6f178c73a0b230945"><td class="memItemLeft" align="right" valign="top"><a id="a31eb531ba7ae25b6f178c73a0b230945" name="a31eb531ba7ae25b6f178c73a0b230945"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetUseMutableGlyphs</b> () const</td></tr>
+<tr class="memdesc:a31eb531ba7ae25b6f178c73a0b230945"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether is using mutable (eraseable) glyphs for fonts. <br /></td></tr>
 <tr class="separator:a31eb531ba7ae25b6f178c73a0b230945"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a32d86084ee54963500d01a6a3f41ae"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#a7a32d86084ee54963500d01a6a3f41ae">GetForceAutoHint</a> () const</td></tr>
+<tr class="memitem:a7a32d86084ee54963500d01a6a3f41ae"><td class="memItemLeft" align="right" valign="top"><a id="a7a32d86084ee54963500d01a6a3f41ae" name="a7a32d86084ee54963500d01a6a3f41ae"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetForceAutoHint</b> () const</td></tr>
+<tr class="memdesc:a7a32d86084ee54963500d01a6a3f41ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether is using forced autohinting. <br /></td></tr>
 <tr class="separator:a7a32d86084ee54963500d01a6a3f41ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf53a4ed2561a48f885599f7db3f9562"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_u_i_8h.html#abc25f48f67a57480b1b674ca317f120e">FontHintLevel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#aaf53a4ed2561a48f885599f7db3f9562">GetFontHintLevel</a> () const</td></tr>
+<tr class="memitem:aaf53a4ed2561a48f885599f7db3f9562"><td class="memItemLeft" align="right" valign="top"><a id="aaf53a4ed2561a48f885599f7db3f9562" name="aaf53a4ed2561a48f885599f7db3f9562"></a>
+<a class="el" href="_u_i_8h.html#abc25f48f67a57480b1b674ca317f120e">FontHintLevel</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetFontHintLevel</b> () const</td></tr>
+<tr class="memdesc:aaf53a4ed2561a48f885599f7db3f9562"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the current FreeType font hinting level. <br /></td></tr>
 <tr class="separator:aaf53a4ed2561a48f885599f7db3f9562"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65152b0c9d272e4c0194a504ae50c7ec"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#a65152b0c9d272e4c0194a504ae50c7ec">GetFontSubpixelThreshold</a> () const</td></tr>
+<tr class="memitem:a65152b0c9d272e4c0194a504ae50c7ec"><td class="memItemLeft" align="right" valign="top"><a id="a65152b0c9d272e4c0194a504ae50c7ec" name="a65152b0c9d272e4c0194a504ae50c7ec"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>GetFontSubpixelThreshold</b> () const</td></tr>
+<tr class="memdesc:a65152b0c9d272e4c0194a504ae50c7ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the font subpixel threshold. Below this size, if the hint level is LIGHT or NONE, fonts will use subpixel positioning plus oversampling for higher-quality rendering. Has no effect at hint level NORMAL. <br /></td></tr>
 <tr class="separator:a65152b0c9d272e4c0194a504ae50c7ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa817429eb0bd5a60dd92db99d2cf747"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#aaa817429eb0bd5a60dd92db99d2cf747">GetFontOversampling</a> () const</td></tr>
+<tr class="memitem:aaa817429eb0bd5a60dd92db99d2cf747"><td class="memItemLeft" align="right" valign="top"><a id="aaa817429eb0bd5a60dd92db99d2cf747" name="aaa817429eb0bd5a60dd92db99d2cf747"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>GetFontOversampling</b> () const</td></tr>
+<tr class="memdesc:aaa817429eb0bd5a60dd92db99d2cf747"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the oversampling (horizonal stretching) used to improve subpixel font rendering. Only affects fonts smaller than the subpixel limit. <br /></td></tr>
 <tr class="separator:aaa817429eb0bd5a60dd92db99d2cf747"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a130650a1b81cec2403030078e1e56298"><td class="memItemLeft" align="right" valign="top"><a id="a130650a1b81cec2403030078e1e56298" name="a130650a1b81cec2403030078e1e56298"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasModalElement</b> () const</td></tr>
@@ -260,9 +342,13 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasModalElement</b> (
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsDragging</b> () const</td></tr>
 <tr class="memdesc:a2425df9cf0640d7ec66e4504a03a13ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether a drag is in progress. <br /></td></tr>
 <tr class="separator:a2425df9cf0640d7ec66e4504a03a13ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfb2418515b35357fa94d483b58cd292"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#acfb2418515b35357fa94d483b58cd292">GetScale</a> () const</td></tr>
+<tr class="memitem:acfb2418515b35357fa94d483b58cd292"><td class="memItemLeft" align="right" valign="top"><a id="acfb2418515b35357fa94d483b58cd292" name="acfb2418515b35357fa94d483b58cd292"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>GetScale</b> () const</td></tr>
+<tr class="memdesc:acfb2418515b35357fa94d483b58cd292"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return current <a class="el" href="class_urho3_d_1_1_u_i.html" title="UI subsystem. Manages the graphical user interface.">UI</a> scale. <br /></td></tr>
 <tr class="separator:acfb2418515b35357fa94d483b58cd292"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace539831d47dd248aa4152ff6b50011f"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_urho3_d_1_1_int_vector2.html">IntVector2</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_u_i.html#ace539831d47dd248aa4152ff6b50011f">GetCustomSize</a> () const</td></tr>
+<tr class="memitem:ace539831d47dd248aa4152ff6b50011f"><td class="memItemLeft" align="right" valign="top"><a id="ace539831d47dd248aa4152ff6b50011f" name="ace539831d47dd248aa4152ff6b50011f"></a>
+const <a class="el" href="class_urho3_d_1_1_int_vector2.html">IntVector2</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetCustomSize</b> () const</td></tr>
+<tr class="memdesc:ace539831d47dd248aa4152ff6b50011f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return root element custom size. Returns 0,0 when custom size is not being used and automatic resizing according to window size is in use instead (default). <br /></td></tr>
 <tr class="separator:ace539831d47dd248aa4152ff6b50011f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac00c2460ea4afffbe17cbf3acc62a105"><td class="memItemLeft" align="right" valign="top"><a id="ac00c2460ea4afffbe17cbf3acc62a105" name="ac00c2460ea4afffbe17cbf3acc62a105"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetElementRenderTexture</b> (<a class="el" href="class_urho3_d_1_1_u_i_element.html">UIElement</a> *element, <a class="el" href="class_urho3_d_1_1_texture2_d.html">Texture2D</a> *texture)</td></tr>
@@ -278,8 +364,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetElementRenderTextu
 <tr class="memdesc:a4d472106f01c137d237b3099751d10c5 inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct. Clean up self from event sender &amp; receiver structures. <br /></td></tr>
 <tr class="separator:a4d472106f01c137d237b3099751d10c5 inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c7af660afc8467a99d1f17c8d099b3b inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#a4c7af660afc8467a99d1f17c8d099b3b">GetType</a> () const =0</td></tr>
+<tr class="memdesc:a4c7af660afc8467a99d1f17c8d099b3b inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return type hash.  <a href="class_urho3_d_1_1_object.html#a4c7af660afc8467a99d1f17c8d099b3b">More...</a><br /></td></tr>
 <tr class="separator:a4c7af660afc8467a99d1f17c8d099b3b inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa70436408fab29ff5d6ea54fa1e09b9b inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#aa70436408fab29ff5d6ea54fa1e09b9b">GetTypeName</a> () const =0</td></tr>
+<tr class="memdesc:aa70436408fab29ff5d6ea54fa1e09b9b inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return type name.  <a href="class_urho3_d_1_1_object.html#aa70436408fab29ff5d6ea54fa1e09b9b">More...</a><br /></td></tr>
 <tr class="separator:aa70436408fab29ff5d6ea54fa1e09b9b inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a768de02d2ed1eab1703c3ba02cf0415d inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a768de02d2ed1eab1703c3ba02cf0415d" name="a768de02d2ed1eab1703c3ba02cf0415d"></a>
 virtual const <a class="el" href="class_urho3_d_1_1_type_info.html">TypeInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetTypeInfo</b> () const =0</td></tr>
@@ -369,11 +457,17 @@ template&lt;typename... Args&gt; </td></tr>
 <a class="el" href="class_urho3_d_1_1_context.html">Context</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetContext</b> () const</td></tr>
 <tr class="memdesc:a8bd9b32c8a56c2f6d618d8afe8091eb7 inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return execution context. <br /></td></tr>
 <tr class="separator:a8bd9b32c8a56c2f6d618d8afe8091eb7 inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd4506c4bdb10232305ef69ebbb78a83 inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#acd4506c4bdb10232305ef69ebbb78a83">GetGlobalVar</a> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> key) const</td></tr>
+<tr class="memitem:acd4506c4bdb10232305ef69ebbb78a83 inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="acd4506c4bdb10232305ef69ebbb78a83" name="acd4506c4bdb10232305ef69ebbb78a83"></a>
+const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetGlobalVar</b> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> key) const</td></tr>
+<tr class="memdesc:acd4506c4bdb10232305ef69ebbb78a83 inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return global variable based on key. <br /></td></tr>
 <tr class="separator:acd4506c4bdb10232305ef69ebbb78a83 inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27b36184a862d9343604f31d85d9bc24 inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="_variant_8h.html#aee85c8bb4263431ef586545ff082720b">VariantMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#a27b36184a862d9343604f31d85d9bc24">GetGlobalVars</a> () const</td></tr>
+<tr class="memitem:a27b36184a862d9343604f31d85d9bc24 inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a27b36184a862d9343604f31d85d9bc24" name="a27b36184a862d9343604f31d85d9bc24"></a>
+const <a class="el" href="_variant_8h.html#aee85c8bb4263431ef586545ff082720b">VariantMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetGlobalVars</b> () const</td></tr>
+<tr class="memdesc:a27b36184a862d9343604f31d85d9bc24 inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return all global variables. <br /></td></tr>
 <tr class="separator:a27b36184a862d9343604f31d85d9bc24 inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43d25cc580737c9dc3b973d6c1230d9e inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#a43d25cc580737c9dc3b973d6c1230d9e">SetGlobalVar</a> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> key, const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;value)</td></tr>
+<tr class="memitem:a43d25cc580737c9dc3b973d6c1230d9e inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a43d25cc580737c9dc3b973d6c1230d9e" name="a43d25cc580737c9dc3b973d6c1230d9e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetGlobalVar</b> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> key, const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;value)</td></tr>
+<tr class="memdesc:a43d25cc580737c9dc3b973d6c1230d9e inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set global variable with the respective key and value. <br /></td></tr>
 <tr class="separator:a43d25cc580737c9dc3b973d6c1230d9e inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fb7d12773df7b6467f62415ee4ce977 inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a9fb7d12773df7b6467f62415ee4ce977" name="a9fb7d12773df7b6467f62415ee4ce977"></a>
 <a class="el" href="class_urho3_d_1_1_object.html">Object</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetSubsystem</b> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> type) const</td></tr>
@@ -404,7 +498,9 @@ template&lt;class T &gt; </td></tr>
 <tr class="memitem:adab8c85b0da9870b217e68a0400345dd inherit pub_methods_class_urho3_d_1_1_object"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetSubsystem</b> () const</td></tr>
 <tr class="memdesc:adab8c85b0da9870b217e68a0400345dd inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Template version of returning a subsystem. <br /></td></tr>
 <tr class="separator:adab8c85b0da9870b217e68a0400345dd inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a227ebc7673a905ac7c878495c66515e3 inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#a227ebc7673a905ac7c878495c66515e3">GetCategory</a> () const</td></tr>
+<tr class="memitem:a227ebc7673a905ac7c878495c66515e3 inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a227ebc7673a905ac7c878495c66515e3" name="a227ebc7673a905ac7c878495c66515e3"></a>
+const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetCategory</b> () const</td></tr>
+<tr class="memdesc:a227ebc7673a905ac7c878495c66515e3 inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return object category. Categories are (optionally) registered along with the object factory. Return an empty string if the object category is not registered. <br /></td></tr>
 <tr class="separator:a227ebc7673a905ac7c878495c66515e3 inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd72cab3f338ef6ca76da511bcd941dc inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="abd72cab3f338ef6ca76da511bcd941dc" name="abd72cab3f338ef6ca76da511bcd941dc"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetBlockEvents</b> (bool block)</td></tr>
@@ -431,13 +527,21 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~RefCounted</b> ()
 <a class="el" href="class_urho3_d_1_1_ref_counted.html">RefCounted</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_urho3_d_1_1_ref_counted.html">RefCounted</a> &amp;rhs)=delete</td></tr>
 <tr class="memdesc:ab34ed11da9f794b4c3ae6a4f33dc090a inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prevent assignment. <br /></td></tr>
 <tr class="separator:ab34ed11da9f794b4c3ae6a4f33dc090a inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d857f439bb5a7935199a8e4fdb8f2c8 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_ref_counted.html#a0d857f439bb5a7935199a8e4fdb8f2c8">AddRef</a> ()</td></tr>
+<tr class="memitem:a0d857f439bb5a7935199a8e4fdb8f2c8 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top"><a id="a0d857f439bb5a7935199a8e4fdb8f2c8" name="a0d857f439bb5a7935199a8e4fdb8f2c8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddRef</b> ()</td></tr>
+<tr class="memdesc:a0d857f439bb5a7935199a8e4fdb8f2c8 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increment reference count. Can also be called outside of a <a class="el" href="class_urho3_d_1_1_shared_ptr.html" title="Shared pointer template class with intrusive reference counting.">SharedPtr</a> for traditional reference counting. <br /></td></tr>
 <tr class="separator:a0d857f439bb5a7935199a8e4fdb8f2c8 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59e95fecbcbc560f81f0bdd52306cc1d inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_ref_counted.html#a59e95fecbcbc560f81f0bdd52306cc1d">ReleaseRef</a> ()</td></tr>
+<tr class="memitem:a59e95fecbcbc560f81f0bdd52306cc1d inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top"><a id="a59e95fecbcbc560f81f0bdd52306cc1d" name="a59e95fecbcbc560f81f0bdd52306cc1d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ReleaseRef</b> ()</td></tr>
+<tr class="memdesc:a59e95fecbcbc560f81f0bdd52306cc1d inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decrement reference count and delete self if no more references. Can also be called outside of a <a class="el" href="class_urho3_d_1_1_shared_ptr.html" title="Shared pointer template class with intrusive reference counting.">SharedPtr</a> for traditional reference counting. <br /></td></tr>
 <tr class="separator:a59e95fecbcbc560f81f0bdd52306cc1d inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e764b1f4b072a1a0dbfaeac62626244 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_ref_counted.html#a7e764b1f4b072a1a0dbfaeac62626244">Refs</a> () const</td></tr>
+<tr class="memitem:a7e764b1f4b072a1a0dbfaeac62626244 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top"><a id="a7e764b1f4b072a1a0dbfaeac62626244" name="a7e764b1f4b072a1a0dbfaeac62626244"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>Refs</b> () const</td></tr>
+<tr class="memdesc:a7e764b1f4b072a1a0dbfaeac62626244 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return reference count. <br /></td></tr>
 <tr class="separator:a7e764b1f4b072a1a0dbfaeac62626244 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27960099d665fa2a05b7d488cfc56d90 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_ref_counted.html#a27960099d665fa2a05b7d488cfc56d90">WeakRefs</a> () const</td></tr>
+<tr class="memitem:a27960099d665fa2a05b7d488cfc56d90 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top"><a id="a27960099d665fa2a05b7d488cfc56d90" name="a27960099d665fa2a05b7d488cfc56d90"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>WeakRefs</b> () const</td></tr>
+<tr class="memdesc:a27960099d665fa2a05b7d488cfc56d90 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return weak reference count. <br /></td></tr>
 <tr class="separator:a27960099d665fa2a05b7d488cfc56d90 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08cd9280809e02f43cd08599391131bb inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top"><a id="a08cd9280809e02f43cd08599391131bb" name="a08cd9280809e02f43cd08599391131bb"></a>
 <a class="el" href="struct_urho3_d_1_1_ref_count.html">RefCount</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>RefCountPtr</b> ()</td></tr>
@@ -800,978 +904,14 @@ static const <a class="el" href="class_urho3_d_1_1_type_info.html">TypeInfo</a> 
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >UI subsystem. Manages the graphical user interface. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ae0bdfcf41f7b617d4147d31da2cdbca2" name="ae0bdfcf41f7b617d4147d31da2cdbca2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae0bdfcf41f7b617d4147d31da2cdbca2">&#9670;&nbsp;</a></span>GetClipboardText()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp; Urho3D::UI::GetClipboardText </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Return clipboard text. </p>
-
-</div>
-</div>
-<a id="a44dbb3e075ecea4116eadec39096e6b1" name="a44dbb3e075ecea4116eadec39096e6b1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a44dbb3e075ecea4116eadec39096e6b1">&#9670;&nbsp;</a></span>GetCursor()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_urho3_d_1_1_cursor.html">Cursor</a> * Urho3D::UI::GetCursor </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return cursor. </p>
-
-</div>
-</div>
-<a id="a3ae2e44e029886eeb0b12182bb002648" name="a3ae2e44e029886eeb0b12182bb002648"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ae2e44e029886eeb0b12182bb002648">&#9670;&nbsp;</a></span>GetCursorPosition()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_urho3_d_1_1_int_vector2.html">IntVector2</a> Urho3D::UI::GetCursorPosition </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Return cursor position. </p>
-
-</div>
-</div>
-<a id="ace539831d47dd248aa4152ff6b50011f" name="ace539831d47dd248aa4152ff6b50011f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace539831d47dd248aa4152ff6b50011f">&#9670;&nbsp;</a></span>GetCustomSize()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="class_urho3_d_1_1_int_vector2.html">IntVector2</a> &amp; Urho3D::UI::GetCustomSize </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return root element custom size. Returns 0,0 when custom size is not being used and automatic resizing according to window size is in use instead (default). </p>
-
-</div>
-</div>
-<a id="af03eddaec815060372242bae1e1d4fd0" name="af03eddaec815060372242bae1e1d4fd0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af03eddaec815060372242bae1e1d4fd0">&#9670;&nbsp;</a></span>GetDefaultToolTipDelay()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float Urho3D::UI::GetDefaultToolTipDelay </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return tooltip default display delay in seconds. </p>
-
-</div>
-</div>
-<a id="a65c1f800df801b4377838d9d2f6c1ad9" name="a65c1f800df801b4377838d9d2f6c1ad9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a65c1f800df801b4377838d9d2f6c1ad9">&#9670;&nbsp;</a></span>GetDoubleClickInterval()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float Urho3D::UI::GetDoubleClickInterval </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return <a class="el" href="class_urho3_d_1_1_u_i.html" title="UI subsystem. Manages the graphical user interface.">UI</a> element double click interval in seconds. </p>
-
-</div>
-</div>
-<a id="ae17e800a74053bfe63c7ef75118ac05b" name="ae17e800a74053bfe63c7ef75118ac05b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae17e800a74053bfe63c7ef75118ac05b">&#9670;&nbsp;</a></span>GetDragBeginDistance()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Urho3D::UI::GetDragBeginDistance </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return <a class="el" href="class_urho3_d_1_1_u_i.html" title="UI subsystem. Manages the graphical user interface.">UI</a> drag start event distance threshold in pixels. </p>
-
-</div>
-</div>
-<a id="a6a05f87c92941189d0c2e6976df2c905" name="a6a05f87c92941189d0c2e6976df2c905"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a05f87c92941189d0c2e6976df2c905">&#9670;&nbsp;</a></span>GetDragBeginInterval()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float Urho3D::UI::GetDragBeginInterval </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return <a class="el" href="class_urho3_d_1_1_u_i.html" title="UI subsystem. Manages the graphical user interface.">UI</a> drag start event interval in seconds. </p>
-
-</div>
-</div>
-<a id="a16f4b26e029b19175a19653c3e6adb31" name="a16f4b26e029b19175a19653c3e6adb31"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a16f4b26e029b19175a19653c3e6adb31">&#9670;&nbsp;</a></span>GetDragElements()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="class_urho3_d_1_1_vector.html">Vector</a>&lt; <a class="el" href="class_urho3_d_1_1_u_i_element.html">UIElement</a> * &gt; Urho3D::UI::GetDragElements </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Return currently dragged elements. </p>
-
-</div>
-</div>
-<a id="a00f326e27e347d8a9c13fa0928c210a6" name="a00f326e27e347d8a9c13fa0928c210a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a00f326e27e347d8a9c13fa0928c210a6">&#9670;&nbsp;</a></span>GetFocusElement()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_urho3_d_1_1_u_i_element.html">UIElement</a> * Urho3D::UI::GetFocusElement </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return focused element. </p>
-
-</div>
-</div>
-<a id="aaf53a4ed2561a48f885599f7db3f9562" name="aaf53a4ed2561a48f885599f7db3f9562"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf53a4ed2561a48f885599f7db3f9562">&#9670;&nbsp;</a></span>GetFontHintLevel()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_u_i_8h.html#abc25f48f67a57480b1b674ca317f120e">FontHintLevel</a> Urho3D::UI::GetFontHintLevel </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return the current FreeType font hinting level. </p>
-
-</div>
-</div>
-<a id="aaa817429eb0bd5a60dd92db99d2cf747" name="aaa817429eb0bd5a60dd92db99d2cf747"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa817429eb0bd5a60dd92db99d2cf747">&#9670;&nbsp;</a></span>GetFontOversampling()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Urho3D::UI::GetFontOversampling </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Get the oversampling (horizonal stretching) used to improve subpixel font rendering. Only affects fonts smaller than the subpixel limit. </p>
-
-</div>
-</div>
-<a id="a65152b0c9d272e4c0194a504ae50c7ec" name="a65152b0c9d272e4c0194a504ae50c7ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a65152b0c9d272e4c0194a504ae50c7ec">&#9670;&nbsp;</a></span>GetFontSubpixelThreshold()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float Urho3D::UI::GetFontSubpixelThreshold </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Get the font subpixel threshold. Below this size, if the hint level is LIGHT or NONE, fonts will use subpixel positioning plus oversampling for higher-quality rendering. Has no effect at hint level NORMAL. </p>
-
-</div>
-</div>
-<a id="a7a32d86084ee54963500d01a6a3f41ae" name="a7a32d86084ee54963500d01a6a3f41ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a32d86084ee54963500d01a6a3f41ae">&#9670;&nbsp;</a></span>GetForceAutoHint()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Urho3D::UI::GetForceAutoHint </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return whether is using forced autohinting. </p>
-
-</div>
-</div>
-<a id="a8433a02802724d3efe7e7bf8d2f0315d" name="a8433a02802724d3efe7e7bf8d2f0315d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8433a02802724d3efe7e7bf8d2f0315d">&#9670;&nbsp;</a></span>GetFrontElement()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_urho3_d_1_1_u_i_element.html">UIElement</a> * Urho3D::UI::GetFrontElement </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Return topmost enabled root-level non-modal element. </p>
-
-</div>
-</div>
-<a id="a73c45ddf24a6fced2b1576560cf1c2fb" name="a73c45ddf24a6fced2b1576560cf1c2fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73c45ddf24a6fced2b1576560cf1c2fb">&#9670;&nbsp;</a></span>GetMaxDoubleClickDistance()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float Urho3D::UI::GetMaxDoubleClickDistance </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return max screen distance in pixels for double clicks to register. </p>
-
-</div>
-</div>
-<a id="a3716d6e6d234c790ca5fc63542ccf7ee" name="a3716d6e6d234c790ca5fc63542ccf7ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3716d6e6d234c790ca5fc63542ccf7ee">&#9670;&nbsp;</a></span>GetMaxFontTextureSize()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Urho3D::UI::GetMaxFontTextureSize </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return font texture maximum size. </p>
-
-</div>
-</div>
-<a id="a932bd5090d04181146dcac4c58f32f8f" name="a932bd5090d04181146dcac4c58f32f8f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a932bd5090d04181146dcac4c58f32f8f">&#9670;&nbsp;</a></span>GetRoot()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_urho3_d_1_1_u_i_element.html">UIElement</a> * Urho3D::UI::GetRoot </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return root <a class="el" href="class_urho3_d_1_1_u_i.html" title="UI subsystem. Manages the graphical user interface.">UI</a> element. </p>
-
-</div>
-</div>
-<a id="ab03a11c4fbdaf054f7300aa442d6ee1c" name="ab03a11c4fbdaf054f7300aa442d6ee1c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab03a11c4fbdaf054f7300aa442d6ee1c">&#9670;&nbsp;</a></span>GetRootModalElement()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_urho3_d_1_1_u_i_element.html">UIElement</a> * Urho3D::UI::GetRootModalElement </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return root modal element. </p>
-
-</div>
-</div>
-<a id="acfb2418515b35357fa94d483b58cd292" name="acfb2418515b35357fa94d483b58cd292"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acfb2418515b35357fa94d483b58cd292">&#9670;&nbsp;</a></span>GetScale()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float Urho3D::UI::GetScale </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return current <a class="el" href="class_urho3_d_1_1_u_i.html" title="UI subsystem. Manages the graphical user interface.">UI</a> scale. </p>
-
-</div>
-</div>
-<a id="a31eb531ba7ae25b6f178c73a0b230945" name="a31eb531ba7ae25b6f178c73a0b230945"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a31eb531ba7ae25b6f178c73a0b230945">&#9670;&nbsp;</a></span>GetUseMutableGlyphs()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Urho3D::UI::GetUseMutableGlyphs </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return whether is using mutable (eraseable) glyphs for fonts. </p>
-
-</div>
-</div>
-<a id="af8bef6358501427f9854b57a013bf7cc" name="af8bef6358501427f9854b57a013bf7cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af8bef6358501427f9854b57a013bf7cc">&#9670;&nbsp;</a></span>GetUseScreenKeyboard()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Urho3D::UI::GetUseScreenKeyboard </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return whether focusing a LineEdit will show the on-screen keyboard. </p>
-
-</div>
-</div>
-<a id="a2defe70f623606384482ed328fe85d91" name="a2defe70f623606384482ed328fe85d91"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2defe70f623606384482ed328fe85d91">&#9670;&nbsp;</a></span>GetUseSystemClipboard()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Urho3D::UI::GetUseSystemClipboard </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return whether is using the system clipboard. </p>
-
-</div>
-</div>
-<a id="a6218e301deedaf7eb31ff74ba3fcdcd4" name="a6218e301deedaf7eb31ff74ba3fcdcd4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6218e301deedaf7eb31ff74ba3fcdcd4">&#9670;&nbsp;</a></span>IsNonFocusedMouseWheel()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Urho3D::UI::IsNonFocusedMouseWheel </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return whether mouse wheel can control also a non-focused element. </p>
-
-</div>
-</div>
-<a id="a45b6ad972b2f5fe0f50912b74d209209" name="a45b6ad972b2f5fe0f50912b74d209209"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a45b6ad972b2f5fe0f50912b74d209209">&#9670;&nbsp;</a></span>SetClipboardText()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::UI::SetClipboardText </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;&#160;</td>
-          <td class="paramname"><em>text</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Set clipboard text. </p>
-
-</div>
-</div>
-<a id="ab7d94a2bf8f5fa20722957f0b0f8d716" name="ab7d94a2bf8f5fa20722957f0b0f8d716"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab7d94a2bf8f5fa20722957f0b0f8d716">&#9670;&nbsp;</a></span>SetCursor()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::UI::SetCursor </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_urho3_d_1_1_cursor.html">Cursor</a> *&#160;</td>
-          <td class="paramname"><em>cursor</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Set cursor <a class="el" href="class_urho3_d_1_1_u_i.html" title="UI subsystem. Manages the graphical user interface.">UI</a> element. </p>
-
-</div>
-</div>
-<a id="ae6fc5d536a21f287476fafa07801ef5e" name="ae6fc5d536a21f287476fafa07801ef5e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6fc5d536a21f287476fafa07801ef5e">&#9670;&nbsp;</a></span>SetCustomSize()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::UI::SetCustomSize </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_urho3_d_1_1_int_vector2.html">IntVector2</a> &amp;&#160;</td>
-          <td class="paramname"><em>size</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Set custom size of the root element. This disables automatic resizing of the root element according to window size. Set custom size 0,0 to return to automatic resizing. </p>
-
-</div>
-</div>
-<a id="a47ac88d68d9e4bc648e7b1b892d02778" name="a47ac88d68d9e4bc648e7b1b892d02778"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a47ac88d68d9e4bc648e7b1b892d02778">&#9670;&nbsp;</a></span>SetDefaultToolTipDelay()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::UI::SetDefaultToolTipDelay </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>delay</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Set tooltip default display delay in seconds. </p>
-
-</div>
-</div>
-<a id="a7d66d21c4b7f72f310ad00f47257e490" name="a7d66d21c4b7f72f310ad00f47257e490"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d66d21c4b7f72f310ad00f47257e490">&#9670;&nbsp;</a></span>SetDoubleClickInterval()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::UI::SetDoubleClickInterval </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>interval</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Set <a class="el" href="class_urho3_d_1_1_u_i.html" title="UI subsystem. Manages the graphical user interface.">UI</a> element double click interval in seconds. </p>
-
-</div>
-</div>
-<a id="a0139fe20b617fe2db097783b59a03172" name="a0139fe20b617fe2db097783b59a03172"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0139fe20b617fe2db097783b59a03172">&#9670;&nbsp;</a></span>SetDragBeginDistance()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::UI::SetDragBeginDistance </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>pixels</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Set <a class="el" href="class_urho3_d_1_1_u_i.html" title="UI subsystem. Manages the graphical user interface.">UI</a> drag event start distance threshold in pixels. </p>
-
-</div>
-</div>
-<a id="a246e421939905d6b9ce449dde586401b" name="a246e421939905d6b9ce449dde586401b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a246e421939905d6b9ce449dde586401b">&#9670;&nbsp;</a></span>SetDragBeginInterval()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::UI::SetDragBeginInterval </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>interval</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Set <a class="el" href="class_urho3_d_1_1_u_i.html" title="UI subsystem. Manages the graphical user interface.">UI</a> drag event start interval in seconds. </p>
-
-</div>
-</div>
-<a id="aa0d8d9ace57d3dec84e96d92addf7f3b" name="aa0d8d9ace57d3dec84e96d92addf7f3b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa0d8d9ace57d3dec84e96d92addf7f3b">&#9670;&nbsp;</a></span>SetFontHintLevel()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::UI::SetFontHintLevel </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="_u_i_8h.html#abc25f48f67a57480b1b674ca317f120e">FontHintLevel</a>&#160;</td>
-          <td class="paramname"><em>level</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Set the hinting level used by FreeType fonts. </p>
-
-</div>
-</div>
-<a id="a42bd2fdb0910d88ccd48cfeed172b0fd" name="a42bd2fdb0910d88ccd48cfeed172b0fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a42bd2fdb0910d88ccd48cfeed172b0fd">&#9670;&nbsp;</a></span>SetFontOversampling()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::UI::SetFontOversampling </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>oversampling</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Set the oversampling (horizonal stretching) used to improve subpixel font rendering. Only affects fonts smaller than the subpixel limit. </p>
-
-</div>
-</div>
-<a id="a4326a98edbefb4bf516bbb528e79e7bd" name="a4326a98edbefb4bf516bbb528e79e7bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4326a98edbefb4bf516bbb528e79e7bd">&#9670;&nbsp;</a></span>SetFontSubpixelThreshold()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::UI::SetFontSubpixelThreshold </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>threshold</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Set the font subpixel threshold. Below this size, if the hint level is LIGHT or NONE, fonts will use subpixel positioning plus oversampling for higher-quality rendering. Has no effect at hint level NORMAL. </p>
-
-</div>
-</div>
-<a id="a3136d55d1cc4ea112324d890a332b810" name="a3136d55d1cc4ea112324d890a332b810"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3136d55d1cc4ea112324d890a332b810">&#9670;&nbsp;</a></span>SetForceAutoHint()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::UI::SetForceAutoHint </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>enable</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Set whether to force font autohinting instead of using FreeType's TTF bytecode interpreter. </p>
-
-</div>
-</div>
-<a id="a1c3ad4aff2b4278c7c080a7473f0cee7" name="a1c3ad4aff2b4278c7c080a7473f0cee7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1c3ad4aff2b4278c7c080a7473f0cee7">&#9670;&nbsp;</a></span>SetMaxDoubleClickDistance()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::UI::SetMaxDoubleClickDistance </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>distPixels</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Set max screen distance in pixels between double click clicks. </p>
-
-</div>
-</div>
-<a id="a47474698321610582940b681d9d94314" name="a47474698321610582940b681d9d94314"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a47474698321610582940b681d9d94314">&#9670;&nbsp;</a></span>SetMaxFontTextureSize()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::UI::SetMaxFontTextureSize </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>size</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Set maximum font face texture size. Must be a power of two. Default is 2048. </p>
-
-</div>
-</div>
-<a id="a70d676b6b63b600b08b56c18389f63c4" name="a70d676b6b63b600b08b56c18389f63c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a70d676b6b63b600b08b56c18389f63c4">&#9670;&nbsp;</a></span>SetModalElement()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Urho3D::UI::SetModalElement </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_urho3_d_1_1_u_i_element.html">UIElement</a> *&#160;</td>
-          <td class="paramname"><em>modalElement</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>enable</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Set modal element. Until all the modal elements are dismissed, all the inputs and events are only sent to them. Return true when successful. Only the modal element can clear its modal status or when it is being destructed. </p>
-
-</div>
-</div>
-<a id="ab9f9a3c281c6e12949c18349a41d994b" name="ab9f9a3c281c6e12949c18349a41d994b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab9f9a3c281c6e12949c18349a41d994b">&#9670;&nbsp;</a></span>SetNonFocusedMouseWheel()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::UI::SetNonFocusedMouseWheel </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>nonFocusedMouseWheel</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Set whether mouse wheel can control also a non-focused element. </p>
-
-</div>
-</div>
-<a id="a3c1e9ed8137e895cd9d2cf4e9be5796f" name="a3c1e9ed8137e895cd9d2cf4e9be5796f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c1e9ed8137e895cd9d2cf4e9be5796f">&#9670;&nbsp;</a></span>SetScale()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::UI::SetScale </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>scale</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Set UI scale. 1.0 is default (pixel perfect). Resize the root element to match. </p>
-
-</div>
-</div>
-<a id="ae3c4899c916faa7d4911975bd7e25372" name="ae3c4899c916faa7d4911975bd7e25372"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae3c4899c916faa7d4911975bd7e25372">&#9670;&nbsp;</a></span>SetUseMutableGlyphs()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::UI::SetUseMutableGlyphs </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>enable</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Set whether to use mutable (eraseable) glyphs to ensure a font face never expands to more than one texture. Default false. </p>
-
-</div>
-</div>
-<a id="ad589c4fa698684727046bfd1da5e8854" name="ad589c4fa698684727046bfd1da5e8854"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad589c4fa698684727046bfd1da5e8854">&#9670;&nbsp;</a></span>SetUseScreenKeyboard()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::UI::SetUseScreenKeyboard </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>enable</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Set whether to show the on-screen keyboard (if supported) when a LineEdit is focused. Default true on mobile devices. </p>
-
-</div>
-</div>
-<a id="aae70a982e3eb0c59f2a49bf7113e2584" name="aae70a982e3eb0c59f2a49bf7113e2584"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aae70a982e3eb0c59f2a49bf7113e2584">&#9670;&nbsp;</a></span>SetUseSystemClipboard()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::UI::SetUseSystemClipboard </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>enable</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Set whether to use system clipboard. Default false. </p>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+</div><hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/runner/work/rurho3d.github.io/rurho3d.github.io/urho3d_repo/Source/Urho3D/UI/<a class="el" href="_u_i_8h.html">UI.h</a></li>
 <li>/home/runner/work/rurho3d.github.io/rurho3d.github.io/urho3d_repo/Source/Urho3D/UI/UI.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 27 2022 08:16:14 for Urho3D by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Wed Sep 28 2022 20:01:29 for Urho3D by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

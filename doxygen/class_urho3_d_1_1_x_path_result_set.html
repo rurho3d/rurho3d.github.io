@@ -85,13 +85,21 @@ Public Member Functions</h2></td></tr>
 <a class="el" href="class_urho3_d_1_1_x_path_result_set.html">XPathResultSet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_urho3_d_1_1_x_path_result_set.html">XPathResultSet</a> &amp;rhs)</td></tr>
 <tr class="memdesc:aa274e18a11b3b9c9a5cdab20fa8da807"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assignment operator. <br /></td></tr>
 <tr class="separator:aa274e18a11b3b9c9a5cdab20fa8da807"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e415be1fee816722297635b4104f5dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_x_m_l_element.html">XMLElement</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_x_path_result_set.html#a2e415be1fee816722297635b4104f5dc">operator[]</a> (i32 index) const</td></tr>
+<tr class="memitem:a2e415be1fee816722297635b4104f5dc"><td class="memItemLeft" align="right" valign="top"><a id="a2e415be1fee816722297635b4104f5dc" name="a2e415be1fee816722297635b4104f5dc"></a>
+<a class="el" href="class_urho3_d_1_1_x_m_l_element.html">XMLElement</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (i32 index) const</td></tr>
+<tr class="memdesc:a2e415be1fee816722297635b4104f5dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the n-th result in the set. Call XMLElement::GetNextResult() to get the subsequent result in the set. Note: The <a class="el" href="class_urho3_d_1_1_x_path_result_set.html" title="XPath query result set.">XPathResultSet</a> return value must be stored in a lhs variable to ensure the underlying xpath_node_set* is still valid while performing <a class="el" href="class_urho3_d_1_1_x_path_result_set.html#a6b8f323c3876c64464624ef2737d462a" title="Return the first result in the set. Call XMLElement::GetNextResult() to get the subsequent result in ...">XPathResultSet::FirstResult()</a>, <a class="el" href="class_urho3_d_1_1_x_path_result_set.html#a2e415be1fee816722297635b4104f5dc" title="Return the n-th result in the set. Call XMLElement::GetNextResult() to get the subsequent result in t...">XPathResultSet::operator []</a>, and <a class="el" href="class_urho3_d_1_1_x_m_l_element.html#a51de9799a837e725c6b8c12b48da0215" title="Return next XPath query result. Only valid when this instance of XMLElement is itself one of the quer...">XMLElement::NextResult()</a>. <br /></td></tr>
 <tr class="separator:a2e415be1fee816722297635b4104f5dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b8f323c3876c64464624ef2737d462a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_x_m_l_element.html">XMLElement</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_x_path_result_set.html#a6b8f323c3876c64464624ef2737d462a">FirstResult</a> ()</td></tr>
+<tr class="memitem:a6b8f323c3876c64464624ef2737d462a"><td class="memItemLeft" align="right" valign="top"><a id="a6b8f323c3876c64464624ef2737d462a" name="a6b8f323c3876c64464624ef2737d462a"></a>
+<a class="el" href="class_urho3_d_1_1_x_m_l_element.html">XMLElement</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FirstResult</b> ()</td></tr>
+<tr class="memdesc:a6b8f323c3876c64464624ef2737d462a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the first result in the set. Call XMLElement::GetNextResult() to get the subsequent result in the set. Note: The <a class="el" href="class_urho3_d_1_1_x_path_result_set.html" title="XPath query result set.">XPathResultSet</a> return value must be stored in a lhs variable to ensure the underlying xpath_node_set* is still valid while performing <a class="el" href="class_urho3_d_1_1_x_path_result_set.html#a6b8f323c3876c64464624ef2737d462a" title="Return the first result in the set. Call XMLElement::GetNextResult() to get the subsequent result in ...">XPathResultSet::FirstResult()</a>, <a class="el" href="class_urho3_d_1_1_x_path_result_set.html#a2e415be1fee816722297635b4104f5dc" title="Return the n-th result in the set. Call XMLElement::GetNextResult() to get the subsequent result in t...">XPathResultSet::operator []</a>, and <a class="el" href="class_urho3_d_1_1_x_m_l_element.html#a51de9799a837e725c6b8c12b48da0215" title="Return next XPath query result. Only valid when this instance of XMLElement is itself one of the quer...">XMLElement::NextResult()</a>. <br /></td></tr>
 <tr class="separator:a6b8f323c3876c64464624ef2737d462a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb5a1e33de9b5fb885e68cd886858f5f"><td class="memItemLeft" align="right" valign="top">i32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_x_path_result_set.html#abb5a1e33de9b5fb885e68cd886858f5f">Size</a> () const</td></tr>
+<tr class="memitem:abb5a1e33de9b5fb885e68cd886858f5f"><td class="memItemLeft" align="right" valign="top"><a id="abb5a1e33de9b5fb885e68cd886858f5f" name="abb5a1e33de9b5fb885e68cd886858f5f"></a>
+i32&#160;</td><td class="memItemRight" valign="bottom"><b>Size</b> () const</td></tr>
+<tr class="memdesc:abb5a1e33de9b5fb885e68cd886858f5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return size of result set. <br /></td></tr>
 <tr class="separator:abb5a1e33de9b5fb885e68cd886858f5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3726232a7e557327103cbd56e5643cab"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_x_path_result_set.html#a3726232a7e557327103cbd56e5643cab">Empty</a> () const</td></tr>
+<tr class="memitem:a3726232a7e557327103cbd56e5643cab"><td class="memItemLeft" align="right" valign="top"><a id="a3726232a7e557327103cbd56e5643cab" name="a3726232a7e557327103cbd56e5643cab"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>Empty</b> () const</td></tr>
+<tr class="memdesc:a3726232a7e557327103cbd56e5643cab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether result set is empty. <br /></td></tr>
 <tr class="separator:a3726232a7e557327103cbd56e5643cab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a805e0047cbac8464c005c67632813289"><td class="memItemLeft" align="right" valign="top"><a id="a805e0047cbac8464c005c67632813289" name="a805e0047cbac8464c005c67632813289"></a>
 pugi::xpath_node_set *&#160;</td><td class="memItemRight" valign="bottom"><b>GetXPathNodeSet</b> () const</td></tr>
@@ -111,88 +119,14 @@ pugi::xpath_node_set *&#160;</td><td class="memItemRight" valign="bottom"><b>res
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >XPath query result set. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a3726232a7e557327103cbd56e5643cab" name="a3726232a7e557327103cbd56e5643cab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3726232a7e557327103cbd56e5643cab">&#9670;&nbsp;</a></span>Empty()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Urho3D::XPathResultSet::Empty </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Return whether result set is empty. </p>
-
-</div>
-</div>
-<a id="a6b8f323c3876c64464624ef2737d462a" name="a6b8f323c3876c64464624ef2737d462a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b8f323c3876c64464624ef2737d462a">&#9670;&nbsp;</a></span>FirstResult()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_urho3_d_1_1_x_m_l_element.html">XMLElement</a> Urho3D::XPathResultSet::FirstResult </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Return the first result in the set. Call XMLElement::GetNextResult() to get the subsequent result in the set. Note: The <a class="el" href="class_urho3_d_1_1_x_path_result_set.html" title="XPath query result set.">XPathResultSet</a> return value must be stored in a lhs variable to ensure the underlying xpath_node_set* is still valid while performing <a class="el" href="class_urho3_d_1_1_x_path_result_set.html#a6b8f323c3876c64464624ef2737d462a">XPathResultSet::FirstResult()</a>, <a class="el" href="class_urho3_d_1_1_x_path_result_set.html#a2e415be1fee816722297635b4104f5dc">XPathResultSet::operator []</a>, and <a class="el" href="class_urho3_d_1_1_x_m_l_element.html#a51de9799a837e725c6b8c12b48da0215">XMLElement::NextResult()</a>. </p>
-
-</div>
-</div>
-<a id="a2e415be1fee816722297635b4104f5dc" name="a2e415be1fee816722297635b4104f5dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2e415be1fee816722297635b4104f5dc">&#9670;&nbsp;</a></span>operator[]()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_urho3_d_1_1_x_m_l_element.html">XMLElement</a> Urho3D::XPathResultSet::operator[] </td>
-          <td>(</td>
-          <td class="paramtype">i32&#160;</td>
-          <td class="paramname"><em>index</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Return the n-th result in the set. Call XMLElement::GetNextResult() to get the subsequent result in the set. Note: The <a class="el" href="class_urho3_d_1_1_x_path_result_set.html" title="XPath query result set.">XPathResultSet</a> return value must be stored in a lhs variable to ensure the underlying xpath_node_set* is still valid while performing <a class="el" href="class_urho3_d_1_1_x_path_result_set.html#a6b8f323c3876c64464624ef2737d462a">XPathResultSet::FirstResult()</a>, <a class="el" href="class_urho3_d_1_1_x_path_result_set.html#a2e415be1fee816722297635b4104f5dc">XPathResultSet::operator []</a>, and <a class="el" href="class_urho3_d_1_1_x_m_l_element.html#a51de9799a837e725c6b8c12b48da0215">XMLElement::NextResult()</a>. </p>
-
-</div>
-</div>
-<a id="abb5a1e33de9b5fb885e68cd886858f5f" name="abb5a1e33de9b5fb885e68cd886858f5f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abb5a1e33de9b5fb885e68cd886858f5f">&#9670;&nbsp;</a></span>Size()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">i32 Urho3D::XPathResultSet::Size </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Return size of result set. </p>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+</div><hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/runner/work/rurho3d.github.io/rurho3d.github.io/urho3d_repo/Source/Urho3D/Resource/XMLElement.h</li>
 <li>/home/runner/work/rurho3d.github.io/rurho3d.github.io/urho3d_repo/Source/Urho3D/Resource/XMLElement.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 27 2022 08:16:14 for Urho3D by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Wed Sep 28 2022 20:01:30 for Urho3D by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

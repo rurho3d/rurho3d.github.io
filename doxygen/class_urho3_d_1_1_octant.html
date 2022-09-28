@@ -59,6 +59,9 @@
 </div><!--header-->
 <div class="contents">
 
+<p>Octree octant.  
+ <a href="class_urho3_d_1_1_octant.html#details">More...</a></p>
+
 <p><code>#include &lt;/home/runner/work/rurho3d.github.io/rurho3d.github.io/urho3d_repo/Source/Urho3D/Graphics/Octree.h&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Urho3D::Octant:</div>
@@ -104,7 +107,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>AddDrawable</b> (<a c
 void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveDrawable</b> (<a class="el" href="class_urho3_d_1_1_drawable.html">Drawable</a> *drawable, bool resetOctant=true)</td></tr>
 <tr class="memdesc:a74b7ecc1123df089ec72bcee7067db80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a drawable object from this octant. <br /></td></tr>
 <tr class="separator:a74b7ecc1123df089ec72bcee7067db80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a917778082171d999772cb529ac09a549"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_urho3_d_1_1_bounding_box.html">BoundingBox</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_octant.html#a917778082171d999772cb529ac09a549">GetWorldBoundingBox</a> () const</td></tr>
+<tr class="memitem:a917778082171d999772cb529ac09a549"><td class="memItemLeft" align="right" valign="top"><a id="a917778082171d999772cb529ac09a549" name="a917778082171d999772cb529ac09a549"></a>
+const <a class="el" href="class_urho3_d_1_1_bounding_box.html">BoundingBox</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetWorldBoundingBox</b> () const</td></tr>
+<tr class="memdesc:a917778082171d999772cb529ac09a549"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return world-space bounding box. <br /></td></tr>
 <tr class="separator:a917778082171d999772cb529ac09a549"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a2d17876f79da226b89a1aa221a7ad9"><td class="memItemLeft" align="right" valign="top"><a id="a1a2d17876f79da226b89a1aa221a7ad9" name="a1a2d17876f79da226b89a1aa221a7ad9"></a>
 const <a class="el" href="class_urho3_d_1_1_bounding_box.html">BoundingBox</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetCullingBox</b> () const</td></tr>
@@ -134,7 +139,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsEmpty</b> ()</td></
 void&#160;</td><td class="memItemRight" valign="bottom"><b>ResetRoot</b> ()</td></tr>
 <tr class="memdesc:a4c5871d090555bd4f5c749ffe3d07fc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset root pointer recursively. Called when the whole octree is being destroyed. <br /></td></tr>
 <tr class="separator:a4c5871d090555bd4f5c749ffe3d07fc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0cc41080dea82194594c51583b1a2d62"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_octant.html#a0cc41080dea82194594c51583b1a2d62">DrawDebugGeometry</a> (<a class="el" href="class_urho3_d_1_1_debug_renderer.html">DebugRenderer</a> *debug, bool depthTest)</td></tr>
+<tr class="memitem:a0cc41080dea82194594c51583b1a2d62"><td class="memItemLeft" align="right" valign="top"><a id="a0cc41080dea82194594c51583b1a2d62" name="a0cc41080dea82194594c51583b1a2d62"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawDebugGeometry</b> (<a class="el" href="class_urho3_d_1_1_debug_renderer.html">DebugRenderer</a> *debug, bool depthTest)</td></tr>
+<tr class="memdesc:a0cc41080dea82194594c51583b1a2d62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw bounds to the debug graphics recursively. <br /></td></tr>
 <tr class="separator:a0cc41080dea82194594c51583b1a2d62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
@@ -208,75 +215,19 @@ i32&#160;</td><td class="memItemRight" valign="bottom"><b>numDrawables_</b> {}</
 <tr class="separator:a33ce784c538181c58558eb371ec3d81a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac42f6b579d0ba3630731e8578ddfe378"><td class="memItemLeft" align="right" valign="top"><a id="ac42f6b579d0ba3630731e8578ddfe378" name="ac42f6b579d0ba3630731e8578ddfe378"></a>
 i32&#160;</td><td class="memItemRight" valign="bottom"><b>index_</b></td></tr>
-<tr class="memdesc:ac42f6b579d0ba3630731e8578ddfe378"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_octant.html">Octant</a> index relative to its siblings or ROOT_INDEX for root octant. <br /></td></tr>
+<tr class="memdesc:ac42f6b579d0ba3630731e8578ddfe378"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_octant.html" title="Octree octant.">Octant</a> index relative to its siblings or ROOT_INDEX for root octant. <br /></td></tr>
 <tr class="separator:ac42f6b579d0ba3630731e8578ddfe378"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Octree octant. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a0cc41080dea82194594c51583b1a2d62" name="a0cc41080dea82194594c51583b1a2d62"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0cc41080dea82194594c51583b1a2d62">&#9670;&nbsp;</a></span>DrawDebugGeometry()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::Octant::DrawDebugGeometry </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_urho3_d_1_1_debug_renderer.html">DebugRenderer</a> *&#160;</td>
-          <td class="paramname"><em>debug</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>depthTest</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Draw bounds to the debug graphics recursively. </p>
-
-</div>
-</div>
-<a id="a917778082171d999772cb529ac09a549" name="a917778082171d999772cb529ac09a549"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a917778082171d999772cb529ac09a549">&#9670;&nbsp;</a></span>GetWorldBoundingBox()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="class_urho3_d_1_1_bounding_box.html">BoundingBox</a> &amp; Urho3D::Octant::GetWorldBoundingBox </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return world-space bounding box. </p>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+</div><hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/runner/work/rurho3d.github.io/rurho3d.github.io/urho3d_repo/Source/Urho3D/Graphics/Octree.h</li>
 <li>/home/runner/work/rurho3d.github.io/rurho3d.github.io/urho3d_repo/Source/Urho3D/Graphics/Octree.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 27 2022 08:16:12 for Urho3D by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Wed Sep 28 2022 20:01:28 for Urho3D by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

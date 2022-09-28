@@ -357,8 +357,10 @@ Private Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>DoResize</b> (i32 newSize)</td></tr>
 <tr class="memdesc:ad8c348fa19162d1511dc7792d94a079a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resize the vector and create/remove new elements as necessary. <br /></td></tr>
 <tr class="separator:ad8c348fa19162d1511dc7792d94a079a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a2ba359c0e6a5c4fef0c49b290fc04f"><td class="memTemplParams" colspan="2">template&lt;class Tag , class RandomIteratorT &gt; </td></tr>
-<tr class="memitem:a3a2ba359c0e6a5c4fef0c49b290fc04f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_urho3_d_1_1_random_access_iterator.html">Iterator</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_vector.html#a3a2ba359c0e6a5c4fef0c49b290fc04f">DoInsertElements</a> (i32 pos, RandomIteratorT start, RandomIteratorT end, Tag)</td></tr>
+<tr class="memitem:a3a2ba359c0e6a5c4fef0c49b290fc04f"><td class="memTemplParams" colspan="2"><a id="a3a2ba359c0e6a5c4fef0c49b290fc04f" name="a3a2ba359c0e6a5c4fef0c49b290fc04f"></a>
+template&lt;class Tag , class RandomIteratorT &gt; </td></tr>
+<tr class="memitem:a3a2ba359c0e6a5c4fef0c49b290fc04f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_urho3_d_1_1_random_access_iterator.html">Iterator</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>DoInsertElements</b> (i32 pos, RandomIteratorT start, RandomIteratorT end, Tag)</td></tr>
+<tr class="memdesc:a3a2ba359c0e6a5c4fef0c49b290fc04f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert elements into the vector using copy or move constructor. If pos is ENDPOS, append the new elements at the end. <br /></td></tr>
 <tr class="separator:a3a2ba359c0e6a5c4fef0c49b290fc04f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87b58b5a82143307cc6ad68b5f94ae8f"><td class="memItemLeft" align="right" valign="top"><a id="a87b58b5a82143307cc6ad68b5f94ae8f" name="a87b58b5a82143307cc6ad68b5f94ae8f"></a>
 <a class="el" href="struct_urho3_d_1_1_random_access_iterator.html">Iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DoEraseElements</b> (i32 pos, i32 count)</td></tr>
@@ -421,67 +423,13 @@ u8 *&#160;</td><td class="memItemRight" valign="bottom"><b>buffer_</b></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;class T&gt;<br />
 class Urho3D::Vector&lt; T &gt;</div><p >Vector template class. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a3a2ba359c0e6a5c4fef0c49b290fc04f" name="a3a2ba359c0e6a5c4fef0c49b290fc04f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a2ba359c0e6a5c4fef0c49b290fc04f">&#9670;&nbsp;</a></span>DoInsertElements()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T &gt; </div>
-<div class="memtemplate">
-template&lt;class Tag , class RandomIteratorT &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="struct_urho3_d_1_1_random_access_iterator.html">Iterator</a> <a class="el" href="class_urho3_d_1_1_vector.html">Urho3D::Vector</a>&lt; T &gt;::DoInsertElements </td>
-          <td>(</td>
-          <td class="paramtype">i32&#160;</td>
-          <td class="paramname"><em>pos</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">RandomIteratorT&#160;</td>
-          <td class="paramname"><em>start</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">RandomIteratorT&#160;</td>
-          <td class="paramname"><em>end</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Tag&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Insert elements into the vector using copy or move constructor. If pos is ENDPOS, append the new elements at the end. </p>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>/home/runner/work/rurho3d.github.io/rurho3d.github.io/urho3d_repo/Source/Urho3D/Container/Vector.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 27 2022 08:16:14 for Urho3D by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Wed Sep 28 2022 20:01:29 for Urho3D by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

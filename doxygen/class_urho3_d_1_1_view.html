@@ -70,7 +70,7 @@ Inheritance diagram for Urho3D::View:</div>
  <div class="center">
   <img src="class_urho3_d_1_1_view.png" usemap="#Urho3D::View_map" alt=""/>
   <map id="Urho3D::View_map" name="Urho3D::View_map">
-<area href="class_urho3_d_1_1_object.html" alt="Urho3D::Object" shape="rect" coords="0,56,127,80"/>
+<area href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil..." alt="Urho3D::Object" shape="rect" coords="0,56,127,80"/>
 <area href="class_urho3_d_1_1_ref_counted.html" title="Base class for intrusively reference-counted objects. These are noncopyable and non-assignable." alt="Urho3D::RefCounted" shape="rect" coords="0,0,127,24"/>
   </map>
 </div></div>
@@ -161,10 +161,10 @@ const <a class="el" href="class_urho3_d_1_1_vector.html">Vector</a>&lt; <a class
 <a class="el" href="class_urho3_d_1_1_occlusion_buffer.html">OcclusionBuffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetOcclusionBuffer</b> () const</td></tr>
 <tr class="memdesc:adee9c738fa534eb4969d86aa7627c569"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the last used software occlusion buffer. <br /></td></tr>
 <tr class="separator:adee9c738fa534eb4969d86aa7627c569"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9dbd9a5b2a87661ca7a4ca4f2b3dedf"><td class="memItemLeft" align="right" valign="top"><a id="ae9dbd9a5b2a87661ca7a4ca4f2b3dedf" name="ae9dbd9a5b2a87661ca7a4ca4f2b3dedf"></a>
-unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>GetNumActiveOccluders</b> () const</td></tr>
-<tr class="memdesc:ae9dbd9a5b2a87661ca7a4ca4f2b3dedf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return number of occluders that were actually rendered. Occluders may be rejected if running out of triangles or if behind other occluders. <br /></td></tr>
-<tr class="separator:ae9dbd9a5b2a87661ca7a4ca4f2b3dedf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d041679037d309275bb1f21e03ed0a1"><td class="memItemLeft" align="right" valign="top"><a id="a2d041679037d309275bb1f21e03ed0a1" name="a2d041679037d309275bb1f21e03ed0a1"></a>
+i32&#160;</td><td class="memItemRight" valign="bottom"><b>GetNumActiveOccluders</b> () const</td></tr>
+<tr class="memdesc:a2d041679037d309275bb1f21e03ed0a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return number of occluders that were actually rendered. Occluders may be rejected if running out of triangles or if behind other occluders. <br /></td></tr>
+<tr class="separator:a2d041679037d309275bb1f21e03ed0a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a955d10793eea1987532076996f6e2f95"><td class="memItemLeft" align="right" valign="top"><a id="a955d10793eea1987532076996f6e2f95" name="a955d10793eea1987532076996f6e2f95"></a>
 <a class="el" href="class_urho3_d_1_1_view.html">View</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetSourceView</b> () const</td></tr>
 <tr class="memdesc:a955d10793eea1987532076996f6e2f95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the source view that was already prepared. Used when viewports specify the same culling camera. <br /></td></tr>
@@ -203,8 +203,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawFullscreenQuad</b
 <tr class="memdesc:a4d472106f01c137d237b3099751d10c5 inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct. Clean up self from event sender &amp; receiver structures. <br /></td></tr>
 <tr class="separator:a4d472106f01c137d237b3099751d10c5 inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c7af660afc8467a99d1f17c8d099b3b inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#a4c7af660afc8467a99d1f17c8d099b3b">GetType</a> () const =0</td></tr>
+<tr class="memdesc:a4c7af660afc8467a99d1f17c8d099b3b inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return type hash.  <a href="class_urho3_d_1_1_object.html#a4c7af660afc8467a99d1f17c8d099b3b">More...</a><br /></td></tr>
 <tr class="separator:a4c7af660afc8467a99d1f17c8d099b3b inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa70436408fab29ff5d6ea54fa1e09b9b inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#aa70436408fab29ff5d6ea54fa1e09b9b">GetTypeName</a> () const =0</td></tr>
+<tr class="memdesc:aa70436408fab29ff5d6ea54fa1e09b9b inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return type name.  <a href="class_urho3_d_1_1_object.html#aa70436408fab29ff5d6ea54fa1e09b9b">More...</a><br /></td></tr>
 <tr class="separator:aa70436408fab29ff5d6ea54fa1e09b9b inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a768de02d2ed1eab1703c3ba02cf0415d inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a768de02d2ed1eab1703c3ba02cf0415d" name="a768de02d2ed1eab1703c3ba02cf0415d"></a>
 virtual const <a class="el" href="class_urho3_d_1_1_type_info.html">TypeInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetTypeInfo</b> () const =0</td></tr>
@@ -294,11 +296,17 @@ template&lt;typename... Args&gt; </td></tr>
 <a class="el" href="class_urho3_d_1_1_context.html">Context</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetContext</b> () const</td></tr>
 <tr class="memdesc:a8bd9b32c8a56c2f6d618d8afe8091eb7 inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return execution context. <br /></td></tr>
 <tr class="separator:a8bd9b32c8a56c2f6d618d8afe8091eb7 inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd4506c4bdb10232305ef69ebbb78a83 inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#acd4506c4bdb10232305ef69ebbb78a83">GetGlobalVar</a> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> key) const</td></tr>
+<tr class="memitem:acd4506c4bdb10232305ef69ebbb78a83 inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="acd4506c4bdb10232305ef69ebbb78a83" name="acd4506c4bdb10232305ef69ebbb78a83"></a>
+const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetGlobalVar</b> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> key) const</td></tr>
+<tr class="memdesc:acd4506c4bdb10232305ef69ebbb78a83 inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return global variable based on key. <br /></td></tr>
 <tr class="separator:acd4506c4bdb10232305ef69ebbb78a83 inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27b36184a862d9343604f31d85d9bc24 inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="_variant_8h.html#aee85c8bb4263431ef586545ff082720b">VariantMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#a27b36184a862d9343604f31d85d9bc24">GetGlobalVars</a> () const</td></tr>
+<tr class="memitem:a27b36184a862d9343604f31d85d9bc24 inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a27b36184a862d9343604f31d85d9bc24" name="a27b36184a862d9343604f31d85d9bc24"></a>
+const <a class="el" href="_variant_8h.html#aee85c8bb4263431ef586545ff082720b">VariantMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetGlobalVars</b> () const</td></tr>
+<tr class="memdesc:a27b36184a862d9343604f31d85d9bc24 inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return all global variables. <br /></td></tr>
 <tr class="separator:a27b36184a862d9343604f31d85d9bc24 inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43d25cc580737c9dc3b973d6c1230d9e inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#a43d25cc580737c9dc3b973d6c1230d9e">SetGlobalVar</a> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> key, const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;value)</td></tr>
+<tr class="memitem:a43d25cc580737c9dc3b973d6c1230d9e inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a43d25cc580737c9dc3b973d6c1230d9e" name="a43d25cc580737c9dc3b973d6c1230d9e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetGlobalVar</b> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> key, const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;value)</td></tr>
+<tr class="memdesc:a43d25cc580737c9dc3b973d6c1230d9e inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set global variable with the respective key and value. <br /></td></tr>
 <tr class="separator:a43d25cc580737c9dc3b973d6c1230d9e inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fb7d12773df7b6467f62415ee4ce977 inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a9fb7d12773df7b6467f62415ee4ce977" name="a9fb7d12773df7b6467f62415ee4ce977"></a>
 <a class="el" href="class_urho3_d_1_1_object.html">Object</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetSubsystem</b> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> type) const</td></tr>
@@ -329,7 +337,9 @@ template&lt;class T &gt; </td></tr>
 <tr class="memitem:adab8c85b0da9870b217e68a0400345dd inherit pub_methods_class_urho3_d_1_1_object"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetSubsystem</b> () const</td></tr>
 <tr class="memdesc:adab8c85b0da9870b217e68a0400345dd inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Template version of returning a subsystem. <br /></td></tr>
 <tr class="separator:adab8c85b0da9870b217e68a0400345dd inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a227ebc7673a905ac7c878495c66515e3 inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#a227ebc7673a905ac7c878495c66515e3">GetCategory</a> () const</td></tr>
+<tr class="memitem:a227ebc7673a905ac7c878495c66515e3 inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a227ebc7673a905ac7c878495c66515e3" name="a227ebc7673a905ac7c878495c66515e3"></a>
+const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetCategory</b> () const</td></tr>
+<tr class="memdesc:a227ebc7673a905ac7c878495c66515e3 inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return object category. Categories are (optionally) registered along with the object factory. Return an empty string if the object category is not registered. <br /></td></tr>
 <tr class="separator:a227ebc7673a905ac7c878495c66515e3 inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd72cab3f338ef6ca76da511bcd941dc inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="abd72cab3f338ef6ca76da511bcd941dc" name="abd72cab3f338ef6ca76da511bcd941dc"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetBlockEvents</b> (bool block)</td></tr>
@@ -356,13 +366,21 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~RefCounted</b> ()
 <a class="el" href="class_urho3_d_1_1_ref_counted.html">RefCounted</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_urho3_d_1_1_ref_counted.html">RefCounted</a> &amp;rhs)=delete</td></tr>
 <tr class="memdesc:ab34ed11da9f794b4c3ae6a4f33dc090a inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prevent assignment. <br /></td></tr>
 <tr class="separator:ab34ed11da9f794b4c3ae6a4f33dc090a inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d857f439bb5a7935199a8e4fdb8f2c8 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_ref_counted.html#a0d857f439bb5a7935199a8e4fdb8f2c8">AddRef</a> ()</td></tr>
+<tr class="memitem:a0d857f439bb5a7935199a8e4fdb8f2c8 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top"><a id="a0d857f439bb5a7935199a8e4fdb8f2c8" name="a0d857f439bb5a7935199a8e4fdb8f2c8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddRef</b> ()</td></tr>
+<tr class="memdesc:a0d857f439bb5a7935199a8e4fdb8f2c8 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increment reference count. Can also be called outside of a <a class="el" href="class_urho3_d_1_1_shared_ptr.html" title="Shared pointer template class with intrusive reference counting.">SharedPtr</a> for traditional reference counting. <br /></td></tr>
 <tr class="separator:a0d857f439bb5a7935199a8e4fdb8f2c8 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59e95fecbcbc560f81f0bdd52306cc1d inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_ref_counted.html#a59e95fecbcbc560f81f0bdd52306cc1d">ReleaseRef</a> ()</td></tr>
+<tr class="memitem:a59e95fecbcbc560f81f0bdd52306cc1d inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top"><a id="a59e95fecbcbc560f81f0bdd52306cc1d" name="a59e95fecbcbc560f81f0bdd52306cc1d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ReleaseRef</b> ()</td></tr>
+<tr class="memdesc:a59e95fecbcbc560f81f0bdd52306cc1d inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decrement reference count and delete self if no more references. Can also be called outside of a <a class="el" href="class_urho3_d_1_1_shared_ptr.html" title="Shared pointer template class with intrusive reference counting.">SharedPtr</a> for traditional reference counting. <br /></td></tr>
 <tr class="separator:a59e95fecbcbc560f81f0bdd52306cc1d inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e764b1f4b072a1a0dbfaeac62626244 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_ref_counted.html#a7e764b1f4b072a1a0dbfaeac62626244">Refs</a> () const</td></tr>
+<tr class="memitem:a7e764b1f4b072a1a0dbfaeac62626244 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top"><a id="a7e764b1f4b072a1a0dbfaeac62626244" name="a7e764b1f4b072a1a0dbfaeac62626244"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>Refs</b> () const</td></tr>
+<tr class="memdesc:a7e764b1f4b072a1a0dbfaeac62626244 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return reference count. <br /></td></tr>
 <tr class="separator:a7e764b1f4b072a1a0dbfaeac62626244 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27960099d665fa2a05b7d488cfc56d90 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_ref_counted.html#a27960099d665fa2a05b7d488cfc56d90">WeakRefs</a> () const</td></tr>
+<tr class="memitem:a27960099d665fa2a05b7d488cfc56d90 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top"><a id="a27960099d665fa2a05b7d488cfc56d90" name="a27960099d665fa2a05b7d488cfc56d90"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>WeakRefs</b> () const</td></tr>
+<tr class="memdesc:a27960099d665fa2a05b7d488cfc56d90 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return weak reference count. <br /></td></tr>
 <tr class="separator:a27960099d665fa2a05b7d488cfc56d90 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08cd9280809e02f43cd08599391131bb inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top"><a id="a08cd9280809e02f43cd08599391131bb" name="a08cd9280809e02f43cd08599391131bb"></a>
 <a class="el" href="struct_urho3_d_1_1_ref_count.html">RefCount</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>RefCountPtr</b> ()</td></tr>
@@ -454,10 +472,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawOccluders</b> (<a
 void&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessLight</b> (<a class="el" href="struct_urho3_d_1_1_light_query_result.html">LightQueryResult</a> &amp;query, i32 threadIndex)</td></tr>
 <tr class="memdesc:a24b3507c65d1bf9a6e9b9fd399ad846a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query for lit geometries and shadow casters for a light. <br /></td></tr>
 <tr class="separator:a24b3507c65d1bf9a6e9b9fd399ad846a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac07eb3c5e41e1826a674ef6ccf2291b0"><td class="memItemLeft" align="right" valign="top"><a id="ac07eb3c5e41e1826a674ef6ccf2291b0" name="ac07eb3c5e41e1826a674ef6ccf2291b0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessShadowCasters</b> (<a class="el" href="struct_urho3_d_1_1_light_query_result.html">LightQueryResult</a> &amp;query, const <a class="el" href="class_urho3_d_1_1_vector.html">Vector</a>&lt; <a class="el" href="class_urho3_d_1_1_drawable.html">Drawable</a> * &gt; &amp;drawables, unsigned splitIndex)</td></tr>
-<tr class="memdesc:ac07eb3c5e41e1826a674ef6ccf2291b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process shadow casters' visibilities and build their combined view- or projection-space bounding box. <br /></td></tr>
-<tr class="separator:ac07eb3c5e41e1826a674ef6ccf2291b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6113894f693fa6328822150e74b9ad6"><td class="memItemLeft" align="right" valign="top"><a id="ad6113894f693fa6328822150e74b9ad6" name="ad6113894f693fa6328822150e74b9ad6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessShadowCasters</b> (<a class="el" href="struct_urho3_d_1_1_light_query_result.html">LightQueryResult</a> &amp;query, const <a class="el" href="class_urho3_d_1_1_vector.html">Vector</a>&lt; <a class="el" href="class_urho3_d_1_1_drawable.html">Drawable</a> * &gt; &amp;drawables, i32 splitIndex)</td></tr>
+<tr class="memdesc:ad6113894f693fa6328822150e74b9ad6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process shadow casters' visibilities and build their combined view- or projection-space bounding box. <br /></td></tr>
+<tr class="separator:ad6113894f693fa6328822150e74b9ad6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d3766cb580e7a61b7ce50bc4e9aa926"><td class="memItemLeft" align="right" valign="top"><a id="a4d3766cb580e7a61b7ce50bc4e9aa926" name="a4d3766cb580e7a61b7ce50bc4e9aa926"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetupShadowCameras</b> (<a class="el" href="struct_urho3_d_1_1_light_query_result.html">LightQueryResult</a> &amp;query)</td></tr>
 <tr class="memdesc:a4d3766cb580e7a61b7ce50bc4e9aa926"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set up initial shadow camera view(s). <br /></td></tr>
@@ -728,10 +746,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>drawDebug_</b> {}</td
 <a class="el" href="class_urho3_d_1_1_vector.html">Vector</a>&lt; <a class="el" href="class_urho3_d_1_1_light.html">Light</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>lights_</b></td></tr>
 <tr class="memdesc:a36bf2bbce6420e7e3bf57dd22e52c80e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lights. <br /></td></tr>
 <tr class="separator:a36bf2bbce6420e7e3bf57dd22e52c80e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2eca0eb0938487bc11cec10dd575751a"><td class="memItemLeft" align="right" valign="top"><a id="a2eca0eb0938487bc11cec10dd575751a" name="a2eca0eb0938487bc11cec10dd575751a"></a>
-unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>activeOccluders_</b> {}</td></tr>
-<tr class="memdesc:a2eca0eb0938487bc11cec10dd575751a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of active occluders. <br /></td></tr>
-<tr class="separator:a2eca0eb0938487bc11cec10dd575751a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a109f23966336c60a1f899e50e0d8c8d0"><td class="memItemLeft" align="right" valign="top"><a id="a109f23966336c60a1f899e50e0d8c8d0" name="a109f23966336c60a1f899e50e0d8c8d0"></a>
+i32&#160;</td><td class="memItemRight" valign="bottom"><b>activeOccluders_</b> {}</td></tr>
+<tr class="memdesc:a109f23966336c60a1f899e50e0d8c8d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of active occluders. <br /></td></tr>
+<tr class="separator:a109f23966336c60a1f899e50e0d8c8d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a521eaea9db4c5d30ebb72010860b1180"><td class="memItemLeft" align="right" valign="top"><a id="a521eaea9db4c5d30ebb72010860b1180" name="a521eaea9db4c5d30ebb72010860b1180"></a>
 <a class="el" href="class_urho3_d_1_1_hash_set.html">HashSet</a>&lt; <a class="el" href="class_urho3_d_1_1_drawable.html">Drawable</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>maxLightsDrawables_</b></td></tr>
 <tr class="memdesc:a521eaea9db4c5d30ebb72010860b1180"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drawables that limit their maximum light count. <br /></td></tr>
@@ -756,34 +774,34 @@ unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>activeOccluders_<
 <a class="el" href="class_urho3_d_1_1_hash_map.html">HashMap</a>&lt; hash64, <a class="el" href="struct_urho3_d_1_1_light_batch_queue.html">LightBatchQueue</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>vertexLightQueues_</b></td></tr>
 <tr class="memdesc:a104ae53cd5d0da95ba5b4b7a81a1a6b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Per-vertex light queues. <br /></td></tr>
 <tr class="separator:a104ae53cd5d0da95ba5b4b7a81a1a6b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0bd1c76092b12ad6f1b1517d0865c8a"><td class="memItemLeft" align="right" valign="top"><a id="af0bd1c76092b12ad6f1b1517d0865c8a" name="af0bd1c76092b12ad6f1b1517d0865c8a"></a>
-<a class="el" href="class_urho3_d_1_1_hash_map.html">HashMap</a>&lt; unsigned, <a class="el" href="struct_urho3_d_1_1_batch_queue.html">BatchQueue</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>batchQueues_</b></td></tr>
-<tr class="memdesc:af0bd1c76092b12ad6f1b1517d0865c8a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_urho3_d_1_1_batch.html" title="Queued 3D geometry draw call.">Batch</a> queues by pass index. <br /></td></tr>
-<tr class="separator:af0bd1c76092b12ad6f1b1517d0865c8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12cc5bc7f399b35ced6011e4541aa58e"><td class="memItemLeft" align="right" valign="top"><a id="a12cc5bc7f399b35ced6011e4541aa58e" name="a12cc5bc7f399b35ced6011e4541aa58e"></a>
-unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>gBufferPassIndex_</b> {}</td></tr>
-<tr class="memdesc:a12cc5bc7f399b35ced6011e4541aa58e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of the GBuffer pass. <br /></td></tr>
-<tr class="separator:a12cc5bc7f399b35ced6011e4541aa58e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adebeeb0e37ab256346e0673ecd066ed0"><td class="memItemLeft" align="right" valign="top"><a id="adebeeb0e37ab256346e0673ecd066ed0" name="adebeeb0e37ab256346e0673ecd066ed0"></a>
-unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>basePassIndex_</b> {}</td></tr>
-<tr class="memdesc:adebeeb0e37ab256346e0673ecd066ed0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of the opaque forward base pass. <br /></td></tr>
-<tr class="separator:adebeeb0e37ab256346e0673ecd066ed0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecdffa06cfea028512415dbd5e57c919"><td class="memItemLeft" align="right" valign="top"><a id="aecdffa06cfea028512415dbd5e57c919" name="aecdffa06cfea028512415dbd5e57c919"></a>
-unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>alphaPassIndex_</b> {}</td></tr>
-<tr class="memdesc:aecdffa06cfea028512415dbd5e57c919"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of the alpha pass. <br /></td></tr>
-<tr class="separator:aecdffa06cfea028512415dbd5e57c919"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b699af190dc0a6a6c2b94be435954f3"><td class="memItemLeft" align="right" valign="top"><a id="a0b699af190dc0a6a6c2b94be435954f3" name="a0b699af190dc0a6a6c2b94be435954f3"></a>
-unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>lightPassIndex_</b> {}</td></tr>
-<tr class="memdesc:a0b699af190dc0a6a6c2b94be435954f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of the forward light pass. <br /></td></tr>
-<tr class="separator:a0b699af190dc0a6a6c2b94be435954f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1536fa735e99655a729efc2b0c1e7cb4"><td class="memItemLeft" align="right" valign="top"><a id="a1536fa735e99655a729efc2b0c1e7cb4" name="a1536fa735e99655a729efc2b0c1e7cb4"></a>
-unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>litBasePassIndex_</b> {}</td></tr>
-<tr class="memdesc:a1536fa735e99655a729efc2b0c1e7cb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of the litbase pass. <br /></td></tr>
-<tr class="separator:a1536fa735e99655a729efc2b0c1e7cb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69223b684e218a0e0b5dd8ac25b1bbf3"><td class="memItemLeft" align="right" valign="top"><a id="a69223b684e218a0e0b5dd8ac25b1bbf3" name="a69223b684e218a0e0b5dd8ac25b1bbf3"></a>
-unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>litAlphaPassIndex_</b> {}</td></tr>
-<tr class="memdesc:a69223b684e218a0e0b5dd8ac25b1bbf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of the litalpha pass. <br /></td></tr>
-<tr class="separator:a69223b684e218a0e0b5dd8ac25b1bbf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07d2cbefd66b07e81ecad63140c42e9c"><td class="memItemLeft" align="right" valign="top"><a id="a07d2cbefd66b07e81ecad63140c42e9c" name="a07d2cbefd66b07e81ecad63140c42e9c"></a>
+<a class="el" href="class_urho3_d_1_1_hash_map.html">HashMap</a>&lt; i32, <a class="el" href="struct_urho3_d_1_1_batch_queue.html">BatchQueue</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>batchQueues_</b></td></tr>
+<tr class="memdesc:a07d2cbefd66b07e81ecad63140c42e9c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_urho3_d_1_1_batch.html" title="Queued 3D geometry draw call.">Batch</a> queues by pass index. <br /></td></tr>
+<tr class="separator:a07d2cbefd66b07e81ecad63140c42e9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fa7aeb815439455c585725ed939c9ed"><td class="memItemLeft" align="right" valign="top"><a id="a2fa7aeb815439455c585725ed939c9ed" name="a2fa7aeb815439455c585725ed939c9ed"></a>
+i32&#160;</td><td class="memItemRight" valign="bottom"><b>gBufferPassIndex_</b> {}</td></tr>
+<tr class="memdesc:a2fa7aeb815439455c585725ed939c9ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of the GBuffer pass. <br /></td></tr>
+<tr class="separator:a2fa7aeb815439455c585725ed939c9ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafa36380de8a4ea0a448791f4d725752"><td class="memItemLeft" align="right" valign="top"><a id="aafa36380de8a4ea0a448791f4d725752" name="aafa36380de8a4ea0a448791f4d725752"></a>
+i32&#160;</td><td class="memItemRight" valign="bottom"><b>basePassIndex_</b> {}</td></tr>
+<tr class="memdesc:aafa36380de8a4ea0a448791f4d725752"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of the opaque forward base pass. <br /></td></tr>
+<tr class="separator:aafa36380de8a4ea0a448791f4d725752"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2dd31822964f2c92c1729f5418f222c"><td class="memItemLeft" align="right" valign="top"><a id="ad2dd31822964f2c92c1729f5418f222c" name="ad2dd31822964f2c92c1729f5418f222c"></a>
+i32&#160;</td><td class="memItemRight" valign="bottom"><b>alphaPassIndex_</b> {}</td></tr>
+<tr class="memdesc:ad2dd31822964f2c92c1729f5418f222c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of the alpha pass. <br /></td></tr>
+<tr class="separator:ad2dd31822964f2c92c1729f5418f222c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49f3d916fa2a8adc3361452854c3f5a9"><td class="memItemLeft" align="right" valign="top"><a id="a49f3d916fa2a8adc3361452854c3f5a9" name="a49f3d916fa2a8adc3361452854c3f5a9"></a>
+i32&#160;</td><td class="memItemRight" valign="bottom"><b>lightPassIndex_</b> {}</td></tr>
+<tr class="memdesc:a49f3d916fa2a8adc3361452854c3f5a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of the forward light pass. <br /></td></tr>
+<tr class="separator:a49f3d916fa2a8adc3361452854c3f5a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad73f6d1e217fe3f930cff0475fe3e7b"><td class="memItemLeft" align="right" valign="top"><a id="aad73f6d1e217fe3f930cff0475fe3e7b" name="aad73f6d1e217fe3f930cff0475fe3e7b"></a>
+i32&#160;</td><td class="memItemRight" valign="bottom"><b>litBasePassIndex_</b> {}</td></tr>
+<tr class="memdesc:aad73f6d1e217fe3f930cff0475fe3e7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of the litbase pass. <br /></td></tr>
+<tr class="separator:aad73f6d1e217fe3f930cff0475fe3e7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bf716dfbf21d5e518fb9e75c3be102c"><td class="memItemLeft" align="right" valign="top"><a id="a6bf716dfbf21d5e518fb9e75c3be102c" name="a6bf716dfbf21d5e518fb9e75c3be102c"></a>
+i32&#160;</td><td class="memItemRight" valign="bottom"><b>litAlphaPassIndex_</b> {}</td></tr>
+<tr class="memdesc:a6bf716dfbf21d5e518fb9e75c3be102c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of the litalpha pass. <br /></td></tr>
+<tr class="separator:a6bf716dfbf21d5e518fb9e75c3be102c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4ab688c249ffc5c9dd45ffac0f8b52f"><td class="memItemLeft" align="right" valign="top"><a id="ae4ab688c249ffc5c9dd45ffac0f8b52f" name="ae4ab688c249ffc5c9dd45ffac0f8b52f"></a>
 const <a class="el" href="struct_urho3_d_1_1_render_path_command.html">RenderPathCommand</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>lightVolumeCommand_</b> {}</td></tr>
 <tr class="memdesc:ae4ab688c249ffc5c9dd45ffac0f8b52f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the light volume command if any. <br /></td></tr>
@@ -861,7 +879,7 @@ static const <a class="el" href="class_urho3_d_1_1_type_info.html">TypeInfo</a> 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 27 2022 08:16:14 for Urho3D by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Wed Sep 28 2022 20:01:30 for Urho3D by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

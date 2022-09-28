@@ -81,18 +81,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SortFrontToBack</b> (
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SortFrontToBack2Pass</b> (<a class="el" href="class_urho3_d_1_1_vector.html">Vector</a>&lt; <a class="el" href="struct_urho3_d_1_1_batch.html">Batch</a> * &gt; &amp;batches)</td></tr>
 <tr class="memdesc:a20bb586067c28c14440d203552f115d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sort batches front to back while also maintaining state sorting. <br /></td></tr>
 <tr class="separator:a20bb586067c28c14440d203552f115d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80c71f72801e95e04945c387b93557f6"><td class="memItemLeft" align="right" valign="top"><a id="a80c71f72801e95e04945c387b93557f6" name="a80c71f72801e95e04945c387b93557f6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetInstancingData</b> (void *lockedData, unsigned stride, unsigned &amp;freeIndex)</td></tr>
-<tr class="memdesc:a80c71f72801e95e04945c387b93557f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pre-set instance data of all groups. The vertex buffer must be big enough to hold all data. <br /></td></tr>
-<tr class="separator:a80c71f72801e95e04945c387b93557f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dff043d6caf232e79f577107aee8e54"><td class="memItemLeft" align="right" valign="top"><a id="a6dff043d6caf232e79f577107aee8e54" name="a6dff043d6caf232e79f577107aee8e54"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetInstancingData</b> (void *lockedData, i32 stride, i32 &amp;freeIndex)</td></tr>
+<tr class="memdesc:a6dff043d6caf232e79f577107aee8e54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pre-set instance data of all groups. The vertex buffer must be big enough to hold all data. <br /></td></tr>
+<tr class="separator:a6dff043d6caf232e79f577107aee8e54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a3a0ba457231d2a75e65fe2a1d1d94c"><td class="memItemLeft" align="right" valign="top"><a id="a9a3a0ba457231d2a75e65fe2a1d1d94c" name="a9a3a0ba457231d2a75e65fe2a1d1d94c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Draw</b> (<a class="el" href="class_urho3_d_1_1_view.html">View</a> *view, <a class="el" href="class_urho3_d_1_1_camera.html">Camera</a> *camera, bool markToStencil, bool usingLightOptimization, bool allowDepthWrite) const</td></tr>
 <tr class="memdesc:a9a3a0ba457231d2a75e65fe2a1d1d94c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw. <br /></td></tr>
 <tr class="separator:a9a3a0ba457231d2a75e65fe2a1d1d94c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac37133e35bb830339b7e2c9c854c7bb"><td class="memItemLeft" align="right" valign="top"><a id="aac37133e35bb830339b7e2c9c854c7bb" name="aac37133e35bb830339b7e2c9c854c7bb"></a>
-unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>GetNumInstances</b> () const</td></tr>
-<tr class="memdesc:aac37133e35bb830339b7e2c9c854c7bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the combined amount of instances. <br /></td></tr>
-<tr class="separator:aac37133e35bb830339b7e2c9c854c7bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28ce6c359a9fe4c481690f5157272d4c"><td class="memItemLeft" align="right" valign="top"><a id="a28ce6c359a9fe4c481690f5157272d4c" name="a28ce6c359a9fe4c481690f5157272d4c"></a>
+i32&#160;</td><td class="memItemRight" valign="bottom"><b>GetNumInstances</b> () const</td></tr>
+<tr class="memdesc:a28ce6c359a9fe4c481690f5157272d4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the combined amount of instances. <br /></td></tr>
+<tr class="separator:a28ce6c359a9fe4c481690f5157272d4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af68c9172b6c75f2054fb08b2d8e8a698"><td class="memItemLeft" align="right" valign="top"><a id="af68c9172b6c75f2054fb08b2d8e8a698" name="af68c9172b6c75f2054fb08b2d8e8a698"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsEmpty</b> () const</td></tr>
 <tr class="memdesc:af68c9172b6c75f2054fb08b2d8e8a698"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether the batch group is empty. <br /></td></tr>
@@ -128,10 +128,10 @@ Public Attributes</h2></td></tr>
 <a class="el" href="class_urho3_d_1_1_vector.html">Vector</a>&lt; <a class="el" href="struct_urho3_d_1_1_batch_group.html">BatchGroup</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>sortedBatchGroups_</b></td></tr>
 <tr class="memdesc:a1e4cfbdafb04752c1ed75d10ce1aded6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sorted instanced draw calls. <br /></td></tr>
 <tr class="separator:a1e4cfbdafb04752c1ed75d10ce1aded6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0d069fefe2a5a2f259c4a2e148c80cb"><td class="memItemLeft" align="right" valign="top"><a id="ae0d069fefe2a5a2f259c4a2e148c80cb" name="ae0d069fefe2a5a2f259c4a2e148c80cb"></a>
-unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>maxSortedInstances_</b></td></tr>
-<tr class="memdesc:ae0d069fefe2a5a2f259c4a2e148c80cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum sorted instances. <br /></td></tr>
-<tr class="separator:ae0d069fefe2a5a2f259c4a2e148c80cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad29fa278dedb707033f471e38cb73b4c"><td class="memItemLeft" align="right" valign="top"><a id="ad29fa278dedb707033f471e38cb73b4c" name="ad29fa278dedb707033f471e38cb73b4c"></a>
+i32&#160;</td><td class="memItemRight" valign="bottom"><b>maxSortedInstances_</b></td></tr>
+<tr class="memdesc:ad29fa278dedb707033f471e38cb73b4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum sorted instances. <br /></td></tr>
+<tr class="separator:ad29fa278dedb707033f471e38cb73b4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa67b3cf598b6a1e927e56d3333734c4e"><td class="memItemLeft" align="right" valign="top"><a id="aa67b3cf598b6a1e927e56d3333734c4e" name="aa67b3cf598b6a1e927e56d3333734c4e"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasExtraDefines_</b></td></tr>
 <tr class="memdesc:aa67b3cf598b6a1e927e56d3333734c4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the pass command contains extra shader defines. <br /></td></tr>
@@ -162,7 +162,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasExtraDefines_</b><
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 27 2022 08:16:11 for Urho3D by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Wed Sep 28 2022 20:01:27 for Urho3D by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

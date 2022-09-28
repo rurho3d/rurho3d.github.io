@@ -69,7 +69,7 @@ Inheritance diagram for Urho3D::Viewport:</div>
  <div class="center">
   <img src="class_urho3_d_1_1_viewport.png" usemap="#Urho3D::Viewport_map" alt=""/>
   <map id="Urho3D::Viewport_map" name="Urho3D::Viewport_map">
-<area href="class_urho3_d_1_1_object.html" alt="Urho3D::Object" shape="rect" coords="0,56,127,80"/>
+<area href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil..." alt="Urho3D::Object" shape="rect" coords="0,56,127,80"/>
 <area href="class_urho3_d_1_1_ref_counted.html" title="Base class for intrusively reference-counted objects. These are noncopyable and non-assignable." alt="Urho3D::RefCounted" shape="rect" coords="0,0,127,24"/>
   </map>
 </div></div>
@@ -92,37 +92,61 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>~Viewport</b> () override</td></tr>
 <tr class="memdesc:ac27ebd9e15afeae5a4d86bc209a03524"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct. <br /></td></tr>
 <tr class="separator:ac27ebd9e15afeae5a4d86bc209a03524"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a631f6576eb25ae4ad1f24a95e1947e19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_viewport.html#a631f6576eb25ae4ad1f24a95e1947e19">SetScene</a> (<a class="el" href="class_urho3_d_1_1_scene.html">Scene</a> *scene)</td></tr>
+<tr class="memitem:a631f6576eb25ae4ad1f24a95e1947e19"><td class="memItemLeft" align="right" valign="top"><a id="a631f6576eb25ae4ad1f24a95e1947e19" name="a631f6576eb25ae4ad1f24a95e1947e19"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetScene</b> (<a class="el" href="class_urho3_d_1_1_scene.html">Scene</a> *scene)</td></tr>
+<tr class="memdesc:a631f6576eb25ae4ad1f24a95e1947e19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set scene. <br /></td></tr>
 <tr class="separator:a631f6576eb25ae4ad1f24a95e1947e19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72e5a9959eb95b23512d52efb1e831b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_viewport.html#a72e5a9959eb95b23512d52efb1e831b1">SetCamera</a> (<a class="el" href="class_urho3_d_1_1_camera.html">Camera</a> *camera)</td></tr>
+<tr class="memitem:a72e5a9959eb95b23512d52efb1e831b1"><td class="memItemLeft" align="right" valign="top"><a id="a72e5a9959eb95b23512d52efb1e831b1" name="a72e5a9959eb95b23512d52efb1e831b1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCamera</b> (<a class="el" href="class_urho3_d_1_1_camera.html">Camera</a> *camera)</td></tr>
+<tr class="memdesc:a72e5a9959eb95b23512d52efb1e831b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set viewport camera. <br /></td></tr>
 <tr class="separator:a72e5a9959eb95b23512d52efb1e831b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc1acf4531e0762f0e19b6399aaf39a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_viewport.html#acc1acf4531e0762f0e19b6399aaf39a9">SetRect</a> (const <a class="el" href="class_urho3_d_1_1_int_rect.html">IntRect</a> &amp;rect)</td></tr>
+<tr class="memitem:acc1acf4531e0762f0e19b6399aaf39a9"><td class="memItemLeft" align="right" valign="top"><a id="acc1acf4531e0762f0e19b6399aaf39a9" name="acc1acf4531e0762f0e19b6399aaf39a9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetRect</b> (const <a class="el" href="class_urho3_d_1_1_int_rect.html">IntRect</a> &amp;rect)</td></tr>
+<tr class="memdesc:acc1acf4531e0762f0e19b6399aaf39a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set view rectangle. A zero rectangle (0 0 0 0) means to use the rendertarget's full dimensions. <br /></td></tr>
 <tr class="separator:acc1acf4531e0762f0e19b6399aaf39a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1ea665002993b6e7308ef85ce4ffbd6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_viewport.html#ab1ea665002993b6e7308ef85ce4ffbd6">SetRenderPath</a> (<a class="el" href="class_urho3_d_1_1_render_path.html">RenderPath</a> *renderPath)</td></tr>
+<tr class="memitem:ab1ea665002993b6e7308ef85ce4ffbd6"><td class="memItemLeft" align="right" valign="top"><a id="ab1ea665002993b6e7308ef85ce4ffbd6" name="ab1ea665002993b6e7308ef85ce4ffbd6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetRenderPath</b> (<a class="el" href="class_urho3_d_1_1_render_path.html">RenderPath</a> *renderPath)</td></tr>
+<tr class="memdesc:ab1ea665002993b6e7308ef85ce4ffbd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set rendering path. <br /></td></tr>
 <tr class="separator:ab1ea665002993b6e7308ef85ce4ffbd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62b971d68362fbe3f455ddf7ab676fa1"><td class="memItemLeft" align="right" valign="top"><a id="a62b971d68362fbe3f455ddf7ab676fa1" name="a62b971d68362fbe3f455ddf7ab676fa1"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>SetRenderPath</b> (<a class="el" href="class_urho3_d_1_1_x_m_l_file.html">XMLFile</a> *file)</td></tr>
 <tr class="memdesc:a62b971d68362fbe3f455ddf7ab676fa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set rendering path from an XML file. <br /></td></tr>
 <tr class="separator:a62b971d68362fbe3f455ddf7ab676fa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a463ebb4f490c112393a3ac573c74cd84"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_viewport.html#a463ebb4f490c112393a3ac573c74cd84">SetDrawDebug</a> (bool enable)</td></tr>
+<tr class="memitem:a463ebb4f490c112393a3ac573c74cd84"><td class="memItemLeft" align="right" valign="top"><a id="a463ebb4f490c112393a3ac573c74cd84" name="a463ebb4f490c112393a3ac573c74cd84"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDrawDebug</b> (bool enable)</td></tr>
+<tr class="memdesc:a463ebb4f490c112393a3ac573c74cd84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set whether to render debug geometry. Default true. <br /></td></tr>
 <tr class="separator:a463ebb4f490c112393a3ac573c74cd84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fa469c632b7be317d974c4d3ca4bffb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_viewport.html#a2fa469c632b7be317d974c4d3ca4bffb">SetCullCamera</a> (<a class="el" href="class_urho3_d_1_1_camera.html">Camera</a> *camera)</td></tr>
+<tr class="memitem:a2fa469c632b7be317d974c4d3ca4bffb"><td class="memItemLeft" align="right" valign="top"><a id="a2fa469c632b7be317d974c4d3ca4bffb" name="a2fa469c632b7be317d974c4d3ca4bffb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCullCamera</b> (<a class="el" href="class_urho3_d_1_1_camera.html">Camera</a> *camera)</td></tr>
+<tr class="memdesc:a2fa469c632b7be317d974c4d3ca4bffb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set separate camera to use for culling. Sharing a culling camera between several viewports allows to prepare the view only once, saving in CPU use. The culling camera's frustum should cover all the viewport cameras' frusta or else objects may be missing from the rendered view. <br /></td></tr>
 <tr class="separator:a2fa469c632b7be317d974c4d3ca4bffb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d603e8c21c8ace61bd51fdbe260e22b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_scene.html">Scene</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_viewport.html#a2d603e8c21c8ace61bd51fdbe260e22b">GetScene</a> () const</td></tr>
+<tr class="memitem:a2d603e8c21c8ace61bd51fdbe260e22b"><td class="memItemLeft" align="right" valign="top"><a id="a2d603e8c21c8ace61bd51fdbe260e22b" name="a2d603e8c21c8ace61bd51fdbe260e22b"></a>
+<a class="el" href="class_urho3_d_1_1_scene.html">Scene</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetScene</b> () const</td></tr>
+<tr class="memdesc:a2d603e8c21c8ace61bd51fdbe260e22b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return scene. <br /></td></tr>
 <tr class="separator:a2d603e8c21c8ace61bd51fdbe260e22b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c8b897705850220d9dc9f3b6244e5bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_camera.html">Camera</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_viewport.html#a4c8b897705850220d9dc9f3b6244e5bf">GetCamera</a> () const</td></tr>
+<tr class="memitem:a4c8b897705850220d9dc9f3b6244e5bf"><td class="memItemLeft" align="right" valign="top"><a id="a4c8b897705850220d9dc9f3b6244e5bf" name="a4c8b897705850220d9dc9f3b6244e5bf"></a>
+<a class="el" href="class_urho3_d_1_1_camera.html">Camera</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetCamera</b> () const</td></tr>
+<tr class="memdesc:a4c8b897705850220d9dc9f3b6244e5bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return viewport camera. <br /></td></tr>
 <tr class="separator:a4c8b897705850220d9dc9f3b6244e5bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51ff6a154ec1ecfe25813a3e4e0a5bf2"><td class="memItemLeft" align="right" valign="top"><a id="a51ff6a154ec1ecfe25813a3e4e0a5bf2" name="a51ff6a154ec1ecfe25813a3e4e0a5bf2"></a>
 <a class="el" href="class_urho3_d_1_1_view.html">View</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetView</b> () const</td></tr>
 <tr class="memdesc:a51ff6a154ec1ecfe25813a3e4e0a5bf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the internal rendering structure. May be null if the viewport has not been rendered yet. <br /></td></tr>
 <tr class="separator:a51ff6a154ec1ecfe25813a3e4e0a5bf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0bcfef75dd5db82acb95fbc743538e19"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_urho3_d_1_1_int_rect.html">IntRect</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_viewport.html#a0bcfef75dd5db82acb95fbc743538e19">GetRect</a> () const</td></tr>
+<tr class="memitem:a0bcfef75dd5db82acb95fbc743538e19"><td class="memItemLeft" align="right" valign="top"><a id="a0bcfef75dd5db82acb95fbc743538e19" name="a0bcfef75dd5db82acb95fbc743538e19"></a>
+const <a class="el" href="class_urho3_d_1_1_int_rect.html">IntRect</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetRect</b> () const</td></tr>
+<tr class="memdesc:a0bcfef75dd5db82acb95fbc743538e19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return view rectangle. A zero rectangle (0 0 0 0) means to use the rendertarget's full dimensions. In this case you could fetch the actual view rectangle from <a class="el" href="class_urho3_d_1_1_view.html" title="Internal structure for 3D rendering work. Created for each backbuffer and texture viewport,...">View</a> object, though it will be valid only after the first frame. <br /></td></tr>
 <tr class="separator:a0bcfef75dd5db82acb95fbc743538e19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79693beecd3cd15bc867f3f0f46158ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_render_path.html">RenderPath</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_viewport.html#a79693beecd3cd15bc867f3f0f46158ff">GetRenderPath</a> () const</td></tr>
+<tr class="memitem:a79693beecd3cd15bc867f3f0f46158ff"><td class="memItemLeft" align="right" valign="top"><a id="a79693beecd3cd15bc867f3f0f46158ff" name="a79693beecd3cd15bc867f3f0f46158ff"></a>
+<a class="el" href="class_urho3_d_1_1_render_path.html">RenderPath</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetRenderPath</b> () const</td></tr>
+<tr class="memdesc:a79693beecd3cd15bc867f3f0f46158ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return rendering path. <br /></td></tr>
 <tr class="separator:a79693beecd3cd15bc867f3f0f46158ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad96fbac45fe545c78bcf10acc5e31a65"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_viewport.html#ad96fbac45fe545c78bcf10acc5e31a65">GetDrawDebug</a> () const</td></tr>
+<tr class="memitem:ad96fbac45fe545c78bcf10acc5e31a65"><td class="memItemLeft" align="right" valign="top"><a id="ad96fbac45fe545c78bcf10acc5e31a65" name="ad96fbac45fe545c78bcf10acc5e31a65"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetDrawDebug</b> () const</td></tr>
+<tr class="memdesc:ad96fbac45fe545c78bcf10acc5e31a65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether to draw debug geometry. <br /></td></tr>
 <tr class="separator:ad96fbac45fe545c78bcf10acc5e31a65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c72b8364e0aad111e220ec132c293e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_camera.html">Camera</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_viewport.html#a7c72b8364e0aad111e220ec132c293e3">GetCullCamera</a> () const</td></tr>
+<tr class="memitem:a7c72b8364e0aad111e220ec132c293e3"><td class="memItemLeft" align="right" valign="top"><a id="a7c72b8364e0aad111e220ec132c293e3" name="a7c72b8364e0aad111e220ec132c293e3"></a>
+<a class="el" href="class_urho3_d_1_1_camera.html">Camera</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetCullCamera</b> () const</td></tr>
+<tr class="memdesc:a7c72b8364e0aad111e220ec132c293e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the culling camera. If null, the viewport camera will be used for culling (normal case). <br /></td></tr>
 <tr class="separator:a7c72b8364e0aad111e220ec132c293e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c4201376e14c0703281473d43527089"><td class="memItemLeft" align="right" valign="top"><a id="a8c4201376e14c0703281473d43527089" name="a8c4201376e14c0703281473d43527089"></a>
 <a class="el" href="class_urho3_d_1_1_ray.html">Ray</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetScreenRay</b> (int x, int y) const</td></tr>
@@ -148,8 +172,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>AllocateView</b> ()</
 <tr class="memdesc:a4d472106f01c137d237b3099751d10c5 inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct. Clean up self from event sender &amp; receiver structures. <br /></td></tr>
 <tr class="separator:a4d472106f01c137d237b3099751d10c5 inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c7af660afc8467a99d1f17c8d099b3b inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#a4c7af660afc8467a99d1f17c8d099b3b">GetType</a> () const =0</td></tr>
+<tr class="memdesc:a4c7af660afc8467a99d1f17c8d099b3b inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return type hash.  <a href="class_urho3_d_1_1_object.html#a4c7af660afc8467a99d1f17c8d099b3b">More...</a><br /></td></tr>
 <tr class="separator:a4c7af660afc8467a99d1f17c8d099b3b inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa70436408fab29ff5d6ea54fa1e09b9b inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#aa70436408fab29ff5d6ea54fa1e09b9b">GetTypeName</a> () const =0</td></tr>
+<tr class="memdesc:aa70436408fab29ff5d6ea54fa1e09b9b inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return type name.  <a href="class_urho3_d_1_1_object.html#aa70436408fab29ff5d6ea54fa1e09b9b">More...</a><br /></td></tr>
 <tr class="separator:aa70436408fab29ff5d6ea54fa1e09b9b inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a768de02d2ed1eab1703c3ba02cf0415d inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a768de02d2ed1eab1703c3ba02cf0415d" name="a768de02d2ed1eab1703c3ba02cf0415d"></a>
 virtual const <a class="el" href="class_urho3_d_1_1_type_info.html">TypeInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetTypeInfo</b> () const =0</td></tr>
@@ -239,11 +265,17 @@ template&lt;typename... Args&gt; </td></tr>
 <a class="el" href="class_urho3_d_1_1_context.html">Context</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetContext</b> () const</td></tr>
 <tr class="memdesc:a8bd9b32c8a56c2f6d618d8afe8091eb7 inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return execution context. <br /></td></tr>
 <tr class="separator:a8bd9b32c8a56c2f6d618d8afe8091eb7 inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd4506c4bdb10232305ef69ebbb78a83 inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#acd4506c4bdb10232305ef69ebbb78a83">GetGlobalVar</a> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> key) const</td></tr>
+<tr class="memitem:acd4506c4bdb10232305ef69ebbb78a83 inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="acd4506c4bdb10232305ef69ebbb78a83" name="acd4506c4bdb10232305ef69ebbb78a83"></a>
+const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetGlobalVar</b> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> key) const</td></tr>
+<tr class="memdesc:acd4506c4bdb10232305ef69ebbb78a83 inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return global variable based on key. <br /></td></tr>
 <tr class="separator:acd4506c4bdb10232305ef69ebbb78a83 inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27b36184a862d9343604f31d85d9bc24 inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="_variant_8h.html#aee85c8bb4263431ef586545ff082720b">VariantMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#a27b36184a862d9343604f31d85d9bc24">GetGlobalVars</a> () const</td></tr>
+<tr class="memitem:a27b36184a862d9343604f31d85d9bc24 inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a27b36184a862d9343604f31d85d9bc24" name="a27b36184a862d9343604f31d85d9bc24"></a>
+const <a class="el" href="_variant_8h.html#aee85c8bb4263431ef586545ff082720b">VariantMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetGlobalVars</b> () const</td></tr>
+<tr class="memdesc:a27b36184a862d9343604f31d85d9bc24 inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return all global variables. <br /></td></tr>
 <tr class="separator:a27b36184a862d9343604f31d85d9bc24 inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43d25cc580737c9dc3b973d6c1230d9e inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#a43d25cc580737c9dc3b973d6c1230d9e">SetGlobalVar</a> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> key, const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;value)</td></tr>
+<tr class="memitem:a43d25cc580737c9dc3b973d6c1230d9e inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a43d25cc580737c9dc3b973d6c1230d9e" name="a43d25cc580737c9dc3b973d6c1230d9e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetGlobalVar</b> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> key, const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;value)</td></tr>
+<tr class="memdesc:a43d25cc580737c9dc3b973d6c1230d9e inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set global variable with the respective key and value. <br /></td></tr>
 <tr class="separator:a43d25cc580737c9dc3b973d6c1230d9e inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fb7d12773df7b6467f62415ee4ce977 inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a9fb7d12773df7b6467f62415ee4ce977" name="a9fb7d12773df7b6467f62415ee4ce977"></a>
 <a class="el" href="class_urho3_d_1_1_object.html">Object</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetSubsystem</b> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> type) const</td></tr>
@@ -274,7 +306,9 @@ template&lt;class T &gt; </td></tr>
 <tr class="memitem:adab8c85b0da9870b217e68a0400345dd inherit pub_methods_class_urho3_d_1_1_object"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetSubsystem</b> () const</td></tr>
 <tr class="memdesc:adab8c85b0da9870b217e68a0400345dd inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Template version of returning a subsystem. <br /></td></tr>
 <tr class="separator:adab8c85b0da9870b217e68a0400345dd inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a227ebc7673a905ac7c878495c66515e3 inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#a227ebc7673a905ac7c878495c66515e3">GetCategory</a> () const</td></tr>
+<tr class="memitem:a227ebc7673a905ac7c878495c66515e3 inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a227ebc7673a905ac7c878495c66515e3" name="a227ebc7673a905ac7c878495c66515e3"></a>
+const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetCategory</b> () const</td></tr>
+<tr class="memdesc:a227ebc7673a905ac7c878495c66515e3 inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return object category. Categories are (optionally) registered along with the object factory. Return an empty string if the object category is not registered. <br /></td></tr>
 <tr class="separator:a227ebc7673a905ac7c878495c66515e3 inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd72cab3f338ef6ca76da511bcd941dc inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="abd72cab3f338ef6ca76da511bcd941dc" name="abd72cab3f338ef6ca76da511bcd941dc"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetBlockEvents</b> (bool block)</td></tr>
@@ -301,13 +335,21 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~RefCounted</b> ()
 <a class="el" href="class_urho3_d_1_1_ref_counted.html">RefCounted</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_urho3_d_1_1_ref_counted.html">RefCounted</a> &amp;rhs)=delete</td></tr>
 <tr class="memdesc:ab34ed11da9f794b4c3ae6a4f33dc090a inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prevent assignment. <br /></td></tr>
 <tr class="separator:ab34ed11da9f794b4c3ae6a4f33dc090a inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d857f439bb5a7935199a8e4fdb8f2c8 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_ref_counted.html#a0d857f439bb5a7935199a8e4fdb8f2c8">AddRef</a> ()</td></tr>
+<tr class="memitem:a0d857f439bb5a7935199a8e4fdb8f2c8 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top"><a id="a0d857f439bb5a7935199a8e4fdb8f2c8" name="a0d857f439bb5a7935199a8e4fdb8f2c8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddRef</b> ()</td></tr>
+<tr class="memdesc:a0d857f439bb5a7935199a8e4fdb8f2c8 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increment reference count. Can also be called outside of a <a class="el" href="class_urho3_d_1_1_shared_ptr.html" title="Shared pointer template class with intrusive reference counting.">SharedPtr</a> for traditional reference counting. <br /></td></tr>
 <tr class="separator:a0d857f439bb5a7935199a8e4fdb8f2c8 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59e95fecbcbc560f81f0bdd52306cc1d inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_ref_counted.html#a59e95fecbcbc560f81f0bdd52306cc1d">ReleaseRef</a> ()</td></tr>
+<tr class="memitem:a59e95fecbcbc560f81f0bdd52306cc1d inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top"><a id="a59e95fecbcbc560f81f0bdd52306cc1d" name="a59e95fecbcbc560f81f0bdd52306cc1d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ReleaseRef</b> ()</td></tr>
+<tr class="memdesc:a59e95fecbcbc560f81f0bdd52306cc1d inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decrement reference count and delete self if no more references. Can also be called outside of a <a class="el" href="class_urho3_d_1_1_shared_ptr.html" title="Shared pointer template class with intrusive reference counting.">SharedPtr</a> for traditional reference counting. <br /></td></tr>
 <tr class="separator:a59e95fecbcbc560f81f0bdd52306cc1d inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e764b1f4b072a1a0dbfaeac62626244 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_ref_counted.html#a7e764b1f4b072a1a0dbfaeac62626244">Refs</a> () const</td></tr>
+<tr class="memitem:a7e764b1f4b072a1a0dbfaeac62626244 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top"><a id="a7e764b1f4b072a1a0dbfaeac62626244" name="a7e764b1f4b072a1a0dbfaeac62626244"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>Refs</b> () const</td></tr>
+<tr class="memdesc:a7e764b1f4b072a1a0dbfaeac62626244 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return reference count. <br /></td></tr>
 <tr class="separator:a7e764b1f4b072a1a0dbfaeac62626244 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27960099d665fa2a05b7d488cfc56d90 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_ref_counted.html#a27960099d665fa2a05b7d488cfc56d90">WeakRefs</a> () const</td></tr>
+<tr class="memitem:a27960099d665fa2a05b7d488cfc56d90 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top"><a id="a27960099d665fa2a05b7d488cfc56d90" name="a27960099d665fa2a05b7d488cfc56d90"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>WeakRefs</b> () const</td></tr>
+<tr class="memdesc:a27960099d665fa2a05b7d488cfc56d90 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return weak reference count. <br /></td></tr>
 <tr class="separator:a27960099d665fa2a05b7d488cfc56d90 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08cd9280809e02f43cd08599391131bb inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top"><a id="a08cd9280809e02f43cd08599391131bb" name="a08cd9280809e02f43cd08599391131bb"></a>
 <a class="el" href="struct_urho3_d_1_1_ref_count.html">RefCount</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>RefCountPtr</b> ()</td></tr>
@@ -367,130 +409,6 @@ static const <a class="el" href="class_urho3_d_1_1_type_info.html">TypeInfo</a> 
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Viewport definition either for a render surface or the backbuffer. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a4c8b897705850220d9dc9f3b6244e5bf" name="a4c8b897705850220d9dc9f3b6244e5bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c8b897705850220d9dc9f3b6244e5bf">&#9670;&nbsp;</a></span>GetCamera()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_urho3_d_1_1_camera.html">Camera</a> * Urho3D::Viewport::GetCamera </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Return viewport camera. </p>
-
-</div>
-</div>
-<a id="a7c72b8364e0aad111e220ec132c293e3" name="a7c72b8364e0aad111e220ec132c293e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c72b8364e0aad111e220ec132c293e3">&#9670;&nbsp;</a></span>GetCullCamera()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_urho3_d_1_1_camera.html">Camera</a> * Urho3D::Viewport::GetCullCamera </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Return the culling camera. If null, the viewport camera will be used for culling (normal case). </p>
-
-</div>
-</div>
-<a id="ad96fbac45fe545c78bcf10acc5e31a65" name="ad96fbac45fe545c78bcf10acc5e31a65"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad96fbac45fe545c78bcf10acc5e31a65">&#9670;&nbsp;</a></span>GetDrawDebug()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Urho3D::Viewport::GetDrawDebug </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return whether to draw debug geometry. </p>
-
-</div>
-</div>
-<a id="a0bcfef75dd5db82acb95fbc743538e19" name="a0bcfef75dd5db82acb95fbc743538e19"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0bcfef75dd5db82acb95fbc743538e19">&#9670;&nbsp;</a></span>GetRect()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="class_urho3_d_1_1_int_rect.html">IntRect</a> &amp; Urho3D::Viewport::GetRect </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return view rectangle. A zero rectangle (0 0 0 0) means to use the rendertarget's full dimensions. In this case you could fetch the actual view rectangle from <a class="el" href="class_urho3_d_1_1_view.html" title="Internal structure for 3D rendering work. Created for each backbuffer and texture viewport,...">View</a> object, though it will be valid only after the first frame. </p>
-
-</div>
-</div>
-<a id="a79693beecd3cd15bc867f3f0f46158ff" name="a79693beecd3cd15bc867f3f0f46158ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a79693beecd3cd15bc867f3f0f46158ff">&#9670;&nbsp;</a></span>GetRenderPath()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_urho3_d_1_1_render_path.html">RenderPath</a> * Urho3D::Viewport::GetRenderPath </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Return rendering path. </p>
-
-</div>
-</div>
-<a id="a2d603e8c21c8ace61bd51fdbe260e22b" name="a2d603e8c21c8ace61bd51fdbe260e22b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2d603e8c21c8ace61bd51fdbe260e22b">&#9670;&nbsp;</a></span>GetScene()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_urho3_d_1_1_scene.html">Scene</a> * Urho3D::Viewport::GetScene </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Return scene. </p>
-
-</div>
-</div>
 <a id="aada0c3ada21f92bac763432c8754fecd" name="aada0c3ada21f92bac763432c8754fecd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aada0c3ada21f92bac763432c8754fecd">&#9670;&nbsp;</a></span>ScreenToWorldPoint()</h2>
 
@@ -528,120 +446,6 @@ static const <a class="el" href="class_urho3_d_1_1_type_info.html">TypeInfo</a> 
 
 </div>
 </div>
-<a id="a72e5a9959eb95b23512d52efb1e831b1" name="a72e5a9959eb95b23512d52efb1e831b1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a72e5a9959eb95b23512d52efb1e831b1">&#9670;&nbsp;</a></span>SetCamera()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::Viewport::SetCamera </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_urho3_d_1_1_camera.html">Camera</a> *&#160;</td>
-          <td class="paramname"><em>camera</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Set viewport camera. </p>
-
-</div>
-</div>
-<a id="a2fa469c632b7be317d974c4d3ca4bffb" name="a2fa469c632b7be317d974c4d3ca4bffb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2fa469c632b7be317d974c4d3ca4bffb">&#9670;&nbsp;</a></span>SetCullCamera()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::Viewport::SetCullCamera </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_urho3_d_1_1_camera.html">Camera</a> *&#160;</td>
-          <td class="paramname"><em>camera</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Set separate camera to use for culling. Sharing a culling camera between several viewports allows to prepare the view only once, saving in CPU use. The culling camera's frustum should cover all the viewport cameras' frusta or else objects may be missing from the rendered view. </p>
-
-</div>
-</div>
-<a id="a463ebb4f490c112393a3ac573c74cd84" name="a463ebb4f490c112393a3ac573c74cd84"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a463ebb4f490c112393a3ac573c74cd84">&#9670;&nbsp;</a></span>SetDrawDebug()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::Viewport::SetDrawDebug </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>enable</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Set whether to render debug geometry. Default true. </p>
-
-</div>
-</div>
-<a id="acc1acf4531e0762f0e19b6399aaf39a9" name="acc1acf4531e0762f0e19b6399aaf39a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acc1acf4531e0762f0e19b6399aaf39a9">&#9670;&nbsp;</a></span>SetRect()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::Viewport::SetRect </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_urho3_d_1_1_int_rect.html">IntRect</a> &amp;&#160;</td>
-          <td class="paramname"><em>rect</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Set view rectangle. A zero rectangle (0 0 0 0) means to use the rendertarget's full dimensions. </p>
-
-</div>
-</div>
-<a id="ab1ea665002993b6e7308ef85ce4ffbd6" name="ab1ea665002993b6e7308ef85ce4ffbd6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab1ea665002993b6e7308ef85ce4ffbd6">&#9670;&nbsp;</a></span>SetRenderPath()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::Viewport::SetRenderPath </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_urho3_d_1_1_render_path.html">RenderPath</a> *&#160;</td>
-          <td class="paramname"><em>renderPath</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Set rendering path. </p>
-
-</div>
-</div>
-<a id="a631f6576eb25ae4ad1f24a95e1947e19" name="a631f6576eb25ae4ad1f24a95e1947e19"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a631f6576eb25ae4ad1f24a95e1947e19">&#9670;&nbsp;</a></span>SetScene()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::Viewport::SetScene </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_urho3_d_1_1_scene.html">Scene</a> *&#160;</td>
-          <td class="paramname"><em>scene</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Set scene. </p>
-
-</div>
-</div>
 <a id="a5a57ee091281b06807b541d491bd5875" name="a5a57ee091281b06807b541d491bd5875"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5a57ee091281b06807b541d491bd5875">&#9670;&nbsp;</a></span>WorldToScreenPoint()</h2>
 
@@ -670,7 +474,7 @@ static const <a class="el" href="class_urho3_d_1_1_type_info.html">TypeInfo</a> 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 27 2022 08:16:14 for Urho3D by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Wed Sep 28 2022 20:01:30 for Urho3D by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

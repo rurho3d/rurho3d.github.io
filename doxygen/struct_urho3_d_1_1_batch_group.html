@@ -90,10 +90,10 @@ Public Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>AddTransforms</b> (const <a class="el" href="struct_urho3_d_1_1_batch.html">Batch</a> &amp;batch)</td></tr>
 <tr class="memdesc:a1307f350fc30c7c69c5aef76661ef7bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add world transform(s) from a batch. <br /></td></tr>
 <tr class="separator:a1307f350fc30c7c69c5aef76661ef7bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92889a8fd53bea74dcd4f3ec0e6623a3"><td class="memItemLeft" align="right" valign="top"><a id="a92889a8fd53bea74dcd4f3ec0e6623a3" name="a92889a8fd53bea74dcd4f3ec0e6623a3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetInstancingData</b> (void *lockedData, unsigned stride, unsigned &amp;freeIndex)</td></tr>
-<tr class="memdesc:a92889a8fd53bea74dcd4f3ec0e6623a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pre-set the instance data. Buffer must be big enough to hold all data. <br /></td></tr>
-<tr class="separator:a92889a8fd53bea74dcd4f3ec0e6623a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af91ff2b72afcd70ac02dc6467cbb0b9f"><td class="memItemLeft" align="right" valign="top"><a id="af91ff2b72afcd70ac02dc6467cbb0b9f" name="af91ff2b72afcd70ac02dc6467cbb0b9f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetInstancingData</b> (void *lockedData, i32 stride, i32 &amp;freeIndex)</td></tr>
+<tr class="memdesc:af91ff2b72afcd70ac02dc6467cbb0b9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pre-set the instance data. Buffer must be big enough to hold all data. <br /></td></tr>
+<tr class="separator:af91ff2b72afcd70ac02dc6467cbb0b9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae44c18517fde1462221ddc7c7a1b2cd4"><td class="memItemLeft" align="right" valign="top"><a id="ae44c18517fde1462221ddc7c7a1b2cd4" name="ae44c18517fde1462221ddc7c7a1b2cd4"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Draw</b> (<a class="el" href="class_urho3_d_1_1_view.html">View</a> *view, <a class="el" href="class_urho3_d_1_1_camera.html">Camera</a> *camera, bool allowDepthWrite) const</td></tr>
 <tr class="memdesc:ae44c18517fde1462221ddc7c7a1b2cd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare and draw. <br /></td></tr>
@@ -126,10 +126,10 @@ Public Attributes</h2></td></tr>
 <a class="el" href="class_urho3_d_1_1_vector.html">Vector</a>&lt; <a class="el" href="struct_urho3_d_1_1_instance_data.html">InstanceData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>instances_</b></td></tr>
 <tr class="memdesc:a95d5b86c9f1b39e6986c85d5c6a3b814"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instance data. <br /></td></tr>
 <tr class="separator:a95d5b86c9f1b39e6986c85d5c6a3b814"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61e51d298f681bb4a069ed9bbafb27d8"><td class="memItemLeft" align="right" valign="top"><a id="a61e51d298f681bb4a069ed9bbafb27d8" name="a61e51d298f681bb4a069ed9bbafb27d8"></a>
-unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>startIndex_</b></td></tr>
-<tr class="memdesc:a61e51d298f681bb4a069ed9bbafb27d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instance stream start index, or M_MAX_UNSIGNED if transforms not pre-set. <br /></td></tr>
-<tr class="separator:a61e51d298f681bb4a069ed9bbafb27d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addff9b35a06ec7fcd20c2311d1de848c"><td class="memItemLeft" align="right" valign="top"><a id="addff9b35a06ec7fcd20c2311d1de848c" name="addff9b35a06ec7fcd20c2311d1de848c"></a>
+i32&#160;</td><td class="memItemRight" valign="bottom"><b>startIndex_</b></td></tr>
+<tr class="memdesc:addff9b35a06ec7fcd20c2311d1de848c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instance stream start index, or NINDEX if transforms not pre-set. <br /></td></tr>
+<tr class="separator:addff9b35a06ec7fcd20c2311d1de848c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_struct_urho3_d_1_1_batch"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_struct_urho3_d_1_1_batch')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="struct_urho3_d_1_1_batch.html">Urho3D::Batch</a></td></tr>
 <tr class="memitem:a2b2882f87585ab891497ad58f46fac94 inherit pub_attribs_struct_urho3_d_1_1_batch"><td class="memItemLeft" align="right" valign="top"><a id="a2b2882f87585ab891497ad58f46fac94" name="a2b2882f87585ab891497ad58f46fac94"></a>
 hash64&#160;</td><td class="memItemRight" valign="bottom"><b>sortKey_</b> {}</td></tr>
@@ -163,10 +163,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isBase_</b> {}</td></
 const <a class="el" href="class_urho3_d_1_1_matrix3x4.html">Matrix3x4</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>worldTransform_</b> {}</td></tr>
 <tr class="memdesc:aba6007620d79f6be14048848f46f665e inherit pub_attribs_struct_urho3_d_1_1_batch"><td class="mdescLeft">&#160;</td><td class="mdescRight">World transform(s). For a skinned model, these are the bone transforms. <br /></td></tr>
 <tr class="separator:aba6007620d79f6be14048848f46f665e inherit pub_attribs_struct_urho3_d_1_1_batch"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10fef31fefa9d8ed7128457804a74ae4 inherit pub_attribs_struct_urho3_d_1_1_batch"><td class="memItemLeft" align="right" valign="top"><a id="a10fef31fefa9d8ed7128457804a74ae4" name="a10fef31fefa9d8ed7128457804a74ae4"></a>
-unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>numWorldTransforms_</b> {}</td></tr>
-<tr class="memdesc:a10fef31fefa9d8ed7128457804a74ae4 inherit pub_attribs_struct_urho3_d_1_1_batch"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of world transforms. <br /></td></tr>
-<tr class="separator:a10fef31fefa9d8ed7128457804a74ae4 inherit pub_attribs_struct_urho3_d_1_1_batch"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3127cf5ca2d9cbf8013583a6cbbbf7d1 inherit pub_attribs_struct_urho3_d_1_1_batch"><td class="memItemLeft" align="right" valign="top"><a id="a3127cf5ca2d9cbf8013583a6cbbbf7d1" name="a3127cf5ca2d9cbf8013583a6cbbbf7d1"></a>
+i32&#160;</td><td class="memItemRight" valign="bottom"><b>numWorldTransforms_</b> {}</td></tr>
+<tr class="memdesc:a3127cf5ca2d9cbf8013583a6cbbbf7d1 inherit pub_attribs_struct_urho3_d_1_1_batch"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of world transforms. <br /></td></tr>
+<tr class="separator:a3127cf5ca2d9cbf8013583a6cbbbf7d1 inherit pub_attribs_struct_urho3_d_1_1_batch"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab288acc04a9fd9169601c1bc733f1031 inherit pub_attribs_struct_urho3_d_1_1_batch"><td class="memItemLeft" align="right" valign="top"><a id="ab288acc04a9fd9169601c1bc733f1031" name="ab288acc04a9fd9169601c1bc733f1031"></a>
 void *&#160;</td><td class="memItemRight" valign="bottom"><b>instancingData_</b> {}</td></tr>
 <tr class="memdesc:ab288acc04a9fd9169601c1bc733f1031 inherit pub_attribs_struct_urho3_d_1_1_batch"><td class="mdescLeft">&#160;</td><td class="mdescRight">Per-instance data. If not null, must contain enough data to fill instancing buffer. <br /></td></tr>
@@ -205,7 +205,7 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><b>instancingData_</b>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 27 2022 08:16:11 for Urho3D by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Wed Sep 28 2022 20:01:27 for Urho3D by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

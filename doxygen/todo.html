@@ -54,7 +54,7 @@
 <dd><a class="anchor" id="_todo000031"></a>Remove duplicate declaration  </dd>
 <dt>Member <a class="el" href="class_urho3_d_1_1_connection.html#a373c8b228b0225e949c3a5a1683be28a">Urho3D::Connection::ProcessExistingNode</a>  (<a class="el" href="class_urho3_d_1_1_node.html" title="Scene node that may contain components and child nodes.">Node</a> *node, <a class="el" href="struct_urho3_d_1_1_node_replication_state.html" title="Per-user node network replication state.">NodeReplicationState</a> &amp;nodeState)</dt>
 <dd><a class="anchor" id="_todo000030"></a>Searching for the component is a potential CPU hotspot. It should be cached  </dd>
-<dt>Member <a class="el" href="class_urho3_d_1_1_connection.html#a0a9e39346bc1f85b9186d3258a178ac1">Urho3D::Connection::ProcessSceneUpdate</a>  (int msgID, <a class="el" href="class_urho3_d_1_1_memory_buffer.html">MemoryBuffer</a> &amp;msg)</dt>
+<dt>Member <a class="el" href="class_urho3_d_1_1_connection.html#a0a9e39346bc1f85b9186d3258a178ac1">Urho3D::Connection::ProcessSceneUpdate</a>  (int msgID, <a class="el" href="class_urho3_d_1_1_memory_buffer.html" title="Memory area that can be read and written to as a stream.">MemoryBuffer</a> &amp;msg)</dt>
 <dd><a class="anchor" id="_todo000029"></a>On mobile devices processing this message may potentially cause a crash if it attempts to load new GPU resources while the application is minimized  </dd>
 <dt>Member <a class="el" href="class_urho3_d_1_1_constraint.html#af98cd9b392064a8305a4aa29787b46af">Urho3D::Constraint::OnMarkedDirty</a>  (<a class="el" href="class_urho3_d_1_1_node.html" title="Scene node that may contain components and child nodes.">Node</a> *node) override</dt>
 <dd><a class="anchor" id="_todo000032"></a>This does not catch the connected body node's scale changing  </dd>
@@ -92,11 +92,11 @@
 <dd><a class="anchor" id="_todo000011"></a>Zero if source was created programmatically  </dd>
 <dt>Member <a class="el" href="class_urho3_d_1_1_renderer.html#a2edda10af9679e17b00db07891945c73">Urho3D::Renderer::DrawDebugGeometry</a>  (bool depthTest)</dt>
 <dd><a class="anchor" id="_todo000012"></a>Because debug geometry is per-scene, if two cameras show views of the same area, occlusion is not shown correctly  </dd>
-<dt>Member <a class="el" href="class_urho3_d_1_1_renderer.html#a44c45f4e35cbce39ed18336ad8ff318d">Urho3D::Renderer::GetScreenBuffer</a>  (int width, int height, unsigned format, int multiSample, bool autoResolve, bool cubemap, bool filtered, bool srgb, unsigned persistentKey=0)</dt>
+<dt>Member <a class="el" href="class_urho3_d_1_1_renderer.html#a6bf3ceae20816a4cd40a82db1109e2c2">Urho3D::Renderer::GetScreenBuffer</a>  (int width, int height, unsigned format, int multiSample, bool autoResolve, bool cubemap, bool filtered, bool srgb, hash32 persistentKey=0)</dt>
 <dd><a class="anchor" id="_todo000014"></a>Mipmaps disabled for now. Allow to request mipmapped buffer?  </dd>
-<dt>Member <a class="el" href="class_urho3_d_1_1_renderer.html#a7d4509e32b17bff5f3069f8fe6fd448d">Urho3D::Renderer::GetShadowMap</a>  (<a class="el" href="class_urho3_d_1_1_light.html" title="Light component.">Light</a> *light, <a class="el" href="class_urho3_d_1_1_camera.html" title="Camera component.">Camera</a> *camera, unsigned viewWidth, unsigned viewHeight)</dt>
+<dt>Member <a class="el" href="class_urho3_d_1_1_renderer.html#a1a7d6de78861b25d96eabb3aae78d745">Urho3D::Renderer::GetShadowMap</a>  (<a class="el" href="class_urho3_d_1_1_light.html" title="Light component.">Light</a> *light, <a class="el" href="class_urho3_d_1_1_camera.html" title="Camera component.">Camera</a> *camera, i32 viewWidth, i32 viewHeight)</dt>
 <dd><a class="anchor" id="_todo000013"></a>Allow to specify maximum shadow maps per resolution, as smaller shadow maps take less memory  </dd>
-<dt>Member <a class="el" href="class_urho3_d_1_1_renderer.html#a0fa71f5839321a9d68def7a2978f452a">Urho3D::Renderer::UpdateQueuedViewport</a>  (unsigned index)</dt>
+<dt>Member <a class="el" href="class_urho3_d_1_1_renderer.html#a51a3ea03fcc548fe0a238bc4c7b8cb3d">Urho3D::Renderer::UpdateQueuedViewport</a>  (i32 index)</dt>
 <dd><a class="anchor" id="_todo000015"></a>May result in incorrect debug geometry culling if the same scene is drawn from multiple viewports  </dd>
 <dt>Member <a class="el" href="class_urho3_d_1_1_scene.html#a625934c3af5fb17f25a09767d4c0cc6b">Urho3D::Scene::UpdateAsyncLoading</a>  ()</dt>
 <dd><a class="anchor" id="_todo000035"></a>Works poorly in scenes where one root-level child node contains all content  </dd>
@@ -121,7 +121,7 @@
 </div><!-- PageDoc -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 27 2022 08:16:10 for Urho3D by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Wed Sep 28 2022 20:01:27 for Urho3D by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

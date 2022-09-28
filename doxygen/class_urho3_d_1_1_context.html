@@ -219,7 +219,7 @@ const <a class="el" href="class_urho3_d_1_1_hash_map.html">HashMap</a>&lt; <a cl
 <tr class="separator:a127d37751b815ee7431dccafedcc1cc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab453809b2c77fe1c412137525a1f6b0b"><td class="memItemLeft" align="right" valign="top"><a id="ab453809b2c77fe1c412137525a1f6b0b" name="ab453809b2c77fe1c412137525a1f6b0b"></a>
 <a class="el" href="class_urho3_d_1_1_event_handler.html">EventHandler</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetEventHandler</b> () const</td></tr>
-<tr class="memdesc:ab453809b2c77fe1c412137525a1f6b0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return active event handler. Set by <a class="el" href="class_urho3_d_1_1_object.html">Object</a>. Null outside event handling. <br /></td></tr>
+<tr class="memdesc:ab453809b2c77fe1c412137525a1f6b0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return active event handler. Set by <a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>. Null outside event handling. <br /></td></tr>
 <tr class="separator:ab453809b2c77fe1c412137525a1f6b0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42126f4380cdae0cf8329ff7c6b838c6"><td class="memItemLeft" align="right" valign="top"><a id="a42126f4380cdae0cf8329ff7c6b838c6" name="a42126f4380cdae0cf8329ff7c6b838c6"></a>
 const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetTypeName</b> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> objectType) const</td></tr>
@@ -276,13 +276,21 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~RefCounted</b> ()
 <a class="el" href="class_urho3_d_1_1_ref_counted.html">RefCounted</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_urho3_d_1_1_ref_counted.html">RefCounted</a> &amp;rhs)=delete</td></tr>
 <tr class="memdesc:ab34ed11da9f794b4c3ae6a4f33dc090a inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prevent assignment. <br /></td></tr>
 <tr class="separator:ab34ed11da9f794b4c3ae6a4f33dc090a inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d857f439bb5a7935199a8e4fdb8f2c8 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_ref_counted.html#a0d857f439bb5a7935199a8e4fdb8f2c8">AddRef</a> ()</td></tr>
+<tr class="memitem:a0d857f439bb5a7935199a8e4fdb8f2c8 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top"><a id="a0d857f439bb5a7935199a8e4fdb8f2c8" name="a0d857f439bb5a7935199a8e4fdb8f2c8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddRef</b> ()</td></tr>
+<tr class="memdesc:a0d857f439bb5a7935199a8e4fdb8f2c8 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increment reference count. Can also be called outside of a <a class="el" href="class_urho3_d_1_1_shared_ptr.html" title="Shared pointer template class with intrusive reference counting.">SharedPtr</a> for traditional reference counting. <br /></td></tr>
 <tr class="separator:a0d857f439bb5a7935199a8e4fdb8f2c8 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59e95fecbcbc560f81f0bdd52306cc1d inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_ref_counted.html#a59e95fecbcbc560f81f0bdd52306cc1d">ReleaseRef</a> ()</td></tr>
+<tr class="memitem:a59e95fecbcbc560f81f0bdd52306cc1d inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top"><a id="a59e95fecbcbc560f81f0bdd52306cc1d" name="a59e95fecbcbc560f81f0bdd52306cc1d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ReleaseRef</b> ()</td></tr>
+<tr class="memdesc:a59e95fecbcbc560f81f0bdd52306cc1d inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decrement reference count and delete self if no more references. Can also be called outside of a <a class="el" href="class_urho3_d_1_1_shared_ptr.html" title="Shared pointer template class with intrusive reference counting.">SharedPtr</a> for traditional reference counting. <br /></td></tr>
 <tr class="separator:a59e95fecbcbc560f81f0bdd52306cc1d inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e764b1f4b072a1a0dbfaeac62626244 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_ref_counted.html#a7e764b1f4b072a1a0dbfaeac62626244">Refs</a> () const</td></tr>
+<tr class="memitem:a7e764b1f4b072a1a0dbfaeac62626244 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top"><a id="a7e764b1f4b072a1a0dbfaeac62626244" name="a7e764b1f4b072a1a0dbfaeac62626244"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>Refs</b> () const</td></tr>
+<tr class="memdesc:a7e764b1f4b072a1a0dbfaeac62626244 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return reference count. <br /></td></tr>
 <tr class="separator:a7e764b1f4b072a1a0dbfaeac62626244 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27960099d665fa2a05b7d488cfc56d90 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_ref_counted.html#a27960099d665fa2a05b7d488cfc56d90">WeakRefs</a> () const</td></tr>
+<tr class="memitem:a27960099d665fa2a05b7d488cfc56d90 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top"><a id="a27960099d665fa2a05b7d488cfc56d90" name="a27960099d665fa2a05b7d488cfc56d90"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>WeakRefs</b> () const</td></tr>
+<tr class="memdesc:a27960099d665fa2a05b7d488cfc56d90 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return weak reference count. <br /></td></tr>
 <tr class="separator:a27960099d665fa2a05b7d488cfc56d90 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08cd9280809e02f43cd08599391131bb inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top"><a id="a08cd9280809e02f43cd08599391131bb" name="a08cd9280809e02f43cd08599391131bb"></a>
 <a class="el" href="struct_urho3_d_1_1_ref_count.html">RefCount</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>RefCountPtr</b> ()</td></tr>
@@ -321,14 +329,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>EndSendEvent</b> ()</
 <tr class="separator:a7e2deb39ff7a46595669a569d913a0b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abfe31e63309944b82052bf2855daea6e"><td class="memItemLeft" align="right" valign="top"><a id="abfe31e63309944b82052bf2855daea6e" name="abfe31e63309944b82052bf2855daea6e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetEventHandler</b> (<a class="el" href="class_urho3_d_1_1_event_handler.html">EventHandler</a> *handler)</td></tr>
-<tr class="memdesc:abfe31e63309944b82052bf2855daea6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set current event handler. Called by <a class="el" href="class_urho3_d_1_1_object.html">Object</a>. <br /></td></tr>
+<tr class="memdesc:abfe31e63309944b82052bf2855daea6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set current event handler. Called by <a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a>. <br /></td></tr>
 <tr class="separator:abfe31e63309944b82052bf2855daea6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a58b468c37948e792e09b237cd6f178a7"><td class="memItemLeft" align="right" valign="top"><a id="a58b468c37948e792e09b237cd6f178a7" name="a58b468c37948e792e09b237cd6f178a7"></a>
 <a class="el" href="class_urho3_d_1_1_hash_map.html">HashMap</a>&lt; <a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a>, <a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a>&lt; <a class="el" href="class_urho3_d_1_1_object_factory.html">ObjectFactory</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>factories_</b></td></tr>
-<tr class="memdesc:a58b468c37948e792e09b237cd6f178a7"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_object.html">Object</a> factories. <br /></td></tr>
+<tr class="memdesc:a58b468c37948e792e09b237cd6f178a7"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a> factories. <br /></td></tr>
 <tr class="separator:a58b468c37948e792e09b237cd6f178a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf5a2ea6423ae2e05cb0e8c172cb04a8"><td class="memItemLeft" align="right" valign="top"><a id="acf5a2ea6423ae2e05cb0e8c172cb04a8" name="acf5a2ea6423ae2e05cb0e8c172cb04a8"></a>
 <a class="el" href="class_urho3_d_1_1_hash_map.html">HashMap</a>&lt; <a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a>, <a class="el" href="class_urho3_d_1_1_shared_ptr.html">SharedPtr</a>&lt; <a class="el" href="class_urho3_d_1_1_object.html">Object</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>subsystems_</b></td></tr>
@@ -364,7 +372,7 @@ Private Attributes</h2></td></tr>
 <tr class="separator:ac10172b791c6a9a137db49e6f905b752"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15bb476c59b55d9576947c0a22f6ff33"><td class="memItemLeft" align="right" valign="top"><a id="a15bb476c59b55d9576947c0a22f6ff33" name="a15bb476c59b55d9576947c0a22f6ff33"></a>
 <a class="el" href="class_urho3_d_1_1_hash_map.html">HashMap</a>&lt; <a class="el" href="class_urho3_d_1_1_string.html">String</a>, <a class="el" href="class_urho3_d_1_1_vector.html">Vector</a>&lt; <a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>objectCategories_</b></td></tr>
-<tr class="memdesc:a15bb476c59b55d9576947c0a22f6ff33"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_object.html">Object</a> categories. <br /></td></tr>
+<tr class="memdesc:a15bb476c59b55d9576947c0a22f6ff33"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a> categories. <br /></td></tr>
 <tr class="separator:a15bb476c59b55d9576947c0a22f6ff33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54a5415ff1bee93b50d6841fa88b3800"><td class="memItemLeft" align="right" valign="top"><a id="a54a5415ff1bee93b50d6841fa88b3800" name="a54a5415ff1bee93b50d6841fa88b3800"></a>
 <a class="el" href="_variant_8h.html#aee85c8bb4263431ef586545ff082720b">VariantMap</a>&#160;</td><td class="memItemRight" valign="bottom"><b>globalVars_</b></td></tr>
@@ -415,7 +423,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Object</b></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 27 2022 08:16:11 for Urho3D by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Wed Sep 28 2022 20:01:28 for Urho3D by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

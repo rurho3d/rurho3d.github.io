@@ -70,13 +70,13 @@ Inheritance diagram for Urho3D::RefCounted:</div>
   <map id="Urho3D::RefCounted_map" name="Urho3D::RefCounted_map">
 <area href="class_urho3_d_1_1_animation_state.html" title="Animation instance." alt="Urho3D::AnimationState" shape="rect" coords="199,56,388,80"/>
 <area href="class_urho3_d_1_1_attribute_accessor.html" title="Abstract base class for invoking attribute accessors." alt="Urho3D::AttributeAccessor" shape="rect" coords="199,112,388,136"/>
-<area href="class_urho3_d_1_1_background_loader.html" alt="Urho3D::BackgroundLoader" shape="rect" coords="199,168,388,192"/>
+<area href="class_urho3_d_1_1_background_loader.html" title="Background loader of resources. Owned by the ResourceCache." alt="Urho3D::BackgroundLoader" shape="rect" coords="199,168,388,192"/>
 <area href="struct_urho3_d_1_1_collision_geometry_data.html" title="Base class for collision shape geometry data." alt="Urho3D::CollisionGeometryData" shape="rect" coords="199,224,388,248"/>
 <area href="class_urho3_d_1_1_context.html" title="Urho3D execution context. Provides access to subsystems, object factories and attributes,..." alt="Urho3D::Context" shape="rect" coords="199,280,388,304"/>
 <area href="class_urho3_d_1_1_event_receiver_group.html" title="Tracking structure for event receivers." alt="Urho3D::EventReceiverGroup" shape="rect" coords="199,336,388,360"/>
 <area href="class_urho3_d_1_1_font_face.html" title="Font face description." alt="Urho3D::FontFace" shape="rect" coords="199,392,388,416"/>
 <area href="class_urho3_d_1_1_http_request.html" title="An HTTP connection with response data stream." alt="Urho3D::HttpRequest" shape="rect" coords="199,448,388,472"/>
-<area href="class_urho3_d_1_1_object.html" alt="Urho3D::Object" shape="rect" coords="199,504,388,528"/>
+<area href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil..." alt="Urho3D::Object" shape="rect" coords="199,504,388,528"/>
 <area href="class_urho3_d_1_1_object_factory.html" title="Base class for object factories." alt="Urho3D::ObjectFactory" shape="rect" coords="199,560,388,584"/>
 <area href="class_urho3_d_1_1_pass.html" title="Material rendering pass, which defines shaders and render state." alt="Urho3D::Pass" shape="rect" coords="199,616,388,640"/>
 <area href="class_urho3_d_1_1_property_set2_d.html" title="Property set." alt="Urho3D::PropertySet2D" shape="rect" coords="199,672,388,696"/>
@@ -89,7 +89,7 @@ Inheritance diagram for Urho3D::RefCounted:</div>
 <area href="class_urho3_d_1_1_tile_map_object2_d.html" title="Tile map object." alt="Urho3D::TileMapObject2D" shape="rect" coords="199,1064,388,1088"/>
 <area href="class_urho3_d_1_1_tmx_layer2_d.html" title="Tmx layer." alt="Urho3D::TmxLayer2D" shape="rect" coords="199,1120,388,1144"/>
 <area href="class_urho3_d_1_1_value_animation_info.html" title="Base class for a value animation instance, which includes animation runtime information and updates t..." alt="Urho3D::ValueAnimationInfo" shape="rect" coords="199,1176,388,1200"/>
-<area href="struct_urho3_d_1_1_work_item.html" alt="Urho3D::WorkItem" shape="rect" coords="199,1232,388,1256"/>
+<area href="struct_urho3_d_1_1_work_item.html" title="Work queue item." alt="Urho3D::WorkItem" shape="rect" coords="199,1232,388,1256"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -111,13 +111,21 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~RefCounted</b> ()
 <a class="el" href="class_urho3_d_1_1_ref_counted.html">RefCounted</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_urho3_d_1_1_ref_counted.html">RefCounted</a> &amp;rhs)=delete</td></tr>
 <tr class="memdesc:ab34ed11da9f794b4c3ae6a4f33dc090a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prevent assignment. <br /></td></tr>
 <tr class="separator:ab34ed11da9f794b4c3ae6a4f33dc090a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d857f439bb5a7935199a8e4fdb8f2c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_ref_counted.html#a0d857f439bb5a7935199a8e4fdb8f2c8">AddRef</a> ()</td></tr>
+<tr class="memitem:a0d857f439bb5a7935199a8e4fdb8f2c8"><td class="memItemLeft" align="right" valign="top"><a id="a0d857f439bb5a7935199a8e4fdb8f2c8" name="a0d857f439bb5a7935199a8e4fdb8f2c8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddRef</b> ()</td></tr>
+<tr class="memdesc:a0d857f439bb5a7935199a8e4fdb8f2c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increment reference count. Can also be called outside of a <a class="el" href="class_urho3_d_1_1_shared_ptr.html" title="Shared pointer template class with intrusive reference counting.">SharedPtr</a> for traditional reference counting. <br /></td></tr>
 <tr class="separator:a0d857f439bb5a7935199a8e4fdb8f2c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59e95fecbcbc560f81f0bdd52306cc1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_ref_counted.html#a59e95fecbcbc560f81f0bdd52306cc1d">ReleaseRef</a> ()</td></tr>
+<tr class="memitem:a59e95fecbcbc560f81f0bdd52306cc1d"><td class="memItemLeft" align="right" valign="top"><a id="a59e95fecbcbc560f81f0bdd52306cc1d" name="a59e95fecbcbc560f81f0bdd52306cc1d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ReleaseRef</b> ()</td></tr>
+<tr class="memdesc:a59e95fecbcbc560f81f0bdd52306cc1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decrement reference count and delete self if no more references. Can also be called outside of a <a class="el" href="class_urho3_d_1_1_shared_ptr.html" title="Shared pointer template class with intrusive reference counting.">SharedPtr</a> for traditional reference counting. <br /></td></tr>
 <tr class="separator:a59e95fecbcbc560f81f0bdd52306cc1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e764b1f4b072a1a0dbfaeac62626244"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_ref_counted.html#a7e764b1f4b072a1a0dbfaeac62626244">Refs</a> () const</td></tr>
+<tr class="memitem:a7e764b1f4b072a1a0dbfaeac62626244"><td class="memItemLeft" align="right" valign="top"><a id="a7e764b1f4b072a1a0dbfaeac62626244" name="a7e764b1f4b072a1a0dbfaeac62626244"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>Refs</b> () const</td></tr>
+<tr class="memdesc:a7e764b1f4b072a1a0dbfaeac62626244"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return reference count. <br /></td></tr>
 <tr class="separator:a7e764b1f4b072a1a0dbfaeac62626244"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27960099d665fa2a05b7d488cfc56d90"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_ref_counted.html#a27960099d665fa2a05b7d488cfc56d90">WeakRefs</a> () const</td></tr>
+<tr class="memitem:a27960099d665fa2a05b7d488cfc56d90"><td class="memItemLeft" align="right" valign="top"><a id="a27960099d665fa2a05b7d488cfc56d90" name="a27960099d665fa2a05b7d488cfc56d90"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>WeakRefs</b> () const</td></tr>
+<tr class="memdesc:a27960099d665fa2a05b7d488cfc56d90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return weak reference count. <br /></td></tr>
 <tr class="separator:a27960099d665fa2a05b7d488cfc56d90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08cd9280809e02f43cd08599391131bb"><td class="memItemLeft" align="right" valign="top"><a id="a08cd9280809e02f43cd08599391131bb" name="a08cd9280809e02f43cd08599391131bb"></a>
 <a class="el" href="struct_urho3_d_1_1_ref_count.html">RefCount</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>RefCountPtr</b> ()</td></tr>
@@ -133,87 +141,14 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Base class for intrusively reference-counted objects. These are noncopyable and non-assignable. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a0d857f439bb5a7935199a8e4fdb8f2c8" name="a0d857f439bb5a7935199a8e4fdb8f2c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d857f439bb5a7935199a8e4fdb8f2c8">&#9670;&nbsp;</a></span>AddRef()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::RefCounted::AddRef </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Increment reference count. Can also be called outside of a <a class="el" href="class_urho3_d_1_1_shared_ptr.html" title="Shared pointer template class with intrusive reference counting.">SharedPtr</a> for traditional reference counting. </p>
-
-</div>
-</div>
-<a id="a7e764b1f4b072a1a0dbfaeac62626244" name="a7e764b1f4b072a1a0dbfaeac62626244"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e764b1f4b072a1a0dbfaeac62626244">&#9670;&nbsp;</a></span>Refs()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Urho3D::RefCounted::Refs </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Return reference count. </p>
-
-</div>
-</div>
-<a id="a59e95fecbcbc560f81f0bdd52306cc1d" name="a59e95fecbcbc560f81f0bdd52306cc1d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a59e95fecbcbc560f81f0bdd52306cc1d">&#9670;&nbsp;</a></span>ReleaseRef()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::RefCounted::ReleaseRef </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Decrement reference count and delete self if no more references. Can also be called outside of a <a class="el" href="class_urho3_d_1_1_shared_ptr.html" title="Shared pointer template class with intrusive reference counting.">SharedPtr</a> for traditional reference counting. </p>
-
-</div>
-</div>
-<a id="a27960099d665fa2a05b7d488cfc56d90" name="a27960099d665fa2a05b7d488cfc56d90"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a27960099d665fa2a05b7d488cfc56d90">&#9670;&nbsp;</a></span>WeakRefs()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Urho3D::RefCounted::WeakRefs </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Return weak reference count. </p>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+</div><hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/runner/work/rurho3d.github.io/rurho3d.github.io/urho3d_repo/Source/Urho3D/Container/RefCounted.h</li>
 <li>/home/runner/work/rurho3d.github.io/rurho3d.github.io/urho3d_repo/Source/Urho3D/Container/RefCounted.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 27 2022 08:16:13 for Urho3D by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Wed Sep 28 2022 20:01:29 for Urho3D by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

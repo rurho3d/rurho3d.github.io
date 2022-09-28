@@ -75,7 +75,7 @@ Inheritance diagram for Urho3D::Node:</div>
   <map id="Urho3D::Node_map" name="Urho3D::Node_map">
 <area href="class_urho3_d_1_1_animatable.html" title="Base class for animatable object, an animatable object can be set animation on it&#39;s attributes,..." alt="Urho3D::Animatable" shape="rect" coords="0,168,127,192"/>
 <area href="class_urho3_d_1_1_serializable.html" title="Base class for objects with automatic serialization through attributes." alt="Urho3D::Serializable" shape="rect" coords="0,112,127,136"/>
-<area href="class_urho3_d_1_1_object.html" alt="Urho3D::Object" shape="rect" coords="0,56,127,80"/>
+<area href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil..." alt="Urho3D::Object" shape="rect" coords="0,56,127,80"/>
 <area href="class_urho3_d_1_1_ref_counted.html" title="Base class for intrusively reference-counted objects. These are noncopyable and non-assignable." alt="Urho3D::RefCounted" shape="rect" coords="0,0,127,24"/>
 <area href="class_urho3_d_1_1_scene.html" title="Root scene node, represents the whole scene." alt="Urho3D::Scene" shape="rect" coords="0,280,127,304"/>
   </map>
@@ -129,7 +129,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>SaveXML</b> (<a class
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>SaveJSON</b> (<a class="el" href="class_urho3_d_1_1_serializer.html">Serializer</a> &amp;dest, const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;indentation=&quot;\t&quot;) const</td></tr>
 <tr class="memdesc:a72ab6ab2922a29d780e57dd5b4d31a77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save to a JSON file. Return true if successful. <br /></td></tr>
 <tr class="separator:a72ab6ab2922a29d780e57dd5b4d31a77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fe38a2be941c8ca1fa59b9639775c09"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#a4fe38a2be941c8ca1fa59b9639775c09">SetName</a> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;name)</td></tr>
+<tr class="memitem:a4fe38a2be941c8ca1fa59b9639775c09"><td class="memItemLeft" align="right" valign="top"><a id="a4fe38a2be941c8ca1fa59b9639775c09" name="a4fe38a2be941c8ca1fa59b9639775c09"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetName</b> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;name)</td></tr>
+<tr class="memdesc:a4fe38a2be941c8ca1fa59b9639775c09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set name of the scene node. Names are not required to be unique. <br /></td></tr>
 <tr class="separator:a4fe38a2be941c8ca1fa59b9639775c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a439a78f3d890caaa6dd33680bb5e493a"><td class="memItemLeft" align="right" valign="top"><a id="a439a78f3d890caaa6dd33680bb5e493a" name="a439a78f3d890caaa6dd33680bb5e493a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetTags</b> (const <a class="el" href="_variant_8h.html#a5f28e7014e5fbb48c5b2a999db00fc29">StringVector</a> &amp;tags)</td></tr>
@@ -155,27 +157,41 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveTag</b> (const 
 void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveAllTags</b> ()</td></tr>
 <tr class="memdesc:a7d20c591eb136f06b302edbe42fd674b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all tags. <br /></td></tr>
 <tr class="separator:a7d20c591eb136f06b302edbe42fd674b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2fd960b4c5641cd38771280a6b84fb8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#aa2fd960b4c5641cd38771280a6b84fb8">SetPosition</a> (const <a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> &amp;position)</td></tr>
+<tr class="memitem:aa2fd960b4c5641cd38771280a6b84fb8"><td class="memItemLeft" align="right" valign="top"><a id="aa2fd960b4c5641cd38771280a6b84fb8" name="aa2fd960b4c5641cd38771280a6b84fb8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPosition</b> (const <a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> &amp;position)</td></tr>
+<tr class="memdesc:aa2fd960b4c5641cd38771280a6b84fb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set position in parent space. If the scene node is on the root level (is child of the scene itself), this is same as world space. <br /></td></tr>
 <tr class="separator:aa2fd960b4c5641cd38771280a6b84fb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a45bac185f4d3dcee531b2ca35af565"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#a0a45bac185f4d3dcee531b2ca35af565">SetPosition2D</a> (const <a class="el" href="class_urho3_d_1_1_vector2.html">Vector2</a> &amp;position)</td></tr>
+<tr class="memitem:a0a45bac185f4d3dcee531b2ca35af565"><td class="memItemLeft" align="right" valign="top"><a id="a0a45bac185f4d3dcee531b2ca35af565" name="a0a45bac185f4d3dcee531b2ca35af565"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPosition2D</b> (const <a class="el" href="class_urho3_d_1_1_vector2.html">Vector2</a> &amp;position)</td></tr>
+<tr class="memdesc:a0a45bac185f4d3dcee531b2ca35af565"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set position in parent space (for Urho2D). <br /></td></tr>
 <tr class="separator:a0a45bac185f4d3dcee531b2ca35af565"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a268eccc6ed323f0b6eaf11a042adfa51"><td class="memItemLeft" align="right" valign="top"><a id="a268eccc6ed323f0b6eaf11a042adfa51" name="a268eccc6ed323f0b6eaf11a042adfa51"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPosition2D</b> (float x, float y)</td></tr>
 <tr class="memdesc:a268eccc6ed323f0b6eaf11a042adfa51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set position in parent space (for Urho2D). <br /></td></tr>
 <tr class="separator:a268eccc6ed323f0b6eaf11a042adfa51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11bd9b2bfda2503123a32889b144aea1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#a11bd9b2bfda2503123a32889b144aea1">SetRotation</a> (const <a class="el" href="class_urho3_d_1_1_quaternion.html">Quaternion</a> &amp;rotation)</td></tr>
+<tr class="memitem:a11bd9b2bfda2503123a32889b144aea1"><td class="memItemLeft" align="right" valign="top"><a id="a11bd9b2bfda2503123a32889b144aea1" name="a11bd9b2bfda2503123a32889b144aea1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetRotation</b> (const <a class="el" href="class_urho3_d_1_1_quaternion.html">Quaternion</a> &amp;rotation)</td></tr>
+<tr class="memdesc:a11bd9b2bfda2503123a32889b144aea1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set rotation in parent space. <br /></td></tr>
 <tr class="separator:a11bd9b2bfda2503123a32889b144aea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a203d47aba9ad013f5ca5b95473716a5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#a203d47aba9ad013f5ca5b95473716a5e">SetRotation2D</a> (float rotation)</td></tr>
+<tr class="memitem:a203d47aba9ad013f5ca5b95473716a5e"><td class="memItemLeft" align="right" valign="top"><a id="a203d47aba9ad013f5ca5b95473716a5e" name="a203d47aba9ad013f5ca5b95473716a5e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetRotation2D</b> (float rotation)</td></tr>
+<tr class="memdesc:a203d47aba9ad013f5ca5b95473716a5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set rotation in parent space (for Urho2D). <br /></td></tr>
 <tr class="separator:a203d47aba9ad013f5ca5b95473716a5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af02633f8b886f9939f839b86378c82f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#af02633f8b886f9939f839b86378c82f9">SetDirection</a> (const <a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> &amp;direction)</td></tr>
+<tr class="memitem:af02633f8b886f9939f839b86378c82f9"><td class="memItemLeft" align="right" valign="top"><a id="af02633f8b886f9939f839b86378c82f9" name="af02633f8b886f9939f839b86378c82f9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDirection</b> (const <a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> &amp;direction)</td></tr>
+<tr class="memdesc:af02633f8b886f9939f839b86378c82f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set forward direction in parent space. Positive Z axis equals identity rotation. <br /></td></tr>
 <tr class="separator:af02633f8b886f9939f839b86378c82f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace951aa924dd417a731746cbf92ead06"><td class="memItemLeft" align="right" valign="top"><a id="ace951aa924dd417a731746cbf92ead06" name="ace951aa924dd417a731746cbf92ead06"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetScale</b> (float scale)</td></tr>
 <tr class="memdesc:ace951aa924dd417a731746cbf92ead06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set uniform scale in parent space. <br /></td></tr>
 <tr class="separator:ace951aa924dd417a731746cbf92ead06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c082c1db09bb3498117d0b3586ecba2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#a2c082c1db09bb3498117d0b3586ecba2">SetScale</a> (const <a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> &amp;scale)</td></tr>
+<tr class="memitem:a2c082c1db09bb3498117d0b3586ecba2"><td class="memItemLeft" align="right" valign="top"><a id="a2c082c1db09bb3498117d0b3586ecba2" name="a2c082c1db09bb3498117d0b3586ecba2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetScale</b> (const <a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> &amp;scale)</td></tr>
+<tr class="memdesc:a2c082c1db09bb3498117d0b3586ecba2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set scale in parent space. <br /></td></tr>
 <tr class="separator:a2c082c1db09bb3498117d0b3586ecba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3154678d02729fa4b88bdddbea7c68a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#a3154678d02729fa4b88bdddbea7c68a6">SetScale2D</a> (const <a class="el" href="class_urho3_d_1_1_vector2.html">Vector2</a> &amp;scale)</td></tr>
+<tr class="memitem:a3154678d02729fa4b88bdddbea7c68a6"><td class="memItemLeft" align="right" valign="top"><a id="a3154678d02729fa4b88bdddbea7c68a6" name="a3154678d02729fa4b88bdddbea7c68a6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetScale2D</b> (const <a class="el" href="class_urho3_d_1_1_vector2.html">Vector2</a> &amp;scale)</td></tr>
+<tr class="memdesc:a3154678d02729fa4b88bdddbea7c68a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set scale in parent space (for Urho2D). <br /></td></tr>
 <tr class="separator:a3154678d02729fa4b88bdddbea7c68a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bb5d5fc58ad2b2c512d61e00ab3b4e2"><td class="memItemLeft" align="right" valign="top"><a id="a4bb5d5fc58ad2b2c512d61e00ab3b4e2" name="a4bb5d5fc58ad2b2c512d61e00ab3b4e2"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetScale2D</b> (float x, float y)</td></tr>
@@ -209,27 +225,41 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetTransform2D</b> (c
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetTransform2D</b> (const <a class="el" href="class_urho3_d_1_1_vector2.html">Vector2</a> &amp;position, float rotation, const <a class="el" href="class_urho3_d_1_1_vector2.html">Vector2</a> &amp;scale)</td></tr>
 <tr class="memdesc:a643cb639e8544153d892123b706c6f3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set position, rotation, and scale in parent space as an atomic operation (for Urho2D). <br /></td></tr>
 <tr class="separator:a643cb639e8544153d892123b706c6f3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75071e15defb94754e145f215acd655a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#a75071e15defb94754e145f215acd655a">SetWorldPosition</a> (const <a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> &amp;position)</td></tr>
+<tr class="memitem:a75071e15defb94754e145f215acd655a"><td class="memItemLeft" align="right" valign="top"><a id="a75071e15defb94754e145f215acd655a" name="a75071e15defb94754e145f215acd655a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetWorldPosition</b> (const <a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> &amp;position)</td></tr>
+<tr class="memdesc:a75071e15defb94754e145f215acd655a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set position in world space. <br /></td></tr>
 <tr class="separator:a75071e15defb94754e145f215acd655a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd5e496ab2c8c5ff273188ed387a7696"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#abd5e496ab2c8c5ff273188ed387a7696">SetWorldPosition2D</a> (const <a class="el" href="class_urho3_d_1_1_vector2.html">Vector2</a> &amp;position)</td></tr>
+<tr class="memitem:abd5e496ab2c8c5ff273188ed387a7696"><td class="memItemLeft" align="right" valign="top"><a id="abd5e496ab2c8c5ff273188ed387a7696" name="abd5e496ab2c8c5ff273188ed387a7696"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetWorldPosition2D</b> (const <a class="el" href="class_urho3_d_1_1_vector2.html">Vector2</a> &amp;position)</td></tr>
+<tr class="memdesc:abd5e496ab2c8c5ff273188ed387a7696"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set position in world space (for Urho2D). <br /></td></tr>
 <tr class="separator:abd5e496ab2c8c5ff273188ed387a7696"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20ed7f818703b5fc4158786f4a76db68"><td class="memItemLeft" align="right" valign="top"><a id="a20ed7f818703b5fc4158786f4a76db68" name="a20ed7f818703b5fc4158786f4a76db68"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetWorldPosition2D</b> (float x, float y)</td></tr>
 <tr class="memdesc:a20ed7f818703b5fc4158786f4a76db68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set position in world space (for Urho2D). <br /></td></tr>
 <tr class="separator:a20ed7f818703b5fc4158786f4a76db68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a51e567fd136b48e30056517c3c6100"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#a0a51e567fd136b48e30056517c3c6100">SetWorldRotation</a> (const <a class="el" href="class_urho3_d_1_1_quaternion.html">Quaternion</a> &amp;rotation)</td></tr>
+<tr class="memitem:a0a51e567fd136b48e30056517c3c6100"><td class="memItemLeft" align="right" valign="top"><a id="a0a51e567fd136b48e30056517c3c6100" name="a0a51e567fd136b48e30056517c3c6100"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetWorldRotation</b> (const <a class="el" href="class_urho3_d_1_1_quaternion.html">Quaternion</a> &amp;rotation)</td></tr>
+<tr class="memdesc:a0a51e567fd136b48e30056517c3c6100"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set rotation in world space. <br /></td></tr>
 <tr class="separator:a0a51e567fd136b48e30056517c3c6100"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f3b2c042f4490b2b91ce733bdc9f7e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#a9f3b2c042f4490b2b91ce733bdc9f7e9">SetWorldRotation2D</a> (float rotation)</td></tr>
+<tr class="memitem:a9f3b2c042f4490b2b91ce733bdc9f7e9"><td class="memItemLeft" align="right" valign="top"><a id="a9f3b2c042f4490b2b91ce733bdc9f7e9" name="a9f3b2c042f4490b2b91ce733bdc9f7e9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetWorldRotation2D</b> (float rotation)</td></tr>
+<tr class="memdesc:a9f3b2c042f4490b2b91ce733bdc9f7e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set rotation in world space (for Urho2D). <br /></td></tr>
 <tr class="separator:a9f3b2c042f4490b2b91ce733bdc9f7e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ca75040c310b9b4b7dd941a327ef4cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#a0ca75040c310b9b4b7dd941a327ef4cf">SetWorldDirection</a> (const <a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> &amp;direction)</td></tr>
+<tr class="memitem:a0ca75040c310b9b4b7dd941a327ef4cf"><td class="memItemLeft" align="right" valign="top"><a id="a0ca75040c310b9b4b7dd941a327ef4cf" name="a0ca75040c310b9b4b7dd941a327ef4cf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetWorldDirection</b> (const <a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> &amp;direction)</td></tr>
+<tr class="memdesc:a0ca75040c310b9b4b7dd941a327ef4cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set forward direction in world space. <br /></td></tr>
 <tr class="separator:a0ca75040c310b9b4b7dd941a327ef4cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef9ea878535741c7f163580ea0dd729a"><td class="memItemLeft" align="right" valign="top"><a id="aef9ea878535741c7f163580ea0dd729a" name="aef9ea878535741c7f163580ea0dd729a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetWorldScale</b> (float scale)</td></tr>
 <tr class="memdesc:aef9ea878535741c7f163580ea0dd729a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set uniform scale in world space. <br /></td></tr>
 <tr class="separator:aef9ea878535741c7f163580ea0dd729a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88196c33c41b9f1aa96c359a6d4e9009"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#a88196c33c41b9f1aa96c359a6d4e9009">SetWorldScale</a> (const <a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> &amp;scale)</td></tr>
+<tr class="memitem:a88196c33c41b9f1aa96c359a6d4e9009"><td class="memItemLeft" align="right" valign="top"><a id="a88196c33c41b9f1aa96c359a6d4e9009" name="a88196c33c41b9f1aa96c359a6d4e9009"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetWorldScale</b> (const <a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> &amp;scale)</td></tr>
+<tr class="memdesc:a88196c33c41b9f1aa96c359a6d4e9009"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set scale in world space. <br /></td></tr>
 <tr class="separator:a88196c33c41b9f1aa96c359a6d4e9009"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c4d99a21b176b525ace088f5f03a92f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#a0c4d99a21b176b525ace088f5f03a92f">SetWorldScale2D</a> (const <a class="el" href="class_urho3_d_1_1_vector2.html">Vector2</a> &amp;scale)</td></tr>
+<tr class="memitem:a0c4d99a21b176b525ace088f5f03a92f"><td class="memItemLeft" align="right" valign="top"><a id="a0c4d99a21b176b525ace088f5f03a92f" name="a0c4d99a21b176b525ace088f5f03a92f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetWorldScale2D</b> (const <a class="el" href="class_urho3_d_1_1_vector2.html">Vector2</a> &amp;scale)</td></tr>
+<tr class="memdesc:a0c4d99a21b176b525ace088f5f03a92f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set scale in world space (for Urho2D). <br /></td></tr>
 <tr class="separator:a0c4d99a21b176b525ace088f5f03a92f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a997e30a6d47064572b0d065cf64d71d6"><td class="memItemLeft" align="right" valign="top"><a id="a997e30a6d47064572b0d065cf64d71d6" name="a997e30a6d47064572b0d065cf64d71d6"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetWorldScale2D</b> (float x, float y)</td></tr>
@@ -315,7 +345,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Scale</b> (const <a c
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Scale2D</b> (const <a class="el" href="class_urho3_d_1_1_vector2.html">Vector2</a> &amp;scale)</td></tr>
 <tr class="memdesc:aa9c8e8fdaf9514e92c891e7dbbbc3b35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify scale in parent space (for Urho2D). <br /></td></tr>
 <tr class="separator:aa9c8e8fdaf9514e92c891e7dbbbc3b35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aebf77521a93e12e059ce1bb953af5c4f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#aebf77521a93e12e059ce1bb953af5c4f">SetEnabled</a> (bool enable)</td></tr>
+<tr class="memitem:aebf77521a93e12e059ce1bb953af5c4f"><td class="memItemLeft" align="right" valign="top"><a id="aebf77521a93e12e059ce1bb953af5c4f" name="aebf77521a93e12e059ce1bb953af5c4f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetEnabled</b> (bool enable)</td></tr>
+<tr class="memdesc:aebf77521a93e12e059ce1bb953af5c4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set enabled/disabled state without recursion. Components in a disabled node become effectively disabled regardless of their own enable/disable state. <br /></td></tr>
 <tr class="separator:aebf77521a93e12e059ce1bb953af5c4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1f42604d1e98496753c1e602837c2e1"><td class="memItemLeft" align="right" valign="top"><a id="af1f42604d1e98496753c1e602837c2e1" name="af1f42604d1e98496753c1e602837c2e1"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDeepEnabled</b> (bool enable)</td></tr>
@@ -329,7 +361,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ResetDeepEnabled</b> 
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetEnabledRecursive</b> (bool enable)</td></tr>
 <tr class="memdesc:a3076ab3fed8d3a873149e1a380f79ad0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set enabled state on self and child nodes. Unlike SetDeepEnabled this does not remember the nodes' own enabled state, but overwrites it. <br /></td></tr>
 <tr class="separator:a3076ab3fed8d3a873149e1a380f79ad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46a82aa6e1c19b4c0cb532fb38b6b4c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#a46a82aa6e1c19b4c0cb532fb38b6b4c1">SetOwner</a> (<a class="el" href="class_urho3_d_1_1_connection.html">Connection</a> *owner)</td></tr>
+<tr class="memitem:a46a82aa6e1c19b4c0cb532fb38b6b4c1"><td class="memItemLeft" align="right" valign="top"><a id="a46a82aa6e1c19b4c0cb532fb38b6b4c1" name="a46a82aa6e1c19b4c0cb532fb38b6b4c1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetOwner</b> (<a class="el" href="class_urho3_d_1_1_connection.html">Connection</a> *owner)</td></tr>
+<tr class="memdesc:a46a82aa6e1c19b4c0cb532fb38b6b4c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set owner connection for networking. <br /></td></tr>
 <tr class="separator:a46a82aa6e1c19b4c0cb532fb38b6b4c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a729772e9f5530a69584e7c3a6a8722ce"><td class="memItemLeft" align="right" valign="top"><a id="a729772e9f5530a69584e7c3a6a8722ce" name="a729772e9f5530a69584e7c3a6a8722ce"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>MarkDirty</b> ()</td></tr>
@@ -407,7 +441,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ReorderComponent</b> 
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Remove</b> ()</td></tr>
 <tr class="memdesc:a926c3fc7ece12b5c4d0f9d05e54d8b56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove from the parent node. If no other shared pointer references exist, causes immediate deletion. <br /></td></tr>
 <tr class="separator:a926c3fc7ece12b5c4d0f9d05e54d8b56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a62d2fd3157b3d569753b57de8d065d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#a8a62d2fd3157b3d569753b57de8d065d">SetParent</a> (<a class="el" href="class_urho3_d_1_1_node.html">Node</a> *parent)</td></tr>
+<tr class="memitem:a8a62d2fd3157b3d569753b57de8d065d"><td class="memItemLeft" align="right" valign="top"><a id="a8a62d2fd3157b3d569753b57de8d065d" name="a8a62d2fd3157b3d569753b57de8d065d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetParent</b> (<a class="el" href="class_urho3_d_1_1_node.html">Node</a> *parent)</td></tr>
+<tr class="memdesc:a8a62d2fd3157b3d569753b57de8d065d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign to a new parent scene node. Retains the world transform. <br /></td></tr>
 <tr class="separator:a8a62d2fd3157b3d569753b57de8d065d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70dad27412862b789eaadab43cb1fd0b"><td class="memItemLeft" align="right" valign="top"><a id="a70dad27412862b789eaadab43cb1fd0b" name="a70dad27412862b789eaadab43cb1fd0b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetVar</b> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> key, const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;value)</td></tr>
@@ -441,77 +477,137 @@ template&lt;class T &gt; </td></tr>
 <tr class="memitem:ab6c88401cefdaeccae1e098de0cf3109"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>RemoveComponents</b> ()</td></tr>
 <tr class="memdesc:ab6c88401cefdaeccae1e098de0cf3109"><td class="mdescLeft">&#160;</td><td class="mdescRight">Template version of removing all components of specific type. <br /></td></tr>
 <tr class="separator:ab6c88401cefdaeccae1e098de0cf3109"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ce16fa386bfc7b728711030eb941723"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#a1ce16fa386bfc7b728711030eb941723">GetID</a> () const</td></tr>
+<tr class="memitem:a1ce16fa386bfc7b728711030eb941723"><td class="memItemLeft" align="right" valign="top"><a id="a1ce16fa386bfc7b728711030eb941723" name="a1ce16fa386bfc7b728711030eb941723"></a>
+unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>GetID</b> () const</td></tr>
+<tr class="memdesc:a1ce16fa386bfc7b728711030eb941723"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return ID. <br /></td></tr>
 <tr class="separator:a1ce16fa386bfc7b728711030eb941723"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9db232116d4278bd3e10c365d2ef57d5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#a9db232116d4278bd3e10c365d2ef57d5">IsReplicated</a> () const</td></tr>
+<tr class="memitem:a9db232116d4278bd3e10c365d2ef57d5"><td class="memItemLeft" align="right" valign="top"><a id="a9db232116d4278bd3e10c365d2ef57d5" name="a9db232116d4278bd3e10c365d2ef57d5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsReplicated</b> () const</td></tr>
+<tr class="memdesc:a9db232116d4278bd3e10c365d2ef57d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether the node is replicated or local to a scene. <br /></td></tr>
 <tr class="separator:a9db232116d4278bd3e10c365d2ef57d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b1640a3996061023dab8751238dc79b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#a7b1640a3996061023dab8751238dc79b">GetName</a> () const</td></tr>
+<tr class="memitem:a7b1640a3996061023dab8751238dc79b"><td class="memItemLeft" align="right" valign="top"><a id="a7b1640a3996061023dab8751238dc79b" name="a7b1640a3996061023dab8751238dc79b"></a>
+const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetName</b> () const</td></tr>
+<tr class="memdesc:a7b1640a3996061023dab8751238dc79b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return name. <br /></td></tr>
 <tr class="separator:a7b1640a3996061023dab8751238dc79b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4ea811eb622efbd7b063b2d08ed6459"><td class="memItemLeft" align="right" valign="top"><a id="af4ea811eb622efbd7b063b2d08ed6459" name="af4ea811eb622efbd7b063b2d08ed6459"></a>
 <a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetNameHash</b> () const</td></tr>
 <tr class="memdesc:af4ea811eb622efbd7b063b2d08ed6459"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return name hash. <br /></td></tr>
 <tr class="separator:af4ea811eb622efbd7b063b2d08ed6459"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49a0f7165252bfcf62cb897067d80044"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="_variant_8h.html#a5f28e7014e5fbb48c5b2a999db00fc29">StringVector</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#a49a0f7165252bfcf62cb897067d80044">GetTags</a> () const</td></tr>
+<tr class="memitem:a49a0f7165252bfcf62cb897067d80044"><td class="memItemLeft" align="right" valign="top"><a id="a49a0f7165252bfcf62cb897067d80044" name="a49a0f7165252bfcf62cb897067d80044"></a>
+const <a class="el" href="_variant_8h.html#a5f28e7014e5fbb48c5b2a999db00fc29">StringVector</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetTags</b> () const</td></tr>
+<tr class="memdesc:a49a0f7165252bfcf62cb897067d80044"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return all tags. <br /></td></tr>
 <tr class="separator:a49a0f7165252bfcf62cb897067d80044"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a848649755f8fd1b088baccd8a7e80ca1"><td class="memItemLeft" align="right" valign="top"><a id="a848649755f8fd1b088baccd8a7e80ca1" name="a848649755f8fd1b088baccd8a7e80ca1"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasTag</b> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;tag) const</td></tr>
 <tr class="memdesc:a848649755f8fd1b088baccd8a7e80ca1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether has a specific tag. <br /></td></tr>
 <tr class="separator:a848649755f8fd1b088baccd8a7e80ca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1bc658c7b719ce21531882df362ea958"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#a1bc658c7b719ce21531882df362ea958">GetParent</a> () const</td></tr>
+<tr class="memitem:a1bc658c7b719ce21531882df362ea958"><td class="memItemLeft" align="right" valign="top"><a id="a1bc658c7b719ce21531882df362ea958" name="a1bc658c7b719ce21531882df362ea958"></a>
+<a class="el" href="class_urho3_d_1_1_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetParent</b> () const</td></tr>
+<tr class="memdesc:a1bc658c7b719ce21531882df362ea958"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return parent scene node. <br /></td></tr>
 <tr class="separator:a1bc658c7b719ce21531882df362ea958"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3742cda838a2b291daa44d3ab00de56"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_scene.html">Scene</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#ad3742cda838a2b291daa44d3ab00de56">GetScene</a> () const</td></tr>
+<tr class="memitem:ad3742cda838a2b291daa44d3ab00de56"><td class="memItemLeft" align="right" valign="top"><a id="ad3742cda838a2b291daa44d3ab00de56" name="ad3742cda838a2b291daa44d3ab00de56"></a>
+<a class="el" href="class_urho3_d_1_1_scene.html">Scene</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetScene</b> () const</td></tr>
+<tr class="memdesc:ad3742cda838a2b291daa44d3ab00de56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return scene. <br /></td></tr>
 <tr class="separator:ad3742cda838a2b291daa44d3ab00de56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a694f0e597e47193dc169cd672db60b08"><td class="memItemLeft" align="right" valign="top"><a id="a694f0e597e47193dc169cd672db60b08" name="a694f0e597e47193dc169cd672db60b08"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsChildOf</b> (<a class="el" href="class_urho3_d_1_1_node.html">Node</a> *node) const</td></tr>
 <tr class="memdesc:a694f0e597e47193dc169cd672db60b08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether is a direct or indirect child of specified node. <br /></td></tr>
 <tr class="separator:a694f0e597e47193dc169cd672db60b08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36ffa108037ab29617bf178fcb4ec1da"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#a36ffa108037ab29617bf178fcb4ec1da">IsEnabled</a> () const</td></tr>
+<tr class="memitem:a36ffa108037ab29617bf178fcb4ec1da"><td class="memItemLeft" align="right" valign="top"><a id="a36ffa108037ab29617bf178fcb4ec1da" name="a36ffa108037ab29617bf178fcb4ec1da"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsEnabled</b> () const</td></tr>
+<tr class="memdesc:a36ffa108037ab29617bf178fcb4ec1da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether is enabled. Disables nodes effectively disable all their components. <br /></td></tr>
 <tr class="separator:a36ffa108037ab29617bf178fcb4ec1da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5de99365f99d842461c402aa09cb630d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#a5de99365f99d842461c402aa09cb630d">IsEnabledSelf</a> () const</td></tr>
+<tr class="memitem:a5de99365f99d842461c402aa09cb630d"><td class="memItemLeft" align="right" valign="top"><a id="a5de99365f99d842461c402aa09cb630d" name="a5de99365f99d842461c402aa09cb630d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsEnabledSelf</b> () const</td></tr>
+<tr class="memdesc:a5de99365f99d842461c402aa09cb630d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the node's last own enabled state. May be different than the value returned by IsEnabled when SetDeepEnabled has been used. <br /></td></tr>
 <tr class="separator:a5de99365f99d842461c402aa09cb630d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe38e0f45b7ffa6d41c6283ce3175f2a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_connection.html">Connection</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#afe38e0f45b7ffa6d41c6283ce3175f2a">GetOwner</a> () const</td></tr>
+<tr class="memitem:afe38e0f45b7ffa6d41c6283ce3175f2a"><td class="memItemLeft" align="right" valign="top"><a id="afe38e0f45b7ffa6d41c6283ce3175f2a" name="afe38e0f45b7ffa6d41c6283ce3175f2a"></a>
+<a class="el" href="class_urho3_d_1_1_connection.html">Connection</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetOwner</b> () const</td></tr>
+<tr class="memdesc:afe38e0f45b7ffa6d41c6283ce3175f2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return owner connection in networking. <br /></td></tr>
 <tr class="separator:afe38e0f45b7ffa6d41c6283ce3175f2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c4d222bfa87cfe55268ed1ccbcdc65c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#a9c4d222bfa87cfe55268ed1ccbcdc65c">GetPosition</a> () const</td></tr>
+<tr class="memitem:a9c4d222bfa87cfe55268ed1ccbcdc65c"><td class="memItemLeft" align="right" valign="top"><a id="a9c4d222bfa87cfe55268ed1ccbcdc65c" name="a9c4d222bfa87cfe55268ed1ccbcdc65c"></a>
+const <a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetPosition</b> () const</td></tr>
+<tr class="memdesc:a9c4d222bfa87cfe55268ed1ccbcdc65c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return position in parent space. <br /></td></tr>
 <tr class="separator:a9c4d222bfa87cfe55268ed1ccbcdc65c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac433c28cb92bfcfa8d64611e7a50a6d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#ac433c28cb92bfcfa8d64611e7a50a6d4">GetPosition2D</a> () const</td></tr>
+<tr class="memitem:ac433c28cb92bfcfa8d64611e7a50a6d4"><td class="memItemLeft" align="right" valign="top"><a id="ac433c28cb92bfcfa8d64611e7a50a6d4" name="ac433c28cb92bfcfa8d64611e7a50a6d4"></a>
+<a class="el" href="class_urho3_d_1_1_vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetPosition2D</b> () const</td></tr>
+<tr class="memdesc:ac433c28cb92bfcfa8d64611e7a50a6d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return position in parent space (for Urho2D). <br /></td></tr>
 <tr class="separator:ac433c28cb92bfcfa8d64611e7a50a6d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4eee69efff9e18b82364ac5a22df5c32"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_urho3_d_1_1_quaternion.html">Quaternion</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#a4eee69efff9e18b82364ac5a22df5c32">GetRotation</a> () const</td></tr>
+<tr class="memitem:a4eee69efff9e18b82364ac5a22df5c32"><td class="memItemLeft" align="right" valign="top"><a id="a4eee69efff9e18b82364ac5a22df5c32" name="a4eee69efff9e18b82364ac5a22df5c32"></a>
+const <a class="el" href="class_urho3_d_1_1_quaternion.html">Quaternion</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetRotation</b> () const</td></tr>
+<tr class="memdesc:a4eee69efff9e18b82364ac5a22df5c32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return rotation in parent space. <br /></td></tr>
 <tr class="separator:a4eee69efff9e18b82364ac5a22df5c32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21ed92710cb92cc64e552ebb9e548e66"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#a21ed92710cb92cc64e552ebb9e548e66">GetRotation2D</a> () const</td></tr>
+<tr class="memitem:a21ed92710cb92cc64e552ebb9e548e66"><td class="memItemLeft" align="right" valign="top"><a id="a21ed92710cb92cc64e552ebb9e548e66" name="a21ed92710cb92cc64e552ebb9e548e66"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>GetRotation2D</b> () const</td></tr>
+<tr class="memdesc:a21ed92710cb92cc64e552ebb9e548e66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return rotation in parent space (for Urho2D). <br /></td></tr>
 <tr class="separator:a21ed92710cb92cc64e552ebb9e548e66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34f114f3145135f846a3354e152c2533"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#a34f114f3145135f846a3354e152c2533">GetDirection</a> () const</td></tr>
+<tr class="memitem:a34f114f3145135f846a3354e152c2533"><td class="memItemLeft" align="right" valign="top"><a id="a34f114f3145135f846a3354e152c2533" name="a34f114f3145135f846a3354e152c2533"></a>
+<a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetDirection</b> () const</td></tr>
+<tr class="memdesc:a34f114f3145135f846a3354e152c2533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return forward direction in parent space. Positive Z axis equals identity rotation. <br /></td></tr>
 <tr class="separator:a34f114f3145135f846a3354e152c2533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14b834f5256b437209fd540c05f7af28"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#a14b834f5256b437209fd540c05f7af28">GetUp</a> () const</td></tr>
+<tr class="memitem:a14b834f5256b437209fd540c05f7af28"><td class="memItemLeft" align="right" valign="top"><a id="a14b834f5256b437209fd540c05f7af28" name="a14b834f5256b437209fd540c05f7af28"></a>
+<a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetUp</b> () const</td></tr>
+<tr class="memdesc:a14b834f5256b437209fd540c05f7af28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return up direction in parent space. Positive Y axis equals identity rotation. <br /></td></tr>
 <tr class="separator:a14b834f5256b437209fd540c05f7af28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef0e9243e131903452837694d672da96"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#aef0e9243e131903452837694d672da96">GetRight</a> () const</td></tr>
+<tr class="memitem:aef0e9243e131903452837694d672da96"><td class="memItemLeft" align="right" valign="top"><a id="aef0e9243e131903452837694d672da96" name="aef0e9243e131903452837694d672da96"></a>
+<a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetRight</b> () const</td></tr>
+<tr class="memdesc:aef0e9243e131903452837694d672da96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return right direction in parent space. Positive X axis equals identity rotation. <br /></td></tr>
 <tr class="separator:aef0e9243e131903452837694d672da96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a0319e7efa9231cb49be4d900b8a6da"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#a5a0319e7efa9231cb49be4d900b8a6da">GetScale</a> () const</td></tr>
+<tr class="memitem:a5a0319e7efa9231cb49be4d900b8a6da"><td class="memItemLeft" align="right" valign="top"><a id="a5a0319e7efa9231cb49be4d900b8a6da" name="a5a0319e7efa9231cb49be4d900b8a6da"></a>
+const <a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetScale</b> () const</td></tr>
+<tr class="memdesc:a5a0319e7efa9231cb49be4d900b8a6da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return scale in parent space. <br /></td></tr>
 <tr class="separator:a5a0319e7efa9231cb49be4d900b8a6da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7cc52c0e53ce916e729cff69f54dc19"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#ab7cc52c0e53ce916e729cff69f54dc19">GetScale2D</a> () const</td></tr>
+<tr class="memitem:ab7cc52c0e53ce916e729cff69f54dc19"><td class="memItemLeft" align="right" valign="top"><a id="ab7cc52c0e53ce916e729cff69f54dc19" name="ab7cc52c0e53ce916e729cff69f54dc19"></a>
+<a class="el" href="class_urho3_d_1_1_vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetScale2D</b> () const</td></tr>
+<tr class="memdesc:ab7cc52c0e53ce916e729cff69f54dc19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return scale in parent space (for Urho2D). <br /></td></tr>
 <tr class="separator:ab7cc52c0e53ce916e729cff69f54dc19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f36ffbac48689b8453d03c6a57a776f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_matrix3x4.html">Matrix3x4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#a7f36ffbac48689b8453d03c6a57a776f">GetTransform</a> () const</td></tr>
+<tr class="memitem:a7f36ffbac48689b8453d03c6a57a776f"><td class="memItemLeft" align="right" valign="top"><a id="a7f36ffbac48689b8453d03c6a57a776f" name="a7f36ffbac48689b8453d03c6a57a776f"></a>
+<a class="el" href="class_urho3_d_1_1_matrix3x4.html">Matrix3x4</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetTransform</b> () const</td></tr>
+<tr class="memdesc:a7f36ffbac48689b8453d03c6a57a776f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return parent space transform matrix. <br /></td></tr>
 <tr class="separator:a7f36ffbac48689b8453d03c6a57a776f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f3fe7808b7af4975ddb21be8a269ece"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#a8f3fe7808b7af4975ddb21be8a269ece">GetWorldPosition</a> () const</td></tr>
+<tr class="memitem:a8f3fe7808b7af4975ddb21be8a269ece"><td class="memItemLeft" align="right" valign="top"><a id="a8f3fe7808b7af4975ddb21be8a269ece" name="a8f3fe7808b7af4975ddb21be8a269ece"></a>
+<a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetWorldPosition</b> () const</td></tr>
+<tr class="memdesc:a8f3fe7808b7af4975ddb21be8a269ece"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return position in world space. <br /></td></tr>
 <tr class="separator:a8f3fe7808b7af4975ddb21be8a269ece"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c310b39df932a228882216e5fb00039"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#a4c310b39df932a228882216e5fb00039">GetWorldPosition2D</a> () const</td></tr>
+<tr class="memitem:a4c310b39df932a228882216e5fb00039"><td class="memItemLeft" align="right" valign="top"><a id="a4c310b39df932a228882216e5fb00039" name="a4c310b39df932a228882216e5fb00039"></a>
+<a class="el" href="class_urho3_d_1_1_vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetWorldPosition2D</b> () const</td></tr>
+<tr class="memdesc:a4c310b39df932a228882216e5fb00039"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return position in world space (for Urho2D). <br /></td></tr>
 <tr class="separator:a4c310b39df932a228882216e5fb00039"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad74175e15dfaa86263299e355a2d49ed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_quaternion.html">Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#ad74175e15dfaa86263299e355a2d49ed">GetWorldRotation</a> () const</td></tr>
+<tr class="memitem:ad74175e15dfaa86263299e355a2d49ed"><td class="memItemLeft" align="right" valign="top"><a id="ad74175e15dfaa86263299e355a2d49ed" name="ad74175e15dfaa86263299e355a2d49ed"></a>
+<a class="el" href="class_urho3_d_1_1_quaternion.html">Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetWorldRotation</b> () const</td></tr>
+<tr class="memdesc:ad74175e15dfaa86263299e355a2d49ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return rotation in world space. <br /></td></tr>
 <tr class="separator:ad74175e15dfaa86263299e355a2d49ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2665d6022346d350ef02ed83293fc884"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#a2665d6022346d350ef02ed83293fc884">GetWorldRotation2D</a> () const</td></tr>
+<tr class="memitem:a2665d6022346d350ef02ed83293fc884"><td class="memItemLeft" align="right" valign="top"><a id="a2665d6022346d350ef02ed83293fc884" name="a2665d6022346d350ef02ed83293fc884"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>GetWorldRotation2D</b> () const</td></tr>
+<tr class="memdesc:a2665d6022346d350ef02ed83293fc884"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return rotation in world space (for Urho2D). <br /></td></tr>
 <tr class="separator:a2665d6022346d350ef02ed83293fc884"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe17e6e94b7ab99663c827442db45a5e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#afe17e6e94b7ab99663c827442db45a5e">GetWorldDirection</a> () const</td></tr>
+<tr class="memitem:afe17e6e94b7ab99663c827442db45a5e"><td class="memItemLeft" align="right" valign="top"><a id="afe17e6e94b7ab99663c827442db45a5e" name="afe17e6e94b7ab99663c827442db45a5e"></a>
+<a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetWorldDirection</b> () const</td></tr>
+<tr class="memdesc:afe17e6e94b7ab99663c827442db45a5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return direction in world space. <br /></td></tr>
 <tr class="separator:afe17e6e94b7ab99663c827442db45a5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91550fd6f58e8be121b4db00eb19718f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#a91550fd6f58e8be121b4db00eb19718f">GetWorldUp</a> () const</td></tr>
+<tr class="memitem:a91550fd6f58e8be121b4db00eb19718f"><td class="memItemLeft" align="right" valign="top"><a id="a91550fd6f58e8be121b4db00eb19718f" name="a91550fd6f58e8be121b4db00eb19718f"></a>
+<a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetWorldUp</b> () const</td></tr>
+<tr class="memdesc:a91550fd6f58e8be121b4db00eb19718f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return node's up vector in world space. <br /></td></tr>
 <tr class="separator:a91550fd6f58e8be121b4db00eb19718f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8dfff3b0a0a5b9431120636901cdfdf9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#a8dfff3b0a0a5b9431120636901cdfdf9">GetWorldRight</a> () const</td></tr>
+<tr class="memitem:a8dfff3b0a0a5b9431120636901cdfdf9"><td class="memItemLeft" align="right" valign="top"><a id="a8dfff3b0a0a5b9431120636901cdfdf9" name="a8dfff3b0a0a5b9431120636901cdfdf9"></a>
+<a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetWorldRight</b> () const</td></tr>
+<tr class="memdesc:a8dfff3b0a0a5b9431120636901cdfdf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return node's right vector in world space. <br /></td></tr>
 <tr class="separator:a8dfff3b0a0a5b9431120636901cdfdf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ae450b752efd7da057b842882d28a23"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#a8ae450b752efd7da057b842882d28a23">GetWorldScale</a> () const</td></tr>
+<tr class="memitem:a8ae450b752efd7da057b842882d28a23"><td class="memItemLeft" align="right" valign="top"><a id="a8ae450b752efd7da057b842882d28a23" name="a8ae450b752efd7da057b842882d28a23"></a>
+<a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetWorldScale</b> () const</td></tr>
+<tr class="memdesc:a8ae450b752efd7da057b842882d28a23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return scale in world space. <br /></td></tr>
 <tr class="separator:a8ae450b752efd7da057b842882d28a23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee2647686dd036f0e4a04eaea909ceef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#aee2647686dd036f0e4a04eaea909ceef">GetSignedWorldScale</a> () const</td></tr>
+<tr class="memitem:aee2647686dd036f0e4a04eaea909ceef"><td class="memItemLeft" align="right" valign="top"><a id="aee2647686dd036f0e4a04eaea909ceef" name="aee2647686dd036f0e4a04eaea909ceef"></a>
+<a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetSignedWorldScale</b> () const</td></tr>
+<tr class="memdesc:aee2647686dd036f0e4a04eaea909ceef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return signed scale in world space. Utilized for Urho2D physics. <br /></td></tr>
 <tr class="separator:aee2647686dd036f0e4a04eaea909ceef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a618a3a5b30014ea86281214efa91d2bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#a618a3a5b30014ea86281214efa91d2bf">GetWorldScale2D</a> () const</td></tr>
+<tr class="memitem:a618a3a5b30014ea86281214efa91d2bf"><td class="memItemLeft" align="right" valign="top"><a id="a618a3a5b30014ea86281214efa91d2bf" name="a618a3a5b30014ea86281214efa91d2bf"></a>
+<a class="el" href="class_urho3_d_1_1_vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetWorldScale2D</b> () const</td></tr>
+<tr class="memdesc:a618a3a5b30014ea86281214efa91d2bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return scale in world space (for Urho2D). <br /></td></tr>
 <tr class="separator:a618a3a5b30014ea86281214efa91d2bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2eb3e2cda5c98b2a92d95fcca8e43fbb"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_urho3_d_1_1_matrix3x4.html">Matrix3x4</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#a2eb3e2cda5c98b2a92d95fcca8e43fbb">GetWorldTransform</a> () const</td></tr>
+<tr class="memitem:a2eb3e2cda5c98b2a92d95fcca8e43fbb"><td class="memItemLeft" align="right" valign="top"><a id="a2eb3e2cda5c98b2a92d95fcca8e43fbb" name="a2eb3e2cda5c98b2a92d95fcca8e43fbb"></a>
+const <a class="el" href="class_urho3_d_1_1_matrix3x4.html">Matrix3x4</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetWorldTransform</b> () const</td></tr>
+<tr class="memdesc:a2eb3e2cda5c98b2a92d95fcca8e43fbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return world space transform matrix. <br /></td></tr>
 <tr class="separator:a2eb3e2cda5c98b2a92d95fcca8e43fbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae68437fbafc44ed6aa710344d5517d24"><td class="memItemLeft" align="right" valign="top"><a id="ae68437fbafc44ed6aa710344d5517d24" name="ae68437fbafc44ed6aa710344d5517d24"></a>
 <a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><b>LocalToWorld</b> (const <a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> &amp;position) const</td></tr>
@@ -589,7 +685,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>GetChildrenWithTag</b
 <a class="el" href="class_urho3_d_1_1_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetChild</b> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> nameHash, bool recursive=false) const</td></tr>
 <tr class="memdesc:a61e624735bd177010da3c13a4b002890"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return child scene node by name hash. <br /></td></tr>
 <tr class="separator:a61e624735bd177010da3c13a4b002890"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0611fca7c9a176941b1e1289e7470599"><td class="memItemLeft" align="right" valign="top">i32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#a0611fca7c9a176941b1e1289e7470599">GetNumComponents</a> () const</td></tr>
+<tr class="memitem:a0611fca7c9a176941b1e1289e7470599"><td class="memItemLeft" align="right" valign="top"><a id="a0611fca7c9a176941b1e1289e7470599" name="a0611fca7c9a176941b1e1289e7470599"></a>
+i32&#160;</td><td class="memItemRight" valign="bottom"><b>GetNumComponents</b> () const</td></tr>
+<tr class="memdesc:a0611fca7c9a176941b1e1289e7470599"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return number of components. <br /></td></tr>
 <tr class="separator:a0611fca7c9a176941b1e1289e7470599"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af86e2090b3c201f68ffce38646d155d3"><td class="memItemLeft" align="right" valign="top"><a id="af86e2090b3c201f68ffce38646d155d3" name="af86e2090b3c201f68ffce38646d155d3"></a>
 i32&#160;</td><td class="memItemRight" valign="bottom"><b>GetNumNetworkComponents</b> () const</td></tr>
@@ -667,7 +765,9 @@ template&lt;class T &gt; </td></tr>
 <tr class="memitem:a6934ea2063a94f8a1e05c4b525a2972c"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>HasComponent</b> () const</td></tr>
 <tr class="memdesc:a6934ea2063a94f8a1e05c4b525a2972c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Template version of checking whether has a specific component. <br /></td></tr>
 <tr class="separator:a6934ea2063a94f8a1e05c4b525a2972c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63c60a49859818ba9dcd0be10542f41a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#a63c60a49859818ba9dcd0be10542f41a">SetID</a> (unsigned id)</td></tr>
+<tr class="memitem:a63c60a49859818ba9dcd0be10542f41a"><td class="memItemLeft" align="right" valign="top"><a id="a63c60a49859818ba9dcd0be10542f41a" name="a63c60a49859818ba9dcd0be10542f41a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetID</b> (unsigned id)</td></tr>
+<tr class="memdesc:a63c60a49859818ba9dcd0be10542f41a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set ID. Called by <a class="el" href="class_urho3_d_1_1_scene.html" title="Root scene node, represents the whole scene.">Scene</a>. <br /></td></tr>
 <tr class="separator:a63c60a49859818ba9dcd0be10542f41a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac085de67716d525a195160ed9231e24c"><td class="memItemLeft" align="right" valign="top"><a id="ac085de67716d525a195160ed9231e24c" name="ac085de67716d525a195160ed9231e24c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetScene</b> (<a class="el" href="class_urho3_d_1_1_scene.html">Scene</a> *scene)</td></tr>
@@ -721,7 +821,9 @@ const <a class="el" href="class_urho3_d_1_1_vector.html">Vector</a>&lt; <a class
 void&#160;</td><td class="memItemRight" valign="bottom"><b>PrepareNetworkUpdate</b> ()</td></tr>
 <tr class="memdesc:a1638957bfa976ea888972a09af45a4f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare network update by comparing attributes and marking replication states dirty as necessary. <br /></td></tr>
 <tr class="separator:a1638957bfa976ea888972a09af45a4f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97097e461db5f08f2a4d062716a5ea9d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#a97097e461db5f08f2a4d062716a5ea9d">CleanupConnection</a> (<a class="el" href="class_urho3_d_1_1_connection.html">Connection</a> *connection)</td></tr>
+<tr class="memitem:a97097e461db5f08f2a4d062716a5ea9d"><td class="memItemLeft" align="right" valign="top"><a id="a97097e461db5f08f2a4d062716a5ea9d" name="a97097e461db5f08f2a4d062716a5ea9d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CleanupConnection</b> (<a class="el" href="class_urho3_d_1_1_connection.html">Connection</a> *connection)</td></tr>
+<tr class="memdesc:a97097e461db5f08f2a4d062716a5ea9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clean up all references to a network connection that is about to be removed. <br /></td></tr>
 <tr class="separator:a97097e461db5f08f2a4d062716a5ea9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a473c783c66c1bc0b497878bc787b1451"><td class="memItemLeft" align="right" valign="top"><a id="a473c783c66c1bc0b497878bc787b1451" name="a473c783c66c1bc0b497878bc787b1451"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>MarkReplicationDirty</b> ()</td></tr>
@@ -780,13 +882,17 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetTransformSilent</b
 <tr class="memitem:aa84286f8bf8adc7a1abf03bf36838db9 inherit pub_methods_class_urho3_d_1_1_animatable"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_animatable.html#aa84286f8bf8adc7a1abf03bf36838db9">SaveJSON</a> (<a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html">JSONValue</a> &amp;dest) const override</td></tr>
 <tr class="memdesc:aa84286f8bf8adc7a1abf03bf36838db9 inherit pub_methods_class_urho3_d_1_1_animatable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save as JSON data. Return true if successful.  <a href="class_urho3_d_1_1_animatable.html#aa84286f8bf8adc7a1abf03bf36838db9">More...</a><br /></td></tr>
 <tr class="separator:aa84286f8bf8adc7a1abf03bf36838db9 inherit pub_methods_class_urho3_d_1_1_animatable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d0aaeefab85096ad391775ec9778a2e inherit pub_methods_class_urho3_d_1_1_animatable"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_animatable.html#a4d0aaeefab85096ad391775ec9778a2e">SetAnimationEnabled</a> (bool enable)</td></tr>
+<tr class="memitem:a4d0aaeefab85096ad391775ec9778a2e inherit pub_methods_class_urho3_d_1_1_animatable"><td class="memItemLeft" align="right" valign="top"><a id="a4d0aaeefab85096ad391775ec9778a2e" name="a4d0aaeefab85096ad391775ec9778a2e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAnimationEnabled</b> (bool enable)</td></tr>
+<tr class="memdesc:a4d0aaeefab85096ad391775ec9778a2e inherit pub_methods_class_urho3_d_1_1_animatable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set automatic update of animation, default true. <br /></td></tr>
 <tr class="separator:a4d0aaeefab85096ad391775ec9778a2e inherit pub_methods_class_urho3_d_1_1_animatable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc97255cf6bf43a76a163ab4188ad15c inherit pub_methods_class_urho3_d_1_1_animatable"><td class="memItemLeft" align="right" valign="top"><a id="adc97255cf6bf43a76a163ab4188ad15c" name="adc97255cf6bf43a76a163ab4188ad15c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAnimationTime</b> (float time)</td></tr>
 <tr class="memdesc:adc97255cf6bf43a76a163ab4188ad15c inherit pub_methods_class_urho3_d_1_1_animatable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set time position of all attribute animations or an object animation manually. Automatic update should be disabled in this case. <br /></td></tr>
 <tr class="separator:adc97255cf6bf43a76a163ab4188ad15c inherit pub_methods_class_urho3_d_1_1_animatable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad47a7d6d1ea14b6145dc812e2d9b8486 inherit pub_methods_class_urho3_d_1_1_animatable"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_animatable.html#ad47a7d6d1ea14b6145dc812e2d9b8486">SetObjectAnimation</a> (<a class="el" href="class_urho3_d_1_1_object_animation.html">ObjectAnimation</a> *objectAnimation)</td></tr>
+<tr class="memitem:ad47a7d6d1ea14b6145dc812e2d9b8486 inherit pub_methods_class_urho3_d_1_1_animatable"><td class="memItemLeft" align="right" valign="top"><a id="ad47a7d6d1ea14b6145dc812e2d9b8486" name="ad47a7d6d1ea14b6145dc812e2d9b8486"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetObjectAnimation</b> (<a class="el" href="class_urho3_d_1_1_object_animation.html">ObjectAnimation</a> *objectAnimation)</td></tr>
+<tr class="memdesc:ad47a7d6d1ea14b6145dc812e2d9b8486 inherit pub_methods_class_urho3_d_1_1_animatable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set object animation. <br /></td></tr>
 <tr class="separator:ad47a7d6d1ea14b6145dc812e2d9b8486 inherit pub_methods_class_urho3_d_1_1_animatable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1aa4f5c600142e625eec608261cca98b inherit pub_methods_class_urho3_d_1_1_animatable"><td class="memItemLeft" align="right" valign="top"><a id="a1aa4f5c600142e625eec608261cca98b" name="a1aa4f5c600142e625eec608261cca98b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAttributeAnimation</b> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;name, <a class="el" href="class_urho3_d_1_1_value_animation.html">ValueAnimation</a> *attributeAnimation, <a class="el" href="_animation_defs_8h.html#af8409fd27c2ac2ee7224ec2b4dde83dd">WrapMode</a> wrapMode=WM_LOOP, float speed=1.0f)</td></tr>
@@ -812,9 +918,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveObjectAnimation
 void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveAttributeAnimation</b> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;name)</td></tr>
 <tr class="memdesc:ae6ca516abed8b44c3ea4a0cc60fbb9ae inherit pub_methods_class_urho3_d_1_1_animatable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove attribute animation. Same as calling SetAttributeAnimation with a null pointer. <br /></td></tr>
 <tr class="separator:ae6ca516abed8b44c3ea4a0cc60fbb9ae inherit pub_methods_class_urho3_d_1_1_animatable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6d9c33482746d0272bd1669766237a0 inherit pub_methods_class_urho3_d_1_1_animatable"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_animatable.html#ab6d9c33482746d0272bd1669766237a0">GetAnimationEnabled</a> () const</td></tr>
+<tr class="memitem:ab6d9c33482746d0272bd1669766237a0 inherit pub_methods_class_urho3_d_1_1_animatable"><td class="memItemLeft" align="right" valign="top"><a id="ab6d9c33482746d0272bd1669766237a0" name="ab6d9c33482746d0272bd1669766237a0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetAnimationEnabled</b> () const</td></tr>
+<tr class="memdesc:ab6d9c33482746d0272bd1669766237a0 inherit pub_methods_class_urho3_d_1_1_animatable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return animation enabled. <br /></td></tr>
 <tr class="separator:ab6d9c33482746d0272bd1669766237a0 inherit pub_methods_class_urho3_d_1_1_animatable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa31b77da686ba0c0fe482e5c2823e0e inherit pub_methods_class_urho3_d_1_1_animatable"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_object_animation.html">ObjectAnimation</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_animatable.html#afa31b77da686ba0c0fe482e5c2823e0e">GetObjectAnimation</a> () const</td></tr>
+<tr class="memitem:afa31b77da686ba0c0fe482e5c2823e0e inherit pub_methods_class_urho3_d_1_1_animatable"><td class="memItemLeft" align="right" valign="top"><a id="afa31b77da686ba0c0fe482e5c2823e0e" name="afa31b77da686ba0c0fe482e5c2823e0e"></a>
+<a class="el" href="class_urho3_d_1_1_object_animation.html">ObjectAnimation</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetObjectAnimation</b> () const</td></tr>
+<tr class="memdesc:afa31b77da686ba0c0fe482e5c2823e0e inherit pub_methods_class_urho3_d_1_1_animatable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return object animation. <br /></td></tr>
 <tr class="separator:afa31b77da686ba0c0fe482e5c2823e0e inherit pub_methods_class_urho3_d_1_1_animatable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af18cf0f27e101f0a1cb01f8292f858c7 inherit pub_methods_class_urho3_d_1_1_animatable"><td class="memItemLeft" align="right" valign="top"><a id="af18cf0f27e101f0a1cb01f8292f858c7" name="af18cf0f27e101f0a1cb01f8292f858c7"></a>
 <a class="el" href="class_urho3_d_1_1_value_animation.html">ValueAnimation</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetAttributeAnimation</b> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;name) const</td></tr>
@@ -891,7 +1001,9 @@ virtual const <a class="el" href="class_urho3_d_1_1_vector.html">Vector</a>&lt; 
 <tr class="memitem:a428c1b2e9b098b23684f7d6228e97177 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_serializable.html#a428c1b2e9b098b23684f7d6228e97177">MarkNetworkUpdate</a> ()</td></tr>
 <tr class="memdesc:a428c1b2e9b098b23684f7d6228e97177 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark for attribute check on the next network update.  <a href="class_urho3_d_1_1_serializable.html#a428c1b2e9b098b23684f7d6228e97177">More...</a><br /></td></tr>
 <tr class="separator:a428c1b2e9b098b23684f7d6228e97177 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52c377ff65bd3198a3c460c6a43dc008 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_serializable.html#a52c377ff65bd3198a3c460c6a43dc008">SetAttribute</a> (unsigned index, const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;value)</td></tr>
+<tr class="memitem:a52c377ff65bd3198a3c460c6a43dc008 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memItemLeft" align="right" valign="top"><a id="a52c377ff65bd3198a3c460c6a43dc008" name="a52c377ff65bd3198a3c460c6a43dc008"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>SetAttribute</b> (unsigned index, const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;value)</td></tr>
+<tr class="memdesc:a52c377ff65bd3198a3c460c6a43dc008 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set attribute by index. Return true if successfully set. <br /></td></tr>
 <tr class="separator:a52c377ff65bd3198a3c460c6a43dc008 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45834f05e09c1edc90bd759b1c03e187 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memItemLeft" align="right" valign="top"><a id="a45834f05e09c1edc90bd759b1c03e187" name="a45834f05e09c1edc90bd759b1c03e187"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>SetAttribute</b> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;name, const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;value)</td></tr>
@@ -909,7 +1021,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ResetToDefault</b> ()
 void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveInstanceDefault</b> ()</td></tr>
 <tr class="memdesc:a1aa03ec3737aa52aa3f8419f43aff050 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove instance's default values if they are set previously. <br /></td></tr>
 <tr class="separator:a1aa03ec3737aa52aa3f8419f43aff050 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa044160c22b374e032ae85c30520f89 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_serializable.html#aaa044160c22b374e032ae85c30520f89">SetTemporary</a> (bool enable)</td></tr>
+<tr class="memitem:aaa044160c22b374e032ae85c30520f89 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memItemLeft" align="right" valign="top"><a id="aaa044160c22b374e032ae85c30520f89" name="aaa044160c22b374e032ae85c30520f89"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetTemporary</b> (bool enable)</td></tr>
+<tr class="memdesc:aaa044160c22b374e032ae85c30520f89 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set temporary flag. Temporary objects will not be saved. <br /></td></tr>
 <tr class="separator:aaa044160c22b374e032ae85c30520f89 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28cff53160b712d452724f3e45afa49b inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memItemLeft" align="right" valign="top"><a id="a28cff53160b712d452724f3e45afa49b" name="a28cff53160b712d452724f3e45afa49b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetInterceptNetworkUpdate</b> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;attributeName, bool enable)</td></tr>
@@ -939,25 +1053,33 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>ReadDeltaUpdate</b> (
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>ReadLatestDataUpdate</b> (<a class="el" href="class_urho3_d_1_1_deserializer.html">Deserializer</a> &amp;source)</td></tr>
 <tr class="memdesc:ae6c88e100f5da55f2567098a96f8a759 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read and apply a network latest data update. Return true if attributes were changed. <br /></td></tr>
 <tr class="separator:ae6c88e100f5da55f2567098a96f8a759 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3783f928c689a3d4ee2d9766661eca0c inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_variant.html">Variant</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_serializable.html#a3783f928c689a3d4ee2d9766661eca0c">GetAttribute</a> (unsigned index) const</td></tr>
+<tr class="memitem:a3783f928c689a3d4ee2d9766661eca0c inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memItemLeft" align="right" valign="top"><a id="a3783f928c689a3d4ee2d9766661eca0c" name="a3783f928c689a3d4ee2d9766661eca0c"></a>
+<a class="el" href="class_urho3_d_1_1_variant.html">Variant</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetAttribute</b> (unsigned index) const</td></tr>
+<tr class="memdesc:a3783f928c689a3d4ee2d9766661eca0c inherit pub_methods_class_urho3_d_1_1_serializable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return attribute value by index. Return empty if illegal index. <br /></td></tr>
 <tr class="separator:a3783f928c689a3d4ee2d9766661eca0c inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a9bcd8df84a2af9437d6a7e26139f85 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memItemLeft" align="right" valign="top"><a id="a4a9bcd8df84a2af9437d6a7e26139f85" name="a4a9bcd8df84a2af9437d6a7e26139f85"></a>
 <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetAttribute</b> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;name) const</td></tr>
 <tr class="memdesc:a4a9bcd8df84a2af9437d6a7e26139f85 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return attribute value by name. Return empty if not found. <br /></td></tr>
 <tr class="separator:a4a9bcd8df84a2af9437d6a7e26139f85 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48b7ab5369b91ff7b7e47c83347963d8 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_variant.html">Variant</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_serializable.html#a48b7ab5369b91ff7b7e47c83347963d8">GetAttributeDefault</a> (unsigned index) const</td></tr>
+<tr class="memitem:a48b7ab5369b91ff7b7e47c83347963d8 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memItemLeft" align="right" valign="top"><a id="a48b7ab5369b91ff7b7e47c83347963d8" name="a48b7ab5369b91ff7b7e47c83347963d8"></a>
+<a class="el" href="class_urho3_d_1_1_variant.html">Variant</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetAttributeDefault</b> (unsigned index) const</td></tr>
+<tr class="memdesc:a48b7ab5369b91ff7b7e47c83347963d8 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return attribute default value by index. Return empty if illegal index. <br /></td></tr>
 <tr class="separator:a48b7ab5369b91ff7b7e47c83347963d8 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08e867f84068c6396136f0b956930a3f inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memItemLeft" align="right" valign="top"><a id="a08e867f84068c6396136f0b956930a3f" name="a08e867f84068c6396136f0b956930a3f"></a>
 <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetAttributeDefault</b> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;name) const</td></tr>
 <tr class="memdesc:a08e867f84068c6396136f0b956930a3f inherit pub_methods_class_urho3_d_1_1_serializable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return attribute default value by name. Return empty if not found. <br /></td></tr>
 <tr class="separator:a08e867f84068c6396136f0b956930a3f inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ef3c99945e4467d6f953986ac0ac118 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_serializable.html#a4ef3c99945e4467d6f953986ac0ac118">GetNumAttributes</a> () const</td></tr>
+<tr class="memitem:a4ef3c99945e4467d6f953986ac0ac118 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memItemLeft" align="right" valign="top"><a id="a4ef3c99945e4467d6f953986ac0ac118" name="a4ef3c99945e4467d6f953986ac0ac118"></a>
+unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>GetNumAttributes</b> () const</td></tr>
+<tr class="memdesc:a4ef3c99945e4467d6f953986ac0ac118 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return number of attributes. <br /></td></tr>
 <tr class="separator:a4ef3c99945e4467d6f953986ac0ac118 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6af0b75ce7fcd21eeb3a23d44350bf5b inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memItemLeft" align="right" valign="top"><a id="a6af0b75ce7fcd21eeb3a23d44350bf5b" name="a6af0b75ce7fcd21eeb3a23d44350bf5b"></a>
 unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>GetNumNetworkAttributes</b> () const</td></tr>
 <tr class="memdesc:a6af0b75ce7fcd21eeb3a23d44350bf5b inherit pub_methods_class_urho3_d_1_1_serializable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return number of network replication attributes. <br /></td></tr>
 <tr class="separator:a6af0b75ce7fcd21eeb3a23d44350bf5b inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa20baf7a00b3c81f16e0c85c69f0b5ce inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_serializable.html#aa20baf7a00b3c81f16e0c85c69f0b5ce">IsTemporary</a> () const</td></tr>
+<tr class="memitem:aa20baf7a00b3c81f16e0c85c69f0b5ce inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memItemLeft" align="right" valign="top"><a id="aa20baf7a00b3c81f16e0c85c69f0b5ce" name="aa20baf7a00b3c81f16e0c85c69f0b5ce"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsTemporary</b> () const</td></tr>
+<tr class="memdesc:aa20baf7a00b3c81f16e0c85c69f0b5ce inherit pub_methods_class_urho3_d_1_1_serializable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether is temporary. <br /></td></tr>
 <tr class="separator:aa20baf7a00b3c81f16e0c85c69f0b5ce inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ff16d749d3e8c5718dc5e34f721c345 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memItemLeft" align="right" valign="top"><a id="a0ff16d749d3e8c5718dc5e34f721c345" name="a0ff16d749d3e8c5718dc5e34f721c345"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetInterceptNetworkUpdate</b> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;attributeName) const</td></tr>
@@ -977,8 +1099,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetInterceptNetworkUp
 <tr class="memdesc:a4d472106f01c137d237b3099751d10c5 inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct. Clean up self from event sender &amp; receiver structures. <br /></td></tr>
 <tr class="separator:a4d472106f01c137d237b3099751d10c5 inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c7af660afc8467a99d1f17c8d099b3b inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#a4c7af660afc8467a99d1f17c8d099b3b">GetType</a> () const =0</td></tr>
+<tr class="memdesc:a4c7af660afc8467a99d1f17c8d099b3b inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return type hash.  <a href="class_urho3_d_1_1_object.html#a4c7af660afc8467a99d1f17c8d099b3b">More...</a><br /></td></tr>
 <tr class="separator:a4c7af660afc8467a99d1f17c8d099b3b inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa70436408fab29ff5d6ea54fa1e09b9b inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#aa70436408fab29ff5d6ea54fa1e09b9b">GetTypeName</a> () const =0</td></tr>
+<tr class="memdesc:aa70436408fab29ff5d6ea54fa1e09b9b inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return type name.  <a href="class_urho3_d_1_1_object.html#aa70436408fab29ff5d6ea54fa1e09b9b">More...</a><br /></td></tr>
 <tr class="separator:aa70436408fab29ff5d6ea54fa1e09b9b inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a768de02d2ed1eab1703c3ba02cf0415d inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a768de02d2ed1eab1703c3ba02cf0415d" name="a768de02d2ed1eab1703c3ba02cf0415d"></a>
 virtual const <a class="el" href="class_urho3_d_1_1_type_info.html">TypeInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetTypeInfo</b> () const =0</td></tr>
@@ -1068,11 +1192,17 @@ template&lt;typename... Args&gt; </td></tr>
 <a class="el" href="class_urho3_d_1_1_context.html">Context</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetContext</b> () const</td></tr>
 <tr class="memdesc:a8bd9b32c8a56c2f6d618d8afe8091eb7 inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return execution context. <br /></td></tr>
 <tr class="separator:a8bd9b32c8a56c2f6d618d8afe8091eb7 inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd4506c4bdb10232305ef69ebbb78a83 inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#acd4506c4bdb10232305ef69ebbb78a83">GetGlobalVar</a> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> key) const</td></tr>
+<tr class="memitem:acd4506c4bdb10232305ef69ebbb78a83 inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="acd4506c4bdb10232305ef69ebbb78a83" name="acd4506c4bdb10232305ef69ebbb78a83"></a>
+const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetGlobalVar</b> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> key) const</td></tr>
+<tr class="memdesc:acd4506c4bdb10232305ef69ebbb78a83 inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return global variable based on key. <br /></td></tr>
 <tr class="separator:acd4506c4bdb10232305ef69ebbb78a83 inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27b36184a862d9343604f31d85d9bc24 inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="_variant_8h.html#aee85c8bb4263431ef586545ff082720b">VariantMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#a27b36184a862d9343604f31d85d9bc24">GetGlobalVars</a> () const</td></tr>
+<tr class="memitem:a27b36184a862d9343604f31d85d9bc24 inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a27b36184a862d9343604f31d85d9bc24" name="a27b36184a862d9343604f31d85d9bc24"></a>
+const <a class="el" href="_variant_8h.html#aee85c8bb4263431ef586545ff082720b">VariantMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetGlobalVars</b> () const</td></tr>
+<tr class="memdesc:a27b36184a862d9343604f31d85d9bc24 inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return all global variables. <br /></td></tr>
 <tr class="separator:a27b36184a862d9343604f31d85d9bc24 inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43d25cc580737c9dc3b973d6c1230d9e inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#a43d25cc580737c9dc3b973d6c1230d9e">SetGlobalVar</a> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> key, const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;value)</td></tr>
+<tr class="memitem:a43d25cc580737c9dc3b973d6c1230d9e inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a43d25cc580737c9dc3b973d6c1230d9e" name="a43d25cc580737c9dc3b973d6c1230d9e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetGlobalVar</b> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> key, const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;value)</td></tr>
+<tr class="memdesc:a43d25cc580737c9dc3b973d6c1230d9e inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set global variable with the respective key and value. <br /></td></tr>
 <tr class="separator:a43d25cc580737c9dc3b973d6c1230d9e inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fb7d12773df7b6467f62415ee4ce977 inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a9fb7d12773df7b6467f62415ee4ce977" name="a9fb7d12773df7b6467f62415ee4ce977"></a>
 <a class="el" href="class_urho3_d_1_1_object.html">Object</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetSubsystem</b> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> type) const</td></tr>
@@ -1103,7 +1233,9 @@ template&lt;class T &gt; </td></tr>
 <tr class="memitem:adab8c85b0da9870b217e68a0400345dd inherit pub_methods_class_urho3_d_1_1_object"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetSubsystem</b> () const</td></tr>
 <tr class="memdesc:adab8c85b0da9870b217e68a0400345dd inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Template version of returning a subsystem. <br /></td></tr>
 <tr class="separator:adab8c85b0da9870b217e68a0400345dd inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a227ebc7673a905ac7c878495c66515e3 inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#a227ebc7673a905ac7c878495c66515e3">GetCategory</a> () const</td></tr>
+<tr class="memitem:a227ebc7673a905ac7c878495c66515e3 inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a227ebc7673a905ac7c878495c66515e3" name="a227ebc7673a905ac7c878495c66515e3"></a>
+const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetCategory</b> () const</td></tr>
+<tr class="memdesc:a227ebc7673a905ac7c878495c66515e3 inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return object category. Categories are (optionally) registered along with the object factory. Return an empty string if the object category is not registered. <br /></td></tr>
 <tr class="separator:a227ebc7673a905ac7c878495c66515e3 inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd72cab3f338ef6ca76da511bcd941dc inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="abd72cab3f338ef6ca76da511bcd941dc" name="abd72cab3f338ef6ca76da511bcd941dc"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetBlockEvents</b> (bool block)</td></tr>
@@ -1130,13 +1262,21 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~RefCounted</b> ()
 <a class="el" href="class_urho3_d_1_1_ref_counted.html">RefCounted</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_urho3_d_1_1_ref_counted.html">RefCounted</a> &amp;rhs)=delete</td></tr>
 <tr class="memdesc:ab34ed11da9f794b4c3ae6a4f33dc090a inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prevent assignment. <br /></td></tr>
 <tr class="separator:ab34ed11da9f794b4c3ae6a4f33dc090a inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d857f439bb5a7935199a8e4fdb8f2c8 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_ref_counted.html#a0d857f439bb5a7935199a8e4fdb8f2c8">AddRef</a> ()</td></tr>
+<tr class="memitem:a0d857f439bb5a7935199a8e4fdb8f2c8 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top"><a id="a0d857f439bb5a7935199a8e4fdb8f2c8" name="a0d857f439bb5a7935199a8e4fdb8f2c8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddRef</b> ()</td></tr>
+<tr class="memdesc:a0d857f439bb5a7935199a8e4fdb8f2c8 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increment reference count. Can also be called outside of a <a class="el" href="class_urho3_d_1_1_shared_ptr.html" title="Shared pointer template class with intrusive reference counting.">SharedPtr</a> for traditional reference counting. <br /></td></tr>
 <tr class="separator:a0d857f439bb5a7935199a8e4fdb8f2c8 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59e95fecbcbc560f81f0bdd52306cc1d inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_ref_counted.html#a59e95fecbcbc560f81f0bdd52306cc1d">ReleaseRef</a> ()</td></tr>
+<tr class="memitem:a59e95fecbcbc560f81f0bdd52306cc1d inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top"><a id="a59e95fecbcbc560f81f0bdd52306cc1d" name="a59e95fecbcbc560f81f0bdd52306cc1d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ReleaseRef</b> ()</td></tr>
+<tr class="memdesc:a59e95fecbcbc560f81f0bdd52306cc1d inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decrement reference count and delete self if no more references. Can also be called outside of a <a class="el" href="class_urho3_d_1_1_shared_ptr.html" title="Shared pointer template class with intrusive reference counting.">SharedPtr</a> for traditional reference counting. <br /></td></tr>
 <tr class="separator:a59e95fecbcbc560f81f0bdd52306cc1d inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e764b1f4b072a1a0dbfaeac62626244 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_ref_counted.html#a7e764b1f4b072a1a0dbfaeac62626244">Refs</a> () const</td></tr>
+<tr class="memitem:a7e764b1f4b072a1a0dbfaeac62626244 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top"><a id="a7e764b1f4b072a1a0dbfaeac62626244" name="a7e764b1f4b072a1a0dbfaeac62626244"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>Refs</b> () const</td></tr>
+<tr class="memdesc:a7e764b1f4b072a1a0dbfaeac62626244 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return reference count. <br /></td></tr>
 <tr class="separator:a7e764b1f4b072a1a0dbfaeac62626244 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27960099d665fa2a05b7d488cfc56d90 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_ref_counted.html#a27960099d665fa2a05b7d488cfc56d90">WeakRefs</a> () const</td></tr>
+<tr class="memitem:a27960099d665fa2a05b7d488cfc56d90 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top"><a id="a27960099d665fa2a05b7d488cfc56d90" name="a27960099d665fa2a05b7d488cfc56d90"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>WeakRefs</b> () const</td></tr>
+<tr class="memdesc:a27960099d665fa2a05b7d488cfc56d90 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return weak reference count. <br /></td></tr>
 <tr class="separator:a27960099d665fa2a05b7d488cfc56d90 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08cd9280809e02f43cd08599391131bb inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top"><a id="a08cd9280809e02f43cd08599391131bb" name="a08cd9280809e02f43cd08599391131bb"></a>
 <a class="el" href="struct_urho3_d_1_1_ref_count.html">RefCount</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>RefCountPtr</b> ()</td></tr>
@@ -1145,10 +1285,14 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~RefCounted</b> ()
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a0bf5b40b97dc36a8b39370aee92ccd9d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_node.html#a0bf5b40b97dc36a8b39370aee92ccd9d">RegisterObject</a> (<a class="el" href="class_urho3_d_1_1_context.html">Context</a> *context)</td></tr>
+<tr class="memitem:a0bf5b40b97dc36a8b39370aee92ccd9d"><td class="memItemLeft" align="right" valign="top"><a id="a0bf5b40b97dc36a8b39370aee92ccd9d" name="a0bf5b40b97dc36a8b39370aee92ccd9d"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterObject</b> (<a class="el" href="class_urho3_d_1_1_context.html">Context</a> *context)</td></tr>
+<tr class="memdesc:a0bf5b40b97dc36a8b39370aee92ccd9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register object factory. <br /></td></tr>
 <tr class="separator:a0bf5b40b97dc36a8b39370aee92ccd9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_class_urho3_d_1_1_animatable"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_urho3_d_1_1_animatable')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="class_urho3_d_1_1_animatable.html">Urho3D::Animatable</a></td></tr>
-<tr class="memitem:a6e04d362924281f977a4775ccff73427 inherit pub_static_methods_class_urho3_d_1_1_animatable"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_animatable.html#a6e04d362924281f977a4775ccff73427">RegisterObject</a> (<a class="el" href="class_urho3_d_1_1_context.html">Context</a> *context)</td></tr>
+<tr class="memitem:a6e04d362924281f977a4775ccff73427 inherit pub_static_methods_class_urho3_d_1_1_animatable"><td class="memItemLeft" align="right" valign="top"><a id="a6e04d362924281f977a4775ccff73427" name="a6e04d362924281f977a4775ccff73427"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterObject</b> (<a class="el" href="class_urho3_d_1_1_context.html">Context</a> *context)</td></tr>
+<tr class="memdesc:a6e04d362924281f977a4775ccff73427 inherit pub_static_methods_class_urho3_d_1_1_animatable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register object factory. <br /></td></tr>
 <tr class="separator:a6e04d362924281f977a4775ccff73427 inherit pub_static_methods_class_urho3_d_1_1_animatable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_class_urho3_d_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_urho3_d_1_1_object')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="class_urho3_d_1_1_object.html">Urho3D::Object</a></td></tr>
 <tr class="memitem:a96b9229f1241a330bf2ea431b7018b05 inherit pub_static_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a96b9229f1241a330bf2ea431b7018b05" name="a96b9229f1241a330bf2ea431b7018b05"></a>
@@ -1429,25 +1573,6 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Connection</b></td><
 
 </div>
 </div>
-<a id="a97097e461db5f08f2a4d062716a5ea9d" name="a97097e461db5f08f2a4d062716a5ea9d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a97097e461db5f08f2a4d062716a5ea9d">&#9670;&nbsp;</a></span>CleanupConnection()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::Node::CleanupConnection </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_urho3_d_1_1_connection.html">Connection</a> *&#160;</td>
-          <td class="paramname"><em>connection</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Clean up all references to a network connection that is about to be removed. </p>
-
-</div>
-</div>
 <a id="ad4d01acf8c5c68831b13cd82f5d1cb0c" name="ad4d01acf8c5c68831b13cd82f5d1cb0c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad4d01acf8c5c68831b13cd82f5d1cb0c">&#9670;&nbsp;</a></span>FindAttributeAnimationTarget()</h2>
 
@@ -1485,796 +1610,6 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Connection</b></td><
 <p>Find target of an attribute animation from object hierarchy by name. </p>
 
 <p>Reimplemented from <a class="el" href="class_urho3_d_1_1_animatable.html#a09ff54e7498d6d1d6068b68c89396577">Urho3D::Animatable</a>.</p>
-
-</div>
-</div>
-<a id="a34f114f3145135f846a3354e152c2533" name="a34f114f3145135f846a3354e152c2533"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a34f114f3145135f846a3354e152c2533">&#9670;&nbsp;</a></span>GetDirection()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> Urho3D::Node::GetDirection </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return forward direction in parent space. Positive Z axis equals identity rotation. </p>
-
-</div>
-</div>
-<a id="a1ce16fa386bfc7b728711030eb941723" name="a1ce16fa386bfc7b728711030eb941723"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ce16fa386bfc7b728711030eb941723">&#9670;&nbsp;</a></span>GetID()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned Urho3D::Node::GetID </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return ID. </p>
-
-</div>
-</div>
-<a id="a7b1640a3996061023dab8751238dc79b" name="a7b1640a3996061023dab8751238dc79b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b1640a3996061023dab8751238dc79b">&#9670;&nbsp;</a></span>GetName()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp; Urho3D::Node::GetName </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return name. </p>
-
-</div>
-</div>
-<a id="a0611fca7c9a176941b1e1289e7470599" name="a0611fca7c9a176941b1e1289e7470599"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0611fca7c9a176941b1e1289e7470599">&#9670;&nbsp;</a></span>GetNumComponents()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">i32 Urho3D::Node::GetNumComponents </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return number of components. </p>
-
-</div>
-</div>
-<a id="afe38e0f45b7ffa6d41c6283ce3175f2a" name="afe38e0f45b7ffa6d41c6283ce3175f2a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afe38e0f45b7ffa6d41c6283ce3175f2a">&#9670;&nbsp;</a></span>GetOwner()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_urho3_d_1_1_connection.html">Connection</a> * Urho3D::Node::GetOwner </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return owner connection in networking. </p>
-
-</div>
-</div>
-<a id="a1bc658c7b719ce21531882df362ea958" name="a1bc658c7b719ce21531882df362ea958"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1bc658c7b719ce21531882df362ea958">&#9670;&nbsp;</a></span>GetParent()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_urho3_d_1_1_node.html">Node</a> * Urho3D::Node::GetParent </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return parent scene node. </p>
-
-</div>
-</div>
-<a id="a9c4d222bfa87cfe55268ed1ccbcdc65c" name="a9c4d222bfa87cfe55268ed1ccbcdc65c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9c4d222bfa87cfe55268ed1ccbcdc65c">&#9670;&nbsp;</a></span>GetPosition()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> &amp; Urho3D::Node::GetPosition </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return position in parent space. </p>
-
-</div>
-</div>
-<a id="ac433c28cb92bfcfa8d64611e7a50a6d4" name="ac433c28cb92bfcfa8d64611e7a50a6d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac433c28cb92bfcfa8d64611e7a50a6d4">&#9670;&nbsp;</a></span>GetPosition2D()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_urho3_d_1_1_vector2.html">Vector2</a> Urho3D::Node::GetPosition2D </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return position in parent space (for Urho2D). </p>
-
-</div>
-</div>
-<a id="aef0e9243e131903452837694d672da96" name="aef0e9243e131903452837694d672da96"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef0e9243e131903452837694d672da96">&#9670;&nbsp;</a></span>GetRight()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> Urho3D::Node::GetRight </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return right direction in parent space. Positive X axis equals identity rotation. </p>
-
-</div>
-</div>
-<a id="a4eee69efff9e18b82364ac5a22df5c32" name="a4eee69efff9e18b82364ac5a22df5c32"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4eee69efff9e18b82364ac5a22df5c32">&#9670;&nbsp;</a></span>GetRotation()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="class_urho3_d_1_1_quaternion.html">Quaternion</a> &amp; Urho3D::Node::GetRotation </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return rotation in parent space. </p>
-
-</div>
-</div>
-<a id="a21ed92710cb92cc64e552ebb9e548e66" name="a21ed92710cb92cc64e552ebb9e548e66"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21ed92710cb92cc64e552ebb9e548e66">&#9670;&nbsp;</a></span>GetRotation2D()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float Urho3D::Node::GetRotation2D </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return rotation in parent space (for Urho2D). </p>
-
-</div>
-</div>
-<a id="a5a0319e7efa9231cb49be4d900b8a6da" name="a5a0319e7efa9231cb49be4d900b8a6da"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5a0319e7efa9231cb49be4d900b8a6da">&#9670;&nbsp;</a></span>GetScale()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> &amp; Urho3D::Node::GetScale </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return scale in parent space. </p>
-
-</div>
-</div>
-<a id="ab7cc52c0e53ce916e729cff69f54dc19" name="ab7cc52c0e53ce916e729cff69f54dc19"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab7cc52c0e53ce916e729cff69f54dc19">&#9670;&nbsp;</a></span>GetScale2D()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_urho3_d_1_1_vector2.html">Vector2</a> Urho3D::Node::GetScale2D </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return scale in parent space (for Urho2D). </p>
-
-</div>
-</div>
-<a id="ad3742cda838a2b291daa44d3ab00de56" name="ad3742cda838a2b291daa44d3ab00de56"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad3742cda838a2b291daa44d3ab00de56">&#9670;&nbsp;</a></span>GetScene()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_urho3_d_1_1_scene.html">Scene</a> * Urho3D::Node::GetScene </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return scene. </p>
-
-</div>
-</div>
-<a id="aee2647686dd036f0e4a04eaea909ceef" name="aee2647686dd036f0e4a04eaea909ceef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aee2647686dd036f0e4a04eaea909ceef">&#9670;&nbsp;</a></span>GetSignedWorldScale()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> Urho3D::Node::GetSignedWorldScale </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Return signed scale in world space. Utilized for Urho2D physics. </p>
-
-</div>
-</div>
-<a id="a49a0f7165252bfcf62cb897067d80044" name="a49a0f7165252bfcf62cb897067d80044"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a49a0f7165252bfcf62cb897067d80044">&#9670;&nbsp;</a></span>GetTags()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="_variant_8h.html#a5f28e7014e5fbb48c5b2a999db00fc29">StringVector</a> &amp; Urho3D::Node::GetTags </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return all tags. </p>
-
-</div>
-</div>
-<a id="a7f36ffbac48689b8453d03c6a57a776f" name="a7f36ffbac48689b8453d03c6a57a776f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f36ffbac48689b8453d03c6a57a776f">&#9670;&nbsp;</a></span>GetTransform()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_urho3_d_1_1_matrix3x4.html">Matrix3x4</a> Urho3D::Node::GetTransform </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return parent space transform matrix. </p>
-
-</div>
-</div>
-<a id="a14b834f5256b437209fd540c05f7af28" name="a14b834f5256b437209fd540c05f7af28"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14b834f5256b437209fd540c05f7af28">&#9670;&nbsp;</a></span>GetUp()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> Urho3D::Node::GetUp </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return up direction in parent space. Positive Y axis equals identity rotation. </p>
-
-</div>
-</div>
-<a id="afe17e6e94b7ab99663c827442db45a5e" name="afe17e6e94b7ab99663c827442db45a5e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afe17e6e94b7ab99663c827442db45a5e">&#9670;&nbsp;</a></span>GetWorldDirection()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> Urho3D::Node::GetWorldDirection </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return direction in world space. </p>
-
-</div>
-</div>
-<a id="a8f3fe7808b7af4975ddb21be8a269ece" name="a8f3fe7808b7af4975ddb21be8a269ece"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f3fe7808b7af4975ddb21be8a269ece">&#9670;&nbsp;</a></span>GetWorldPosition()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> Urho3D::Node::GetWorldPosition </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return position in world space. </p>
-
-</div>
-</div>
-<a id="a4c310b39df932a228882216e5fb00039" name="a4c310b39df932a228882216e5fb00039"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c310b39df932a228882216e5fb00039">&#9670;&nbsp;</a></span>GetWorldPosition2D()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_urho3_d_1_1_vector2.html">Vector2</a> Urho3D::Node::GetWorldPosition2D </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return position in world space (for Urho2D). </p>
-
-</div>
-</div>
-<a id="a8dfff3b0a0a5b9431120636901cdfdf9" name="a8dfff3b0a0a5b9431120636901cdfdf9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8dfff3b0a0a5b9431120636901cdfdf9">&#9670;&nbsp;</a></span>GetWorldRight()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> Urho3D::Node::GetWorldRight </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return node's right vector in world space. </p>
-
-</div>
-</div>
-<a id="ad74175e15dfaa86263299e355a2d49ed" name="ad74175e15dfaa86263299e355a2d49ed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad74175e15dfaa86263299e355a2d49ed">&#9670;&nbsp;</a></span>GetWorldRotation()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_urho3_d_1_1_quaternion.html">Quaternion</a> Urho3D::Node::GetWorldRotation </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return rotation in world space. </p>
-
-</div>
-</div>
-<a id="a2665d6022346d350ef02ed83293fc884" name="a2665d6022346d350ef02ed83293fc884"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2665d6022346d350ef02ed83293fc884">&#9670;&nbsp;</a></span>GetWorldRotation2D()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float Urho3D::Node::GetWorldRotation2D </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return rotation in world space (for Urho2D). </p>
-
-</div>
-</div>
-<a id="a8ae450b752efd7da057b842882d28a23" name="a8ae450b752efd7da057b842882d28a23"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ae450b752efd7da057b842882d28a23">&#9670;&nbsp;</a></span>GetWorldScale()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> Urho3D::Node::GetWorldScale </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return scale in world space. </p>
-
-</div>
-</div>
-<a id="a618a3a5b30014ea86281214efa91d2bf" name="a618a3a5b30014ea86281214efa91d2bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a618a3a5b30014ea86281214efa91d2bf">&#9670;&nbsp;</a></span>GetWorldScale2D()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_urho3_d_1_1_vector2.html">Vector2</a> Urho3D::Node::GetWorldScale2D </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return scale in world space (for Urho2D). </p>
-
-</div>
-</div>
-<a id="a2eb3e2cda5c98b2a92d95fcca8e43fbb" name="a2eb3e2cda5c98b2a92d95fcca8e43fbb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2eb3e2cda5c98b2a92d95fcca8e43fbb">&#9670;&nbsp;</a></span>GetWorldTransform()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="class_urho3_d_1_1_matrix3x4.html">Matrix3x4</a> &amp; Urho3D::Node::GetWorldTransform </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return world space transform matrix. </p>
-
-</div>
-</div>
-<a id="a91550fd6f58e8be121b4db00eb19718f" name="a91550fd6f58e8be121b4db00eb19718f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91550fd6f58e8be121b4db00eb19718f">&#9670;&nbsp;</a></span>GetWorldUp()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> Urho3D::Node::GetWorldUp </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return node's up vector in world space. </p>
-
-</div>
-</div>
-<a id="a36ffa108037ab29617bf178fcb4ec1da" name="a36ffa108037ab29617bf178fcb4ec1da"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a36ffa108037ab29617bf178fcb4ec1da">&#9670;&nbsp;</a></span>IsEnabled()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Urho3D::Node::IsEnabled </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return whether is enabled. Disables nodes effectively disable all their components. </p>
-
-</div>
-</div>
-<a id="a5de99365f99d842461c402aa09cb630d" name="a5de99365f99d842461c402aa09cb630d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5de99365f99d842461c402aa09cb630d">&#9670;&nbsp;</a></span>IsEnabledSelf()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Urho3D::Node::IsEnabledSelf </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return the node's last own enabled state. May be different than the value returned by IsEnabled when SetDeepEnabled has been used. </p>
-
-</div>
-</div>
-<a id="a9db232116d4278bd3e10c365d2ef57d5" name="a9db232116d4278bd3e10c365d2ef57d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9db232116d4278bd3e10c365d2ef57d5">&#9670;&nbsp;</a></span>IsReplicated()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Urho3D::Node::IsReplicated </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Return whether the node is replicated or local to a scene. </p>
 
 </div>
 </div>
@@ -2463,33 +1798,6 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Connection</b></td><
 
 </div>
 </div>
-<a id="a0bf5b40b97dc36a8b39370aee92ccd9d" name="a0bf5b40b97dc36a8b39370aee92ccd9d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0bf5b40b97dc36a8b39370aee92ccd9d">&#9670;&nbsp;</a></span>RegisterObject()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::Node::RegisterObject </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_urho3_d_1_1_context.html">Context</a> *&#160;</td>
-          <td class="paramname"><em>context</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Register object factory. </p>
-
-</div>
-</div>
 <a id="a8c4ee4fccbbdc6a87dfe8831cdfee88a" name="a8c4ee4fccbbdc6a87dfe8831cdfee88a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8c4ee4fccbbdc6a87dfe8831cdfee88a">&#9670;&nbsp;</a></span>Save()</h2>
 
@@ -2615,415 +1923,6 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Connection</b></td><
 
 </div>
 </div>
-<a id="af02633f8b886f9939f839b86378c82f9" name="af02633f8b886f9939f839b86378c82f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af02633f8b886f9939f839b86378c82f9">&#9670;&nbsp;</a></span>SetDirection()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::Node::SetDirection </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> &amp;&#160;</td>
-          <td class="paramname"><em>direction</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Set forward direction in parent space. Positive Z axis equals identity rotation. </p>
-
-</div>
-</div>
-<a id="aebf77521a93e12e059ce1bb953af5c4f" name="aebf77521a93e12e059ce1bb953af5c4f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aebf77521a93e12e059ce1bb953af5c4f">&#9670;&nbsp;</a></span>SetEnabled()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::Node::SetEnabled </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>enable</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Set enabled/disabled state without recursion. Components in a disabled node become effectively disabled regardless of their own enable/disable state. </p>
-
-</div>
-</div>
-<a id="a63c60a49859818ba9dcd0be10542f41a" name="a63c60a49859818ba9dcd0be10542f41a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a63c60a49859818ba9dcd0be10542f41a">&#9670;&nbsp;</a></span>SetID()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::Node::SetID </td>
-          <td>(</td>
-          <td class="paramtype">unsigned&#160;</td>
-          <td class="paramname"><em>id</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Set ID. Called by <a class="el" href="class_urho3_d_1_1_scene.html" title="Root scene node, represents the whole scene.">Scene</a>. </p>
-
-</div>
-</div>
-<a id="a4fe38a2be941c8ca1fa59b9639775c09" name="a4fe38a2be941c8ca1fa59b9639775c09"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4fe38a2be941c8ca1fa59b9639775c09">&#9670;&nbsp;</a></span>SetName()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::Node::SetName </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;&#160;</td>
-          <td class="paramname"><em>name</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Set name of the scene node. Names are not required to be unique. </p>
-
-</div>
-</div>
-<a id="a46a82aa6e1c19b4c0cb532fb38b6b4c1" name="a46a82aa6e1c19b4c0cb532fb38b6b4c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a46a82aa6e1c19b4c0cb532fb38b6b4c1">&#9670;&nbsp;</a></span>SetOwner()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::Node::SetOwner </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_urho3_d_1_1_connection.html">Connection</a> *&#160;</td>
-          <td class="paramname"><em>owner</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Set owner connection for networking. </p>
-
-</div>
-</div>
-<a id="a8a62d2fd3157b3d569753b57de8d065d" name="a8a62d2fd3157b3d569753b57de8d065d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8a62d2fd3157b3d569753b57de8d065d">&#9670;&nbsp;</a></span>SetParent()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::Node::SetParent </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_urho3_d_1_1_node.html">Node</a> *&#160;</td>
-          <td class="paramname"><em>parent</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Assign to a new parent scene node. Retains the world transform. </p>
-
-</div>
-</div>
-<a id="aa2fd960b4c5641cd38771280a6b84fb8" name="aa2fd960b4c5641cd38771280a6b84fb8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa2fd960b4c5641cd38771280a6b84fb8">&#9670;&nbsp;</a></span>SetPosition()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::Node::SetPosition </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> &amp;&#160;</td>
-          <td class="paramname"><em>position</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Set position in parent space. If the scene node is on the root level (is child of the scene itself), this is same as world space. </p>
-
-</div>
-</div>
-<a id="a0a45bac185f4d3dcee531b2ca35af565" name="a0a45bac185f4d3dcee531b2ca35af565"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a45bac185f4d3dcee531b2ca35af565">&#9670;&nbsp;</a></span>SetPosition2D()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::Node::SetPosition2D </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_urho3_d_1_1_vector2.html">Vector2</a> &amp;&#160;</td>
-          <td class="paramname"><em>position</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Set position in parent space (for Urho2D). </p>
-
-</div>
-</div>
-<a id="a11bd9b2bfda2503123a32889b144aea1" name="a11bd9b2bfda2503123a32889b144aea1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a11bd9b2bfda2503123a32889b144aea1">&#9670;&nbsp;</a></span>SetRotation()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::Node::SetRotation </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_urho3_d_1_1_quaternion.html">Quaternion</a> &amp;&#160;</td>
-          <td class="paramname"><em>rotation</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Set rotation in parent space. </p>
-
-</div>
-</div>
-<a id="a203d47aba9ad013f5ca5b95473716a5e" name="a203d47aba9ad013f5ca5b95473716a5e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a203d47aba9ad013f5ca5b95473716a5e">&#9670;&nbsp;</a></span>SetRotation2D()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::Node::SetRotation2D </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>rotation</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Set rotation in parent space (for Urho2D). </p>
-
-</div>
-</div>
-<a id="a2c082c1db09bb3498117d0b3586ecba2" name="a2c082c1db09bb3498117d0b3586ecba2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c082c1db09bb3498117d0b3586ecba2">&#9670;&nbsp;</a></span>SetScale()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::Node::SetScale </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> &amp;&#160;</td>
-          <td class="paramname"><em>scale</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Set scale in parent space. </p>
-
-</div>
-</div>
-<a id="a3154678d02729fa4b88bdddbea7c68a6" name="a3154678d02729fa4b88bdddbea7c68a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3154678d02729fa4b88bdddbea7c68a6">&#9670;&nbsp;</a></span>SetScale2D()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::Node::SetScale2D </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_urho3_d_1_1_vector2.html">Vector2</a> &amp;&#160;</td>
-          <td class="paramname"><em>scale</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Set scale in parent space (for Urho2D). </p>
-
-</div>
-</div>
-<a id="a0ca75040c310b9b4b7dd941a327ef4cf" name="a0ca75040c310b9b4b7dd941a327ef4cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0ca75040c310b9b4b7dd941a327ef4cf">&#9670;&nbsp;</a></span>SetWorldDirection()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::Node::SetWorldDirection </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> &amp;&#160;</td>
-          <td class="paramname"><em>direction</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Set forward direction in world space. </p>
-
-</div>
-</div>
-<a id="a75071e15defb94754e145f215acd655a" name="a75071e15defb94754e145f215acd655a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a75071e15defb94754e145f215acd655a">&#9670;&nbsp;</a></span>SetWorldPosition()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::Node::SetWorldPosition </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> &amp;&#160;</td>
-          <td class="paramname"><em>position</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Set position in world space. </p>
-
-</div>
-</div>
-<a id="abd5e496ab2c8c5ff273188ed387a7696" name="abd5e496ab2c8c5ff273188ed387a7696"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd5e496ab2c8c5ff273188ed387a7696">&#9670;&nbsp;</a></span>SetWorldPosition2D()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::Node::SetWorldPosition2D </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_urho3_d_1_1_vector2.html">Vector2</a> &amp;&#160;</td>
-          <td class="paramname"><em>position</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Set position in world space (for Urho2D). </p>
-
-</div>
-</div>
-<a id="a0a51e567fd136b48e30056517c3c6100" name="a0a51e567fd136b48e30056517c3c6100"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a51e567fd136b48e30056517c3c6100">&#9670;&nbsp;</a></span>SetWorldRotation()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::Node::SetWorldRotation </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_urho3_d_1_1_quaternion.html">Quaternion</a> &amp;&#160;</td>
-          <td class="paramname"><em>rotation</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Set rotation in world space. </p>
-
-</div>
-</div>
-<a id="a9f3b2c042f4490b2b91ce733bdc9f7e9" name="a9f3b2c042f4490b2b91ce733bdc9f7e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f3b2c042f4490b2b91ce733bdc9f7e9">&#9670;&nbsp;</a></span>SetWorldRotation2D()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::Node::SetWorldRotation2D </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>rotation</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Set rotation in world space (for Urho2D). </p>
-
-</div>
-</div>
-<a id="a88196c33c41b9f1aa96c359a6d4e9009" name="a88196c33c41b9f1aa96c359a6d4e9009"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a88196c33c41b9f1aa96c359a6d4e9009">&#9670;&nbsp;</a></span>SetWorldScale()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::Node::SetWorldScale </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> &amp;&#160;</td>
-          <td class="paramname"><em>scale</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Set scale in world space. </p>
-
-</div>
-</div>
-<a id="a0c4d99a21b176b525ace088f5f03a92f" name="a0c4d99a21b176b525ace088f5f03a92f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c4d99a21b176b525ace088f5f03a92f">&#9670;&nbsp;</a></span>SetWorldScale2D()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::Node::SetWorldScale2D </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_urho3_d_1_1_vector2.html">Vector2</a> &amp;&#160;</td>
-          <td class="paramname"><em>scale</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Set scale in world space (for Urho2D). </p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/runner/work/rurho3d.github.io/rurho3d.github.io/urho3d_repo/Source/Urho3D/Scene/<a class="el" href="_node_8h.html">Node.h</a></li>
 <li>/home/runner/work/rurho3d.github.io/rurho3d.github.io/urho3d_repo/Source/Urho3D/Scene/Node.cpp</li>
@@ -3031,7 +1930,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Connection</b></td><
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 27 2022 08:16:12 for Urho3D by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Wed Sep 28 2022 20:01:28 for Urho3D by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

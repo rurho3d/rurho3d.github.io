@@ -58,6 +58,9 @@
 </div><!--header-->
 <div class="contents">
 
+<p>Abstract stream for reading. @nocount.  
+ <a href="class_urho3_d_1_1_deserializer.html#details">More...</a></p>
+
 <p><code>#include &lt;/home/runner/work/rurho3d.github.io/rurho3d.github.io/urho3d_repo/Source/Urho3D/IO/Deserializer.h&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Urho3D::Deserializer:</div>
@@ -68,7 +71,7 @@ Inheritance diagram for Urho3D::Deserializer:</div>
 <area href="class_urho3_d_1_1_abstract_file.html" title="A common root class for objects that implement both Serializer and Deserializer." alt="Urho3D::AbstractFile" shape="rect" coords="228,56,370,80"/>
 <area href="class_urho3_d_1_1_http_request.html" title="An HTTP connection with response data stream." alt="Urho3D::HttpRequest" shape="rect" coords="380,56,522,80"/>
 <area href="class_urho3_d_1_1_file.html" title="File opened either through the filesystem or from within a package file." alt="Urho3D::File" shape="rect" coords="0,112,142,136"/>
-<area href="class_urho3_d_1_1_memory_buffer.html" alt="Urho3D::MemoryBuffer" shape="rect" coords="152,112,294,136"/>
+<area href="class_urho3_d_1_1_memory_buffer.html" title="Memory area that can be read and written to as a stream." alt="Urho3D::MemoryBuffer" shape="rect" coords="152,112,294,136"/>
 <area href="class_urho3_d_1_1_named_pipe.html" title="Named pipe for interprocess communication." alt="Urho3D::NamedPipe" shape="rect" coords="304,112,446,136"/>
 <area href="class_urho3_d_1_1_vector_buffer.html" title="Dynamically sized buffer that can be read and written to as a stream." alt="Urho3D::VectorBuffer" shape="rect" coords="456,112,598,136"/>
   </map>
@@ -95,22 +98,29 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~Deserializer</b> 
 <tr class="memdesc:a9ac30f41773c9e386f671e13054b5d55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set position from the beginning of the stream. Return actual new position.  <a href="class_urho3_d_1_1_deserializer.html#a9ac30f41773c9e386f671e13054b5d55">More...</a><br /></td></tr>
 <tr class="separator:a9ac30f41773c9e386f671e13054b5d55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59b68616d6572fed705f41237cb57be9"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_deserializer.html#a59b68616d6572fed705f41237cb57be9">GetName</a> () const</td></tr>
+<tr class="memdesc:a59b68616d6572fed705f41237cb57be9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return name of the stream.  <a href="class_urho3_d_1_1_deserializer.html#a59b68616d6572fed705f41237cb57be9">More...</a><br /></td></tr>
 <tr class="separator:a59b68616d6572fed705f41237cb57be9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b8eeccc4456ac8bcef552b4aa97d041"><td class="memItemLeft" align="right" valign="top">virtual hash32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_deserializer.html#a1b8eeccc4456ac8bcef552b4aa97d041">GetChecksum</a> ()</td></tr>
+<tr class="memdesc:a1b8eeccc4456ac8bcef552b4aa97d041"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a checksum if applicable.  <a href="class_urho3_d_1_1_deserializer.html#a1b8eeccc4456ac8bcef552b4aa97d041">More...</a><br /></td></tr>
 <tr class="separator:a1b8eeccc4456ac8bcef552b4aa97d041"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62d8b0e28fa886adfdde1c42c6913477"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_deserializer.html#a62d8b0e28fa886adfdde1c42c6913477">IsEof</a> () const</td></tr>
+<tr class="memdesc:a62d8b0e28fa886adfdde1c42c6913477"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether the end of stream has been reached.  <a href="class_urho3_d_1_1_deserializer.html#a62d8b0e28fa886adfdde1c42c6913477">More...</a><br /></td></tr>
 <tr class="separator:a62d8b0e28fa886adfdde1c42c6913477"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6dd4da48a33d4fb8570943a408f41b02"><td class="memItemLeft" align="right" valign="top"><a id="a6dd4da48a33d4fb8570943a408f41b02" name="a6dd4da48a33d4fb8570943a408f41b02"></a>
 i64&#160;</td><td class="memItemRight" valign="bottom"><b>SeekRelative</b> (i64 delta)</td></tr>
 <tr class="memdesc:a6dd4da48a33d4fb8570943a408f41b02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set position relative to current position. Return actual new position. <br /></td></tr>
 <tr class="separator:a6dd4da48a33d4fb8570943a408f41b02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaac4dbf012113afd88c018380b20316d"><td class="memItemLeft" align="right" valign="top">i64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_deserializer.html#aaac4dbf012113afd88c018380b20316d">GetPosition</a> () const</td></tr>
+<tr class="memitem:aaac4dbf012113afd88c018380b20316d"><td class="memItemLeft" align="right" valign="top"><a id="aaac4dbf012113afd88c018380b20316d" name="aaac4dbf012113afd88c018380b20316d"></a>
+i64&#160;</td><td class="memItemRight" valign="bottom"><b>GetPosition</b> () const</td></tr>
+<tr class="memdesc:aaac4dbf012113afd88c018380b20316d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return current position. <br /></td></tr>
 <tr class="separator:aaac4dbf012113afd88c018380b20316d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a62565c3655310a53fe6d03da82af0d"><td class="memItemLeft" align="right" valign="top"><a id="a3a62565c3655310a53fe6d03da82af0d" name="a3a62565c3655310a53fe6d03da82af0d"></a>
 i64&#160;</td><td class="memItemRight" valign="bottom"><b>Tell</b> () const</td></tr>
 <tr class="memdesc:a3a62565c3655310a53fe6d03da82af0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return current position. <br /></td></tr>
 <tr class="separator:a3a62565c3655310a53fe6d03da82af0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b067068911c834462f58757300b3d19"><td class="memItemLeft" align="right" valign="top">i64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_deserializer.html#a4b067068911c834462f58757300b3d19">GetSize</a> () const</td></tr>
+<tr class="memitem:a4b067068911c834462f58757300b3d19"><td class="memItemLeft" align="right" valign="top"><a id="a4b067068911c834462f58757300b3d19" name="a4b067068911c834462f58757300b3d19"></a>
+i64&#160;</td><td class="memItemRight" valign="bottom"><b>GetSize</b> () const</td></tr>
+<tr class="memdesc:a4b067068911c834462f58757300b3d19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return size. <br /></td></tr>
 <tr class="separator:a4b067068911c834462f58757300b3d19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8ccfd2f2784af5fc4943843dee19ef7"><td class="memItemLeft" align="right" valign="top"><a id="aa8ccfd2f2784af5fc4943843dee19ef7" name="aa8ccfd2f2784af5fc4943843dee19ef7"></a>
 long long&#160;</td><td class="memItemRight" valign="bottom"><b>ReadInt64</b> ()</td></tr>
@@ -170,7 +180,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>ReadDouble</b> ()</
 <tr class="separator:a403d5e8df2cbc84bea47892a7353b7ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a919252c073115ed4a19f23883e209b1b"><td class="memItemLeft" align="right" valign="top"><a id="a919252c073115ed4a19f23883e209b1b" name="a919252c073115ed4a19f23883e209b1b"></a>
 <a class="el" href="class_urho3_d_1_1_rect.html">Rect</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ReadRect</b> ()</td></tr>
-<tr class="memdesc:a919252c073115ed4a19f23883e209b1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a <a class="el" href="class_urho3_d_1_1_rect.html">Rect</a>. <br /></td></tr>
+<tr class="memdesc:a919252c073115ed4a19f23883e209b1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a <a class="el" href="class_urho3_d_1_1_rect.html" title="Two-dimensional bounding rectangle.">Rect</a>. <br /></td></tr>
 <tr class="separator:a919252c073115ed4a19f23883e209b1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24fca5b0832f3129a82fcf2215380336"><td class="memItemLeft" align="right" valign="top"><a id="a24fca5b0832f3129a82fcf2215380336" name="a24fca5b0832f3129a82fcf2215380336"></a>
 <a class="el" href="class_urho3_d_1_1_vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ReadVector2</b> ()</td></tr>
@@ -285,7 +295,7 @@ i64&#160;</td><td class="memItemRight" valign="bottom"><b>size_</b></td></tr>
 <tr class="separator:ab0d1805f2addff20e35762307d44f2ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Abstract stream for reading. @nocount </p>
+<div class="textblock"><p >Abstract stream for reading. @nocount. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a1b8eeccc4456ac8bcef552b4aa97d041" name="a1b8eeccc4456ac8bcef552b4aa97d041"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1b8eeccc4456ac8bcef552b4aa97d041">&#9670;&nbsp;</a></span>GetChecksum()</h2>
@@ -309,7 +319,8 @@ i64&#160;</td><td class="memItemRight" valign="bottom"><b>size_</b></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Return a checksum if applicable. </p>
+
+<p>Return a checksum if applicable. </p>
 
 <p>Reimplemented in <a class="el" href="class_urho3_d_1_1_file.html#afb8c73e29ecea041605b9bc9f36ce3a9">Urho3D::File</a>.</p>
 
@@ -337,61 +348,10 @@ i64&#160;</td><td class="memItemRight" valign="bottom"><b>size_</b></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Return name of the stream. </p>
+
+<p>Return name of the stream. </p>
 
 <p>Reimplemented in <a class="el" href="class_urho3_d_1_1_abstract_file.html#ada04895491d2abbb4d7d376869be7b4f">Urho3D::AbstractFile</a>.</p>
-
-</div>
-</div>
-<a id="aaac4dbf012113afd88c018380b20316d" name="aaac4dbf012113afd88c018380b20316d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaac4dbf012113afd88c018380b20316d">&#9670;&nbsp;</a></span>GetPosition()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">i64 Urho3D::Deserializer::GetPosition </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return current position. </p>
-
-</div>
-</div>
-<a id="a4b067068911c834462f58757300b3d19" name="a4b067068911c834462f58757300b3d19"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b067068911c834462f58757300b3d19">&#9670;&nbsp;</a></span>GetSize()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">i64 Urho3D::Deserializer::GetSize </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return size. </p>
 
 </div>
 </div>
@@ -417,7 +377,8 @@ i64&#160;</td><td class="memItemRight" valign="bottom"><b>size_</b></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Return whether the end of stream has been reached. </p>
+
+<p>Return whether the end of stream has been reached. </p>
 
 <p>Reimplemented in <a class="el" href="class_urho3_d_1_1_named_pipe.html#a5b8e31b41d82f568fd2eb2a0882c0976">Urho3D::NamedPipe</a>, and <a class="el" href="class_urho3_d_1_1_http_request.html#a5b83ae3fd9b78b1de195bd9cd9103173">Urho3D::HttpRequest</a>.</p>
 
@@ -500,7 +461,7 @@ i64&#160;</td><td class="memItemRight" valign="bottom"><b>size_</b></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 27 2022 08:16:11 for Urho3D by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Wed Sep 28 2022 20:01:28 for Urho3D by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

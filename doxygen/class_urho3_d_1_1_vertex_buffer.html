@@ -70,7 +70,7 @@ Inheritance diagram for Urho3D::VertexBuffer:</div>
  <div class="center">
   <img src="class_urho3_d_1_1_vertex_buffer.png" usemap="#Urho3D::VertexBuffer_map" alt=""/>
   <map id="Urho3D::VertexBuffer_map" name="Urho3D::VertexBuffer_map">
-<area href="class_urho3_d_1_1_object.html" alt="Urho3D::Object" shape="rect" coords="0,56,133,80"/>
+<area href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil..." alt="Urho3D::Object" shape="rect" coords="0,56,133,80"/>
 <area href="class_urho3_d_1_1_g_p_u_object.html" title="Base class for GPU resources." alt="Urho3D::GPUObject" shape="rect" coords="143,56,276,80"/>
 <area href="class_urho3_d_1_1_ref_counted.html" title="Base class for intrusively reference-counted objects. These are noncopyable and non-assignable." alt="Urho3D::RefCounted" shape="rect" coords="0,0,133,24"/>
   </map>
@@ -95,7 +95,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a44c1a387c164fe346fbd069fcbb7a51e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_vertex_buffer.html#a44c1a387c164fe346fbd069fcbb7a51e">Release</a> () override</td></tr>
 <tr class="memdesc:a44c1a387c164fe346fbd069fcbb7a51e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release buffer.  <a href="class_urho3_d_1_1_vertex_buffer.html#a44c1a387c164fe346fbd069fcbb7a51e">More...</a><br /></td></tr>
 <tr class="separator:a44c1a387c164fe346fbd069fcbb7a51e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54c2ded230cbfbbeac650caac088ad7c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_vertex_buffer.html#a54c2ded230cbfbbeac650caac088ad7c">SetShadowed</a> (bool enable)</td></tr>
+<tr class="memitem:a54c2ded230cbfbbeac650caac088ad7c"><td class="memItemLeft" align="right" valign="top"><a id="a54c2ded230cbfbbeac650caac088ad7c" name="a54c2ded230cbfbbeac650caac088ad7c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetShadowed</b> (bool enable)</td></tr>
+<tr class="memdesc:a54c2ded230cbfbbeac650caac088ad7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable shadowing in CPU memory. Shadowing is forced on if the graphics subsystem does not exist. <br /></td></tr>
 <tr class="separator:a54c2ded230cbfbbeac650caac088ad7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b195d8bbc3b46ed5bc8c63e93a413f8"><td class="memItemLeft" align="right" valign="top"><a id="a3b195d8bbc3b46ed5bc8c63e93a413f8" name="a3b195d8bbc3b46ed5bc8c63e93a413f8"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>SetSize</b> (i32 vertexCount, const <a class="el" href="class_urho3_d_1_1_vector.html">Vector</a>&lt; <a class="el" href="struct_urho3_d_1_1_vertex_element.html">VertexElement</a> &gt; &amp;elements, bool dynamic=false)</td></tr>
@@ -121,19 +123,29 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><b>Lock</b> (i32 start
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Unlock</b> ()</td></tr>
 <tr class="memdesc:a10d352ff496e04a7d1395559d72a0b17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unlock the buffer and apply changes to the GPU buffer. <br /></td></tr>
 <tr class="separator:a10d352ff496e04a7d1395559d72a0b17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff76cc5b8809d02b3ae41e72683ec0e9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_vertex_buffer.html#aff76cc5b8809d02b3ae41e72683ec0e9">IsShadowed</a> () const</td></tr>
+<tr class="memitem:aff76cc5b8809d02b3ae41e72683ec0e9"><td class="memItemLeft" align="right" valign="top"><a id="aff76cc5b8809d02b3ae41e72683ec0e9" name="aff76cc5b8809d02b3ae41e72683ec0e9"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsShadowed</b> () const</td></tr>
+<tr class="memdesc:aff76cc5b8809d02b3ae41e72683ec0e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether CPU memory shadowing is enabled. <br /></td></tr>
 <tr class="separator:aff76cc5b8809d02b3ae41e72683ec0e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab19285169ae884083fcbd608818b1420"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_vertex_buffer.html#ab19285169ae884083fcbd608818b1420">IsDynamic</a> () const</td></tr>
+<tr class="memitem:ab19285169ae884083fcbd608818b1420"><td class="memItemLeft" align="right" valign="top"><a id="ab19285169ae884083fcbd608818b1420" name="ab19285169ae884083fcbd608818b1420"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsDynamic</b> () const</td></tr>
+<tr class="memdesc:ab19285169ae884083fcbd608818b1420"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether is dynamic. <br /></td></tr>
 <tr class="separator:ab19285169ae884083fcbd608818b1420"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21c125b08d02da5abccbae01e7cbf9d2"><td class="memItemLeft" align="right" valign="top"><a id="a21c125b08d02da5abccbae01e7cbf9d2" name="a21c125b08d02da5abccbae01e7cbf9d2"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsLocked</b> () const</td></tr>
 <tr class="memdesc:a21c125b08d02da5abccbae01e7cbf9d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether is currently locked. <br /></td></tr>
 <tr class="separator:a21c125b08d02da5abccbae01e7cbf9d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21be758a9b0549498d8f1c6adc650780"><td class="memItemLeft" align="right" valign="top">i32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_vertex_buffer.html#a21be758a9b0549498d8f1c6adc650780">GetVertexCount</a> () const</td></tr>
+<tr class="memitem:a21be758a9b0549498d8f1c6adc650780"><td class="memItemLeft" align="right" valign="top"><a id="a21be758a9b0549498d8f1c6adc650780" name="a21be758a9b0549498d8f1c6adc650780"></a>
+i32&#160;</td><td class="memItemRight" valign="bottom"><b>GetVertexCount</b> () const</td></tr>
+<tr class="memdesc:a21be758a9b0549498d8f1c6adc650780"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return number of vertices. <br /></td></tr>
 <tr class="separator:a21be758a9b0549498d8f1c6adc650780"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abdeb39d525997a1e791f4696beb9bdec"><td class="memItemLeft" align="right" valign="top">i32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_vertex_buffer.html#abdeb39d525997a1e791f4696beb9bdec">GetVertexSize</a> () const</td></tr>
+<tr class="memitem:abdeb39d525997a1e791f4696beb9bdec"><td class="memItemLeft" align="right" valign="top"><a id="abdeb39d525997a1e791f4696beb9bdec" name="abdeb39d525997a1e791f4696beb9bdec"></a>
+i32&#160;</td><td class="memItemRight" valign="bottom"><b>GetVertexSize</b> () const</td></tr>
+<tr class="memdesc:abdeb39d525997a1e791f4696beb9bdec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return vertex size in bytes. <br /></td></tr>
 <tr class="separator:abdeb39d525997a1e791f4696beb9bdec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6158715d8e26a0dce6439fb655da67b6"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_urho3_d_1_1_vector.html">Vector</a>&lt; <a class="el" href="struct_urho3_d_1_1_vertex_element.html">VertexElement</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_vertex_buffer.html#a6158715d8e26a0dce6439fb655da67b6">GetElements</a> () const</td></tr>
+<tr class="memitem:a6158715d8e26a0dce6439fb655da67b6"><td class="memItemLeft" align="right" valign="top"><a id="a6158715d8e26a0dce6439fb655da67b6" name="a6158715d8e26a0dce6439fb655da67b6"></a>
+const <a class="el" href="class_urho3_d_1_1_vector.html">Vector</a>&lt; <a class="el" href="struct_urho3_d_1_1_vertex_element.html">VertexElement</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetElements</b> () const</td></tr>
+<tr class="memdesc:a6158715d8e26a0dce6439fb655da67b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return vertex elements. <br /></td></tr>
 <tr class="separator:a6158715d8e26a0dce6439fb655da67b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97816272eff229c09fc3892271a890e1"><td class="memItemLeft" align="right" valign="top"><a id="a97816272eff229c09fc3892271a890e1" name="a97816272eff229c09fc3892271a890e1"></a>
 const <a class="el" href="struct_urho3_d_1_1_vertex_element.html">VertexElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetElement</b> (<a class="el" href="_graphics_defs_8h.html#a79588dde23778c29cea45e2d3c2b0971">VertexElementSemantic</a> semantic, i8 index=0) const</td></tr>
@@ -159,7 +171,9 @@ i32&#160;</td><td class="memItemRight" valign="bottom"><b>GetElementOffset</b> (
 i32&#160;</td><td class="memItemRight" valign="bottom"><b>GetElementOffset</b> (<a class="el" href="_graphics_defs_8h.html#aebe82c3ae30941ba8142db5411e74783">VertexElementType</a> type, <a class="el" href="_graphics_defs_8h.html#a79588dde23778c29cea45e2d3c2b0971">VertexElementSemantic</a> semantic, i8 index=0) const</td></tr>
 <tr class="memdesc:a0248f317784d601f84627fea7acf1efb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return offset of a element with specific type within vertex, or NINDEX if element does not exist. <br /></td></tr>
 <tr class="separator:a0248f317784d601f84627fea7acf1efb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81124a4397cc4b9ab48f925b6f59f8a6"><td class="memItemLeft" align="right" valign="top">VertexMaskFlags&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_vertex_buffer.html#a81124a4397cc4b9ab48f925b6f59f8a6">GetElementMask</a> () const</td></tr>
+<tr class="memitem:a81124a4397cc4b9ab48f925b6f59f8a6"><td class="memItemLeft" align="right" valign="top"><a id="a81124a4397cc4b9ab48f925b6f59f8a6" name="a81124a4397cc4b9ab48f925b6f59f8a6"></a>
+VertexMaskFlags&#160;</td><td class="memItemRight" valign="bottom"><b>GetElementMask</b> () const</td></tr>
+<tr class="memdesc:a81124a4397cc4b9ab48f925b6f59f8a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return legacy vertex element mask. Note that both semantic and type must match the legacy element for a mask bit to be set. <br /></td></tr>
 <tr class="separator:a81124a4397cc4b9ab48f925b6f59f8a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb03b70ba833bffd18b94d1e73921a4e"><td class="memItemLeft" align="right" valign="top"><a id="aeb03b70ba833bffd18b94d1e73921a4e" name="aeb03b70ba833bffd18b94d1e73921a4e"></a>
 u8 *&#160;</td><td class="memItemRight" valign="bottom"><b>GetShadowData</b> () const</td></tr>
@@ -183,8 +197,10 @@ hash64&#160;</td><td class="memItemRight" valign="bottom"><b>GetBufferHash</b> (
 <tr class="memdesc:a4d472106f01c137d237b3099751d10c5 inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct. Clean up self from event sender &amp; receiver structures. <br /></td></tr>
 <tr class="separator:a4d472106f01c137d237b3099751d10c5 inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c7af660afc8467a99d1f17c8d099b3b inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#a4c7af660afc8467a99d1f17c8d099b3b">GetType</a> () const =0</td></tr>
+<tr class="memdesc:a4c7af660afc8467a99d1f17c8d099b3b inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return type hash.  <a href="class_urho3_d_1_1_object.html#a4c7af660afc8467a99d1f17c8d099b3b">More...</a><br /></td></tr>
 <tr class="separator:a4c7af660afc8467a99d1f17c8d099b3b inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa70436408fab29ff5d6ea54fa1e09b9b inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#aa70436408fab29ff5d6ea54fa1e09b9b">GetTypeName</a> () const =0</td></tr>
+<tr class="memdesc:aa70436408fab29ff5d6ea54fa1e09b9b inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return type name.  <a href="class_urho3_d_1_1_object.html#aa70436408fab29ff5d6ea54fa1e09b9b">More...</a><br /></td></tr>
 <tr class="separator:aa70436408fab29ff5d6ea54fa1e09b9b inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a768de02d2ed1eab1703c3ba02cf0415d inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a768de02d2ed1eab1703c3ba02cf0415d" name="a768de02d2ed1eab1703c3ba02cf0415d"></a>
 virtual const <a class="el" href="class_urho3_d_1_1_type_info.html">TypeInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetTypeInfo</b> () const =0</td></tr>
@@ -274,11 +290,17 @@ template&lt;typename... Args&gt; </td></tr>
 <a class="el" href="class_urho3_d_1_1_context.html">Context</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetContext</b> () const</td></tr>
 <tr class="memdesc:a8bd9b32c8a56c2f6d618d8afe8091eb7 inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return execution context. <br /></td></tr>
 <tr class="separator:a8bd9b32c8a56c2f6d618d8afe8091eb7 inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd4506c4bdb10232305ef69ebbb78a83 inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#acd4506c4bdb10232305ef69ebbb78a83">GetGlobalVar</a> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> key) const</td></tr>
+<tr class="memitem:acd4506c4bdb10232305ef69ebbb78a83 inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="acd4506c4bdb10232305ef69ebbb78a83" name="acd4506c4bdb10232305ef69ebbb78a83"></a>
+const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetGlobalVar</b> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> key) const</td></tr>
+<tr class="memdesc:acd4506c4bdb10232305ef69ebbb78a83 inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return global variable based on key. <br /></td></tr>
 <tr class="separator:acd4506c4bdb10232305ef69ebbb78a83 inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27b36184a862d9343604f31d85d9bc24 inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="_variant_8h.html#aee85c8bb4263431ef586545ff082720b">VariantMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#a27b36184a862d9343604f31d85d9bc24">GetGlobalVars</a> () const</td></tr>
+<tr class="memitem:a27b36184a862d9343604f31d85d9bc24 inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a27b36184a862d9343604f31d85d9bc24" name="a27b36184a862d9343604f31d85d9bc24"></a>
+const <a class="el" href="_variant_8h.html#aee85c8bb4263431ef586545ff082720b">VariantMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetGlobalVars</b> () const</td></tr>
+<tr class="memdesc:a27b36184a862d9343604f31d85d9bc24 inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return all global variables. <br /></td></tr>
 <tr class="separator:a27b36184a862d9343604f31d85d9bc24 inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43d25cc580737c9dc3b973d6c1230d9e inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#a43d25cc580737c9dc3b973d6c1230d9e">SetGlobalVar</a> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> key, const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;value)</td></tr>
+<tr class="memitem:a43d25cc580737c9dc3b973d6c1230d9e inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a43d25cc580737c9dc3b973d6c1230d9e" name="a43d25cc580737c9dc3b973d6c1230d9e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetGlobalVar</b> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> key, const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;value)</td></tr>
+<tr class="memdesc:a43d25cc580737c9dc3b973d6c1230d9e inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set global variable with the respective key and value. <br /></td></tr>
 <tr class="separator:a43d25cc580737c9dc3b973d6c1230d9e inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fb7d12773df7b6467f62415ee4ce977 inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a9fb7d12773df7b6467f62415ee4ce977" name="a9fb7d12773df7b6467f62415ee4ce977"></a>
 <a class="el" href="class_urho3_d_1_1_object.html">Object</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetSubsystem</b> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> type) const</td></tr>
@@ -309,7 +331,9 @@ template&lt;class T &gt; </td></tr>
 <tr class="memitem:adab8c85b0da9870b217e68a0400345dd inherit pub_methods_class_urho3_d_1_1_object"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetSubsystem</b> () const</td></tr>
 <tr class="memdesc:adab8c85b0da9870b217e68a0400345dd inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Template version of returning a subsystem. <br /></td></tr>
 <tr class="separator:adab8c85b0da9870b217e68a0400345dd inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a227ebc7673a905ac7c878495c66515e3 inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#a227ebc7673a905ac7c878495c66515e3">GetCategory</a> () const</td></tr>
+<tr class="memitem:a227ebc7673a905ac7c878495c66515e3 inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a227ebc7673a905ac7c878495c66515e3" name="a227ebc7673a905ac7c878495c66515e3"></a>
+const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetCategory</b> () const</td></tr>
+<tr class="memdesc:a227ebc7673a905ac7c878495c66515e3 inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return object category. Categories are (optionally) registered along with the object factory. Return an empty string if the object category is not registered. <br /></td></tr>
 <tr class="separator:a227ebc7673a905ac7c878495c66515e3 inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd72cab3f338ef6ca76da511bcd941dc inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="abd72cab3f338ef6ca76da511bcd941dc" name="abd72cab3f338ef6ca76da511bcd941dc"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetBlockEvents</b> (bool block)</td></tr>
@@ -336,13 +360,21 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~RefCounted</b> ()
 <a class="el" href="class_urho3_d_1_1_ref_counted.html">RefCounted</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_urho3_d_1_1_ref_counted.html">RefCounted</a> &amp;rhs)=delete</td></tr>
 <tr class="memdesc:ab34ed11da9f794b4c3ae6a4f33dc090a inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prevent assignment. <br /></td></tr>
 <tr class="separator:ab34ed11da9f794b4c3ae6a4f33dc090a inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d857f439bb5a7935199a8e4fdb8f2c8 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_ref_counted.html#a0d857f439bb5a7935199a8e4fdb8f2c8">AddRef</a> ()</td></tr>
+<tr class="memitem:a0d857f439bb5a7935199a8e4fdb8f2c8 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top"><a id="a0d857f439bb5a7935199a8e4fdb8f2c8" name="a0d857f439bb5a7935199a8e4fdb8f2c8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddRef</b> ()</td></tr>
+<tr class="memdesc:a0d857f439bb5a7935199a8e4fdb8f2c8 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increment reference count. Can also be called outside of a <a class="el" href="class_urho3_d_1_1_shared_ptr.html" title="Shared pointer template class with intrusive reference counting.">SharedPtr</a> for traditional reference counting. <br /></td></tr>
 <tr class="separator:a0d857f439bb5a7935199a8e4fdb8f2c8 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59e95fecbcbc560f81f0bdd52306cc1d inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_ref_counted.html#a59e95fecbcbc560f81f0bdd52306cc1d">ReleaseRef</a> ()</td></tr>
+<tr class="memitem:a59e95fecbcbc560f81f0bdd52306cc1d inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top"><a id="a59e95fecbcbc560f81f0bdd52306cc1d" name="a59e95fecbcbc560f81f0bdd52306cc1d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ReleaseRef</b> ()</td></tr>
+<tr class="memdesc:a59e95fecbcbc560f81f0bdd52306cc1d inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decrement reference count and delete self if no more references. Can also be called outside of a <a class="el" href="class_urho3_d_1_1_shared_ptr.html" title="Shared pointer template class with intrusive reference counting.">SharedPtr</a> for traditional reference counting. <br /></td></tr>
 <tr class="separator:a59e95fecbcbc560f81f0bdd52306cc1d inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e764b1f4b072a1a0dbfaeac62626244 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_ref_counted.html#a7e764b1f4b072a1a0dbfaeac62626244">Refs</a> () const</td></tr>
+<tr class="memitem:a7e764b1f4b072a1a0dbfaeac62626244 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top"><a id="a7e764b1f4b072a1a0dbfaeac62626244" name="a7e764b1f4b072a1a0dbfaeac62626244"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>Refs</b> () const</td></tr>
+<tr class="memdesc:a7e764b1f4b072a1a0dbfaeac62626244 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return reference count. <br /></td></tr>
 <tr class="separator:a7e764b1f4b072a1a0dbfaeac62626244 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27960099d665fa2a05b7d488cfc56d90 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_ref_counted.html#a27960099d665fa2a05b7d488cfc56d90">WeakRefs</a> () const</td></tr>
+<tr class="memitem:a27960099d665fa2a05b7d488cfc56d90 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top"><a id="a27960099d665fa2a05b7d488cfc56d90" name="a27960099d665fa2a05b7d488cfc56d90"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>WeakRefs</b> () const</td></tr>
+<tr class="memdesc:a27960099d665fa2a05b7d488cfc56d90 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return weak reference count. <br /></td></tr>
 <tr class="separator:a27960099d665fa2a05b7d488cfc56d90 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08cd9280809e02f43cd08599391131bb inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top"><a id="a08cd9280809e02f43cd08599391131bb" name="a08cd9280809e02f43cd08599391131bb"></a>
 <a class="el" href="struct_urho3_d_1_1_ref_count.html">RefCount</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>RefCountPtr</b> ()</td></tr>
@@ -382,7 +414,9 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><b>GetGPUObject</b> ()
 u32&#160;</td><td class="memItemRight" valign="bottom"><b>GetGPUObjectName</b> () const</td></tr>
 <tr class="memdesc:a5ea92ffd360b51030133f2f06bca8805 inherit pub_methods_class_urho3_d_1_1_g_p_u_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the object name. Applicable only on OpenGL. <br /></td></tr>
 <tr class="separator:a5ea92ffd360b51030133f2f06bca8805 inherit pub_methods_class_urho3_d_1_1_g_p_u_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6938a78e8bb131f8c53e136778c9f6c2 inherit pub_methods_class_urho3_d_1_1_g_p_u_object"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_g_p_u_object.html#a6938a78e8bb131f8c53e136778c9f6c2">IsDataLost</a> () const</td></tr>
+<tr class="memitem:a6938a78e8bb131f8c53e136778c9f6c2 inherit pub_methods_class_urho3_d_1_1_g_p_u_object"><td class="memItemLeft" align="right" valign="top"><a id="a6938a78e8bb131f8c53e136778c9f6c2" name="a6938a78e8bb131f8c53e136778c9f6c2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsDataLost</b> () const</td></tr>
+<tr class="memdesc:a6938a78e8bb131f8c53e136778c9f6c2 inherit pub_methods_class_urho3_d_1_1_g_p_u_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether data is lost due to context loss. <br /></td></tr>
 <tr class="separator:a6938a78e8bb131f8c53e136778c9f6c2 inherit pub_methods_class_urho3_d_1_1_g_p_u_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7039fc3a187fd67855a802c00099452b inherit pub_methods_class_urho3_d_1_1_g_p_u_object"><td class="memItemLeft" align="right" valign="top"><a id="a7039fc3a187fd67855a802c00099452b" name="a7039fc3a187fd67855a802c00099452b"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasPendingData</b> () const</td></tr>
@@ -520,7 +554,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:abf1a902885d2c3bac02f3f58e0e0f037 inherit pro_attribs_class_urho3_d_1_1_g_p_u_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02851f652df5053623c4434f2cd9a4b8 inherit pro_attribs_class_urho3_d_1_1_g_p_u_object"><td class="memItemLeft" align="right" valign="top"><a id="a02851f652df5053623c4434f2cd9a4b8" name="a02851f652df5053623c4434f2cd9a4b8"></a>
 <a class="el" href="union_urho3_d_1_1_g_p_u_object_handle.html">GPUObjectHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>object_</b> {}</td></tr>
-<tr class="memdesc:a02851f652df5053623c4434f2cd9a4b8 inherit pro_attribs_class_urho3_d_1_1_g_p_u_object"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_object.html">Object</a> pointer or name. <br /></td></tr>
+<tr class="memdesc:a02851f652df5053623c4434f2cd9a4b8 inherit pro_attribs_class_urho3_d_1_1_g_p_u_object"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a> pointer or name. <br /></td></tr>
 <tr class="separator:a02851f652df5053623c4434f2cd9a4b8 inherit pro_attribs_class_urho3_d_1_1_g_p_u_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6c82e62ca8b1098c4157acfe517c772 inherit pro_attribs_class_urho3_d_1_1_g_p_u_object"><td class="memItemLeft" align="right" valign="top"><a id="ab6c82e62ca8b1098c4157acfe517c772" name="ab6c82e62ca8b1098c4157acfe517c772"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>dataLost_</b> {}</td></tr>
@@ -534,162 +568,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>dataPending_</b> {}</
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Hardware vertex buffer. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a81124a4397cc4b9ab48f925b6f59f8a6" name="a81124a4397cc4b9ab48f925b6f59f8a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a81124a4397cc4b9ab48f925b6f59f8a6">&#9670;&nbsp;</a></span>GetElementMask()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">VertexMaskFlags Urho3D::VertexBuffer::GetElementMask </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return legacy vertex element mask. Note that both semantic and type must match the legacy element for a mask bit to be set. </p>
-
-</div>
-</div>
-<a id="a6158715d8e26a0dce6439fb655da67b6" name="a6158715d8e26a0dce6439fb655da67b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6158715d8e26a0dce6439fb655da67b6">&#9670;&nbsp;</a></span>GetElements()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="class_urho3_d_1_1_vector.html">Vector</a>&lt; <a class="el" href="struct_urho3_d_1_1_vertex_element.html">VertexElement</a> &gt; &amp; Urho3D::VertexBuffer::GetElements </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return vertex elements. </p>
-
-</div>
-</div>
-<a id="a21be758a9b0549498d8f1c6adc650780" name="a21be758a9b0549498d8f1c6adc650780"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21be758a9b0549498d8f1c6adc650780">&#9670;&nbsp;</a></span>GetVertexCount()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">i32 Urho3D::VertexBuffer::GetVertexCount </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return number of vertices. </p>
-
-</div>
-</div>
-<a id="abdeb39d525997a1e791f4696beb9bdec" name="abdeb39d525997a1e791f4696beb9bdec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abdeb39d525997a1e791f4696beb9bdec">&#9670;&nbsp;</a></span>GetVertexSize()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">i32 Urho3D::VertexBuffer::GetVertexSize </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return vertex size in bytes. </p>
-
-</div>
-</div>
-<a id="ab19285169ae884083fcbd608818b1420" name="ab19285169ae884083fcbd608818b1420"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab19285169ae884083fcbd608818b1420">&#9670;&nbsp;</a></span>IsDynamic()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Urho3D::VertexBuffer::IsDynamic </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return whether is dynamic. </p>
-
-</div>
-</div>
-<a id="aff76cc5b8809d02b3ae41e72683ec0e9" name="aff76cc5b8809d02b3ae41e72683ec0e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aff76cc5b8809d02b3ae41e72683ec0e9">&#9670;&nbsp;</a></span>IsShadowed()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Urho3D::VertexBuffer::IsShadowed </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return whether CPU memory shadowing is enabled. </p>
-
-</div>
-</div>
 <a id="a7d5b1d3ad958b729367f2e7a2d54dd41" name="a7d5b1d3ad958b729367f2e7a2d54dd41"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7d5b1d3ad958b729367f2e7a2d54dd41">&#9670;&nbsp;</a></span>OnDeviceLost()</h2>
 
@@ -777,25 +655,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>dataPending_</b> {}</
 
 </div>
 </div>
-<a id="a54c2ded230cbfbbeac650caac088ad7c" name="a54c2ded230cbfbbeac650caac088ad7c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54c2ded230cbfbbeac650caac088ad7c">&#9670;&nbsp;</a></span>SetShadowed()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::VertexBuffer::SetShadowed </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>enable</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Enable shadowing in CPU memory. Shadowing is forced on if the graphics subsystem does not exist. </p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/runner/work/rurho3d.github.io/rurho3d.github.io/urho3d_repo/Source/Urho3D/GraphicsAPI/VertexBuffer.h</li>
 <li>/home/runner/work/rurho3d.github.io/rurho3d.github.io/urho3d_repo/Source/Urho3D/GraphicsAPI/VertexBuffer.cpp</li>
@@ -803,7 +662,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>dataPending_</b> {}</
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 27 2022 08:16:14 for Urho3D by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Wed Sep 28 2022 20:01:30 for Urho3D by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

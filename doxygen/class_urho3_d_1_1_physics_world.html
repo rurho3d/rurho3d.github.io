@@ -73,10 +73,10 @@ Inheritance diagram for Urho3D::PhysicsWorld:</div>
  <div class="center">
   <img src="class_urho3_d_1_1_physics_world.png" usemap="#Urho3D::PhysicsWorld_map" alt=""/>
   <map id="Urho3D::PhysicsWorld_map" name="Urho3D::PhysicsWorld_map">
-<area href="class_urho3_d_1_1_component.html" alt="Urho3D::Component" shape="rect" coords="0,224,138,248"/>
+<area href="class_urho3_d_1_1_component.html" title="Base class for components. Components can be created to scene nodes." alt="Urho3D::Component" shape="rect" coords="0,224,138,248"/>
 <area href="class_urho3_d_1_1_animatable.html" title="Base class for animatable object, an animatable object can be set animation on it&#39;s attributes,..." alt="Urho3D::Animatable" shape="rect" coords="0,168,138,192"/>
 <area href="class_urho3_d_1_1_serializable.html" title="Base class for objects with automatic serialization through attributes." alt="Urho3D::Serializable" shape="rect" coords="0,112,138,136"/>
-<area href="class_urho3_d_1_1_object.html" alt="Urho3D::Object" shape="rect" coords="0,56,138,80"/>
+<area href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil..." alt="Urho3D::Object" shape="rect" coords="0,56,138,80"/>
 <area href="class_urho3_d_1_1_ref_counted.html" title="Base class for intrusively reference-counted objects. These are noncopyable and non-assignable." alt="Urho3D::RefCounted" shape="rect" coords="0,0,138,24"/>
   </map>
 </div></div>
@@ -130,21 +130,37 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Update</b> (float tim
 void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateCollisions</b> ()</td></tr>
 <tr class="memdesc:a7301bf7355ad0be5080fa441f952213d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refresh collisions only without updating dynamics. <br /></td></tr>
 <tr class="separator:a7301bf7355ad0be5080fa441f952213d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fafd7df49a20afe6a77143afdc9bd09"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_physics_world.html#a4fafd7df49a20afe6a77143afdc9bd09">SetFps</a> (i32 fps)</td></tr>
+<tr class="memitem:a4fafd7df49a20afe6a77143afdc9bd09"><td class="memItemLeft" align="right" valign="top"><a id="a4fafd7df49a20afe6a77143afdc9bd09" name="a4fafd7df49a20afe6a77143afdc9bd09"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFps</b> (i32 fps)</td></tr>
+<tr class="memdesc:a4fafd7df49a20afe6a77143afdc9bd09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set simulation substeps per second. <br /></td></tr>
 <tr class="separator:a4fafd7df49a20afe6a77143afdc9bd09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4de247dd2476854b2739e1739aaa8a16"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_physics_world.html#a4de247dd2476854b2739e1739aaa8a16">SetGravity</a> (const <a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> &amp;gravity)</td></tr>
+<tr class="memitem:a4de247dd2476854b2739e1739aaa8a16"><td class="memItemLeft" align="right" valign="top"><a id="a4de247dd2476854b2739e1739aaa8a16" name="a4de247dd2476854b2739e1739aaa8a16"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetGravity</b> (const <a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> &amp;gravity)</td></tr>
+<tr class="memdesc:a4de247dd2476854b2739e1739aaa8a16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set gravity. <br /></td></tr>
 <tr class="separator:a4de247dd2476854b2739e1739aaa8a16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d5c83640cf870a7b81a7bc7bb77bf0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_physics_world.html#a1d5c83640cf870a7b81a7bc7bb77bf0e">SetMaxSubSteps</a> (int num)</td></tr>
+<tr class="memitem:a1d5c83640cf870a7b81a7bc7bb77bf0e"><td class="memItemLeft" align="right" valign="top"><a id="a1d5c83640cf870a7b81a7bc7bb77bf0e" name="a1d5c83640cf870a7b81a7bc7bb77bf0e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetMaxSubSteps</b> (int num)</td></tr>
+<tr class="memdesc:a1d5c83640cf870a7b81a7bc7bb77bf0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set maximum number of physics substeps per frame. 0 (default) is unlimited. Positive values cap the amount. Use a negative value to enable an adaptive timestep. This may cause inconsistent physics behavior. <br /></td></tr>
 <tr class="separator:a1d5c83640cf870a7b81a7bc7bb77bf0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1db39ea4c68531cec61b44ee5d7c460d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_physics_world.html#a1db39ea4c68531cec61b44ee5d7c460d">SetNumIterations</a> (int num)</td></tr>
+<tr class="memitem:a1db39ea4c68531cec61b44ee5d7c460d"><td class="memItemLeft" align="right" valign="top"><a id="a1db39ea4c68531cec61b44ee5d7c460d" name="a1db39ea4c68531cec61b44ee5d7c460d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetNumIterations</b> (int num)</td></tr>
+<tr class="memdesc:a1db39ea4c68531cec61b44ee5d7c460d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set number of constraint solver iterations. <br /></td></tr>
 <tr class="separator:a1db39ea4c68531cec61b44ee5d7c460d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6dfd8cd956bd2eb82d9777221ae9ab1b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_physics_world.html#a6dfd8cd956bd2eb82d9777221ae9ab1b">SetUpdateEnabled</a> (bool enable)</td></tr>
+<tr class="memitem:a6dfd8cd956bd2eb82d9777221ae9ab1b"><td class="memItemLeft" align="right" valign="top"><a id="a6dfd8cd956bd2eb82d9777221ae9ab1b" name="a6dfd8cd956bd2eb82d9777221ae9ab1b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetUpdateEnabled</b> (bool enable)</td></tr>
+<tr class="memdesc:a6dfd8cd956bd2eb82d9777221ae9ab1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable automatic physics simulation during scene update. Enabled by default. <br /></td></tr>
 <tr class="separator:a6dfd8cd956bd2eb82d9777221ae9ab1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5cfe054879fc8c7f80394b75f08004cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_physics_world.html#a5cfe054879fc8c7f80394b75f08004cb">SetInterpolation</a> (bool enable)</td></tr>
+<tr class="memitem:a5cfe054879fc8c7f80394b75f08004cb"><td class="memItemLeft" align="right" valign="top"><a id="a5cfe054879fc8c7f80394b75f08004cb" name="a5cfe054879fc8c7f80394b75f08004cb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetInterpolation</b> (bool enable)</td></tr>
+<tr class="memdesc:a5cfe054879fc8c7f80394b75f08004cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set whether to interpolate between simulation steps. <br /></td></tr>
 <tr class="separator:a5cfe054879fc8c7f80394b75f08004cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10935f2969836d082870f13f4bd7b813"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_physics_world.html#a10935f2969836d082870f13f4bd7b813">SetInternalEdge</a> (bool enable)</td></tr>
+<tr class="memitem:a10935f2969836d082870f13f4bd7b813"><td class="memItemLeft" align="right" valign="top"><a id="a10935f2969836d082870f13f4bd7b813" name="a10935f2969836d082870f13f4bd7b813"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetInternalEdge</b> (bool enable)</td></tr>
+<tr class="memdesc:a10935f2969836d082870f13f4bd7b813"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set whether to use Bullet's internal edge utility for trimesh collisions. Disabled by default. <br /></td></tr>
 <tr class="separator:a10935f2969836d082870f13f4bd7b813"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afdc72a4df479ffd6539c1169d47f6778"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_physics_world.html#afdc72a4df479ffd6539c1169d47f6778">SetSplitImpulse</a> (bool enable)</td></tr>
+<tr class="memitem:afdc72a4df479ffd6539c1169d47f6778"><td class="memItemLeft" align="right" valign="top"><a id="afdc72a4df479ffd6539c1169d47f6778" name="afdc72a4df479ffd6539c1169d47f6778"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSplitImpulse</b> (bool enable)</td></tr>
+<tr class="memdesc:afdc72a4df479ffd6539c1169d47f6778"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set split impulse collision mode. This is more accurate, but slower. Disabled by default. <br /></td></tr>
 <tr class="separator:afdc72a4df479ffd6539c1169d47f6778"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a3ffe15234de07890df0cf0b3aa966a"><td class="memItemLeft" align="right" valign="top"><a id="a5a3ffe15234de07890df0cf0b3aa966a" name="a5a3ffe15234de07890df0cf0b3aa966a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetMaxNetworkAngularVelocity</b> (float velocity)</td></tr>
@@ -158,7 +174,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Raycast</b> (<a class
 void&#160;</td><td class="memItemRight" valign="bottom"><b>RaycastSingle</b> (<a class="el" href="struct_urho3_d_1_1_physics_raycast_result.html">PhysicsRaycastResult</a> &amp;result, const <a class="el" href="class_urho3_d_1_1_ray.html">Ray</a> &amp;ray, float maxDistance, unsigned collisionMask=M_MAX_UNSIGNED)</td></tr>
 <tr class="memdesc:a7714c87f664595e59c28663653dd56e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a physics world raycast and return the closest hit. <br /></td></tr>
 <tr class="separator:a7714c87f664595e59c28663653dd56e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75aa1ba5ef79934fa5933e9fc2a0516c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_physics_world.html#a75aa1ba5ef79934fa5933e9fc2a0516c">RaycastSingleSegmented</a> (<a class="el" href="struct_urho3_d_1_1_physics_raycast_result.html">PhysicsRaycastResult</a> &amp;result, const <a class="el" href="class_urho3_d_1_1_ray.html">Ray</a> &amp;ray, float maxDistance, float segmentDistance, unsigned collisionMask=M_MAX_UNSIGNED, float overlapDistance=0.1f)</td></tr>
+<tr class="memitem:a75aa1ba5ef79934fa5933e9fc2a0516c"><td class="memItemLeft" align="right" valign="top"><a id="a75aa1ba5ef79934fa5933e9fc2a0516c" name="a75aa1ba5ef79934fa5933e9fc2a0516c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RaycastSingleSegmented</b> (<a class="el" href="struct_urho3_d_1_1_physics_raycast_result.html">PhysicsRaycastResult</a> &amp;result, const <a class="el" href="class_urho3_d_1_1_ray.html">Ray</a> &amp;ray, float maxDistance, float segmentDistance, unsigned collisionMask=M_MAX_UNSIGNED, float overlapDistance=0.1f)</td></tr>
+<tr class="memdesc:a75aa1ba5ef79934fa5933e9fc2a0516c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a physics world segmented raycast and return the closest hit. Useful for big scenes with many bodies. overlapDistance is used to make sure there are no gap between segments, and must be smaller than segmentDistance. <br /></td></tr>
 <tr class="separator:a75aa1ba5ef79934fa5933e9fc2a0516c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9625022dc308a9b18750c969bbd72963"><td class="memItemLeft" align="right" valign="top"><a id="a9625022dc308a9b18750c969bbd72963" name="a9625022dc308a9b18750c969bbd72963"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SphereCast</b> (<a class="el" href="struct_urho3_d_1_1_physics_raycast_result.html">PhysicsRaycastResult</a> &amp;result, const <a class="el" href="class_urho3_d_1_1_ray.html">Ray</a> &amp;ray, float radius, float maxDistance, unsigned collisionMask=M_MAX_UNSIGNED)</td></tr>
@@ -192,21 +210,37 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>GetRigidBodies</b> (<
 void&#160;</td><td class="memItemRight" valign="bottom"><b>GetCollidingBodies</b> (<a class="el" href="class_urho3_d_1_1_vector.html">Vector</a>&lt; <a class="el" href="class_urho3_d_1_1_rigid_body.html">RigidBody</a> * &gt; &amp;result, const <a class="el" href="class_urho3_d_1_1_rigid_body.html">RigidBody</a> *body)</td></tr>
 <tr class="memdesc:afb3c2677e6c5bc71369e285ad3794252"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return rigid bodies that have been in collision with the specified body on the last simulation step. Only returns collisions that were sent as events (depends on collision event mode) and excludes e.g. static-static collisions. <br /></td></tr>
 <tr class="separator:afb3c2677e6c5bc71369e285ad3794252"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34ae07cd26ca6e2948231b10a3fedc96"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_physics_world.html#a34ae07cd26ca6e2948231b10a3fedc96">GetGravity</a> () const</td></tr>
+<tr class="memitem:a34ae07cd26ca6e2948231b10a3fedc96"><td class="memItemLeft" align="right" valign="top"><a id="a34ae07cd26ca6e2948231b10a3fedc96" name="a34ae07cd26ca6e2948231b10a3fedc96"></a>
+<a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetGravity</b> () const</td></tr>
+<tr class="memdesc:a34ae07cd26ca6e2948231b10a3fedc96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return gravity. <br /></td></tr>
 <tr class="separator:a34ae07cd26ca6e2948231b10a3fedc96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a7763576fb638104d782515b08b1f58"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_physics_world.html#a9a7763576fb638104d782515b08b1f58">GetMaxSubSteps</a> () const</td></tr>
+<tr class="memitem:a9a7763576fb638104d782515b08b1f58"><td class="memItemLeft" align="right" valign="top"><a id="a9a7763576fb638104d782515b08b1f58" name="a9a7763576fb638104d782515b08b1f58"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>GetMaxSubSteps</b> () const</td></tr>
+<tr class="memdesc:a9a7763576fb638104d782515b08b1f58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return maximum number of physics substeps per frame. <br /></td></tr>
 <tr class="separator:a9a7763576fb638104d782515b08b1f58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae27ca7980752936a27a15178d4b308a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_physics_world.html#aae27ca7980752936a27a15178d4b308a">GetNumIterations</a> () const</td></tr>
+<tr class="memitem:aae27ca7980752936a27a15178d4b308a"><td class="memItemLeft" align="right" valign="top"><a id="aae27ca7980752936a27a15178d4b308a" name="aae27ca7980752936a27a15178d4b308a"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>GetNumIterations</b> () const</td></tr>
+<tr class="memdesc:aae27ca7980752936a27a15178d4b308a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return number of constraint solver iterations. <br /></td></tr>
 <tr class="separator:aae27ca7980752936a27a15178d4b308a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b6ec7c99e3ac48a06447a70d2440f05"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_physics_world.html#a0b6ec7c99e3ac48a06447a70d2440f05">IsUpdateEnabled</a> () const</td></tr>
+<tr class="memitem:a0b6ec7c99e3ac48a06447a70d2440f05"><td class="memItemLeft" align="right" valign="top"><a id="a0b6ec7c99e3ac48a06447a70d2440f05" name="a0b6ec7c99e3ac48a06447a70d2440f05"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsUpdateEnabled</b> () const</td></tr>
+<tr class="memdesc:a0b6ec7c99e3ac48a06447a70d2440f05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether physics world will automatically simulate during scene update. <br /></td></tr>
 <tr class="separator:a0b6ec7c99e3ac48a06447a70d2440f05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16b6948ae1456cff43b834961f2fda83"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_physics_world.html#a16b6948ae1456cff43b834961f2fda83">GetInterpolation</a> () const</td></tr>
+<tr class="memitem:a16b6948ae1456cff43b834961f2fda83"><td class="memItemLeft" align="right" valign="top"><a id="a16b6948ae1456cff43b834961f2fda83" name="a16b6948ae1456cff43b834961f2fda83"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetInterpolation</b> () const</td></tr>
+<tr class="memdesc:a16b6948ae1456cff43b834961f2fda83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether interpolation between simulation steps is enabled. <br /></td></tr>
 <tr class="separator:a16b6948ae1456cff43b834961f2fda83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48e9d45cf1bb95c789372f1d12bef493"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_physics_world.html#a48e9d45cf1bb95c789372f1d12bef493">GetInternalEdge</a> () const</td></tr>
+<tr class="memitem:a48e9d45cf1bb95c789372f1d12bef493"><td class="memItemLeft" align="right" valign="top"><a id="a48e9d45cf1bb95c789372f1d12bef493" name="a48e9d45cf1bb95c789372f1d12bef493"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetInternalEdge</b> () const</td></tr>
+<tr class="memdesc:a48e9d45cf1bb95c789372f1d12bef493"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether Bullet's internal edge utility for trimesh collisions is enabled. <br /></td></tr>
 <tr class="separator:a48e9d45cf1bb95c789372f1d12bef493"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22d80fcdd584c0d2f3ffa69464906d24"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_physics_world.html#a22d80fcdd584c0d2f3ffa69464906d24">GetSplitImpulse</a> () const</td></tr>
+<tr class="memitem:a22d80fcdd584c0d2f3ffa69464906d24"><td class="memItemLeft" align="right" valign="top"><a id="a22d80fcdd584c0d2f3ffa69464906d24" name="a22d80fcdd584c0d2f3ffa69464906d24"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetSplitImpulse</b> () const</td></tr>
+<tr class="memdesc:a22d80fcdd584c0d2f3ffa69464906d24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether split impulse collision mode is enabled. <br /></td></tr>
 <tr class="separator:a22d80fcdd584c0d2f3ffa69464906d24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a281b1e40d99a6e76435fafff1ca11a"><td class="memItemLeft" align="right" valign="top">i32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_physics_world.html#a8a281b1e40d99a6e76435fafff1ca11a">GetFps</a> () const</td></tr>
+<tr class="memitem:a8a281b1e40d99a6e76435fafff1ca11a"><td class="memItemLeft" align="right" valign="top"><a id="a8a281b1e40d99a6e76435fafff1ca11a" name="a8a281b1e40d99a6e76435fafff1ca11a"></a>
+i32&#160;</td><td class="memItemRight" valign="bottom"><b>GetFps</b> () const</td></tr>
+<tr class="memdesc:a8a281b1e40d99a6e76435fafff1ca11a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return simulation steps per second. <br /></td></tr>
 <tr class="separator:a8a281b1e40d99a6e76435fafff1ca11a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04c9bb464c4315d447b8cdac8cb549d0"><td class="memItemLeft" align="right" valign="top"><a id="a04c9bb464c4315d447b8cdac8cb549d0" name="a04c9bb464c4315d447b8cdac8cb549d0"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>GetMaxNetworkAngularVelocity</b> () const</td></tr>
@@ -314,25 +348,37 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsSimulating</b> () c
 <tr class="memitem:a219e412aa90aa36b9c05872abf0608dc inherit pub_methods_class_urho3_d_1_1_component"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_component.html#a219e412aa90aa36b9c05872abf0608dc">DrawDebugGeometry</a> (<a class="el" href="class_urho3_d_1_1_debug_renderer.html">DebugRenderer</a> *debug, bool depthTest)</td></tr>
 <tr class="memdesc:a219e412aa90aa36b9c05872abf0608dc inherit pub_methods_class_urho3_d_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Visualize the component as debug geometry.  <a href="class_urho3_d_1_1_component.html#a219e412aa90aa36b9c05872abf0608dc">More...</a><br /></td></tr>
 <tr class="separator:a219e412aa90aa36b9c05872abf0608dc inherit pub_methods_class_urho3_d_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84cc0be4504cc2234be4056ef7ffe976 inherit pub_methods_class_urho3_d_1_1_component"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_component.html#a84cc0be4504cc2234be4056ef7ffe976">SetEnabled</a> (bool enable)</td></tr>
+<tr class="memitem:a84cc0be4504cc2234be4056ef7ffe976 inherit pub_methods_class_urho3_d_1_1_component"><td class="memItemLeft" align="right" valign="top"><a id="a84cc0be4504cc2234be4056ef7ffe976" name="a84cc0be4504cc2234be4056ef7ffe976"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetEnabled</b> (bool enable)</td></tr>
+<tr class="memdesc:a84cc0be4504cc2234be4056ef7ffe976 inherit pub_methods_class_urho3_d_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set enabled/disabled state. <br /></td></tr>
 <tr class="separator:a84cc0be4504cc2234be4056ef7ffe976 inherit pub_methods_class_urho3_d_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cb217364df06d4886bfba9d3aec3bed inherit pub_methods_class_urho3_d_1_1_component"><td class="memItemLeft" align="right" valign="top"><a id="a9cb217364df06d4886bfba9d3aec3bed" name="a9cb217364df06d4886bfba9d3aec3bed"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Remove</b> ()</td></tr>
 <tr class="memdesc:a9cb217364df06d4886bfba9d3aec3bed inherit pub_methods_class_urho3_d_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove from the scene node. If no other shared pointer references exist, causes immediate deletion. <br /></td></tr>
 <tr class="separator:a9cb217364df06d4886bfba9d3aec3bed inherit pub_methods_class_urho3_d_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac803d00c18507307b17c287fb123c219 inherit pub_methods_class_urho3_d_1_1_component"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_component.html#ac803d00c18507307b17c287fb123c219">GetID</a> () const</td></tr>
+<tr class="memitem:ac803d00c18507307b17c287fb123c219 inherit pub_methods_class_urho3_d_1_1_component"><td class="memItemLeft" align="right" valign="top"><a id="ac803d00c18507307b17c287fb123c219" name="ac803d00c18507307b17c287fb123c219"></a>
+unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>GetID</b> () const</td></tr>
+<tr class="memdesc:ac803d00c18507307b17c287fb123c219 inherit pub_methods_class_urho3_d_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return ID. <br /></td></tr>
 <tr class="separator:ac803d00c18507307b17c287fb123c219 inherit pub_methods_class_urho3_d_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f1388c232ca01b7c7328c761aae6e76 inherit pub_methods_class_urho3_d_1_1_component"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_component.html#a8f1388c232ca01b7c7328c761aae6e76">IsReplicated</a> () const</td></tr>
+<tr class="memitem:a8f1388c232ca01b7c7328c761aae6e76 inherit pub_methods_class_urho3_d_1_1_component"><td class="memItemLeft" align="right" valign="top"><a id="a8f1388c232ca01b7c7328c761aae6e76" name="a8f1388c232ca01b7c7328c761aae6e76"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsReplicated</b> () const</td></tr>
+<tr class="memdesc:a8f1388c232ca01b7c7328c761aae6e76 inherit pub_methods_class_urho3_d_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether the component is replicated or local to a scene. <br /></td></tr>
 <tr class="separator:a8f1388c232ca01b7c7328c761aae6e76 inherit pub_methods_class_urho3_d_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada751ff77fe3e5bc417db31cfebc0df8 inherit pub_methods_class_urho3_d_1_1_component"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_component.html#ada751ff77fe3e5bc417db31cfebc0df8">GetNode</a> () const</td></tr>
+<tr class="memitem:ada751ff77fe3e5bc417db31cfebc0df8 inherit pub_methods_class_urho3_d_1_1_component"><td class="memItemLeft" align="right" valign="top"><a id="ada751ff77fe3e5bc417db31cfebc0df8" name="ada751ff77fe3e5bc417db31cfebc0df8"></a>
+<a class="el" href="class_urho3_d_1_1_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetNode</b> () const</td></tr>
+<tr class="memdesc:ada751ff77fe3e5bc417db31cfebc0df8 inherit pub_methods_class_urho3_d_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return scene node. <br /></td></tr>
 <tr class="separator:ada751ff77fe3e5bc417db31cfebc0df8 inherit pub_methods_class_urho3_d_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c22f727341671a0420934f249ffe059 inherit pub_methods_class_urho3_d_1_1_component"><td class="memItemLeft" align="right" valign="top"><a id="a2c22f727341671a0420934f249ffe059" name="a2c22f727341671a0420934f249ffe059"></a>
 <a class="el" href="class_urho3_d_1_1_scene.html">Scene</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetScene</b> () const</td></tr>
 <tr class="memdesc:a2c22f727341671a0420934f249ffe059 inherit pub_methods_class_urho3_d_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the scene the node belongs to. <br /></td></tr>
 <tr class="separator:a2c22f727341671a0420934f249ffe059 inherit pub_methods_class_urho3_d_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1cb9a868ec7bb3e46c37fbc91040cf95 inherit pub_methods_class_urho3_d_1_1_component"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_component.html#a1cb9a868ec7bb3e46c37fbc91040cf95">IsEnabled</a> () const</td></tr>
+<tr class="memitem:a1cb9a868ec7bb3e46c37fbc91040cf95 inherit pub_methods_class_urho3_d_1_1_component"><td class="memItemLeft" align="right" valign="top"><a id="a1cb9a868ec7bb3e46c37fbc91040cf95" name="a1cb9a868ec7bb3e46c37fbc91040cf95"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsEnabled</b> () const</td></tr>
+<tr class="memdesc:a1cb9a868ec7bb3e46c37fbc91040cf95 inherit pub_methods_class_urho3_d_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether is enabled. <br /></td></tr>
 <tr class="separator:a1cb9a868ec7bb3e46c37fbc91040cf95 inherit pub_methods_class_urho3_d_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafa7952d0f225edde3387da0c91a9356 inherit pub_methods_class_urho3_d_1_1_component"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_component.html#aafa7952d0f225edde3387da0c91a9356">IsEnabledEffective</a> () const</td></tr>
+<tr class="memitem:aafa7952d0f225edde3387da0c91a9356 inherit pub_methods_class_urho3_d_1_1_component"><td class="memItemLeft" align="right" valign="top"><a id="aafa7952d0f225edde3387da0c91a9356" name="aafa7952d0f225edde3387da0c91a9356"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsEnabledEffective</b> () const</td></tr>
+<tr class="memdesc:aafa7952d0f225edde3387da0c91a9356 inherit pub_methods_class_urho3_d_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether is effectively enabled (node is also enabled). <br /></td></tr>
 <tr class="separator:aafa7952d0f225edde3387da0c91a9356 inherit pub_methods_class_urho3_d_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6070c8208ad98595d8c3fe43778d6069 inherit pub_methods_class_urho3_d_1_1_component"><td class="memItemLeft" align="right" valign="top"><a id="a6070c8208ad98595d8c3fe43778d6069" name="a6070c8208ad98595d8c3fe43778d6069"></a>
 <a class="el" href="class_urho3_d_1_1_component.html">Component</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetComponent</b> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> type) const</td></tr>
@@ -360,7 +406,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>AddReplicationState</
 void&#160;</td><td class="memItemRight" valign="bottom"><b>PrepareNetworkUpdate</b> ()</td></tr>
 <tr class="memdesc:a911f485323c5d9898f104cece2c02430 inherit pub_methods_class_urho3_d_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare network update by comparing attributes and marking replication states dirty as necessary. <br /></td></tr>
 <tr class="separator:a911f485323c5d9898f104cece2c02430 inherit pub_methods_class_urho3_d_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbe2c6c54d1c155092d05cc61ec19b3e inherit pub_methods_class_urho3_d_1_1_component"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_component.html#adbe2c6c54d1c155092d05cc61ec19b3e">CleanupConnection</a> (<a class="el" href="class_urho3_d_1_1_connection.html">Connection</a> *connection)</td></tr>
+<tr class="memitem:adbe2c6c54d1c155092d05cc61ec19b3e inherit pub_methods_class_urho3_d_1_1_component"><td class="memItemLeft" align="right" valign="top"><a id="adbe2c6c54d1c155092d05cc61ec19b3e" name="adbe2c6c54d1c155092d05cc61ec19b3e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CleanupConnection</b> (<a class="el" href="class_urho3_d_1_1_connection.html">Connection</a> *connection)</td></tr>
+<tr class="memdesc:adbe2c6c54d1c155092d05cc61ec19b3e inherit pub_methods_class_urho3_d_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clean up all references to a network connection that is about to be removed. <br /></td></tr>
 <tr class="separator:adbe2c6c54d1c155092d05cc61ec19b3e inherit pub_methods_class_urho3_d_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_urho3_d_1_1_animatable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_urho3_d_1_1_animatable')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_urho3_d_1_1_animatable.html">Urho3D::Animatable</a></td></tr>
 <tr class="memitem:afcfabde468a5c45d0dea79830e12e75b inherit pub_methods_class_urho3_d_1_1_animatable"><td class="memItemLeft" align="right" valign="top"><a id="afcfabde468a5c45d0dea79830e12e75b" name="afcfabde468a5c45d0dea79830e12e75b"></a>
@@ -383,13 +431,17 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>PrepareNetworkUpdate<
 <tr class="memitem:aa84286f8bf8adc7a1abf03bf36838db9 inherit pub_methods_class_urho3_d_1_1_animatable"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_animatable.html#aa84286f8bf8adc7a1abf03bf36838db9">SaveJSON</a> (<a class="el" href="class_urho3_d_1_1_j_s_o_n_value.html">JSONValue</a> &amp;dest) const override</td></tr>
 <tr class="memdesc:aa84286f8bf8adc7a1abf03bf36838db9 inherit pub_methods_class_urho3_d_1_1_animatable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save as JSON data. Return true if successful.  <a href="class_urho3_d_1_1_animatable.html#aa84286f8bf8adc7a1abf03bf36838db9">More...</a><br /></td></tr>
 <tr class="separator:aa84286f8bf8adc7a1abf03bf36838db9 inherit pub_methods_class_urho3_d_1_1_animatable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d0aaeefab85096ad391775ec9778a2e inherit pub_methods_class_urho3_d_1_1_animatable"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_animatable.html#a4d0aaeefab85096ad391775ec9778a2e">SetAnimationEnabled</a> (bool enable)</td></tr>
+<tr class="memitem:a4d0aaeefab85096ad391775ec9778a2e inherit pub_methods_class_urho3_d_1_1_animatable"><td class="memItemLeft" align="right" valign="top"><a id="a4d0aaeefab85096ad391775ec9778a2e" name="a4d0aaeefab85096ad391775ec9778a2e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAnimationEnabled</b> (bool enable)</td></tr>
+<tr class="memdesc:a4d0aaeefab85096ad391775ec9778a2e inherit pub_methods_class_urho3_d_1_1_animatable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set automatic update of animation, default true. <br /></td></tr>
 <tr class="separator:a4d0aaeefab85096ad391775ec9778a2e inherit pub_methods_class_urho3_d_1_1_animatable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc97255cf6bf43a76a163ab4188ad15c inherit pub_methods_class_urho3_d_1_1_animatable"><td class="memItemLeft" align="right" valign="top"><a id="adc97255cf6bf43a76a163ab4188ad15c" name="adc97255cf6bf43a76a163ab4188ad15c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAnimationTime</b> (float time)</td></tr>
 <tr class="memdesc:adc97255cf6bf43a76a163ab4188ad15c inherit pub_methods_class_urho3_d_1_1_animatable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set time position of all attribute animations or an object animation manually. Automatic update should be disabled in this case. <br /></td></tr>
 <tr class="separator:adc97255cf6bf43a76a163ab4188ad15c inherit pub_methods_class_urho3_d_1_1_animatable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad47a7d6d1ea14b6145dc812e2d9b8486 inherit pub_methods_class_urho3_d_1_1_animatable"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_animatable.html#ad47a7d6d1ea14b6145dc812e2d9b8486">SetObjectAnimation</a> (<a class="el" href="class_urho3_d_1_1_object_animation.html">ObjectAnimation</a> *objectAnimation)</td></tr>
+<tr class="memitem:ad47a7d6d1ea14b6145dc812e2d9b8486 inherit pub_methods_class_urho3_d_1_1_animatable"><td class="memItemLeft" align="right" valign="top"><a id="ad47a7d6d1ea14b6145dc812e2d9b8486" name="ad47a7d6d1ea14b6145dc812e2d9b8486"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetObjectAnimation</b> (<a class="el" href="class_urho3_d_1_1_object_animation.html">ObjectAnimation</a> *objectAnimation)</td></tr>
+<tr class="memdesc:ad47a7d6d1ea14b6145dc812e2d9b8486 inherit pub_methods_class_urho3_d_1_1_animatable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set object animation. <br /></td></tr>
 <tr class="separator:ad47a7d6d1ea14b6145dc812e2d9b8486 inherit pub_methods_class_urho3_d_1_1_animatable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1aa4f5c600142e625eec608261cca98b inherit pub_methods_class_urho3_d_1_1_animatable"><td class="memItemLeft" align="right" valign="top"><a id="a1aa4f5c600142e625eec608261cca98b" name="a1aa4f5c600142e625eec608261cca98b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAttributeAnimation</b> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;name, <a class="el" href="class_urho3_d_1_1_value_animation.html">ValueAnimation</a> *attributeAnimation, <a class="el" href="_animation_defs_8h.html#af8409fd27c2ac2ee7224ec2b4dde83dd">WrapMode</a> wrapMode=WM_LOOP, float speed=1.0f)</td></tr>
@@ -415,9 +467,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveObjectAnimation
 void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveAttributeAnimation</b> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;name)</td></tr>
 <tr class="memdesc:ae6ca516abed8b44c3ea4a0cc60fbb9ae inherit pub_methods_class_urho3_d_1_1_animatable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove attribute animation. Same as calling SetAttributeAnimation with a null pointer. <br /></td></tr>
 <tr class="separator:ae6ca516abed8b44c3ea4a0cc60fbb9ae inherit pub_methods_class_urho3_d_1_1_animatable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6d9c33482746d0272bd1669766237a0 inherit pub_methods_class_urho3_d_1_1_animatable"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_animatable.html#ab6d9c33482746d0272bd1669766237a0">GetAnimationEnabled</a> () const</td></tr>
+<tr class="memitem:ab6d9c33482746d0272bd1669766237a0 inherit pub_methods_class_urho3_d_1_1_animatable"><td class="memItemLeft" align="right" valign="top"><a id="ab6d9c33482746d0272bd1669766237a0" name="ab6d9c33482746d0272bd1669766237a0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetAnimationEnabled</b> () const</td></tr>
+<tr class="memdesc:ab6d9c33482746d0272bd1669766237a0 inherit pub_methods_class_urho3_d_1_1_animatable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return animation enabled. <br /></td></tr>
 <tr class="separator:ab6d9c33482746d0272bd1669766237a0 inherit pub_methods_class_urho3_d_1_1_animatable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa31b77da686ba0c0fe482e5c2823e0e inherit pub_methods_class_urho3_d_1_1_animatable"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_object_animation.html">ObjectAnimation</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_animatable.html#afa31b77da686ba0c0fe482e5c2823e0e">GetObjectAnimation</a> () const</td></tr>
+<tr class="memitem:afa31b77da686ba0c0fe482e5c2823e0e inherit pub_methods_class_urho3_d_1_1_animatable"><td class="memItemLeft" align="right" valign="top"><a id="afa31b77da686ba0c0fe482e5c2823e0e" name="afa31b77da686ba0c0fe482e5c2823e0e"></a>
+<a class="el" href="class_urho3_d_1_1_object_animation.html">ObjectAnimation</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetObjectAnimation</b> () const</td></tr>
+<tr class="memdesc:afa31b77da686ba0c0fe482e5c2823e0e inherit pub_methods_class_urho3_d_1_1_animatable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return object animation. <br /></td></tr>
 <tr class="separator:afa31b77da686ba0c0fe482e5c2823e0e inherit pub_methods_class_urho3_d_1_1_animatable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af18cf0f27e101f0a1cb01f8292f858c7 inherit pub_methods_class_urho3_d_1_1_animatable"><td class="memItemLeft" align="right" valign="top"><a id="af18cf0f27e101f0a1cb01f8292f858c7" name="af18cf0f27e101f0a1cb01f8292f858c7"></a>
 <a class="el" href="class_urho3_d_1_1_value_animation.html">ValueAnimation</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetAttributeAnimation</b> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;name) const</td></tr>
@@ -494,7 +550,9 @@ virtual const <a class="el" href="class_urho3_d_1_1_vector.html">Vector</a>&lt; 
 <tr class="memitem:a428c1b2e9b098b23684f7d6228e97177 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_serializable.html#a428c1b2e9b098b23684f7d6228e97177">MarkNetworkUpdate</a> ()</td></tr>
 <tr class="memdesc:a428c1b2e9b098b23684f7d6228e97177 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark for attribute check on the next network update.  <a href="class_urho3_d_1_1_serializable.html#a428c1b2e9b098b23684f7d6228e97177">More...</a><br /></td></tr>
 <tr class="separator:a428c1b2e9b098b23684f7d6228e97177 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52c377ff65bd3198a3c460c6a43dc008 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_serializable.html#a52c377ff65bd3198a3c460c6a43dc008">SetAttribute</a> (unsigned index, const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;value)</td></tr>
+<tr class="memitem:a52c377ff65bd3198a3c460c6a43dc008 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memItemLeft" align="right" valign="top"><a id="a52c377ff65bd3198a3c460c6a43dc008" name="a52c377ff65bd3198a3c460c6a43dc008"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>SetAttribute</b> (unsigned index, const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;value)</td></tr>
+<tr class="memdesc:a52c377ff65bd3198a3c460c6a43dc008 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set attribute by index. Return true if successfully set. <br /></td></tr>
 <tr class="separator:a52c377ff65bd3198a3c460c6a43dc008 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45834f05e09c1edc90bd759b1c03e187 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memItemLeft" align="right" valign="top"><a id="a45834f05e09c1edc90bd759b1c03e187" name="a45834f05e09c1edc90bd759b1c03e187"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>SetAttribute</b> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;name, const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;value)</td></tr>
@@ -512,7 +570,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ResetToDefault</b> ()
 void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveInstanceDefault</b> ()</td></tr>
 <tr class="memdesc:a1aa03ec3737aa52aa3f8419f43aff050 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove instance's default values if they are set previously. <br /></td></tr>
 <tr class="separator:a1aa03ec3737aa52aa3f8419f43aff050 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa044160c22b374e032ae85c30520f89 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_serializable.html#aaa044160c22b374e032ae85c30520f89">SetTemporary</a> (bool enable)</td></tr>
+<tr class="memitem:aaa044160c22b374e032ae85c30520f89 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memItemLeft" align="right" valign="top"><a id="aaa044160c22b374e032ae85c30520f89" name="aaa044160c22b374e032ae85c30520f89"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetTemporary</b> (bool enable)</td></tr>
+<tr class="memdesc:aaa044160c22b374e032ae85c30520f89 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set temporary flag. Temporary objects will not be saved. <br /></td></tr>
 <tr class="separator:aaa044160c22b374e032ae85c30520f89 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28cff53160b712d452724f3e45afa49b inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memItemLeft" align="right" valign="top"><a id="a28cff53160b712d452724f3e45afa49b" name="a28cff53160b712d452724f3e45afa49b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetInterceptNetworkUpdate</b> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;attributeName, bool enable)</td></tr>
@@ -542,25 +602,33 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>ReadDeltaUpdate</b> (
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>ReadLatestDataUpdate</b> (<a class="el" href="class_urho3_d_1_1_deserializer.html">Deserializer</a> &amp;source)</td></tr>
 <tr class="memdesc:ae6c88e100f5da55f2567098a96f8a759 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read and apply a network latest data update. Return true if attributes were changed. <br /></td></tr>
 <tr class="separator:ae6c88e100f5da55f2567098a96f8a759 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3783f928c689a3d4ee2d9766661eca0c inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_variant.html">Variant</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_serializable.html#a3783f928c689a3d4ee2d9766661eca0c">GetAttribute</a> (unsigned index) const</td></tr>
+<tr class="memitem:a3783f928c689a3d4ee2d9766661eca0c inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memItemLeft" align="right" valign="top"><a id="a3783f928c689a3d4ee2d9766661eca0c" name="a3783f928c689a3d4ee2d9766661eca0c"></a>
+<a class="el" href="class_urho3_d_1_1_variant.html">Variant</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetAttribute</b> (unsigned index) const</td></tr>
+<tr class="memdesc:a3783f928c689a3d4ee2d9766661eca0c inherit pub_methods_class_urho3_d_1_1_serializable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return attribute value by index. Return empty if illegal index. <br /></td></tr>
 <tr class="separator:a3783f928c689a3d4ee2d9766661eca0c inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a9bcd8df84a2af9437d6a7e26139f85 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memItemLeft" align="right" valign="top"><a id="a4a9bcd8df84a2af9437d6a7e26139f85" name="a4a9bcd8df84a2af9437d6a7e26139f85"></a>
 <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetAttribute</b> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;name) const</td></tr>
 <tr class="memdesc:a4a9bcd8df84a2af9437d6a7e26139f85 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return attribute value by name. Return empty if not found. <br /></td></tr>
 <tr class="separator:a4a9bcd8df84a2af9437d6a7e26139f85 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48b7ab5369b91ff7b7e47c83347963d8 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_variant.html">Variant</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_serializable.html#a48b7ab5369b91ff7b7e47c83347963d8">GetAttributeDefault</a> (unsigned index) const</td></tr>
+<tr class="memitem:a48b7ab5369b91ff7b7e47c83347963d8 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memItemLeft" align="right" valign="top"><a id="a48b7ab5369b91ff7b7e47c83347963d8" name="a48b7ab5369b91ff7b7e47c83347963d8"></a>
+<a class="el" href="class_urho3_d_1_1_variant.html">Variant</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetAttributeDefault</b> (unsigned index) const</td></tr>
+<tr class="memdesc:a48b7ab5369b91ff7b7e47c83347963d8 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return attribute default value by index. Return empty if illegal index. <br /></td></tr>
 <tr class="separator:a48b7ab5369b91ff7b7e47c83347963d8 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08e867f84068c6396136f0b956930a3f inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memItemLeft" align="right" valign="top"><a id="a08e867f84068c6396136f0b956930a3f" name="a08e867f84068c6396136f0b956930a3f"></a>
 <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetAttributeDefault</b> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;name) const</td></tr>
 <tr class="memdesc:a08e867f84068c6396136f0b956930a3f inherit pub_methods_class_urho3_d_1_1_serializable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return attribute default value by name. Return empty if not found. <br /></td></tr>
 <tr class="separator:a08e867f84068c6396136f0b956930a3f inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ef3c99945e4467d6f953986ac0ac118 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_serializable.html#a4ef3c99945e4467d6f953986ac0ac118">GetNumAttributes</a> () const</td></tr>
+<tr class="memitem:a4ef3c99945e4467d6f953986ac0ac118 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memItemLeft" align="right" valign="top"><a id="a4ef3c99945e4467d6f953986ac0ac118" name="a4ef3c99945e4467d6f953986ac0ac118"></a>
+unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>GetNumAttributes</b> () const</td></tr>
+<tr class="memdesc:a4ef3c99945e4467d6f953986ac0ac118 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return number of attributes. <br /></td></tr>
 <tr class="separator:a4ef3c99945e4467d6f953986ac0ac118 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6af0b75ce7fcd21eeb3a23d44350bf5b inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memItemLeft" align="right" valign="top"><a id="a6af0b75ce7fcd21eeb3a23d44350bf5b" name="a6af0b75ce7fcd21eeb3a23d44350bf5b"></a>
 unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>GetNumNetworkAttributes</b> () const</td></tr>
 <tr class="memdesc:a6af0b75ce7fcd21eeb3a23d44350bf5b inherit pub_methods_class_urho3_d_1_1_serializable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return number of network replication attributes. <br /></td></tr>
 <tr class="separator:a6af0b75ce7fcd21eeb3a23d44350bf5b inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa20baf7a00b3c81f16e0c85c69f0b5ce inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_serializable.html#aa20baf7a00b3c81f16e0c85c69f0b5ce">IsTemporary</a> () const</td></tr>
+<tr class="memitem:aa20baf7a00b3c81f16e0c85c69f0b5ce inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memItemLeft" align="right" valign="top"><a id="aa20baf7a00b3c81f16e0c85c69f0b5ce" name="aa20baf7a00b3c81f16e0c85c69f0b5ce"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsTemporary</b> () const</td></tr>
+<tr class="memdesc:aa20baf7a00b3c81f16e0c85c69f0b5ce inherit pub_methods_class_urho3_d_1_1_serializable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether is temporary. <br /></td></tr>
 <tr class="separator:aa20baf7a00b3c81f16e0c85c69f0b5ce inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ff16d749d3e8c5718dc5e34f721c345 inherit pub_methods_class_urho3_d_1_1_serializable"><td class="memItemLeft" align="right" valign="top"><a id="a0ff16d749d3e8c5718dc5e34f721c345" name="a0ff16d749d3e8c5718dc5e34f721c345"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetInterceptNetworkUpdate</b> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;attributeName) const</td></tr>
@@ -580,8 +648,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetInterceptNetworkUp
 <tr class="memdesc:a4d472106f01c137d237b3099751d10c5 inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct. Clean up self from event sender &amp; receiver structures. <br /></td></tr>
 <tr class="separator:a4d472106f01c137d237b3099751d10c5 inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c7af660afc8467a99d1f17c8d099b3b inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#a4c7af660afc8467a99d1f17c8d099b3b">GetType</a> () const =0</td></tr>
+<tr class="memdesc:a4c7af660afc8467a99d1f17c8d099b3b inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return type hash.  <a href="class_urho3_d_1_1_object.html#a4c7af660afc8467a99d1f17c8d099b3b">More...</a><br /></td></tr>
 <tr class="separator:a4c7af660afc8467a99d1f17c8d099b3b inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa70436408fab29ff5d6ea54fa1e09b9b inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#aa70436408fab29ff5d6ea54fa1e09b9b">GetTypeName</a> () const =0</td></tr>
+<tr class="memdesc:aa70436408fab29ff5d6ea54fa1e09b9b inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return type name.  <a href="class_urho3_d_1_1_object.html#aa70436408fab29ff5d6ea54fa1e09b9b">More...</a><br /></td></tr>
 <tr class="separator:aa70436408fab29ff5d6ea54fa1e09b9b inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a768de02d2ed1eab1703c3ba02cf0415d inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a768de02d2ed1eab1703c3ba02cf0415d" name="a768de02d2ed1eab1703c3ba02cf0415d"></a>
 virtual const <a class="el" href="class_urho3_d_1_1_type_info.html">TypeInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetTypeInfo</b> () const =0</td></tr>
@@ -671,11 +741,17 @@ template&lt;typename... Args&gt; </td></tr>
 <a class="el" href="class_urho3_d_1_1_context.html">Context</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetContext</b> () const</td></tr>
 <tr class="memdesc:a8bd9b32c8a56c2f6d618d8afe8091eb7 inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return execution context. <br /></td></tr>
 <tr class="separator:a8bd9b32c8a56c2f6d618d8afe8091eb7 inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd4506c4bdb10232305ef69ebbb78a83 inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#acd4506c4bdb10232305ef69ebbb78a83">GetGlobalVar</a> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> key) const</td></tr>
+<tr class="memitem:acd4506c4bdb10232305ef69ebbb78a83 inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="acd4506c4bdb10232305ef69ebbb78a83" name="acd4506c4bdb10232305ef69ebbb78a83"></a>
+const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetGlobalVar</b> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> key) const</td></tr>
+<tr class="memdesc:acd4506c4bdb10232305ef69ebbb78a83 inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return global variable based on key. <br /></td></tr>
 <tr class="separator:acd4506c4bdb10232305ef69ebbb78a83 inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27b36184a862d9343604f31d85d9bc24 inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="_variant_8h.html#aee85c8bb4263431ef586545ff082720b">VariantMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#a27b36184a862d9343604f31d85d9bc24">GetGlobalVars</a> () const</td></tr>
+<tr class="memitem:a27b36184a862d9343604f31d85d9bc24 inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a27b36184a862d9343604f31d85d9bc24" name="a27b36184a862d9343604f31d85d9bc24"></a>
+const <a class="el" href="_variant_8h.html#aee85c8bb4263431ef586545ff082720b">VariantMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetGlobalVars</b> () const</td></tr>
+<tr class="memdesc:a27b36184a862d9343604f31d85d9bc24 inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return all global variables. <br /></td></tr>
 <tr class="separator:a27b36184a862d9343604f31d85d9bc24 inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43d25cc580737c9dc3b973d6c1230d9e inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#a43d25cc580737c9dc3b973d6c1230d9e">SetGlobalVar</a> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> key, const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;value)</td></tr>
+<tr class="memitem:a43d25cc580737c9dc3b973d6c1230d9e inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a43d25cc580737c9dc3b973d6c1230d9e" name="a43d25cc580737c9dc3b973d6c1230d9e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetGlobalVar</b> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> key, const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;value)</td></tr>
+<tr class="memdesc:a43d25cc580737c9dc3b973d6c1230d9e inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set global variable with the respective key and value. <br /></td></tr>
 <tr class="separator:a43d25cc580737c9dc3b973d6c1230d9e inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fb7d12773df7b6467f62415ee4ce977 inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a9fb7d12773df7b6467f62415ee4ce977" name="a9fb7d12773df7b6467f62415ee4ce977"></a>
 <a class="el" href="class_urho3_d_1_1_object.html">Object</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetSubsystem</b> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> type) const</td></tr>
@@ -706,7 +782,9 @@ template&lt;class T &gt; </td></tr>
 <tr class="memitem:adab8c85b0da9870b217e68a0400345dd inherit pub_methods_class_urho3_d_1_1_object"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetSubsystem</b> () const</td></tr>
 <tr class="memdesc:adab8c85b0da9870b217e68a0400345dd inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Template version of returning a subsystem. <br /></td></tr>
 <tr class="separator:adab8c85b0da9870b217e68a0400345dd inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a227ebc7673a905ac7c878495c66515e3 inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#a227ebc7673a905ac7c878495c66515e3">GetCategory</a> () const</td></tr>
+<tr class="memitem:a227ebc7673a905ac7c878495c66515e3 inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a227ebc7673a905ac7c878495c66515e3" name="a227ebc7673a905ac7c878495c66515e3"></a>
+const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetCategory</b> () const</td></tr>
+<tr class="memdesc:a227ebc7673a905ac7c878495c66515e3 inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return object category. Categories are (optionally) registered along with the object factory. Return an empty string if the object category is not registered. <br /></td></tr>
 <tr class="separator:a227ebc7673a905ac7c878495c66515e3 inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd72cab3f338ef6ca76da511bcd941dc inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="abd72cab3f338ef6ca76da511bcd941dc" name="abd72cab3f338ef6ca76da511bcd941dc"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetBlockEvents</b> (bool block)</td></tr>
@@ -733,13 +811,21 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~RefCounted</b> ()
 <a class="el" href="class_urho3_d_1_1_ref_counted.html">RefCounted</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_urho3_d_1_1_ref_counted.html">RefCounted</a> &amp;rhs)=delete</td></tr>
 <tr class="memdesc:ab34ed11da9f794b4c3ae6a4f33dc090a inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prevent assignment. <br /></td></tr>
 <tr class="separator:ab34ed11da9f794b4c3ae6a4f33dc090a inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d857f439bb5a7935199a8e4fdb8f2c8 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_ref_counted.html#a0d857f439bb5a7935199a8e4fdb8f2c8">AddRef</a> ()</td></tr>
+<tr class="memitem:a0d857f439bb5a7935199a8e4fdb8f2c8 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top"><a id="a0d857f439bb5a7935199a8e4fdb8f2c8" name="a0d857f439bb5a7935199a8e4fdb8f2c8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddRef</b> ()</td></tr>
+<tr class="memdesc:a0d857f439bb5a7935199a8e4fdb8f2c8 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increment reference count. Can also be called outside of a <a class="el" href="class_urho3_d_1_1_shared_ptr.html" title="Shared pointer template class with intrusive reference counting.">SharedPtr</a> for traditional reference counting. <br /></td></tr>
 <tr class="separator:a0d857f439bb5a7935199a8e4fdb8f2c8 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59e95fecbcbc560f81f0bdd52306cc1d inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_ref_counted.html#a59e95fecbcbc560f81f0bdd52306cc1d">ReleaseRef</a> ()</td></tr>
+<tr class="memitem:a59e95fecbcbc560f81f0bdd52306cc1d inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top"><a id="a59e95fecbcbc560f81f0bdd52306cc1d" name="a59e95fecbcbc560f81f0bdd52306cc1d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ReleaseRef</b> ()</td></tr>
+<tr class="memdesc:a59e95fecbcbc560f81f0bdd52306cc1d inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decrement reference count and delete self if no more references. Can also be called outside of a <a class="el" href="class_urho3_d_1_1_shared_ptr.html" title="Shared pointer template class with intrusive reference counting.">SharedPtr</a> for traditional reference counting. <br /></td></tr>
 <tr class="separator:a59e95fecbcbc560f81f0bdd52306cc1d inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e764b1f4b072a1a0dbfaeac62626244 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_ref_counted.html#a7e764b1f4b072a1a0dbfaeac62626244">Refs</a> () const</td></tr>
+<tr class="memitem:a7e764b1f4b072a1a0dbfaeac62626244 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top"><a id="a7e764b1f4b072a1a0dbfaeac62626244" name="a7e764b1f4b072a1a0dbfaeac62626244"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>Refs</b> () const</td></tr>
+<tr class="memdesc:a7e764b1f4b072a1a0dbfaeac62626244 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return reference count. <br /></td></tr>
 <tr class="separator:a7e764b1f4b072a1a0dbfaeac62626244 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27960099d665fa2a05b7d488cfc56d90 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_ref_counted.html#a27960099d665fa2a05b7d488cfc56d90">WeakRefs</a> () const</td></tr>
+<tr class="memitem:a27960099d665fa2a05b7d488cfc56d90 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top"><a id="a27960099d665fa2a05b7d488cfc56d90" name="a27960099d665fa2a05b7d488cfc56d90"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>WeakRefs</b> () const</td></tr>
+<tr class="memdesc:a27960099d665fa2a05b7d488cfc56d90 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return weak reference count. <br /></td></tr>
 <tr class="separator:a27960099d665fa2a05b7d488cfc56d90 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08cd9280809e02f43cd08599391131bb inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top"><a id="a08cd9280809e02f43cd08599391131bb" name="a08cd9280809e02f43cd08599391131bb"></a>
 <a class="el" href="struct_urho3_d_1_1_ref_count.html">RefCount</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>RefCountPtr</b> ()</td></tr>
@@ -748,10 +834,14 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~RefCounted</b> ()
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:adea5413d0fb49e5b7b31b3da558329ca"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_physics_world.html#adea5413d0fb49e5b7b31b3da558329ca">RegisterObject</a> (<a class="el" href="class_urho3_d_1_1_context.html">Context</a> *context)</td></tr>
+<tr class="memitem:adea5413d0fb49e5b7b31b3da558329ca"><td class="memItemLeft" align="right" valign="top"><a id="adea5413d0fb49e5b7b31b3da558329ca" name="adea5413d0fb49e5b7b31b3da558329ca"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterObject</b> (<a class="el" href="class_urho3_d_1_1_context.html">Context</a> *context)</td></tr>
+<tr class="memdesc:adea5413d0fb49e5b7b31b3da558329ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register object factory. <br /></td></tr>
 <tr class="separator:adea5413d0fb49e5b7b31b3da558329ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_class_urho3_d_1_1_animatable"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_urho3_d_1_1_animatable')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="class_urho3_d_1_1_animatable.html">Urho3D::Animatable</a></td></tr>
-<tr class="memitem:a6e04d362924281f977a4775ccff73427 inherit pub_static_methods_class_urho3_d_1_1_animatable"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_animatable.html#a6e04d362924281f977a4775ccff73427">RegisterObject</a> (<a class="el" href="class_urho3_d_1_1_context.html">Context</a> *context)</td></tr>
+<tr class="memitem:a6e04d362924281f977a4775ccff73427 inherit pub_static_methods_class_urho3_d_1_1_animatable"><td class="memItemLeft" align="right" valign="top"><a id="a6e04d362924281f977a4775ccff73427" name="a6e04d362924281f977a4775ccff73427"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterObject</b> (<a class="el" href="class_urho3_d_1_1_context.html">Context</a> *context)</td></tr>
+<tr class="memdesc:a6e04d362924281f977a4775ccff73427 inherit pub_static_methods_class_urho3_d_1_1_animatable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register object factory. <br /></td></tr>
 <tr class="separator:a6e04d362924281f977a4775ccff73427 inherit pub_static_methods_class_urho3_d_1_1_animatable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_class_urho3_d_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_urho3_d_1_1_object')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="class_urho3_d_1_1_object.html">Urho3D::Object</a></td></tr>
 <tr class="memitem:a96b9229f1241a330bf2ea431b7018b05 inherit pub_static_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a96b9229f1241a330bf2ea431b7018b05" name="a96b9229f1241a330bf2ea431b7018b05"></a>
@@ -790,7 +880,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a694661584adfa38834d4b7ee960fb29a inherit pro_methods_class_urho3_d_1_1_component"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_component.html#a694661584adfa38834d4b7ee960fb29a">OnNodeSetEnabled</a> (<a class="el" href="class_urho3_d_1_1_node.html">Node</a> *node)</td></tr>
 <tr class="memdesc:a694661584adfa38834d4b7ee960fb29a inherit pro_methods_class_urho3_d_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle scene node enabled status changing.  <a href="class_urho3_d_1_1_component.html#a694661584adfa38834d4b7ee960fb29a">More...</a><br /></td></tr>
 <tr class="separator:a694661584adfa38834d4b7ee960fb29a inherit pro_methods_class_urho3_d_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a871e9a8397df466d804a02786970788c inherit pro_methods_class_urho3_d_1_1_component"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_component.html#a871e9a8397df466d804a02786970788c">SetID</a> (unsigned id)</td></tr>
+<tr class="memitem:a871e9a8397df466d804a02786970788c inherit pro_methods_class_urho3_d_1_1_component"><td class="memItemLeft" align="right" valign="top"><a id="a871e9a8397df466d804a02786970788c" name="a871e9a8397df466d804a02786970788c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetID</b> (unsigned id)</td></tr>
+<tr class="memdesc:a871e9a8397df466d804a02786970788c inherit pro_methods_class_urho3_d_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set ID. Called by <a class="el" href="class_urho3_d_1_1_scene.html" title="Root scene node, represents the whole scene.">Scene</a>. <br /></td></tr>
 <tr class="separator:a871e9a8397df466d804a02786970788c inherit pro_methods_class_urho3_d_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbd5b600c3a004defcb4eb393f855de6 inherit pro_methods_class_urho3_d_1_1_component"><td class="memItemLeft" align="right" valign="top"><a id="abbd5b600c3a004defcb4eb393f855de6" name="abbd5b600c3a004defcb4eb393f855de6"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetNode</b> (<a class="el" href="class_urho3_d_1_1_node.html">Node</a> *node)</td></tr>
@@ -1095,190 +1187,6 @@ std::unique_ptr&lt; <a class="el" href="struct_urho3_d_1_1_network_state.html">N
 
 </div>
 </div>
-<a id="a8a281b1e40d99a6e76435fafff1ca11a" name="a8a281b1e40d99a6e76435fafff1ca11a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8a281b1e40d99a6e76435fafff1ca11a">&#9670;&nbsp;</a></span>GetFps()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">i32 Urho3D::PhysicsWorld::GetFps </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return simulation steps per second. </p>
-
-</div>
-</div>
-<a id="a34ae07cd26ca6e2948231b10a3fedc96" name="a34ae07cd26ca6e2948231b10a3fedc96"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a34ae07cd26ca6e2948231b10a3fedc96">&#9670;&nbsp;</a></span>GetGravity()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> Urho3D::PhysicsWorld::GetGravity </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Return gravity. </p>
-
-</div>
-</div>
-<a id="a48e9d45cf1bb95c789372f1d12bef493" name="a48e9d45cf1bb95c789372f1d12bef493"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a48e9d45cf1bb95c789372f1d12bef493">&#9670;&nbsp;</a></span>GetInternalEdge()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Urho3D::PhysicsWorld::GetInternalEdge </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return whether Bullet's internal edge utility for trimesh collisions is enabled. </p>
-
-</div>
-</div>
-<a id="a16b6948ae1456cff43b834961f2fda83" name="a16b6948ae1456cff43b834961f2fda83"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a16b6948ae1456cff43b834961f2fda83">&#9670;&nbsp;</a></span>GetInterpolation()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Urho3D::PhysicsWorld::GetInterpolation </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return whether interpolation between simulation steps is enabled. </p>
-
-</div>
-</div>
-<a id="a9a7763576fb638104d782515b08b1f58" name="a9a7763576fb638104d782515b08b1f58"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9a7763576fb638104d782515b08b1f58">&#9670;&nbsp;</a></span>GetMaxSubSteps()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Urho3D::PhysicsWorld::GetMaxSubSteps </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return maximum number of physics substeps per frame. </p>
-
-</div>
-</div>
-<a id="aae27ca7980752936a27a15178d4b308a" name="aae27ca7980752936a27a15178d4b308a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aae27ca7980752936a27a15178d4b308a">&#9670;&nbsp;</a></span>GetNumIterations()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Urho3D::PhysicsWorld::GetNumIterations </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Return number of constraint solver iterations. </p>
-
-</div>
-</div>
-<a id="a22d80fcdd584c0d2f3ffa69464906d24" name="a22d80fcdd584c0d2f3ffa69464906d24"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a22d80fcdd584c0d2f3ffa69464906d24">&#9670;&nbsp;</a></span>GetSplitImpulse()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Urho3D::PhysicsWorld::GetSplitImpulse </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Return whether split impulse collision mode is enabled. </p>
-
-</div>
-</div>
-<a id="a0b6ec7c99e3ac48a06447a70d2440f05" name="a0b6ec7c99e3ac48a06447a70d2440f05"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b6ec7c99e3ac48a06447a70d2440f05">&#9670;&nbsp;</a></span>IsUpdateEnabled()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Urho3D::PhysicsWorld::IsUpdateEnabled </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return whether physics world will automatically simulate during scene update. </p>
-
-</div>
-</div>
 <a id="a0b0a8200a977bb58e0a7ee4693ed6b30" name="a0b0a8200a977bb58e0a7ee4693ed6b30"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0b0a8200a977bb58e0a7ee4693ed6b30">&#9670;&nbsp;</a></span>OnSceneSet()</h2>
 
@@ -1309,238 +1217,6 @@ std::unique_ptr&lt; <a class="el" href="struct_urho3_d_1_1_network_state.html">N
 
 </div>
 </div>
-<a id="a75aa1ba5ef79934fa5933e9fc2a0516c" name="a75aa1ba5ef79934fa5933e9fc2a0516c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a75aa1ba5ef79934fa5933e9fc2a0516c">&#9670;&nbsp;</a></span>RaycastSingleSegmented()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::PhysicsWorld::RaycastSingleSegmented </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_urho3_d_1_1_physics_raycast_result.html">PhysicsRaycastResult</a> &amp;&#160;</td>
-          <td class="paramname"><em>result</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="class_urho3_d_1_1_ray.html">Ray</a> &amp;&#160;</td>
-          <td class="paramname"><em>ray</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>maxDistance</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>segmentDistance</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned&#160;</td>
-          <td class="paramname"><em>collisionMask</em> = <code>M_MAX_UNSIGNED</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>overlapDistance</em> = <code>0.1f</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Perform a physics world segmented raycast and return the closest hit. Useful for big scenes with many bodies. overlapDistance is used to make sure there are no gap between segments, and must be smaller than segmentDistance. </p>
-
-</div>
-</div>
-<a id="adea5413d0fb49e5b7b31b3da558329ca" name="adea5413d0fb49e5b7b31b3da558329ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adea5413d0fb49e5b7b31b3da558329ca">&#9670;&nbsp;</a></span>RegisterObject()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::PhysicsWorld::RegisterObject </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_urho3_d_1_1_context.html">Context</a> *&#160;</td>
-          <td class="paramname"><em>context</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Register object factory. </p>
-
-</div>
-</div>
-<a id="a4fafd7df49a20afe6a77143afdc9bd09" name="a4fafd7df49a20afe6a77143afdc9bd09"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4fafd7df49a20afe6a77143afdc9bd09">&#9670;&nbsp;</a></span>SetFps()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::PhysicsWorld::SetFps </td>
-          <td>(</td>
-          <td class="paramtype">i32&#160;</td>
-          <td class="paramname"><em>fps</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Set simulation substeps per second. </p>
-
-</div>
-</div>
-<a id="a4de247dd2476854b2739e1739aaa8a16" name="a4de247dd2476854b2739e1739aaa8a16"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4de247dd2476854b2739e1739aaa8a16">&#9670;&nbsp;</a></span>SetGravity()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::PhysicsWorld::SetGravity </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> &amp;&#160;</td>
-          <td class="paramname"><em>gravity</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Set gravity. </p>
-
-</div>
-</div>
-<a id="a10935f2969836d082870f13f4bd7b813" name="a10935f2969836d082870f13f4bd7b813"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a10935f2969836d082870f13f4bd7b813">&#9670;&nbsp;</a></span>SetInternalEdge()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::PhysicsWorld::SetInternalEdge </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>enable</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Set whether to use Bullet's internal edge utility for trimesh collisions. Disabled by default. </p>
-
-</div>
-</div>
-<a id="a5cfe054879fc8c7f80394b75f08004cb" name="a5cfe054879fc8c7f80394b75f08004cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5cfe054879fc8c7f80394b75f08004cb">&#9670;&nbsp;</a></span>SetInterpolation()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::PhysicsWorld::SetInterpolation </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>enable</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Set whether to interpolate between simulation steps. </p>
-
-</div>
-</div>
-<a id="a1d5c83640cf870a7b81a7bc7bb77bf0e" name="a1d5c83640cf870a7b81a7bc7bb77bf0e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d5c83640cf870a7b81a7bc7bb77bf0e">&#9670;&nbsp;</a></span>SetMaxSubSteps()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::PhysicsWorld::SetMaxSubSteps </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>num</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Set maximum number of physics substeps per frame. 0 (default) is unlimited. Positive values cap the amount. Use a negative value to enable an adaptive timestep. This may cause inconsistent physics behavior. </p>
-
-</div>
-</div>
-<a id="a1db39ea4c68531cec61b44ee5d7c460d" name="a1db39ea4c68531cec61b44ee5d7c460d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1db39ea4c68531cec61b44ee5d7c460d">&#9670;&nbsp;</a></span>SetNumIterations()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::PhysicsWorld::SetNumIterations </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>num</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Set number of constraint solver iterations. </p>
-
-</div>
-</div>
-<a id="afdc72a4df479ffd6539c1169d47f6778" name="afdc72a4df479ffd6539c1169d47f6778"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afdc72a4df479ffd6539c1169d47f6778">&#9670;&nbsp;</a></span>SetSplitImpulse()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::PhysicsWorld::SetSplitImpulse </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>enable</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Set split impulse collision mode. This is more accurate, but slower. Disabled by default. </p>
-
-</div>
-</div>
-<a id="a6dfd8cd956bd2eb82d9777221ae9ab1b" name="a6dfd8cd956bd2eb82d9777221ae9ab1b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6dfd8cd956bd2eb82d9777221ae9ab1b">&#9670;&nbsp;</a></span>SetUpdateEnabled()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::PhysicsWorld::SetUpdateEnabled </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>enable</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Enable or disable automatic physics simulation during scene update. Enabled by default. </p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/runner/work/rurho3d.github.io/rurho3d.github.io/urho3d_repo/Source/Urho3D/Physics/PhysicsWorld.h</li>
 <li>/home/runner/work/rurho3d.github.io/rurho3d.github.io/urho3d_repo/Source/Urho3D/Physics/PhysicsWorld.cpp</li>
@@ -1548,7 +1224,7 @@ std::unique_ptr&lt; <a class="el" href="struct_urho3_d_1_1_network_state.html">N
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 27 2022 08:16:13 for Urho3D by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Wed Sep 28 2022 20:01:29 for Urho3D by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

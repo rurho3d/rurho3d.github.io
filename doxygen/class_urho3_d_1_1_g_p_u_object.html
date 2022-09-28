@@ -116,7 +116,9 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><b>GetGPUObject</b> ()
 u32&#160;</td><td class="memItemRight" valign="bottom"><b>GetGPUObjectName</b> () const</td></tr>
 <tr class="memdesc:a5ea92ffd360b51030133f2f06bca8805"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the object name. Applicable only on OpenGL. <br /></td></tr>
 <tr class="separator:a5ea92ffd360b51030133f2f06bca8805"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6938a78e8bb131f8c53e136778c9f6c2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_g_p_u_object.html#a6938a78e8bb131f8c53e136778c9f6c2">IsDataLost</a> () const</td></tr>
+<tr class="memitem:a6938a78e8bb131f8c53e136778c9f6c2"><td class="memItemLeft" align="right" valign="top"><a id="a6938a78e8bb131f8c53e136778c9f6c2" name="a6938a78e8bb131f8c53e136778c9f6c2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsDataLost</b> () const</td></tr>
+<tr class="memdesc:a6938a78e8bb131f8c53e136778c9f6c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether data is lost due to context loss. <br /></td></tr>
 <tr class="separator:a6938a78e8bb131f8c53e136778c9f6c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7039fc3a187fd67855a802c00099452b"><td class="memItemLeft" align="right" valign="top"><a id="a7039fc3a187fd67855a802c00099452b" name="a7039fc3a187fd67855a802c00099452b"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasPendingData</b> () const</td></tr>
@@ -131,7 +133,7 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:abf1a902885d2c3bac02f3f58e0e0f037"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02851f652df5053623c4434f2cd9a4b8"><td class="memItemLeft" align="right" valign="top"><a id="a02851f652df5053623c4434f2cd9a4b8" name="a02851f652df5053623c4434f2cd9a4b8"></a>
 <a class="el" href="union_urho3_d_1_1_g_p_u_object_handle.html">GPUObjectHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>object_</b> {}</td></tr>
-<tr class="memdesc:a02851f652df5053623c4434f2cd9a4b8"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_object.html">Object</a> pointer or name. <br /></td></tr>
+<tr class="memdesc:a02851f652df5053623c4434f2cd9a4b8"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil...">Object</a> pointer or name. <br /></td></tr>
 <tr class="separator:a02851f652df5053623c4434f2cd9a4b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6c82e62ca8b1098c4157acfe517c772"><td class="memItemLeft" align="right" valign="top"><a id="ab6c82e62ca8b1098c4157acfe517c772" name="ab6c82e62ca8b1098c4157acfe517c772"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>dataLost_</b> {}</td></tr>
@@ -145,32 +147,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>dataPending_</b> {}</
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Base class for GPU resources. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a6938a78e8bb131f8c53e136778c9f6c2" name="a6938a78e8bb131f8c53e136778c9f6c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6938a78e8bb131f8c53e136778c9f6c2">&#9670;&nbsp;</a></span>IsDataLost()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Urho3D::GPUObject::IsDataLost </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return whether data is lost due to context loss. </p>
-
-</div>
-</div>
 <a id="a054b2b9d1ac58c3dc81866bb7db6761a" name="a054b2b9d1ac58c3dc81866bb7db6761a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a054b2b9d1ac58c3dc81866bb7db6761a">&#9670;&nbsp;</a></span>OnDeviceLost()</h2>
 
@@ -265,7 +241,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>dataPending_</b> {}</
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 27 2022 08:16:12 for Urho3D by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Wed Sep 28 2022 20:01:28 for Urho3D by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

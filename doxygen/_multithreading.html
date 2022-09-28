@@ -41,7 +41,7 @@
   <div class="headertitle"><div class="title">Multithreading </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p >Urho3D uses a task-based multithreading model. The <a class="el" href="class_urho3_d_1_1_work_queue.html" title="Work queue subsystem for multithreading.">WorkQueue</a> subsystem can be supplied with tasks described by the <a class="el" href="struct_urho3_d_1_1_work_item.html">WorkItem</a> structure, by calling <a class="el" href="class_urho3_d_1_1_work_queue.html#ab717544bbd92f6bece773423b50a13f3">AddWorkItem()</a>. These will be executed in background worker threads. The function <a class="el" href="class_urho3_d_1_1_work_queue.html#ae806e307f90b458bf86be68ec4648089">Complete()</a> will complete all currently pending tasks, and execute them also in the main thread to make them finish faster.</p>
+<div class="textblock"><p >Urho3D uses a task-based multithreading model. The <a class="el" href="class_urho3_d_1_1_work_queue.html" title="Work queue subsystem for multithreading.">WorkQueue</a> subsystem can be supplied with tasks described by the <a class="el" href="struct_urho3_d_1_1_work_item.html" title="Work queue item.">WorkItem</a> structure, by calling <a class="el" href="class_urho3_d_1_1_work_queue.html#ab717544bbd92f6bece773423b50a13f3">AddWorkItem()</a>. These will be executed in background worker threads. The function <a class="el" href="class_urho3_d_1_1_work_queue.html#ae806e307f90b458bf86be68ec4648089">Complete()</a> will complete all currently pending tasks, and execute them also in the main thread to make them finish faster.</p>
 <p >On single-core systems no worker threads will be created, and tasks are immediately processed by the main thread instead. In the presence of more cores, a worker thread will be created for each hardware core except one which is reserved for the main thread. Hyperthreaded cores are not included, as creating worker threads also for them leads to unpredictable extra synchronization overhead.</p>
 <p >The work items include a function pointer to call, with the signature</p>
 <pre class="fragment">void WorkFunction(const WorkItem* item, unsigned threadIndex)
@@ -59,7 +59,7 @@
 </div><!-- PageDoc -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 27 2022 08:16:10 for Urho3D by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Wed Sep 28 2022 20:01:27 for Urho3D by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

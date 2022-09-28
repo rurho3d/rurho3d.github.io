@@ -58,6 +58,9 @@
 </div><!--header-->
 <div class="contents">
 
+<p>Three-dimensional axis-aligned bounding box.  
+ <a href="class_urho3_d_1_1_bounding_box.html#details">More...</a></p>
+
 <p><code>#include &lt;/home/runner/work/rurho3d.github.io/rurho3d.github.io/urho3d_repo/Source/Urho3D/Math/BoundingBox.h&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -104,7 +107,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a655df5c184be59265bcd91ed694b2298"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9839bbf361dcde30cb0149cb31619e84"><td class="memItemLeft" align="right" valign="top"><a id="a9839bbf361dcde30cb0149cb31619e84" name="a9839bbf361dcde30cb0149cb31619e84"></a>
 <a class="el" href="class_urho3_d_1_1_bounding_box.html">BoundingBox</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_urho3_d_1_1_rect.html">Rect</a> &amp;rhs) noexcept</td></tr>
-<tr class="memdesc:a9839bbf361dcde30cb0149cb31619e84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign from a <a class="el" href="class_urho3_d_1_1_rect.html">Rect</a>, with the Z dimension left zero. <br /></td></tr>
+<tr class="memdesc:a9839bbf361dcde30cb0149cb31619e84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign from a <a class="el" href="class_urho3_d_1_1_rect.html" title="Two-dimensional bounding rectangle.">Rect</a>, with the Z dimension left zero. <br /></td></tr>
 <tr class="separator:a9839bbf361dcde30cb0149cb31619e84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aabbd2a53978025ee925742f8018ae8a1"><td class="memItemLeft" align="right" valign="top"><a id="aabbd2a53978025ee925742f8018ae8a1" name="aabbd2a53978025ee925742f8018ae8a1"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="class_urho3_d_1_1_bounding_box.html">BoundingBox</a> &amp;rhs) const</td></tr>
@@ -120,7 +123,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Define</b> (const <a 
 <tr class="separator:afd34713236804d7207ce7fd709e99db9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a763c598805fb432e21d2ef6ef71796"><td class="memItemLeft" align="right" valign="top"><a id="a1a763c598805fb432e21d2ef6ef71796" name="a1a763c598805fb432e21d2ef6ef71796"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Define</b> (const <a class="el" href="class_urho3_d_1_1_rect.html">Rect</a> &amp;rect)</td></tr>
-<tr class="memdesc:a1a763c598805fb432e21d2ef6ef71796"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define from a <a class="el" href="class_urho3_d_1_1_rect.html">Rect</a>. <br /></td></tr>
+<tr class="memdesc:a1a763c598805fb432e21d2ef6ef71796"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define from a <a class="el" href="class_urho3_d_1_1_rect.html" title="Two-dimensional bounding rectangle.">Rect</a>. <br /></td></tr>
 <tr class="separator:a1a763c598805fb432e21d2ef6ef71796"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5605ac83ed7e0bc6a3aeab204e9da261"><td class="memItemLeft" align="right" valign="top"><a id="a5605ac83ed7e0bc6a3aeab204e9da261" name="a5605ac83ed7e0bc6a3aeab204e9da261"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Define</b> (const <a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> &amp;min, const <a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> &amp;max)</td></tr>
@@ -194,11 +197,17 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Clear</b> ()</td></tr
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>Defined</b> () const</td></tr>
 <tr class="memdesc:adc0131aa1d9fcea402a47973925da048"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if this bounding box is defined via a previous call to <a class="el" href="class_urho3_d_1_1_bounding_box.html#afd34713236804d7207ce7fd709e99db9" title="Define from another bounding box.">Define()</a> or <a class="el" href="class_urho3_d_1_1_bounding_box.html#a4befcf3c67e94eb2f1924e1179b09bd2" title="Merge a point.">Merge()</a>. <br /></td></tr>
 <tr class="separator:adc0131aa1d9fcea402a47973925da048"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeae6990922162d49a54d9360b4c1bd04"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_bounding_box.html#aeae6990922162d49a54d9360b4c1bd04">Center</a> () const</td></tr>
+<tr class="memitem:aeae6990922162d49a54d9360b4c1bd04"><td class="memItemLeft" align="right" valign="top"><a id="aeae6990922162d49a54d9360b4c1bd04" name="aeae6990922162d49a54d9360b4c1bd04"></a>
+<a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Center</b> () const</td></tr>
+<tr class="memdesc:aeae6990922162d49a54d9360b4c1bd04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return center. <br /></td></tr>
 <tr class="separator:aeae6990922162d49a54d9360b4c1bd04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb679ba521af393be790d1b8ae64fdf5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_bounding_box.html#acb679ba521af393be790d1b8ae64fdf5">Size</a> () const</td></tr>
+<tr class="memitem:acb679ba521af393be790d1b8ae64fdf5"><td class="memItemLeft" align="right" valign="top"><a id="acb679ba521af393be790d1b8ae64fdf5" name="acb679ba521af393be790d1b8ae64fdf5"></a>
+<a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Size</b> () const</td></tr>
+<tr class="memdesc:acb679ba521af393be790d1b8ae64fdf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return size. <br /></td></tr>
 <tr class="separator:acb679ba521af393be790d1b8ae64fdf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a9e6a1766bd3700e1512f22f2d8e6e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_bounding_box.html#a0a9e6a1766bd3700e1512f22f2d8e6e4">HalfSize</a> () const</td></tr>
+<tr class="memitem:a0a9e6a1766bd3700e1512f22f2d8e6e4"><td class="memItemLeft" align="right" valign="top"><a id="a0a9e6a1766bd3700e1512f22f2d8e6e4" name="a0a9e6a1766bd3700e1512f22f2d8e6e4"></a>
+<a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><b>HalfSize</b> () const</td></tr>
+<tr class="memdesc:a0a9e6a1766bd3700e1512f22f2d8e6e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return half-size. <br /></td></tr>
 <tr class="separator:a0a9e6a1766bd3700e1512f22f2d8e6e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00fe243d05516209a4ef6f83ff7179df"><td class="memItemLeft" align="right" valign="top"><a id="a00fe243d05516209a4ef6f83ff7179df" name="a00fe243d05516209a4ef6f83ff7179df"></a>
 <a class="el" href="class_urho3_d_1_1_bounding_box.html">BoundingBox</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Transformed</b> (const <a class="el" href="class_urho3_d_1_1_matrix3.html">Matrix3</a> &amp;transform) const</td></tr>
@@ -260,93 +269,14 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>dummyMax_</b> {}</td
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Three-dimensional axis-aligned bounding box. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="aeae6990922162d49a54d9360b4c1bd04" name="aeae6990922162d49a54d9360b4c1bd04"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeae6990922162d49a54d9360b4c1bd04">&#9670;&nbsp;</a></span>Center()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> Urho3D::BoundingBox::Center </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return center. </p>
-
-</div>
-</div>
-<a id="a0a9e6a1766bd3700e1512f22f2d8e6e4" name="a0a9e6a1766bd3700e1512f22f2d8e6e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a9e6a1766bd3700e1512f22f2d8e6e4">&#9670;&nbsp;</a></span>HalfSize()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> Urho3D::BoundingBox::HalfSize </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return half-size. </p>
-
-</div>
-</div>
-<a id="acb679ba521af393be790d1b8ae64fdf5" name="acb679ba521af393be790d1b8ae64fdf5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acb679ba521af393be790d1b8ae64fdf5">&#9670;&nbsp;</a></span>Size()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_urho3_d_1_1_vector3.html">Vector3</a> Urho3D::BoundingBox::Size </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return size. </p>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+</div><hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/runner/work/rurho3d.github.io/rurho3d.github.io/urho3d_repo/Source/Urho3D/Math/BoundingBox.h</li>
 <li>/home/runner/work/rurho3d.github.io/rurho3d.github.io/urho3d_repo/Source/Urho3D/Math/BoundingBox.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 27 2022 08:16:11 for Urho3D by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Wed Sep 28 2022 20:01:27 for Urho3D by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

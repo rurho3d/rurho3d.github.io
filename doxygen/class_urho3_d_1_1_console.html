@@ -69,7 +69,7 @@ Inheritance diagram for Urho3D::Console:</div>
  <div class="center">
   <img src="class_urho3_d_1_1_console.png" usemap="#Urho3D::Console_map" alt=""/>
   <map id="Urho3D::Console_map" name="Urho3D::Console_map">
-<area href="class_urho3_d_1_1_object.html" alt="Urho3D::Object" shape="rect" coords="0,56,127,80"/>
+<area href="class_urho3_d_1_1_object.html" title="Base class for objects with type identification, subsystem access and event sending/receiving capabil..." alt="Urho3D::Object" shape="rect" coords="0,56,127,80"/>
 <area href="class_urho3_d_1_1_ref_counted.html" title="Base class for intrusively reference-counted objects. These are noncopyable and non-assignable." alt="Urho3D::RefCounted" shape="rect" coords="0,0,127,24"/>
   </map>
 </div></div>
@@ -84,25 +84,41 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>~Console</b> () override</td></tr>
 <tr class="memdesc:aea902c8702dc8d3581c5a1936c7e63e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct. <br /></td></tr>
 <tr class="separator:aea902c8702dc8d3581c5a1936c7e63e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6c414693bfee660f1e871d2d76d509c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_console.html#ab6c414693bfee660f1e871d2d76d509c">SetDefaultStyle</a> (<a class="el" href="class_urho3_d_1_1_x_m_l_file.html">XMLFile</a> *style)</td></tr>
+<tr class="memitem:ab6c414693bfee660f1e871d2d76d509c"><td class="memItemLeft" align="right" valign="top"><a id="ab6c414693bfee660f1e871d2d76d509c" name="ab6c414693bfee660f1e871d2d76d509c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDefaultStyle</b> (<a class="el" href="class_urho3_d_1_1_x_m_l_file.html">XMLFile</a> *style)</td></tr>
+<tr class="memdesc:ab6c414693bfee660f1e871d2d76d509c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set <a class="el" href="class_urho3_d_1_1_u_i.html" title="UI subsystem. Manages the graphical user interface.">UI</a> elements' style from an XML file. <br /></td></tr>
 <tr class="separator:ab6c414693bfee660f1e871d2d76d509c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1326b059443a666f16fbe89cb000c662"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_console.html#a1326b059443a666f16fbe89cb000c662">SetVisible</a> (bool enable)</td></tr>
+<tr class="memitem:a1326b059443a666f16fbe89cb000c662"><td class="memItemLeft" align="right" valign="top"><a id="a1326b059443a666f16fbe89cb000c662" name="a1326b059443a666f16fbe89cb000c662"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetVisible</b> (bool enable)</td></tr>
+<tr class="memdesc:a1326b059443a666f16fbe89cb000c662"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show or hide. <br /></td></tr>
 <tr class="separator:a1326b059443a666f16fbe89cb000c662"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62a7add1a0c2dab1f2b0ed01691fed27"><td class="memItemLeft" align="right" valign="top"><a id="a62a7add1a0c2dab1f2b0ed01691fed27" name="a62a7add1a0c2dab1f2b0ed01691fed27"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Toggle</b> ()</td></tr>
 <tr class="memdesc:a62a7add1a0c2dab1f2b0ed01691fed27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggle visibility. <br /></td></tr>
 <tr class="separator:a62a7add1a0c2dab1f2b0ed01691fed27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a7662a654ecdff173220fb9d058c100"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_console.html#a8a7662a654ecdff173220fb9d058c100">SetAutoVisibleOnError</a> (bool enable)</td></tr>
+<tr class="memitem:a8a7662a654ecdff173220fb9d058c100"><td class="memItemLeft" align="right" valign="top"><a id="a8a7662a654ecdff173220fb9d058c100" name="a8a7662a654ecdff173220fb9d058c100"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAutoVisibleOnError</b> (bool enable)</td></tr>
+<tr class="memdesc:a8a7662a654ecdff173220fb9d058c100"><td class="mdescLeft">&#160;</td><td class="mdescRight">Automatically set console to visible when receiving an error log message. <br /></td></tr>
 <tr class="separator:a8a7662a654ecdff173220fb9d058c100"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91e111a7ddc4d0579522755c5c9a4de8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_console.html#a91e111a7ddc4d0579522755c5c9a4de8">SetCommandInterpreter</a> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;interpreter)</td></tr>
+<tr class="memitem:a91e111a7ddc4d0579522755c5c9a4de8"><td class="memItemLeft" align="right" valign="top"><a id="a91e111a7ddc4d0579522755c5c9a4de8" name="a91e111a7ddc4d0579522755c5c9a4de8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCommandInterpreter</b> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;interpreter)</td></tr>
+<tr class="memdesc:a91e111a7ddc4d0579522755c5c9a4de8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the command interpreter. <br /></td></tr>
 <tr class="separator:a91e111a7ddc4d0579522755c5c9a4de8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abdeed242ba1ef0d2d0e3a70574b7b898"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_console.html#abdeed242ba1ef0d2d0e3a70574b7b898">SetNumBufferedRows</a> (i32 rows)</td></tr>
+<tr class="memitem:abdeed242ba1ef0d2d0e3a70574b7b898"><td class="memItemLeft" align="right" valign="top"><a id="abdeed242ba1ef0d2d0e3a70574b7b898" name="abdeed242ba1ef0d2d0e3a70574b7b898"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetNumBufferedRows</b> (i32 rows)</td></tr>
+<tr class="memdesc:abdeed242ba1ef0d2d0e3a70574b7b898"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set number of buffered rows. <br /></td></tr>
 <tr class="separator:abdeed242ba1ef0d2d0e3a70574b7b898"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f7b06f146d3a01921ae1ba16c7688e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_console.html#a9f7b06f146d3a01921ae1ba16c7688e3">SetNumRows</a> (i32 rows)</td></tr>
+<tr class="memitem:a9f7b06f146d3a01921ae1ba16c7688e3"><td class="memItemLeft" align="right" valign="top"><a id="a9f7b06f146d3a01921ae1ba16c7688e3" name="a9f7b06f146d3a01921ae1ba16c7688e3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetNumRows</b> (i32 rows)</td></tr>
+<tr class="memdesc:a9f7b06f146d3a01921ae1ba16c7688e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set number of displayed rows. <br /></td></tr>
 <tr class="separator:a9f7b06f146d3a01921ae1ba16c7688e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aace7877d398e9da47ba15d1e2627fb19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_console.html#aace7877d398e9da47ba15d1e2627fb19">SetNumHistoryRows</a> (i32 rows)</td></tr>
+<tr class="memitem:aace7877d398e9da47ba15d1e2627fb19"><td class="memItemLeft" align="right" valign="top"><a id="aace7877d398e9da47ba15d1e2627fb19" name="aace7877d398e9da47ba15d1e2627fb19"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetNumHistoryRows</b> (i32 rows)</td></tr>
+<tr class="memdesc:aace7877d398e9da47ba15d1e2627fb19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set command history maximum size, 0 disables history. <br /></td></tr>
 <tr class="separator:aace7877d398e9da47ba15d1e2627fb19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98b1d9382ecfe63be3e010ee6328cc93"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_console.html#a98b1d9382ecfe63be3e010ee6328cc93">SetFocusOnShow</a> (bool enable)</td></tr>
+<tr class="memitem:a98b1d9382ecfe63be3e010ee6328cc93"><td class="memItemLeft" align="right" valign="top"><a id="a98b1d9382ecfe63be3e010ee6328cc93" name="a98b1d9382ecfe63be3e010ee6328cc93"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFocusOnShow</b> (bool enable)</td></tr>
+<tr class="memdesc:a98b1d9382ecfe63be3e010ee6328cc93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set whether to automatically focus the line edit when showing. Default true on desktops and false on mobile devices, as on mobiles it would pop up the screen keyboard. <br /></td></tr>
 <tr class="separator:a98b1d9382ecfe63be3e010ee6328cc93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a561505bb839161cf2db4056807ec2ab0"><td class="memItemLeft" align="right" valign="top"><a id="a561505bb839161cf2db4056807ec2ab0" name="a561505bb839161cf2db4056807ec2ab0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>AddAutoComplete</b> (const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;option)</td></tr>
@@ -116,35 +132,61 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveAutoComplete</b
 void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateElements</b> ()</td></tr>
 <tr class="memdesc:a34c1811446ef1218f69c6a40b8898e80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update elements to layout properly. Call this after manually adjusting the sub-elements. <br /></td></tr>
 <tr class="separator:a34c1811446ef1218f69c6a40b8898e80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a106dcebff5ed7a3a61edf478e487071d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_x_m_l_file.html">XMLFile</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_console.html#a106dcebff5ed7a3a61edf478e487071d">GetDefaultStyle</a> () const</td></tr>
+<tr class="memitem:a106dcebff5ed7a3a61edf478e487071d"><td class="memItemLeft" align="right" valign="top"><a id="a106dcebff5ed7a3a61edf478e487071d" name="a106dcebff5ed7a3a61edf478e487071d"></a>
+<a class="el" href="class_urho3_d_1_1_x_m_l_file.html">XMLFile</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetDefaultStyle</b> () const</td></tr>
+<tr class="memdesc:a106dcebff5ed7a3a61edf478e487071d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the <a class="el" href="class_urho3_d_1_1_u_i.html" title="UI subsystem. Manages the graphical user interface.">UI</a> style file. <br /></td></tr>
 <tr class="separator:a106dcebff5ed7a3a61edf478e487071d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a581de52e903aa95b019af8a043a542"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_border_image.html">BorderImage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_console.html#a4a581de52e903aa95b019af8a043a542">GetBackground</a> () const</td></tr>
+<tr class="memitem:a4a581de52e903aa95b019af8a043a542"><td class="memItemLeft" align="right" valign="top"><a id="a4a581de52e903aa95b019af8a043a542" name="a4a581de52e903aa95b019af8a043a542"></a>
+<a class="el" href="class_urho3_d_1_1_border_image.html">BorderImage</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetBackground</b> () const</td></tr>
+<tr class="memdesc:a4a581de52e903aa95b019af8a043a542"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the background element. <br /></td></tr>
 <tr class="separator:a4a581de52e903aa95b019af8a043a542"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8bc293fb5a86b8db025d354575f2b125"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_line_edit.html">LineEdit</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_console.html#a8bc293fb5a86b8db025d354575f2b125">GetLineEdit</a> () const</td></tr>
+<tr class="memitem:a8bc293fb5a86b8db025d354575f2b125"><td class="memItemLeft" align="right" valign="top"><a id="a8bc293fb5a86b8db025d354575f2b125" name="a8bc293fb5a86b8db025d354575f2b125"></a>
+<a class="el" href="class_urho3_d_1_1_line_edit.html">LineEdit</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetLineEdit</b> () const</td></tr>
+<tr class="memdesc:a8bc293fb5a86b8db025d354575f2b125"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the line edit element. <br /></td></tr>
 <tr class="separator:a8bc293fb5a86b8db025d354575f2b125"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a5e63002b5f265f53f251c819d25764"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_urho3_d_1_1_button.html">Button</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_console.html#a2a5e63002b5f265f53f251c819d25764">GetCloseButton</a> () const</td></tr>
+<tr class="memitem:a2a5e63002b5f265f53f251c819d25764"><td class="memItemLeft" align="right" valign="top"><a id="a2a5e63002b5f265f53f251c819d25764" name="a2a5e63002b5f265f53f251c819d25764"></a>
+<a class="el" href="class_urho3_d_1_1_button.html">Button</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetCloseButton</b> () const</td></tr>
+<tr class="memdesc:a2a5e63002b5f265f53f251c819d25764"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the close butoon element. <br /></td></tr>
 <tr class="separator:a2a5e63002b5f265f53f251c819d25764"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2d44e2fc810e779793fa680247bf2c1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_console.html#ae2d44e2fc810e779793fa680247bf2c1">IsVisible</a> () const</td></tr>
+<tr class="memitem:ae2d44e2fc810e779793fa680247bf2c1"><td class="memItemLeft" align="right" valign="top"><a id="ae2d44e2fc810e779793fa680247bf2c1" name="ae2d44e2fc810e779793fa680247bf2c1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsVisible</b> () const</td></tr>
+<tr class="memdesc:ae2d44e2fc810e779793fa680247bf2c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether is visible. <br /></td></tr>
 <tr class="separator:ae2d44e2fc810e779793fa680247bf2c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad2b68696654daff52a3b762a56ae662"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_console.html#aad2b68696654daff52a3b762a56ae662">IsAutoVisibleOnError</a> () const</td></tr>
+<tr class="memitem:aad2b68696654daff52a3b762a56ae662"><td class="memItemLeft" align="right" valign="top"><a id="aad2b68696654daff52a3b762a56ae662" name="aad2b68696654daff52a3b762a56ae662"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsAutoVisibleOnError</b> () const</td></tr>
+<tr class="memdesc:aad2b68696654daff52a3b762a56ae662"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true when console is set to automatically visible when receiving an error log message. <br /></td></tr>
 <tr class="separator:aad2b68696654daff52a3b762a56ae662"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37fb41d4aaca43ea7f98257af68e36ce"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_console.html#a37fb41d4aaca43ea7f98257af68e36ce">GetCommandInterpreter</a> () const</td></tr>
+<tr class="memitem:a37fb41d4aaca43ea7f98257af68e36ce"><td class="memItemLeft" align="right" valign="top"><a id="a37fb41d4aaca43ea7f98257af68e36ce" name="a37fb41d4aaca43ea7f98257af68e36ce"></a>
+const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetCommandInterpreter</b> () const</td></tr>
+<tr class="memdesc:a37fb41d4aaca43ea7f98257af68e36ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the last used command interpreter. <br /></td></tr>
 <tr class="separator:a37fb41d4aaca43ea7f98257af68e36ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4bdbac3c9f596f7816801ee7db342a64"><td class="memItemLeft" align="right" valign="top">i32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_console.html#a4bdbac3c9f596f7816801ee7db342a64">GetNumBufferedRows</a> () const</td></tr>
+<tr class="memitem:a4bdbac3c9f596f7816801ee7db342a64"><td class="memItemLeft" align="right" valign="top"><a id="a4bdbac3c9f596f7816801ee7db342a64" name="a4bdbac3c9f596f7816801ee7db342a64"></a>
+i32&#160;</td><td class="memItemRight" valign="bottom"><b>GetNumBufferedRows</b> () const</td></tr>
+<tr class="memdesc:a4bdbac3c9f596f7816801ee7db342a64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return number of buffered rows. <br /></td></tr>
 <tr class="separator:a4bdbac3c9f596f7816801ee7db342a64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b2a11a7e999be75896761258e4b68de"><td class="memItemLeft" align="right" valign="top">i32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_console.html#a3b2a11a7e999be75896761258e4b68de">GetNumRows</a> () const</td></tr>
+<tr class="memitem:a3b2a11a7e999be75896761258e4b68de"><td class="memItemLeft" align="right" valign="top"><a id="a3b2a11a7e999be75896761258e4b68de" name="a3b2a11a7e999be75896761258e4b68de"></a>
+i32&#160;</td><td class="memItemRight" valign="bottom"><b>GetNumRows</b> () const</td></tr>
+<tr class="memdesc:a3b2a11a7e999be75896761258e4b68de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return number of displayed rows. <br /></td></tr>
 <tr class="separator:a3b2a11a7e999be75896761258e4b68de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27fdc8c4d00a3954e1d3f28ce4220175"><td class="memItemLeft" align="right" valign="top"><a id="a27fdc8c4d00a3954e1d3f28ce4220175" name="a27fdc8c4d00a3954e1d3f28ce4220175"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>CopySelectedRows</b> () const</td></tr>
 <tr class="memdesc:a27fdc8c4d00a3954e1d3f28ce4220175"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy selected rows to system clipboard. <br /></td></tr>
 <tr class="separator:a27fdc8c4d00a3954e1d3f28ce4220175"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a119b94075ea4d7080010553e7898f805"><td class="memItemLeft" align="right" valign="top">i32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_console.html#a119b94075ea4d7080010553e7898f805">GetNumHistoryRows</a> () const</td></tr>
+<tr class="memitem:a119b94075ea4d7080010553e7898f805"><td class="memItemLeft" align="right" valign="top"><a id="a119b94075ea4d7080010553e7898f805" name="a119b94075ea4d7080010553e7898f805"></a>
+i32&#160;</td><td class="memItemRight" valign="bottom"><b>GetNumHistoryRows</b> () const</td></tr>
+<tr class="memdesc:a119b94075ea4d7080010553e7898f805"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return history maximum size. <br /></td></tr>
 <tr class="separator:a119b94075ea4d7080010553e7898f805"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a234c73da5dab331b0b71eb424243aec5"><td class="memItemLeft" align="right" valign="top">i32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_console.html#a234c73da5dab331b0b71eb424243aec5">GetHistoryPosition</a> () const</td></tr>
+<tr class="memitem:a234c73da5dab331b0b71eb424243aec5"><td class="memItemLeft" align="right" valign="top"><a id="a234c73da5dab331b0b71eb424243aec5" name="a234c73da5dab331b0b71eb424243aec5"></a>
+i32&#160;</td><td class="memItemRight" valign="bottom"><b>GetHistoryPosition</b> () const</td></tr>
+<tr class="memdesc:a234c73da5dab331b0b71eb424243aec5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return current history position. <br /></td></tr>
 <tr class="separator:a234c73da5dab331b0b71eb424243aec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7567a53dc8f1953b52ae4683d320bdcf"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_console.html#a7567a53dc8f1953b52ae4683d320bdcf">GetHistoryRow</a> (i32 index) const</td></tr>
+<tr class="memitem:a7567a53dc8f1953b52ae4683d320bdcf"><td class="memItemLeft" align="right" valign="top"><a id="a7567a53dc8f1953b52ae4683d320bdcf" name="a7567a53dc8f1953b52ae4683d320bdcf"></a>
+const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetHistoryRow</b> (i32 index) const</td></tr>
+<tr class="memdesc:a7567a53dc8f1953b52ae4683d320bdcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return history row at index. <br /></td></tr>
 <tr class="separator:a7567a53dc8f1953b52ae4683d320bdcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a671c85fed93662ddb3b8f1f1759e92ff"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_console.html#a671c85fed93662ddb3b8f1f1759e92ff">GetFocusOnShow</a> () const</td></tr>
+<tr class="memitem:a671c85fed93662ddb3b8f1f1759e92ff"><td class="memItemLeft" align="right" valign="top"><a id="a671c85fed93662ddb3b8f1f1759e92ff" name="a671c85fed93662ddb3b8f1f1759e92ff"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetFocusOnShow</b> () const</td></tr>
+<tr class="memdesc:a671c85fed93662ddb3b8f1f1759e92ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether automatically focuses the line edit when showing. <br /></td></tr>
 <tr class="separator:a671c85fed93662ddb3b8f1f1759e92ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_urho3_d_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_urho3_d_1_1_object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_urho3_d_1_1_object.html">Urho3D::Object</a></td></tr>
 <tr class="memitem:a95a6cd1c5c12a458fda4b38f873a334d inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a95a6cd1c5c12a458fda4b38f873a334d" name="a95a6cd1c5c12a458fda4b38f873a334d"></a>
@@ -156,8 +198,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>CopySelectedRows</b> 
 <tr class="memdesc:a4d472106f01c137d237b3099751d10c5 inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct. Clean up self from event sender &amp; receiver structures. <br /></td></tr>
 <tr class="separator:a4d472106f01c137d237b3099751d10c5 inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c7af660afc8467a99d1f17c8d099b3b inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#a4c7af660afc8467a99d1f17c8d099b3b">GetType</a> () const =0</td></tr>
+<tr class="memdesc:a4c7af660afc8467a99d1f17c8d099b3b inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return type hash.  <a href="class_urho3_d_1_1_object.html#a4c7af660afc8467a99d1f17c8d099b3b">More...</a><br /></td></tr>
 <tr class="separator:a4c7af660afc8467a99d1f17c8d099b3b inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa70436408fab29ff5d6ea54fa1e09b9b inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#aa70436408fab29ff5d6ea54fa1e09b9b">GetTypeName</a> () const =0</td></tr>
+<tr class="memdesc:aa70436408fab29ff5d6ea54fa1e09b9b inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return type name.  <a href="class_urho3_d_1_1_object.html#aa70436408fab29ff5d6ea54fa1e09b9b">More...</a><br /></td></tr>
 <tr class="separator:aa70436408fab29ff5d6ea54fa1e09b9b inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a768de02d2ed1eab1703c3ba02cf0415d inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a768de02d2ed1eab1703c3ba02cf0415d" name="a768de02d2ed1eab1703c3ba02cf0415d"></a>
 virtual const <a class="el" href="class_urho3_d_1_1_type_info.html">TypeInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetTypeInfo</b> () const =0</td></tr>
@@ -247,11 +291,17 @@ template&lt;typename... Args&gt; </td></tr>
 <a class="el" href="class_urho3_d_1_1_context.html">Context</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetContext</b> () const</td></tr>
 <tr class="memdesc:a8bd9b32c8a56c2f6d618d8afe8091eb7 inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return execution context. <br /></td></tr>
 <tr class="separator:a8bd9b32c8a56c2f6d618d8afe8091eb7 inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd4506c4bdb10232305ef69ebbb78a83 inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#acd4506c4bdb10232305ef69ebbb78a83">GetGlobalVar</a> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> key) const</td></tr>
+<tr class="memitem:acd4506c4bdb10232305ef69ebbb78a83 inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="acd4506c4bdb10232305ef69ebbb78a83" name="acd4506c4bdb10232305ef69ebbb78a83"></a>
+const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetGlobalVar</b> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> key) const</td></tr>
+<tr class="memdesc:acd4506c4bdb10232305ef69ebbb78a83 inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return global variable based on key. <br /></td></tr>
 <tr class="separator:acd4506c4bdb10232305ef69ebbb78a83 inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27b36184a862d9343604f31d85d9bc24 inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="_variant_8h.html#aee85c8bb4263431ef586545ff082720b">VariantMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#a27b36184a862d9343604f31d85d9bc24">GetGlobalVars</a> () const</td></tr>
+<tr class="memitem:a27b36184a862d9343604f31d85d9bc24 inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a27b36184a862d9343604f31d85d9bc24" name="a27b36184a862d9343604f31d85d9bc24"></a>
+const <a class="el" href="_variant_8h.html#aee85c8bb4263431ef586545ff082720b">VariantMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetGlobalVars</b> () const</td></tr>
+<tr class="memdesc:a27b36184a862d9343604f31d85d9bc24 inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return all global variables. <br /></td></tr>
 <tr class="separator:a27b36184a862d9343604f31d85d9bc24 inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43d25cc580737c9dc3b973d6c1230d9e inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#a43d25cc580737c9dc3b973d6c1230d9e">SetGlobalVar</a> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> key, const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;value)</td></tr>
+<tr class="memitem:a43d25cc580737c9dc3b973d6c1230d9e inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a43d25cc580737c9dc3b973d6c1230d9e" name="a43d25cc580737c9dc3b973d6c1230d9e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetGlobalVar</b> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> key, const <a class="el" href="class_urho3_d_1_1_variant.html">Variant</a> &amp;value)</td></tr>
+<tr class="memdesc:a43d25cc580737c9dc3b973d6c1230d9e inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set global variable with the respective key and value. <br /></td></tr>
 <tr class="separator:a43d25cc580737c9dc3b973d6c1230d9e inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fb7d12773df7b6467f62415ee4ce977 inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a9fb7d12773df7b6467f62415ee4ce977" name="a9fb7d12773df7b6467f62415ee4ce977"></a>
 <a class="el" href="class_urho3_d_1_1_object.html">Object</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetSubsystem</b> (<a class="el" href="class_urho3_d_1_1_string_hash.html">StringHash</a> type) const</td></tr>
@@ -282,7 +332,9 @@ template&lt;class T &gt; </td></tr>
 <tr class="memitem:adab8c85b0da9870b217e68a0400345dd inherit pub_methods_class_urho3_d_1_1_object"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetSubsystem</b> () const</td></tr>
 <tr class="memdesc:adab8c85b0da9870b217e68a0400345dd inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Template version of returning a subsystem. <br /></td></tr>
 <tr class="separator:adab8c85b0da9870b217e68a0400345dd inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a227ebc7673a905ac7c878495c66515e3 inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_object.html#a227ebc7673a905ac7c878495c66515e3">GetCategory</a> () const</td></tr>
+<tr class="memitem:a227ebc7673a905ac7c878495c66515e3 inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a227ebc7673a905ac7c878495c66515e3" name="a227ebc7673a905ac7c878495c66515e3"></a>
+const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetCategory</b> () const</td></tr>
+<tr class="memdesc:a227ebc7673a905ac7c878495c66515e3 inherit pub_methods_class_urho3_d_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return object category. Categories are (optionally) registered along with the object factory. Return an empty string if the object category is not registered. <br /></td></tr>
 <tr class="separator:a227ebc7673a905ac7c878495c66515e3 inherit pub_methods_class_urho3_d_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd72cab3f338ef6ca76da511bcd941dc inherit pub_methods_class_urho3_d_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="abd72cab3f338ef6ca76da511bcd941dc" name="abd72cab3f338ef6ca76da511bcd941dc"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetBlockEvents</b> (bool block)</td></tr>
@@ -309,13 +361,21 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~RefCounted</b> ()
 <a class="el" href="class_urho3_d_1_1_ref_counted.html">RefCounted</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_urho3_d_1_1_ref_counted.html">RefCounted</a> &amp;rhs)=delete</td></tr>
 <tr class="memdesc:ab34ed11da9f794b4c3ae6a4f33dc090a inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prevent assignment. <br /></td></tr>
 <tr class="separator:ab34ed11da9f794b4c3ae6a4f33dc090a inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d857f439bb5a7935199a8e4fdb8f2c8 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_ref_counted.html#a0d857f439bb5a7935199a8e4fdb8f2c8">AddRef</a> ()</td></tr>
+<tr class="memitem:a0d857f439bb5a7935199a8e4fdb8f2c8 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top"><a id="a0d857f439bb5a7935199a8e4fdb8f2c8" name="a0d857f439bb5a7935199a8e4fdb8f2c8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddRef</b> ()</td></tr>
+<tr class="memdesc:a0d857f439bb5a7935199a8e4fdb8f2c8 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increment reference count. Can also be called outside of a <a class="el" href="class_urho3_d_1_1_shared_ptr.html" title="Shared pointer template class with intrusive reference counting.">SharedPtr</a> for traditional reference counting. <br /></td></tr>
 <tr class="separator:a0d857f439bb5a7935199a8e4fdb8f2c8 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59e95fecbcbc560f81f0bdd52306cc1d inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_ref_counted.html#a59e95fecbcbc560f81f0bdd52306cc1d">ReleaseRef</a> ()</td></tr>
+<tr class="memitem:a59e95fecbcbc560f81f0bdd52306cc1d inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top"><a id="a59e95fecbcbc560f81f0bdd52306cc1d" name="a59e95fecbcbc560f81f0bdd52306cc1d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ReleaseRef</b> ()</td></tr>
+<tr class="memdesc:a59e95fecbcbc560f81f0bdd52306cc1d inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decrement reference count and delete self if no more references. Can also be called outside of a <a class="el" href="class_urho3_d_1_1_shared_ptr.html" title="Shared pointer template class with intrusive reference counting.">SharedPtr</a> for traditional reference counting. <br /></td></tr>
 <tr class="separator:a59e95fecbcbc560f81f0bdd52306cc1d inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e764b1f4b072a1a0dbfaeac62626244 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_ref_counted.html#a7e764b1f4b072a1a0dbfaeac62626244">Refs</a> () const</td></tr>
+<tr class="memitem:a7e764b1f4b072a1a0dbfaeac62626244 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top"><a id="a7e764b1f4b072a1a0dbfaeac62626244" name="a7e764b1f4b072a1a0dbfaeac62626244"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>Refs</b> () const</td></tr>
+<tr class="memdesc:a7e764b1f4b072a1a0dbfaeac62626244 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return reference count. <br /></td></tr>
 <tr class="separator:a7e764b1f4b072a1a0dbfaeac62626244 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27960099d665fa2a05b7d488cfc56d90 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_urho3_d_1_1_ref_counted.html#a27960099d665fa2a05b7d488cfc56d90">WeakRefs</a> () const</td></tr>
+<tr class="memitem:a27960099d665fa2a05b7d488cfc56d90 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top"><a id="a27960099d665fa2a05b7d488cfc56d90" name="a27960099d665fa2a05b7d488cfc56d90"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>WeakRefs</b> () const</td></tr>
+<tr class="memdesc:a27960099d665fa2a05b7d488cfc56d90 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return weak reference count. <br /></td></tr>
 <tr class="separator:a27960099d665fa2a05b7d488cfc56d90 inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08cd9280809e02f43cd08599391131bb inherit pub_methods_class_urho3_d_1_1_ref_counted"><td class="memItemLeft" align="right" valign="top"><a id="a08cd9280809e02f43cd08599391131bb" name="a08cd9280809e02f43cd08599391131bb"></a>
 <a class="el" href="struct_urho3_d_1_1_ref_count.html">RefCount</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>RefCountPtr</b> ()</td></tr>
@@ -460,483 +520,7 @@ static const <a class="el" href="class_urho3_d_1_1_type_info.html">TypeInfo</a> 
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Console window with log history and command line prompt. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a4a581de52e903aa95b019af8a043a542" name="a4a581de52e903aa95b019af8a043a542"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a581de52e903aa95b019af8a043a542">&#9670;&nbsp;</a></span>GetBackground()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_urho3_d_1_1_border_image.html">BorderImage</a> * Urho3D::Console::GetBackground </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return the background element. </p>
-
-</div>
-</div>
-<a id="a2a5e63002b5f265f53f251c819d25764" name="a2a5e63002b5f265f53f251c819d25764"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a5e63002b5f265f53f251c819d25764">&#9670;&nbsp;</a></span>GetCloseButton()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_urho3_d_1_1_button.html">Button</a> * Urho3D::Console::GetCloseButton </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return the close butoon element. </p>
-
-</div>
-</div>
-<a id="a37fb41d4aaca43ea7f98257af68e36ce" name="a37fb41d4aaca43ea7f98257af68e36ce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a37fb41d4aaca43ea7f98257af68e36ce">&#9670;&nbsp;</a></span>GetCommandInterpreter()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp; Urho3D::Console::GetCommandInterpreter </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return the last used command interpreter. </p>
-
-</div>
-</div>
-<a id="a106dcebff5ed7a3a61edf478e487071d" name="a106dcebff5ed7a3a61edf478e487071d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a106dcebff5ed7a3a61edf478e487071d">&#9670;&nbsp;</a></span>GetDefaultStyle()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_urho3_d_1_1_x_m_l_file.html">XMLFile</a> * Urho3D::Console::GetDefaultStyle </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Return the <a class="el" href="class_urho3_d_1_1_u_i.html" title="UI subsystem. Manages the graphical user interface.">UI</a> style file. </p>
-
-</div>
-</div>
-<a id="a671c85fed93662ddb3b8f1f1759e92ff" name="a671c85fed93662ddb3b8f1f1759e92ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a671c85fed93662ddb3b8f1f1759e92ff">&#9670;&nbsp;</a></span>GetFocusOnShow()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Urho3D::Console::GetFocusOnShow </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return whether automatically focuses the line edit when showing. </p>
-
-</div>
-</div>
-<a id="a234c73da5dab331b0b71eb424243aec5" name="a234c73da5dab331b0b71eb424243aec5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a234c73da5dab331b0b71eb424243aec5">&#9670;&nbsp;</a></span>GetHistoryPosition()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">i32 Urho3D::Console::GetHistoryPosition </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return current history position. </p>
-
-</div>
-</div>
-<a id="a7567a53dc8f1953b52ae4683d320bdcf" name="a7567a53dc8f1953b52ae4683d320bdcf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7567a53dc8f1953b52ae4683d320bdcf">&#9670;&nbsp;</a></span>GetHistoryRow()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp; Urho3D::Console::GetHistoryRow </td>
-          <td>(</td>
-          <td class="paramtype">i32&#160;</td>
-          <td class="paramname"><em>index</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Return history row at index. </p>
-
-</div>
-</div>
-<a id="a8bc293fb5a86b8db025d354575f2b125" name="a8bc293fb5a86b8db025d354575f2b125"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8bc293fb5a86b8db025d354575f2b125">&#9670;&nbsp;</a></span>GetLineEdit()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_urho3_d_1_1_line_edit.html">LineEdit</a> * Urho3D::Console::GetLineEdit </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return the line edit element. </p>
-
-</div>
-</div>
-<a id="a4bdbac3c9f596f7816801ee7db342a64" name="a4bdbac3c9f596f7816801ee7db342a64"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4bdbac3c9f596f7816801ee7db342a64">&#9670;&nbsp;</a></span>GetNumBufferedRows()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">i32 Urho3D::Console::GetNumBufferedRows </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Return number of buffered rows. </p>
-
-</div>
-</div>
-<a id="a119b94075ea4d7080010553e7898f805" name="a119b94075ea4d7080010553e7898f805"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a119b94075ea4d7080010553e7898f805">&#9670;&nbsp;</a></span>GetNumHistoryRows()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">i32 Urho3D::Console::GetNumHistoryRows </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return history maximum size. </p>
-
-</div>
-</div>
-<a id="a3b2a11a7e999be75896761258e4b68de" name="a3b2a11a7e999be75896761258e4b68de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b2a11a7e999be75896761258e4b68de">&#9670;&nbsp;</a></span>GetNumRows()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">i32 Urho3D::Console::GetNumRows </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return number of displayed rows. </p>
-
-</div>
-</div>
-<a id="aad2b68696654daff52a3b762a56ae662" name="aad2b68696654daff52a3b762a56ae662"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad2b68696654daff52a3b762a56ae662">&#9670;&nbsp;</a></span>IsAutoVisibleOnError()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Urho3D::Console::IsAutoVisibleOnError </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Return true when console is set to automatically visible when receiving an error log message. </p>
-
-</div>
-</div>
-<a id="ae2d44e2fc810e779793fa680247bf2c1" name="ae2d44e2fc810e779793fa680247bf2c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae2d44e2fc810e779793fa680247bf2c1">&#9670;&nbsp;</a></span>IsVisible()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Urho3D::Console::IsVisible </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Return whether is visible. </p>
-
-</div>
-</div>
-<a id="a8a7662a654ecdff173220fb9d058c100" name="a8a7662a654ecdff173220fb9d058c100"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8a7662a654ecdff173220fb9d058c100">&#9670;&nbsp;</a></span>SetAutoVisibleOnError()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::Console::SetAutoVisibleOnError </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>enable</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Automatically set console to visible when receiving an error log message. </p>
-
-</div>
-</div>
-<a id="a91e111a7ddc4d0579522755c5c9a4de8" name="a91e111a7ddc4d0579522755c5c9a4de8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91e111a7ddc4d0579522755c5c9a4de8">&#9670;&nbsp;</a></span>SetCommandInterpreter()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::Console::SetCommandInterpreter </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_urho3_d_1_1_string.html">String</a> &amp;&#160;</td>
-          <td class="paramname"><em>interpreter</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Set the command interpreter. </p>
-
-</div>
-</div>
-<a id="ab6c414693bfee660f1e871d2d76d509c" name="ab6c414693bfee660f1e871d2d76d509c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab6c414693bfee660f1e871d2d76d509c">&#9670;&nbsp;</a></span>SetDefaultStyle()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::Console::SetDefaultStyle </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_urho3_d_1_1_x_m_l_file.html">XMLFile</a> *&#160;</td>
-          <td class="paramname"><em>style</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Set <a class="el" href="class_urho3_d_1_1_u_i.html" title="UI subsystem. Manages the graphical user interface.">UI</a> elements' style from an XML file. </p>
-
-</div>
-</div>
-<a id="a98b1d9382ecfe63be3e010ee6328cc93" name="a98b1d9382ecfe63be3e010ee6328cc93"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98b1d9382ecfe63be3e010ee6328cc93">&#9670;&nbsp;</a></span>SetFocusOnShow()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::Console::SetFocusOnShow </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>enable</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Set whether to automatically focus the line edit when showing. Default true on desktops and false on mobile devices, as on mobiles it would pop up the screen keyboard. </p>
-
-</div>
-</div>
-<a id="abdeed242ba1ef0d2d0e3a70574b7b898" name="abdeed242ba1ef0d2d0e3a70574b7b898"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abdeed242ba1ef0d2d0e3a70574b7b898">&#9670;&nbsp;</a></span>SetNumBufferedRows()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::Console::SetNumBufferedRows </td>
-          <td>(</td>
-          <td class="paramtype">i32&#160;</td>
-          <td class="paramname"><em>rows</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Set number of buffered rows. </p>
-
-</div>
-</div>
-<a id="aace7877d398e9da47ba15d1e2627fb19" name="aace7877d398e9da47ba15d1e2627fb19"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aace7877d398e9da47ba15d1e2627fb19">&#9670;&nbsp;</a></span>SetNumHistoryRows()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::Console::SetNumHistoryRows </td>
-          <td>(</td>
-          <td class="paramtype">i32&#160;</td>
-          <td class="paramname"><em>rows</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Set command history maximum size, 0 disables history. </p>
-
-</div>
-</div>
-<a id="a9f7b06f146d3a01921ae1ba16c7688e3" name="a9f7b06f146d3a01921ae1ba16c7688e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f7b06f146d3a01921ae1ba16c7688e3">&#9670;&nbsp;</a></span>SetNumRows()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::Console::SetNumRows </td>
-          <td>(</td>
-          <td class="paramtype">i32&#160;</td>
-          <td class="paramname"><em>rows</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Set number of displayed rows. </p>
-
-</div>
-</div>
-<a id="a1326b059443a666f16fbe89cb000c662" name="a1326b059443a666f16fbe89cb000c662"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1326b059443a666f16fbe89cb000c662">&#9670;&nbsp;</a></span>SetVisible()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Urho3D::Console::SetVisible </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>enable</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Show or hide. </p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
+</div><h2 class="groupheader">Member Data Documentation</h2>
 <a id="a1927f606b845da943ae60afc91aa406b" name="a1927f606b845da943ae60afc91aa406b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1927f606b845da943ae60afc91aa406b">&#9670;&nbsp;</a></span>autoComplete_</h2>
 
@@ -969,7 +553,7 @@ static const <a class="el" href="class_urho3_d_1_1_type_info.html">TypeInfo</a> 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 27 2022 08:16:11 for Urho3D by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Wed Sep 28 2022 20:01:27 for Urho3D by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>
